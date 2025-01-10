@@ -1,0 +1,8 @@
+{
+  "questions": [
+    { "type": "true_false", "question": "李白是唐代詩人。", "answer": "true" },
+    { "type": "single_choice", "question": "《詩經》有幾篇詩？", "options": ["305", "315", "350", "400"], "answer": "305" },
+    { "type": "multiple_choice", "question": "以下哪些是四書？", "options": ["論語", "中庸", "詩經", "孟子"], "answer": ["論語", "中庸", "孟子"] },
+    { "type": "short_answer", "question": "請寫出一首唐詩的詩名：" }
+  ]
+}
