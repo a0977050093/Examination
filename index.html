@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>線上測驗</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>線上測驗</h1>
+
+  <!-- 下拉選單選擇科目 -->
+  <label for="subject">選擇科目：</label>
+  <select id="subject" onchange="loadSubject()">
+    <option value="" disabled selected>請選擇科目</option>
+    <option value="chinese">國文</option>
+    <option value="english">英文</option>
+    <option value="math">數學</option>
+  </select>
+
+  <!-- 題目容器 -->
+  <div id="quiz-container"></div>
+
+  <!-- 提交按鈕 -->
+  <button class="btn" onclick="submitQuiz()">提交測驗</button>
+
+  <!-- 顯示結果 -->
+  <div id="result"></div>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
