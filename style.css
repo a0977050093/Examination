@@ -1,13 +1,27 @@
 /* 基本樣式設定 */
 body {
   font-family: Arial, sans-serif;
-  margin: 20px;
-  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  background-color: #f7f7f7;
 }
 
 /* 標題樣式 */
 h1 {
   color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* 容器樣式 */
+.container {
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+  padding: 20px;
+  border: 2px solid #333;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* 問題區塊樣式 */
@@ -15,20 +29,27 @@ h1 {
   margin-bottom: 20px;
 }
 
-/* 選項縮排 */
-.options {
-  margin-left: 20px;
+/* 核選框樣式 */
+.options label {
+  display: block;
+  padding: 5px 0;
+}
+
+.options input {
+  margin-right: 10px;
+  transform: scale(1.2); /* 放大核選框 */
 }
 
 /* 按鈕樣式 */
 .btn {
-  margin: 10px 0;
+  width: 100%;
   padding: 10px 15px;
   background-color: #007BFF;
   color: #fff;
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  font-size: 16px;
 }
 
 .btn:hover {
@@ -37,7 +58,7 @@ h1 {
 
 /* 結果區塊樣式 */
 #result {
-  margin-top: 20px;
   font-weight: bold;
   color: #0056b3;
+  text-align: center;
 }
