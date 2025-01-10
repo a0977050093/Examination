@@ -1,0 +1,8 @@
+{
+  "questions": [
+    { "type": "true_false", "question": "The Earth is round.", "answer": "true" },
+    { "type": "single_choice", "question": "Which is a vowel?", "options": ["B", "C", "E", "G"], "answer": "E" },
+    { "type": "multiple_choice", "question": "Choose the correct verbs:", "options": ["run", "cat", "eat", "house"], "answer": ["run", "eat"] },
+    { "type": "short_answer", "question": "Write a sentence using the word 'happiness':" }
+  ]
+}
