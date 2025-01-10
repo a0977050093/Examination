@@ -1,0 +1,43 @@
+/* 基本樣式設定 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  line-height: 1.6;
+}
+
+/* 標題樣式 */
+h1 {
+  color: #333;
+}
+
+/* 問題區塊樣式 */
+.question {
+  margin-bottom: 20px;
+}
+
+/* 選項縮排 */
+.options {
+  margin-left: 20px;
+}
+
+/* 按鈕樣式 */
+.btn {
+  margin: 10px 0;
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* 結果區塊樣式 */
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #0056b3;
+}
