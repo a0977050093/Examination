@@ -26,22 +26,32 @@ function renderQuiz() {
     questionDiv.innerHTML = `<p>Q${index + 1}: ${q.question}</p>`;
 
     if (q.type === "true_false") {
+      // 是非題 OX 核選框
       questionDiv.innerHTML += `
-        <label><input type="radio" name="q${index}" value="true"> 正確</label>
-        <label><input type="radio" name="q${index}" value="false"> 錯誤</label>`;
+        <div class="options">
+          <label><input type="radio" name="q${index}" value="true"> O (正確)</label>
+          <label><input type="radio" name="q${index}" value="false"> X (錯誤)</label>
+        </div>`;
     } else if (q.type === "single_choice") {
+      // 單選題
       const shuffledOptions = [...q.options].sort(() => Math.random() - 0.5);
+      questionDiv.innerHTML += `<div class="options">`;
       shuffledOptions.forEach(opt => {
         questionDiv.innerHTML += `
-          <label class="options"><input type="radio" name="q${index}" value="${opt}"> ${opt}</label>`;
+          <label><input type="radio" name="q${index}" value="${opt}"> ${opt}</label>`;
       });
+      questionDiv.innerHTML += `</div>`;
     } else if (q.type === "multiple_choice") {
+      // 複選題
       const shuffledOptions = [...q.options].sort(() => Math.random() - 0.5);
+      questionDiv.innerHTML += `<div class="options">`;
       shuffledOptions.forEach(opt => {
         questionDiv.innerHTML += `
-          <label class="options"><input type="checkbox" name="q${index}" value="${opt}"> ${opt}</label>`;
+          <label><input type="checkbox" name="q${index}" value="${opt}"> ${opt}</label>`;
       });
+      questionDiv.innerHTML += `</div>`;
     } else if (q.type === "short_answer") {
+      // 問答題
       questionDiv.innerHTML += `
         <textarea name="q${index}" rows="3" cols="40" placeholder="請作答"></textarea>`;
     }
@@ -80,5 +90,4 @@ function submitQuiz() {
     }
   });
 
-  document.getElementById("result").innerText = `你的得分是：${score}/${currentQuestions.length - currentQuestions.filter(q => q.type === "short_answer").length}`;
-}
+  document.getElementById("result").innerText = `你的得分是：${
