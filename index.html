@@ -10,22 +10,26 @@
   <h1>線上測驗</h1>
 
   <!-- 下拉選單選擇科目 -->
-  <label for="subject">選擇科目：</label>
-  <select id="subject" onchange="loadSubject()">
-    <option value="" disabled selected>請選擇科目</option>
-    <option value="chinese">國文</option>
-    <option value="english">英文</option>
-    <option value="math">數學</option>
-  </select>
+  <div class="container">
+    <label for="subject">選擇科目：</label>
+    <select id="subject" onchange="loadSubject()">
+      <option value="" disabled selected>請選擇科目</option>
+      <option value="chinese">國文</option>
+      <option value="english">英文</option>
+      <option value="math">數學</option>
+    </select>
+  </div>
 
   <!-- 題目容器 -->
-  <div id="quiz-container"></div>
+  <div id="quiz-container" class="container"></div>
 
   <!-- 提交按鈕 -->
-  <button class="btn" onclick="submitQuiz()">提交測驗</button>
+  <div class="container">
+    <button class="btn" onclick="submitQuiz()">提交測驗</button>
+  </div>
 
   <!-- 顯示結果 -->
-  <div id="result"></div>
+  <div id="result" class="container"></div>
 
   <script src="quiz.js"></script>
 </body>
