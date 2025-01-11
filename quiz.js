@@ -1,21 +1,20 @@
-// 題庫資料從 JSON 檔案載入
 let currentQuestions = [];
 
-// 根據選擇的科目載入題庫
+// 科目選擇後載入題庫
 function loadSubject() {
   const subject = document.getElementById("subject").value;
   if (!subject) return;
 
-  fetch(`${subject}.json`)
+  fetch(`${subject}.json`) // 根據科目載入 JSON
     .then(response => response.json())
     .then(data => {
       currentQuestions = data.questions;
-      renderQuiz();
+      renderQuiz(); // 渲染測驗題目
     })
     .catch(error => console.error("Error loading subject:", error));
 }
 
-// 渲染題目
+// 渲染測驗題目
 function renderQuiz() {
   const quizContainer = document.getElementById("quiz-container");
   quizContainer.innerHTML = "";
@@ -25,35 +24,24 @@ function renderQuiz() {
     questionDiv.className = "question";
     questionDiv.innerHTML = `<p>Q${index + 1}: ${q.question}</p>`;
 
+    // 顯示不同類型的題目
     if (q.type === "true_false") {
-      // 是非題 OX 核選框
       questionDiv.innerHTML += `
-        <div class="options">
-          <label><input type="radio" name="q${index}" value="true"> O (正確)</label>
-          <label><input type="radio" name="q${index}" value="false"> X (錯誤)</label>
-        </div>`;
+        <label><input type="radio" name="q${index}" value="true"> 正確</label>
+        <label><input type="radio" name="q${index}" value="false"> 錯誤</label>`;
     } else if (q.type === "single_choice") {
-      // 單選題
-      const shuffledOptions = [...q.options].sort(() => Math.random() - 0.5);
-      questionDiv.innerHTML += `<div class="options">`;
-      shuffledOptions.forEach(opt => {
+      q.options.forEach(option => {
         questionDiv.innerHTML += `
-          <label><input type="radio" name="q${index}" value="${opt}"> ${opt}</label>`;
+          <label><input type="radio" name="q${index}" value="${option}"> ${option}</label>`;
       });
-      questionDiv.innerHTML += `</div>`;
     } else if (q.type === "multiple_choice") {
-      // 複選題
-      const shuffledOptions = [...q.options].sort(() => Math.random() - 0.5);
-      questionDiv.innerHTML += `<div class="options">`;
-      shuffledOptions.forEach(opt => {
+      q.options.forEach(option => {
         questionDiv.innerHTML += `
-          <label><input type="checkbox" name="q${index}" value="${opt}"> ${opt}</label>`;
+          <label><input type="checkbox" name="q${index}" value="${option}"> ${option}</label>`;
       });
-      questionDiv.innerHTML += `</div>`;
     } else if (q.type === "short_answer") {
-      // 問答題
       questionDiv.innerHTML += `
-        <textarea name="q${index}" rows="3" cols="40" placeholder="請作答"></textarea>`;
+        <textarea name="q${index}" rows="3" placeholder="請作答"></textarea>`;
     }
 
     quizContainer.appendChild(questionDiv);
@@ -62,32 +50,18 @@ function renderQuiz() {
 
 // 提交測驗
 function submitQuiz() {
-  const userAnswers = [];
+  let score = 0;
+
   currentQuestions.forEach((q, index) => {
     const inputs = document.querySelectorAll(`[name="q${index}"]`);
     if (q.type === "true_false" || q.type === "single_choice") {
       const selected = [...inputs].find(input => input.checked);
-      userAnswers.push(selected ? selected.value : null);
+      if (selected && selected.value === q.answer) score++;
     } else if (q.type === "multiple_choice") {
-      userAnswers.push([...inputs].filter(input => input.checked).map(input => input.value));
-    } else if (q.type === "short_answer") {
-      userAnswers.push(inputs[0].value.trim());
+      const selected = [...inputs].filter(input => input.checked).map(input => input.value);
+      if (JSON.stringify(selected.sort()) === JSON.stringify(q.answer.sort())) score++;
     }
   });
 
-  // 計算分數
-  let score = 0;
-  currentQuestions.forEach((q, index) => {
-    if (q.type === "short_answer") return; // 問答題不計分
-    if (Array.isArray(q.answer)) {
-      if (JSON.stringify(q.answer.sort()) === JSON.stringify(userAnswers[index].sort())) {
-        score++;
-      }
-    } else {
-      if (q.answer === userAnswers[index]) {
-        score++;
-      }
-    }
-  });
-
-  document.getElementById("result").innerText = `你的得分是：${
+  document.getElementById("result").innerText = `得分：${score}/${currentQuestions.length}`;
+}
