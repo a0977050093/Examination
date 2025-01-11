@@ -1,8 +1,173 @@
 {
   "questions": [
-    { "type": "true_false", "question": "李白是唐代詩人。", "answer": "true" },
-    { "type": "single_choice", "question": "《詩經》有幾篇詩？", "options": ["305", "315", "350", "400"], "answer": "305" },
-    { "type": "multiple_choice", "question": "以下哪些是四書？", "options": ["論語", "中庸", "詩經", "孟子"], "answer": ["論語", "中庸", "孟子"] },
-    { "type": "short_answer", "question": "請寫出一首唐詩的詩名：" }
+    {
+      "type": "single_choice",
+      "question": "下列哪一項是《三國演義》的主要角色？",
+      "options": ["劉備", "屈原", "李白"],
+      "answer": "劉備"
+    },
+    {
+      "type": "single_choice",
+      "question": "《紅樓夢》的作者是誰？",
+      "options": ["曹雪芹", "施耐庵", "羅貫中"],
+      "answer": "曹雪芹"
+    },
+    {
+      "type": "single_choice",
+      "question": "成語「指鹿為馬」的典故出自哪本書？",
+      "options": ["史記", "左傳", "資治通鑑"],
+      "answer": "史記"
+    },
+    {
+      "type": "single_choice",
+      "question": "詩句「兩岸猿聲啼不住，輕舟已過萬重山」的作者是？",
+      "options": ["李白", "杜甫", "王之涣"],
+      "answer": "李白"
+    },
+    {
+      "type": "single_choice",
+      "question": "「先天下之憂而憂，後天下之樂而樂」出自哪位文人？",
+      "options": ["范仲淹", "蘇軾", "王安石"],
+      "answer": "范仲淹"
+    },
+    {
+      "type": "single_choice",
+      "question": "《左傳》的作者是誰？",
+      "options": ["孔子", "司馬遷", "左丘明"],
+      "answer": "左丘明"
+    },
+    {
+      "type": "single_choice",
+      "question": "《楚辭》的代表作是什麼？",
+      "options": ["離騷", "九歌", "天問"],
+      "answer": "離騷"
+    },
+    {
+      "type": "single_choice",
+      "question": "成語「草船借箭」與誰有關？",
+      "options": ["諸葛亮", "周瑜", "曹操"],
+      "answer": "諸葛亮"
+    },
+    {
+      "type": "single_choice",
+      "question": "「大江東去，浪淘盡，千古風流人物」是哪位詞人的作品？",
+      "options": ["蘇軾", "李清照", "辛棄疾"],
+      "answer": "蘇軾"
+    },
+    {
+      "type": "single_choice",
+      "question": "下列哪一位是唐代詩人？",
+      "options": ["李白", "蘇軾", "陶淵明"],
+      "answer": "李白"
+    },
+    {
+      "type": "single_choice",
+      "question": "下列哪一位是《聊齋志異》的作者？",
+      "options": ["蒲松齡", "曹雪芹", "羅貫中"],
+      "answer": "蒲松齡"
+    },
+    {
+      "type": "single_choice",
+      "question": "詩句「莫愁前路無知己，天下誰人不識君」的作者是？",
+      "options": ["高適", "王之涣", "李白"],
+      "answer": "高適"
+    },
+    {
+      "type": "single_choice",
+      "question": "《詩經》是中國哪一時期的詩歌總集？",
+      "options": ["先秦", "唐代", "宋代"],
+      "answer": "先秦"
+    },
+    {
+      "type": "single_choice",
+      "question": "下列哪一位與蘇軾並稱為「唐宋八大家」？",
+      "options": ["歐陽修", "杜甫", "王安石"],
+      "answer": "歐陽修"
+    },
+    {
+      "type": "single_choice",
+      "question": "詩句「千里鶯啼綠映紅」的作者是？",
+      "options": ["杜牧", "王安石", "杜甫"],
+      "answer": "杜牧"
+    },
+    {
+      "type": "single_choice",
+      "question": "「後人哀之而不鑒之，亦使後人而復哀後人也」出自哪本書？",
+      "options": ["史記", "左傳", "資治通鑑"],
+      "answer": "史記"
+    },
+    {
+      "type": "single_choice",
+      "question": "成語「呂端大事不糊塗」與哪位人物有關？",
+      "options": ["呂端", "諸葛亮", "包拯"],
+      "answer": "呂端"
+    },
+    {
+      "type": "single_choice",
+      "question": "詩句「夕陽無限好，只是近黃昏」的作者是？",
+      "options": ["李商隱", "杜甫", "白居易"],
+      "answer": "李商隱"
+    },
+    {
+      "type": "single_choice",
+      "question": "「北風捲地白草折，胡天八月即飛雪」出自哪位詩人的作品？",
+      "options": ["岑參", "杜甫", "王昌齡"],
+      "answer": "岑參"
+    },
+    {
+      "type": "single_choice",
+      "question": "「欲窮千里目，更上一層樓」出自哪位詩人的作品？",
+      "options": ["王之涣", "李白", "杜甫"],
+      "answer": "王之涣"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "下列哪些屬於唐代詩人？",
+      "options": ["李白", "杜甫", "王維", "白居易"],
+      "answer": ["李白", "杜甫", "王維", "白居易"]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "下列哪些屬於四書？",
+      "options": ["大學", "中庸", "論語", "孟子"],
+      "answer": ["大學", "中庸", "論語", "孟子"]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "下列哪些成語與《三國演義》有關？",
+      "options": ["草船借箭", "三顧茅廬", "空城計", "指鹿為馬"],
+      "answer": ["草船借箭", "三顧茅廬", "空城計"]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "下列哪些屬於唐代的詩歌名篇？",
+      "options": ["靜夜思", "將進酒", "春望", "虞美人"],
+      "answer": ["靜夜思", "將進酒", "春望"]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "《西遊記》中的主要角色有哪些？",
+      "options": ["孫悟空", "豬八戒", "唐僧", "白骨精"],
+      "answer": ["孫悟空", "豬八戒", "唐僧"]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "下列哪些屬於宋代的詞牌？",
+      "options": ["滿江紅", "水調歌頭", "菩薩蠻", "將進酒"],
+      "answer": ["滿江紅", "水調歌頭", "菩薩蠻"]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "《資治通鑑》的主要作者有哪些？",
+      "options": ["司馬光", "司馬遷", "班固", "孔子"],
+      "answer": ["司馬光"]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "下列哪些成語出自《三國演義》？",
+      "options": ["空城計", "三顧茅廬", "草船借箭", "七步詩"],
+      "answer": ["空城計", "三顧茅廬", "草船借箭"]
+    }
+    // 添加更多題目，直至單選 30 題和複選 30 題。
   ]
 }
