@@ -1,8 +1,0 @@
-{
-  "questions": [
-    { "type": "true_false", "question": "0 是偶數。", "answer": "true" },
-    { "type": "single_choice", "question": "5 + 7 = ?", "options": ["11", "12", "13", "14"], "answer": "12" },
-    { "type": "multiple_choice", "question": "哪些是質數？", "options": ["2", "4", "5", "6"], "answer": ["2", "5"] },
-    { "type": "short_answer", "question": "" }
-  ]
-}

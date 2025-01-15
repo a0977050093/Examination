@@ -1,0 +1,634 @@
+{
+  "questions": [
+    {
+      "type": "single_choice",
+      "question": "中1. 專有名詞：CDMA（Code Division Multiple Access）之中文譯意為何？",
+      "options": ["分碼多工", "分時多工", "分頻多工", "預先分配多工"],
+      "answer": "分碼多工",
+      "reference": "陸軍衛星裝備操作手冊第二章第一節第一款P2-2"
+    },
+    {
+      "type": "single_choice",
+      "question": "中2. 完成MCPC設定後，執行其語音通速時，多工器的電話號碼為幾碼？",
+      "options": ["4碼", "5碼", "6碼", "10碼"],
+      "answer": "5碼",
+      "reference": "陸軍衛星裝備操作手冊第二章第三節第二款P2-100"
+    },
+    {
+      "type": "single_choice",
+      "question": "中3. 為避免車體有滑動的危險，車載終端開設時「場地的坡度」不可超過幾度？",
+      "options": ["5度", "10度", "15度", "20度"],
+      "answer": "20度",
+      "reference": "陸軍衛星裝備操作手冊第二章第三節第一款P2-57"
+    },
+    {
+      "type": "single_choice",
+      "question": "中4. 「固定終端台」的圖形天線碟盤直徑為多少？",
+      "options": ["1.2米", "1.5米", "1.8米", "2.4米"],
+      "answer": "1.8米",
+      "reference": "陸軍衛星裝備操作手冊第三章第一節第二款P2-10"
+    },
+    {
+      "type": "single_choice",
+      "question": "中5. 完成CDMA設定後，執行其語音通速時，電話號碼為幾碼？",
+      "options": ["8碼", "9碼", "6碼", "7碼"],
+      "answer": "6碼",
+      "reference": "陸軍衛星裝備操作手冊第二章第三節第二款P2-100"
+    },
+    {
+      "type": "single_choice",
+      "question": "中6. 執行「天線微調」時，天線控制器顯示器A/欄位，意義為何？",
+      "options": ["方位角", "俯仰角", "極化角", "直角"],
+      "answer": "方位角",
+      "reference": "陸軍衛星裝備操作手冊第二章第三節第一款P2-75"
+    },
+    {
+      "type": "single_choice",
+      "question": "中7. 發電機保養時，每次啟用需運轉多久時間？",
+      "options": ["五分鐘", "三十分鐘", "四十分鐘", "八分鐘"],
+      "answer": "三十分鐘",
+      "reference": "陸軍衛星裝備操作手冊第二章第一節第二款P6-16"
+    },
+    {
+      "type": "single_choice",
+      "question": "中8. 執行「天線微調」時，天線控制器顯示器POL欄位，意義為何？",
+      "options": ["方位角", "俯仰角", "極化角", "直角"],
+      "answer": "極化角",
+      "reference": "陸軍衛星裝備操作手冊第二章第三節第一款P2-75"
+    },
+    {
+      "type": "single_choice",
+      "question": "中9. 車載終端，如何清除「油壓腳柱」之前的狀態記憶？",
+      "options": ["前駕上昇+復歸鍵", "前駕下降+復歸鍵", "前駕上昇+自動平衡鍵", "前駕下降+自動平衡鍵"],
+      "answer": "前駕上昇+復歸鍵",
+      "reference": "陸軍衛星裝備操作手冊第二章第一節第二款P2-13（接裝訓練教材）"
+    },
+    {
+      "type": "single_choice",
+      "question": "中10. 車載終端的「發電機」輸入的電壓值為多少？",
+      "options": ["AC110V", "AC220V", "DC24V", "DC12V"],
+      "answer": "AC220V",
+      "reference": "陸軍衛星裝備操作手冊第二章第三節第一款P2-64"
+    },
+    {
+      "type": "single_choice",
+      "question": "中11. 「車載網管主台」的圖形天線碟盤直徑為多少？",
+      "options": ["1.2米", "1.5米", "1.8米", "2.4米"],
+      "answer": "2.4米",
+      "reference": "陸軍衛星裝備操作手冊第二章第一節第二款P2-10"
+    },
+    {
+      "type": "single_choice",
+      "question": "中12. 「車載終端 CS/TRC-802」的圖形天線碟盤直徑為多少？",
+      "options": ["0.75 米", "1 米", "1.8 米", "2.2 米"],
+      "answer": "1 米",
+      "reference": "陸軍衛星裝備操作手冊第二章第一節第二款 P2-10"
+    },
+    {
+      "type": "single_choice",
+      "question": "中13. 中頻信號監控面板之輸出入阻抗為多少歐姆？",
+      "options": ["40", "50", "30", "20"],
+      "answer": "50",
+      "reference": "陸軍衛星裝備操作手冊第二章第一節第二款 P2-17"
+    },
+    {
+      "type": "single_choice",
+      "question": "中14. 下列哪項裝備，支援衛星 MCPC 鍵路上所傳輸之通訊協定，涵蓋了語音、傳真和數據？",
+      "options": ["多工器 CX-950e", "數位信標接收機 DTR", "功率放大器 MT-3200", "磁羅經 COMPASS"],
+      "answer": "多工器 CX-950e",
+      "reference": "陸軍衛星裝備操作手冊第二章第一節第二款 P2-18"
+    },
+    {
+      "type": "single_choice",
+      "question": "中15. 車載終端，MCPC 調渡機的裝備程式為何？",
+      "options": ["ACU-4000", "MD-2003", "AUPG-4000", "CDM-570"],
+      "answer": "CDM-570",
+      "reference": "陸軍衛星裝備操作手冊第二章第三節第四款 P2-134"
+    },
+    {
+      "type": "single_choice",
+      "question": "中16. 下列哪項裝備，可以直接控制調整天線之「方位角、俯仰角及極化角」？",
+      "options": ["數位信標接收機 DTR", "天線控制器 ACU", "磁羅經 COMPASS", "全球定位系統 GPS"],
+      "answer": "天線控制器 ACU",
+      "reference": "陸軍衛星裝備操作手冊第二章第一節第二款 P2-15"
+    },
+    {
+      "type": "single_choice",
+      "question": "中17. 下列哪項裝備，可以提供衛星天線所需之發射功率？",
+      "options": ["CX-950e", "COMPASS", "BUC", "DTR"],
+      "answer": "BUC",
+      "reference": "陸軍衛星裝備操作手冊第二章第一節第二款 P2-16"
+    },
+    {
+      "type": "single_choice",
+      "question": "中18. 請問為配合網路管理系統運作所需之必要裝備？",
+      "options": ["上鍵功率控制器 AUPG-4000", "數位信標接收機 DTR", "CDMA 調渡機", "磁羅經 COMPASS"],
+      "answer": "CDMA 調渡機",
+      "reference": "陸軍衛星裝備操作手冊第二章第一節第二款 P2-17"
+    },
+    {
+      "type": "single_choice",
+      "question": "中19. 請問下列哪項裝備，可提供天線系統(載具)所在地的經度、緯度與距海平面的高度等資料？",
+      "options": ["數位信標接收機 DTR", "多工器 CX-950e", "全球定位系統接收天線 GPS", "磁羅經 COMPASS"],
+      "answer": "全球定位系統接收天線 GPS",
+      "reference": "陸軍衛星裝備操作手冊第二章第一節第二款 P2-15"
+    },
+    {
+      "type": "single_choice",
+      "question": "中20. 請問下列哪項裝備，可提供車尾東西西北的指向，以配合天線控制軟體自動搜索與抓取衛星？",
+      "options": ["數位信標接收機 DTR", "功率放大器 MT-3200", "磁羅經 COMPASS", "多工器 CX-950e"],
+      "answer": "磁羅經 COMPASS",
+      "reference": "陸軍衛星裝備操作手冊第二章第一節第二款 P2-15"
+    },
+    {
+      "type": "single_choice",
+      "question": "中21. 專有名詞：MCPC (Multiple Channel Per Carrier) 之中文譯意為何？",
+      "options": ["多路載波", "分碼多工", "單路載波", "分時多工"],
+      "answer": "多路載波",
+      "reference": "陸軍衛星裝備操作手冊第二章第一節第一款 P2-2"
+    },
+    {
+      "type": "single_choice",
+      "question": "中22. 「CDMA 系統」網管對其傳輸頻寬限制最大為何？",
+      "options": ["128Kbps", "384Kbps", "64Kbps", "512Kbps"],
+      "answer": "64Kbps",
+      "reference": "陸軍衛星裝備操作手冊第二章第三節第四款 P2-132"
+    },
+    {
+      "type": "single_choice",
+      "question": "中23. 「MCPC 系統調渡機」在視訊會議時，傳輸頻寬最少選擇為何？",
+      "options": ["19.6Kbps", "386Kbps", "9.6Kbps", "2.048Mbps"],
+      "answer": "386Kbps",
+      "reference": "陸軍衛星裝備操作手冊第二章第三節第四款 P2-132"
+    },
+    {
+      "type": "single_choice",
+      "question": "中24. 執行「天線微調」時，天線控制器顯示器EL欄位，意義為何？",
+      "options": ["方位角", "俯仰角", "極化角", "直角"],
+      "answer": "俯仰角",
+      "reference": "陸軍衛星裝備操作手冊第二章第三節第一款P2-75"
+    },
+    {
+      "type": "single_choice",
+      "question": "中25. 衛星通信系統自成一個封閉式網路，若要介接單網或其他運用，須獲得「」單位同意後，由資訊業管人員執行相關防火牆與路由設定分配？",
+      "options": ["指揮部", "六軍團", "司令部", "教學部"],
+      "answer": "司令部",
+      "reference": "陸軍衛星裝備操作手冊第二章三節四款P2-130"
+    },
+    {
+      "type": "single_choice",
+      "question": "易26. 本軍衛星系統可攜終端PT，使用天線總成本體的功能鍵「自動對星」時，需按下幾響後放掉按鍵？",
+      "options": ["1響", "2響", "3響", "4響"],
+      "answer": "2響",
+      "reference": "陸軍衛星裝備操作手冊第二章第三節第一款P2-69"
+    },
+    {
+      "type": "single_choice",
+      "question": "易27. 本軍衛星系統可攜終端PT，使用天線總成本體的功能鍵「天線復位」時，需按下幾響後放掉按鍵？",
+      "options": ["1響", "2響", "3響", "4響"],
+      "answer": "1響",
+      "reference": "陸軍衛星裝備操作手冊第二章第三節第一款P2-69"
+    },
+    {
+      "type": "single_choice",
+      "question": "易28. 本軍衛星系統可攜終端PT，使用天線總成本體的功能鍵「天線收藏」時，需按下幾響後放掉按鍵？",
+      "options": ["1響", "2響", "3響", "4響"],
+      "answer": "3響",
+      "reference": "陸軍衛星裝備操作手冊第二章第三節第一款P2-69"
+    },
+    {
+      "type": "single_choice",
+      "question": "易29. 本軍衛星系統CDMA連鎖後，網路運作架構，為下列何者？",
+      "options": ["星狀架構", "網狀架構", "樹狀架構", "以上皆非"],
+      "answer": "星狀架構",
+      "reference": "陸軍衛星裝備操作手冊第二章第一節第二款P2-12"
+    },
+    {
+      "type": "single_choice",
+      "question": "易30. 本軍衛星系統MCPC連鎖後，「網路運作架構」為下列何者？",
+      "options": ["星狀架構", "網狀架構", "樹狀架構", "以上皆非"],
+      "answer": "網狀架構",
+      "reference": "陸軍衛星裝備操作手冊第二章第一節第二款P2-12"
+    },
+    {
+      "type": "single_choice",
+      "question": "易31. 本軍衛星系統中的「視訊裝備」組成下列何者為非？",
+      "options": ["遙控器", "降頻轉換器", "麥克風、視訊鏡頭", "螢幕、喇叭"],
+      "answer": "降頻轉換器",
+      "reference": "陸軍衛星裝備操作手冊第二章第二節P2-52"
+    },
+    {
+      "type": "single_choice",
+      "question": "易32. 下列何者，有提供發送「定位導航訊號」的服務？",
+      "options": ["格洛納斯GLONASS", "海事衛星INMARSAT", "中新二號衛星ST-2", "探險家一號衛星EXPLORER-1"],
+      "answer": "格洛納斯GLONASS",
+      "reference": "陸軍衛星裝備操作手冊第三章第二節P4-9"
+    },
+    {
+      "type": "single_choice",
+      "question": "易33. 下列何者，有提供「衛星行動電話」的服務？",
+      "options": ["伽利略衛星Galileo", "歐星衛星Thuraya", "中新二號衛星ST-2", "探險家一號衛星EXPLORER-1"],
+      "answer": "歐星衛星Thuraya",
+      "reference": "陸軍衛星裝備操作手冊第三章第二節P3-17"
+    },
+    {
+      "type": "single_choice",
+      "question": "易34. 下列何者為本軍衛星系統建置的「地面站台」？",
+      "options": ["固定網管主台FTNMS", "車載終端VT靜中通", "車載終端VT動中通", "指管中心MCC"],
+      "answer": "車載終端VT動中通",
+      "reference": "陸軍衛星裝備操作手冊第二章第四節P1-44"
+    },
+    {
+      "type": "single_choice",
+      "question": "易35. 本軍衛星系統車載終端VT的多工器CX-950e「第1張卡片」配置為何？",
+      "options": ["FXS雙路類比語音卡", "通用輸出入卡", "10/100乙太網路卡", "E&M雙路類比語音卡"],
+      "answer": "10/100乙太網路卡",
+      "reference": "陸軍衛星裝備操作手冊第二章第三節第二款P2-166"
+    },
+    {
+      "type": "single_choice",
+      "question": "易36. 本軍衛星系統車載終端VT的多工器CX-950e「第7張卡片」配置為何？",
+      "options": ["FXS雙路類比語音卡", "通用輸出入卡", "10/100乙太網路卡", "E&M雙路類比語音卡"],
+      "answer": "E&M雙路類比語音卡",
+      "reference": "陸軍衛星裝備操作手冊第二章第三節第二款P2-166"
+    },
+    {
+      "type": "single_choice",
+      "question": "易37. 本軍衛星系統車載終端VT的多工器CX-950e「第8張卡片」配置為何？",
+      "options": ["FXO雙路類比語音卡", "10/100乙太網路卡", "數位式介面模組卡", "E&M雙路類比語音卡"],
+      "answer": "數位式介面模組卡",
+      "reference": "陸軍衛星裝備操作手冊第二章第三節第二款P2-166"
+    },
+    {
+      "type": "single_choice",
+      "question": "易38. 本軍衛星系統車載終端VT的多工器CX-950e「第6張卡片」配置為何？",
+      "options": ["插槽保留，未配置卡片", "FXO雙路類比語音卡", "FXS雙路類比語音卡", "E&M雙路類比語音卡"],
+      "answer": "插槽保留，未配置卡片",
+      "reference": "陸軍衛星裝備操作手冊第二章第三節第二款P2-166"
+    },
+    {
+      "type": "single_choice",
+      "question": "易39. 請問多工器CX-950e線路類比語音卡之FXO為何功能？",
+      "options": ["本身無搭號音需靠交換機提供", "本身有搭號音", "以上皆是", "以上皆非"],
+      "answer": "本身無搭號音需靠交換機提供",
+      "reference": "陸軍衛星裝備操作手冊第二章第二節P2-51"
+    },
+    {
+      "type": "single_choice",
+      "question": "易40. 請問多工器CX-950e線路類比語音卡之FXS為何功能？",
+      "options": ["本身無搭號音需靠交換機提供", "本身有搭號音", "以上皆是", "以上皆非"],
+      "answer": "本身有搭號音",
+      "reference": "陸軍衛星裝備操作手冊第二章第二節P2-52"
+    },
+    {
+      "type": "single_choice",
+      "question": "易41. 請問下列何者？非天線控制器 (ACU) 可對天線碟盤調整之角度？",
+      "options": ["方位角", "俯仰角", "極化角", "純角"],
+      "answer": "純角",
+      "reference": "陸軍衛星裝備操作手冊第二章第二節P2-42"
+    },
+    {
+      "type": "single_choice",
+      "question": "易42. 請問多工器CX-950e使用RJ-45網路線銜接T1時，其使用的色對為何？",
+      "options": ["藍色;橙色", "紅色;白色", "黑色;綠色", "白色;黑色"],
+      "answer": "藍色;橙色",
+      "reference": "陸軍衛星裝備操作手冊第二章第三節第四款P2-128"
+    },
+    {
+      "type": "single_choice",
+      "question": "易43. 下列何者，有提供「衛星行動電話」的服務？",
+      "options": ["伽利略衛星Galileo", "海軍衛星INMARSAT", "中新二號衛星ST-2", "探險家一號衛星EXPLORER-1"],
+      "answer": "海軍衛星INMARSAT",
+      "reference": "陸軍衛星裝備操作手冊第三章第二節P3-17"
+    },
+    {
+      "type": "single_choice",
+      "question": "易44. 請問多工器CX-950e參數設定時，可使用哪些軟體做設定？",
+      "options": ["CX Tool: CX Access", "CX Office;CX Windows", "CX950;CX Word", "CX Windows;CX950"],
+      "answer": "CX Tool: CX Access",
+      "reference": "陸軍衛星裝備操作手冊P2-119"
+    },
+    {
+      "type": "single_choice",
+      "question": "易45. 請問下列哪項裝備銜接多工器CX-950e？",
+      "options": ["上鍵功率控制器", "數位信標接收機", "CDMA調渡機", "MCPC調渡機"],
+      "answer": "MCPC調渡機",
+      "reference": "陸軍衛星裝備操作手冊第二章第一節第二款P2-17"
+    },
+    {
+      "type": "single_choice",
+      "question": "易46. 請問中新二號衛星 (ST-2) 所使用的通信頻段為？",
+      "options": ["Ku頻段", "X頻段", "X頻段", "Ka頻段"],
+      "answer": "Ku頻段",
+      "reference": "陸軍衛星裝備操作手冊第二章第一節第二款P2-8"
+    },
+    {
+      "type": "single_choice",
+      "question": "易47. 下列何者為本軍衛星系統建置的「地面站台」？",
+      "options": ["固定網管主台FTNMS", "繼載終端ST", "車載網管主台TSNMS", "指管中心MCC"],
+      "answer": "車載網管主台TSNMS",
+      "reference": "陸軍衛星裝備操作手冊第一章第四節P1-44"
+    },
+    {
+      "type": "single_choice",
+      "question": "易48. 本軍衛星系統車載終端VT的多工器CX-950e「第1張卡片」配置為何？",
+      "options": ["FXS雙路類比語音卡", "通用輸出入卡", "10/100乙太網路卡", "E&M雙路類比語音卡"],
+      "answer": "10/100乙太網路卡",
+      "reference": "陸軍衛星裝備操作手冊第二章第三節第二款P2-166"
+    },
+    {
+      "type": "single_choice",
+      "question": "易49. 本軍衛星系統車載終端VT的多工器CX-950e「第7張卡片」配置為何？",
+      "options": ["FXS雙路類比語音卡", "通用輸出入卡", "10/100乙太網路卡", "E&M雙路類比語音卡"],
+      "answer": "E&M雙路類比語音卡",
+      "reference": "陸軍衛星裝備操作手冊第二章第三節第二款P2-166"
+    },
+    {
+      "type": "single_choice",
+      "question": "易50. 本軍衛星系統車載終端VT的多工器CX-950e「第8張卡片」配置為何？",
+      "options": ["FXO雙路類比語音卡", "10/100乙太網路卡", "數位式介面模組卡", "E&M雙路類比語音卡"],
+      "answer": "數位式介面模組卡",
+      "reference": "陸軍衛星裝備操作手冊第二章第三節第二款P2-166"
+    },
+    {
+      "type": "single_choice",
+      "question": "易51. 本軍衛星系統車載終端VT的多工器CX-950e「第6張卡片」配置為何？",
+      "options": ["插槽保留，未配置卡片", "FXO雙路類比語音卡", "FXS雙路類比語音卡", "E&M雙路類比語音卡"],
+      "answer": "插槽保留，未配置卡片",
+      "reference": "陸軍衛星裝備操作手冊第二章第三節第二款P2-166"
+    },
+    {
+      "type": "single_choice",
+      "question": "易52. 請問多工器CX-950e線路類比語音卡之FXO為何功能？",
+      "options": ["本身無搭號音需靠交換機提供", "本身有搭號音", "以上皆是", "以上皆非"],
+      "answer": "本身無搭號音需靠交換機提供",
+      "reference": "陸軍衛星裝備操作手冊第二章第二節P2-51"
+    },
+    {
+      "type": "single_choice",
+      "question": "易53. 請問多工器CX-950e線路類比語音卡之FXS為何功能？",
+      "options": ["本身無搭號音需靠交換機提供", "本身有搭號音", "以上皆是", "以上皆非"],
+      "answer": "本身有搭號音",
+      "reference": "陸軍衛星裝備操作手冊第二章第二節P2-52"
+    },
+    {
+      "type": "single_choice",
+      "question": "易54. 請問下列何者？非天線控制器 (ACU) 可對天線碟盤調整之角度？",
+      "options": ["方位角", "俯仰角", "極化角", "純角"],
+      "answer": "純角",
+      "reference": "陸軍衛星裝備操作手冊第二章第二節P2-42"
+    },
+    {
+      "type": "single_choice",
+      "question": "易55. 請問多工器CX-950e使用RJ-45網路線銜接T1時，其使用的色對為何？",
+      "options": ["藍色;橙色", "紅色;白色", "黑色;綠色", "白色;黑色"],
+      "answer": "藍色;橙色",
+      "reference": "陸軍衛星裝備操作手冊第二章第三節第四款P2-128"
+    },
+    {
+      "type": "single_choice",
+      "question": "易56. 下列何者，有提供「衛星行動電話」的服務？",
+      "options": ["伽利略衛星Galileo", "海軍衛星INMARSAT", "中新二號衛星ST-2", "探險家一號衛星EXPLORER-1"],
+      "answer": "海軍衛星INMARSAT",
+      "reference": "陸軍衛星裝備操作手冊第三章第二節P3-17"
+    },
+    {
+      "type": "single_choice",
+      "question": "易57. 請問多工器CX-950e參數設定時，可使用哪些軟體做設定？",
+      "options": ["CX Tool: CX Access", "CX Office;CX Windows", "CX950;CX Word", "CX Windows;CX950"],
+      "answer": "CX Tool: CX Access",
+      "reference": "陸軍衛星裝備操作手冊P2-119"
+    },
+    {
+      "type": "single_choice",
+      "question": "易58. 請問下列哪項裝備銜接多工器CX-950e？",
+      "options": ["上鍵功率控制器", "數位信標接收機", "CDMA調渡機", "MCPC調渡機"],
+      "answer": "MCPC調渡機",
+      "reference": "陸軍衛星裝備操作手冊第二章第一節第二款P2-17"
+    },
+    {
+      "type": "single_choice",
+      "question": "易59. 請問中新二號衛星 (ST-2) 所使用的通信頻段為？",
+      "options": ["Ku頻段", "X頻段", "X頻段", "Ka頻段"],
+      "answer": "Ku頻段",
+      "reference": "陸軍衛星裝備操作手冊第二章第一節第二款P2-8"
+    },
+    {
+      "type": "single_choice",
+      "question": "易60. 下列何者為本軍衛星系統建置的「地面站台」？",
+      "options": ["固定網管主台FTNMS", "繼載終端ST", "車載網管主台TSNMS", "指管中心MCC"],
+      "answer": "車載網管主台TSNMS",
+      "reference": "陸軍衛星裝備操作手冊第一章第四節P1-44"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "中1. 自動天線桅杆氣箱油(空壓機)之使用敘述，下列何者正確？",
+      "options": ["使用AC110-120V電力驅動", "充壓8bar以上之壓縮空氣達每分鐘旋轉2850轉", "可壓縮20公升壓縮空氣，儲存於10公升之儲氣筒中", "供應自動天線桅杆架使用"],
+      "answer": ["充壓8bar以上之壓縮空氣達每分鐘旋轉2850轉", "供應自動天線桅杆架使用"],
+      "reference": "陸軍CS/VRC-518機動數位微波系統訓練手冊第二章第二節P2-21"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "中2. 機動微波車之電力系統，下列何者正確？",
+      "options": ["8KW柴油發電機", "可攜3KW備用汽油發電機", "不斷電系統(UPS)及電源控制箱", "以上皆非"],
+      "answer": ["8KW柴油發電機", "可攜3KW備用汽油發電機", "不斷電系統(UPS)及電源控制箱"],
+      "reference": "陸軍CS/VRC-518機動數位微波系統訓練手冊第二章第二節P2-26"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "中3. 8KW柴油發電機之組成，下列敘述何者正確？",
+      "options": ["由引擎、發電機、自動電壓調整器", "機架、氣油箱", "操作控制面板、機殼等組件所組成", "排氣管上安裝伸縮排氣套管，使發電機能在室內或拉出室外發動及操作"],
+      "answer": ["由引擎、發電機、自動電壓調整器", "操作控制面板、機殼等組件所組成", "排氣管上安裝伸縮排氣套管，使發電機能在室內或拉出室外發動及操作"],
+      "reference": "陸軍CS/VRC-518機動數位微波系統訓練手冊第二章第二節P2-27"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "中4. 可攜式3KW備用汽油發電機之組成，下列敘述何者正確？",
+      "options": ["由發電機電極、引擎總成", "控制面板、機架、汽油箱", "排氣管上安裝伸縮排氣套管，使發電機能在室內或拉出室外發動及操作", "輸出電纜線及接地線組等組成"],
+      "answer": ["由發電機電極、引擎總成", "控制面板、機架、汽油箱", "輸出電纜線及接地線組等組成"],
+      "reference": "陸軍CS/VRC-518機動數位微波系統訓練手冊第二章第二節P2-28"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "中5. 有關不斷電系統(UPS)功能說明，下列敘述何者正確？",
+      "options": ["安裝於車廂內部前方台座右側土，放置在保護盒內與車廂前方台座接合", "停電時不斷電系統以電瓶提供約30分鐘儲蓄之電力", "確保作業不中斷及防止通信機組及電氣設備當機損毀", "當停電時不斷電系統以電瓶提供約50分鐘儲蓄之電力"],
+      "answer": ["安裝於車廂內部前方台座右側土，放置在保護盒內與車廂前方台座接合", "停電時不斷電系統以電瓶提供約30分鐘儲蓄之電力", "確保作業不中斷及防止通信機組及電氣設備當機損毀"],
+      "reference": "陸軍CS/VRC-518機動數位微波系統訓練手冊第二章第二節P2-29"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "中6. 數位微波機之發射系統功能說明，下列敘述何者正確？",
+      "options": ["具有自動發射功率調整(Auto Transmit Power Control, ATPC)功能", "可減少微波設備之功率損耗", "降低或消除雨表、干擾之影響", "具備電壓過大保護機制 (Voltage Standing Wave Ratio VSWR)"],
+      "answer": ["具有自動發射功率調整(Auto Transmit Power Control, ATPC)功能", "可減少微波設備之功率損耗", "降低或消除雨表、干擾之影響", "具備電壓過大保護機制 (Voltage Standing Wave Ratio VSWR)"],
+      "reference": "陸軍CS/VRC-518機動數位微波系統訓練手冊第二章第二節P2-33"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "中7. 乙太網路保密器(EDU-05C)之功能，下列敘述何者正確？",
+      "options": ["將來自用戶端(LAN Port)之封包資料，予以加密處理後，傳送至遠端(WAN Port)", "將接收自遠端(WAN Port) 之密文資料封包還原為明文後，送至用戶端(LAN Port)", "將來自用戶端(WAN Port)之封包資料，予以加密處理後，傳送至遠端(LAN Port)", "將接收自遠端(LAN Port) 之密文資料封包還原為明文後，送至用戶端(WAN Port)"],
+      "answer": ["將來自用戶端(LAN Port)之封包資料，予以加密處理後，傳送至遠端(WAN Port)", "將接收自遠端(WAN Port) 之密文資料封包還原為明文後，送至用戶端(LAN Port)"],
+      "reference": "陸軍CS/VRC-518機動數位微波系統訓練手冊第二章第二節P2-41"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "中8. 網路電話機IP-920P 之功能說明，下列何者正確？",
+      "options": ["來電轉接", "熱線功能", "多方會議、快速撥號、留言信箱及免打擾", "具備櫃"],
+      "answer": ["來電轉接", "熱線功能", "多方會議、快速撥號、留言信箱及免打擾"],
+      "reference": "陸軍CS/VRC-518機動數位微波系統訓練手冊第二章第二節P2-47"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "中9. 網路電話交換機 HVR-969，可對所屬用戶提供下列哪些服務？",
+      "options": ["數位語音服務", "可透過 T1 模組將現用固定式或野戰式總機相互整合運用", "降低或消除兩表、干擾之影響", "使兩端電話用戶，無論是頻比或數位訊號，均可達到語音通聯能力"],
+      "answer": ["數位語音服務", "可透過 T1 模組將現用固定式或野戰式總機相互整合運用", "使兩端電話用戶，無論是頻比或數位訊號，均可達到語音通聯能力"],
+      "reference": "陸軍CS/VRC-518機動數位微波系統訓練手冊第二章第二節P2-48"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "中10. 無線電話音閒道器 VE-PG3 之功能，下列何者正確？",
+      "options": ["提升旅、營級語音整合能力，於各指揮所內建置無線電話音閒道器", "可運用國軍六碼電話與無線電用戶實施語音通道", "可整合 U/VHF 無線電通信系統，提升通信運用彈性", "具備電壓過大保護機制"],
+      "answer": ["提升旅、營級語音整合能力，於各指揮所內建置無線電話音閒道器", "可運用國軍六碼電話與無線電用戶實施語音通道", "可整合 U/VHF 無線電通信系統，提升通信運用彈性"],
+      "reference": "陸軍CS/VRC-518機動數位微波系統訓練手冊第二章第二節P2-48"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "易11. 自動撥桿之敘述，下列何者正確？",
+      "options": ["共有 9 節桿", "以氣動方式上升", "共有 10 節桿", "以油壓方式上升"],
+      "answer": ["共有 9 節桿", "以氣動方式上升"],
+      "reference": "陸軍CS/VRC-518機動數位微波系統訓練手冊第三章第三節P3-17"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "易12. 下列對乙太網路保證器時間調整之敘述何者正確？",
+      "options": ["可使用手動設定", "為中原標準時間", "使用無線電自動校準", "可使用自動定時設定"],
+      "answer": ["可使用手動設定", "可使用自動定時設定"],
+      "reference": "陸軍CS/VRC-518機動數位微波系統訓練手冊第三章第四節P3-59"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "易13. 下列對乙太網路保證器之型號敘述何者為非？",
+      "options": ["EDU-03C", "EDU-03A", "EDU-05C", "EDU-05A"],
+      "answer": ["EDU-03A", "EDU-05A"],
+      "reference": "陸軍CS/VRC-518機動數位微波系統訓練手冊第三章第四節P3-52"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "易14. 下列對網路電話交換機用戶新增方式何者正確？",
+      "options": ["新增分機", "跨區新增", "快速新增", "批次新增"],
+      "answer": ["新增分機", "跨區新增", "批次新增"],
+      "reference": "陸軍CS/VRC-518機動數位微波系統訓練手冊第三章第四節P3-73"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "易15. 下列對網路電話交換機 T1 之敘述何者為是？",
+      "options": ["僅有 1 組 T1", "可擴充至 6 組 T1", "擁有 2 組 T1", "可用來承接陸區系統"],
+      "answer": ["擁有 2 組 T1", "可用來承接陸區系統"],
+      "reference": "陸軍CS/VRC-518機動數位微波系統訓練手冊第三章第四節P3-76"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "易16. 對於 DTMF 模式可設定的格式，下列何者正確？",
+      "options": ["Inband", "RFC2833", "SIPInfo", "VOIP CPE"],
+      "answer": ["Inband", "RFC2833", "SIPInfo"],
+      "reference": "陸軍CS/VRC-518機動數位微波系統訓練手冊第三章第三節P3-74"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "易17. 對於網路電話交換機 POE 埠口之敘述何者正確？",
+      "options": ["可用來連接網路電話交換機", "預設 IP 為 10.10.170.80", "擁有 8 個埠口", "提供網路電話機電源"],
+      "answer": ["可用來連接網路電話交換機", "提供網路電話機電源"],
+      "reference": "陸軍CS/VRC-518機動數位微波系統訓練手冊第三章第四節P3-85"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "易18. 對於無線電話音閒道器之敘述何者正確？",
+      "options": ["使用 FOX 埠口連接網路電話交換機", "網頁登入埠口為 5588", "連接網路電話交換機之 LANI", "預設的 IP 為 10.10.169.169"],
+      "answer": ["網頁登入埠口為 5588", "預設的 IP 為 10.10.169.169"],
+      "reference": "陸軍CS/VRC-518機動數位微波系統訓練手冊第三章第四節P3-87"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "易19. 下列射频设备之载波运行者正確？",
+      "options": ["可設定跑馬字幕", "可設定字幕顏色", "可修改終端用戶的名稱", "可設定分割畫面"],
+      "answer": ["可設定跑馬字幕", "可設定字幕顏色", "可修改終端用戶的名稱"],
+      "reference": "陸軍CS/VRC-518機動數位微波系統訓練手冊第三章第四節P3-99"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "易20. 下列對網路電話支援機之載波進行者正確？",
+      "options": ["WAN埠用來連接外部網路", "WAN埠連接用來連接無線電話音閘道器", "LAN2埠口用來連接無線電話音閘道器", "以上皆是"],
+      "answer": ["WAN埠用來連接外部網路", "LAN2埠口用來連接無線電話音閘道器"],
+      "reference": "陸軍CS/VRC-518機動數位微波系統訓練手冊第三章第四節P3-70"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "難21. SKW柴油發電機油耗敘述下列何者為是？",
+      "options": ["負載每小時油耗0.32加侖", "全負載每小時油耗0.64加侖", "半負載每小時油耗1.21公升", "全負載每小時油耗2.42加侖"],
+      "answer": ["負載每小時油耗0.32加侖", "全負載每小時油耗0.64加侖"],
+      "reference": "陸軍CS/VRC-518機動數位微波系統訓練手冊第二章第二節P2-27"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "難22. 下列何者對TR-860數位微波機敘述下列何者為是？",
+      "options": ["傳輸速率1024kbps接收階度要≦91 dBm", "傳輸速率2048kbps接收階度要≦-89 dBm", "傳輸速率4096kbps接收階度要≦-85 dBm", "傳輸速率8000kbps接收階度要≦-83 dBm"],
+      "answer": ["傳輸速率1024kbps接收階度要≦91 dBm", "傳輸速率2048kbps接收階度要≦-89 dBm", "傳輸速率4096kbps接收階度要≦-85 dBm", "傳輸速率8000kbps接收階度要≦-83 dBm"],
+      "reference": "陸軍CS/VRC-518機動數位微波系統訓練手冊第二章第二節P2-37"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "難23. 下列何者對TR-860數位微波機敘述下列何者為是？",
+      "options": ["傳輸速率1024kbps發射頻寬為≦2MHZ", "傳輸速率2048kbps發射頻寬為≦4MHZ", "傳輸速率4096kbps發射頻寬為≦6MHZ", "傳輸速率8000kbps發射頻寬為≦8MHZ"],
+      "answer": ["傳輸速率1024kbps發射頻寬為≦2MHZ", "傳輸速率2048kbps發射頻寬為≦4MHZ", "傳輸速率4096kbps發射頻寬為≦6MHZ", "傳輸速率8000kbps發射頻寬為≦8MHZ"],
+      "reference": "陸軍CS/VRC-518機動數位微波系統訓練手冊第二章第二節P2-37"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "難24. 下列何者對TR-860數位微波機系統FDD型式選擇點對點定頻模式下傳輸率可選擇那些？",
+      "options": ["1024kbps", "2048kbps", "4096kbps", "8192kbps"],
+      "answer": ["1024kbps", "2048kbps", "4096kbps", "8192kbps"],
+      "reference": "陸軍CS/VRC-518機動數位微波系統訓練手冊第二章第二節P2-37"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "難25. 下列何者對TR-860數位微波機系統TDD型式選擇點對點跳頻模式下傳輸率可選擇那些？",
+      "options": ["3000kbps", "4000kbps", "5000kbps", "6000kbps"],
+      "answer": ["3000kbps", "4000kbps"],
+      "reference": "陸軍CS/VRC-518機動數位微波系統訓練手冊第二章第二節P2-37"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "難26. 下列何者對TR-860數位微波機系統FDD型式選擇點對多點平均模式主台傳輸率可選擇那些？",
+      "options": ["256kbps", "512kbps", "1024kbps", "2048kbps"],
+      "answer": ["256kbps", "1024kbps", "2048kbps"],
+      "reference": "陸軍CS/VRC-518機動數位微波系統訓練手冊第二章第二節P2-27"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "難27. 以下網路電話支援機敘述何者為是？",
+      "options": ["提供同時100門網路電話用戶上線通話能力", "接多方會談功能，可同時處理20個使用者的電話語音會議", "供電式網路支援器(POE)、1組、8埠", "類比分機錄(FXO)、1組、8埠"],
+      "answer": ["提供同時100門網路電話用戶上線通話能力", "接多方會談功能，可同時處理20個使用者的電話語音會議"],
+      "reference": "陸軍CS/VRC-518機動數位微波系統訓練手冊第二章第二節P2-50"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "難28. 下列何者對TR-860數位微波機操作敘述下列何者為是？",
+      "options": ["微波訊號建立EWLS12%", "微波訊號建立EWLS13%", "微波訊號建立BER≧0.00e+00", "微波訊號建立BER≦0.00e+00"],
+      "answer": ["微波訊號建立EWLS12%", "微波訊號建立BER≦0.00e+00"],
+      "reference": "陸軍CS/VRC-518機動數位微波系統訓練手冊第二章第二節P2-37"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "難29. 以下網路電話交換機 T1 設定敘述何者為非？",
+      "options": ["硬體設定後選擇通訊設定在選 T1 設定", "Signaling 選擇 CAS", "Framing 選擇 ESP", "Line Coding 選擇 B8ZS"],
+      "answer": ["Framing 選擇 ESP", "Line Coding 選擇 B8ZS"],
+      "reference": "陸軍CS/VRC-518機動數位微波系統訓練手冊第三章第四節P3-78"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "難30. ROIP(無線電閘道器)設定步驟為非 A 登入 ROIP 設定 B 於 PBX 設定好門號 C 網路電話線路 D 設定分機連結 E 設定進入呼叫設定 F 無線電設定 G 啟用無線電機構號功能。",
+      "options": ["ABCDEFG", "BACDEFG", "CABDEFG", "DABCEFG"],
+      "answer": ["BACDEFG", "CABDEFG"],
+      "reference": "陸軍CS/VRC-518機動數位微波系統訓練手冊第三章第四節P3-78"
+    }
+  ]
+}
