@@ -1,8 +1,66 @@
 {
   "questions": [
-    { "type": "true_false", "question": "The Earth is round.", "answer": "true" },
-    { "type": "single_choice", "question": "Which is a vowel?", "options": ["B", "C", "E", "G"], "answer": "E" },
-    { "type": "multiple_choice", "question": "Choose the correct verbs:", "options": ["run", "cat", "eat", "house"], "answer": ["run", "eat"] },
-    { "type": "short_answer", "question": "Write a sentence using the word 'happiness':" }
+    {
+      "type": "single_choice",
+      "question": "負責各指揮所內通信電子資訊設施開設作業與維護，為下列何種部隊之任務?",
+      "options": ["工兵部隊", "化學兵部隊", "通資電部隊", "砲兵部隊"],
+      "answer": "通資電部隊"
+    },
+    {
+      "type": "single_choice",
+      "question": "通資電部隊之特性中何為各通信電子資訊系統，均為整體系統中之一環，其技術特性要求標準化，俾與上、下級及友軍間構成一體，相互協調，統一運用。",
+      "options": ["可靠性", "安全性", "配合性", "統一性"],
+      "answer": "統一性"
+    },
+    {
+      "type": "single_choice",
+      "question": "地區指揮部通資作業連由連部、資訊組、輪車保養組、通信保養組、食勤組、有線電暨文電中心排、無線電排及何者所組成?",
+      "options": ["區域通信排", "系統維護組", "微波排", "網管中心組"],
+      "answer": "微波排"
+    },
+    {
+      "type": "single_choice",
+      "question": "以下何者非本島防衛指揮部通資作業連編組?",
+      "options": ["多波道排", "有線電暨文電中心排", "無線電排", "飛航管制排"],
+      "answer": "飛航管制排"
+    },
+    {
+      "type": "single_choice",
+      "question": "以下何者非本島聯兵旅通資作業連無線電排內編組?",
+      "options": ["防情台", "調頻台", "機動台", "電訊偵收組"],
+      "answer": "電訊偵收組"
+    },
+    {
+      "type": "single_choice",
+      "question": "聯兵旅通資作業連資訊組負責旅級各指揮所內郵用戶資訊線路架設與維護作業，並運用何者或介接國軍光纖骨幹電路／建立資訊傳輸平台。",
+      "options": ["光纖熔接機", "野戰數位總機", "小延伸節點", "MICS 系統"],
+      "answer": "小延伸節點"
+    },
+    {
+      "type": "single_choice",
+      "question": "行軍間通資之限制因素中，誰必須及早獲悉有關戰術狀況，及既有通資設施現況，方能適切運用?",
+      "options": ["通資電軍官", "作戰官", "情報官", "人事官"],
+      "answer": "通資電軍官"
+    },
+    {
+      "type": "single_choice",
+      "question": "行軍間通資之限制因素中，行軍軸線之地形對何種無線電電台通信最敏感，直接影響通信距離與通信品質?",
+      "options": ["防情台", "調燭台", "調頻台", "空管台"],
+      "answer": "調頻台"
+    },
+    {
+      "type": "single_choice",
+      "question": "宿營時通資應講求什麼，以儘量利用宿營地區內既有通資設施為原則?",
+      "options": ["迅速", "確實", "安全", "節約"],
+      "answer": "節約"
+    },
+    {
+      "type": "single_choice",
+      "question": "攻擊發起通資設施要領中，何種設施可預作先遣作業之準備，保持機動，即時推進?",
+      "options": ["情報中心", "交換中心", "架設中心", "通訊中心"],
+      "answer": "通訊中心"
+    },
+    
+    
   ]
 }
