@@ -1,5 +1,5 @@
 {
-  "single_choice": [
+  "questions": [
     {
       "type": "single_choice",
       "question": "中1. 負責各指揮所內通信電子資訊設施開設作業與維護，為下列何種部隊之任務？",
@@ -489,9 +489,7 @@
       "options": ["發布W-36颱風警報", "發布W-24颱風警報", "發布W-12颱風警報", "發布W-6颱風警報"],
       "answer": "發布W-36颱風警報",
       "reference": "陸軍通貨連(排)教範第五章第三節 P5-5"
-    }
-  ],
-  "multiple_choice": [
+    },
     {
       "type": "multiple_choice",
       "question": "中1. 依法賦予某個人掌握與運用軍隊之權責，謂之？下列何者為非？",
