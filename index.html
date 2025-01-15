@@ -9,21 +9,40 @@
 <body>
   <h1>線上題庫測驗系統</h1>
 
-  <!-- 下拉選單選擇科目 -->
+  <!-- 科目選擇 -->
   <div class="container">
-    <label for="subject">選擇科目：</label>
-    <select id="subject" onchange="loadSubject()">
-      <option value="" disabled selected>請選擇科目</option>
-      <option value="chinese">國文</option>
-      <option value="english">英文</option>
-      <option value="math">數學</option>
-    </select>
+    <h3>選擇科目：</h3>
+    <button class="btn" onclick="loadSubject('chinese')">國文</button>
+    <button class="btn" onclick="loadSubject('english')">英文</button>
+    <button class="btn" onclick="loadSubject('math')">數學</button>
+  </div>
+
+  <!-- 顯示題庫資訊 -->
+  <div id="subject-info" class="container"></div>
+
+  <!-- 模式選擇 -->
+  <div id="mode-selection" class="container" style="display: none;">
+    <h3>選擇模式：</h3>
+    <button class="btn" onclick="startPractice()">練習模式</button>
+    <button class="btn" onclick="startTest()">測驗模式</button>
+  </div>
+
+  <!-- 練習模式自定義 -->
+  <div id="customize-practice" class="container" style="display: none;">
+    <h3>自定義練習題數：</h3>
+    <label for="singleCount">單選題數量：</label>
+    <input type="number" id="singleCount" min="0" placeholder="例如 5">
+    <br>
+    <label for="multipleCount">複選題數量：</label>
+    <input type="number" id="multipleCount" min="0" placeholder="例如 3">
+    <br>
+    <button class="btn" onclick="startCustomPractice()">開始練習</button>
   </div>
 
   <!-- 顯示測驗題目 -->
   <div id="quiz-container" class="container"></div>
 
-  <!-- 提交按鈕 -->
+  <!-- 提交測驗按鈕 -->
   <div class="container">
     <button class="btn" onclick="submitQuiz()">提交測驗</button>
   </div>
