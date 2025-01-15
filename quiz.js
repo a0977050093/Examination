@@ -1,4 +1,4 @@
-let currentQuestions = [];
+let currentQuestions = []; // 儲存當前題庫的題目
 
 // 載入科目題庫
 function loadSubject() {
@@ -15,9 +15,9 @@ function loadSubject() {
 
       // 依照用戶選擇的練習模式或測驗模式載入題目
       if (document.querySelector('input[name="mode"]:checked').value === 'practice') {
-        loadPracticeMode(data);
+        loadPracticeMode(data); // 載入練習模式
       } else {
-        loadTestMode(data);
+        loadTestMode(data); // 載入測驗模式
       }
     })
     .catch(error => {
@@ -41,34 +41,28 @@ function displaySubjectInfo(data) {
 
 // 載入練習模式（顯示所有題目）
 function loadPracticeMode(data) {
-  // 取出所有題目
-  currentQuestions = data.questions;
-  // 渲染題目
-  renderQuiz();
+  currentQuestions = data.questions; // 取出所有題目
+  renderQuiz(); // 渲染所有題目
 }
 
 // 載入測驗模式（隨機選擇 20 題單選題與 10 題複選題）
 function loadTestMode(data) {
-  // 分類單選題與複選題
   const singleChoice = data.questions.filter(q => q.type === "single_choice");
   const multipleChoice = data.questions.filter(q => q.type === "multiple_choice");
 
-  // 隨機選擇單選題 20 題，複選題 10 題
+  // 隨機選擇 20 題單選題，10 題複選題
   currentQuestions = [
     ...getRandomQuestions(singleChoice, 20),
     ...getRandomQuestions(multipleChoice, 10),
   ];
 
-  // 渲染測驗題目
-  renderQuiz();
+  renderQuiz(); // 渲染測驗題目
 }
 
 // 隨機選擇指定數量的題目
 function getRandomQuestions(questions, count) {
-  // 使用亂數打亂題目順序
-  const shuffled = questions.sort(() => Math.random() - 0.5);
-  // 取前 count 個題目
-  return shuffled.slice(0, count);
+  const shuffled = questions.sort(() => Math.random() - 0.5); // 亂數打亂題目順序
+  return shuffled.slice(0, count); // 取前 count 顆題目
 }
 
 // 渲染測驗題目（以表格形式顯示）
