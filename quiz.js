@@ -10,24 +10,57 @@ function loadSubject() {
   fetch(`${subject}.json`)
     .then(response => response.json()) // 將回應轉換為 JSON 格式
     .then(data => {
-      // 將題目依類型分為單選題與複選題
-      const singleChoice = data.questions.filter(q => q.type === "single_choice");
-      const multipleChoice = data.questions.filter(q => q.type === "multiple_choice");
+      // 顯示科目的題庫資料摘要（如題目數量及題型）
+      displaySubjectInfo(data);
 
-      // 隨機選擇單選題 20 題與複選題 10 題
-      currentQuestions = [
-        ...getRandomQuestions(singleChoice, 20),
-        ...getRandomQuestions(multipleChoice, 10),
-      ];
-
-      // 渲染測驗題目
-      renderQuiz();
+      // 依照用戶選擇的練習模式或測驗模式載入題目
+      if (document.querySelector('input[name="mode"]:checked').value === 'practice') {
+        loadPracticeMode(data);
+      } else {
+        loadTestMode(data);
+      }
     })
     .catch(error => {
       // 顯示錯誤訊息
       console.error("Error loading subject:", error);
       document.getElementById("quiz-container").innerHTML = "<p>無法載入題庫，請檢查檔案是否存在。</p>";
     });
+}
+
+// 顯示科目的題庫資料摘要（題目數量及題型）
+function displaySubjectInfo(data) {
+  const subjectInfo = document.getElementById("subject-info");
+  const singleChoiceCount = data.questions.filter(q => q.type === "single_choice").length;
+  const multipleChoiceCount = data.questions.filter(q => q.type === "multiple_choice").length;
+
+  subjectInfo.innerHTML = `
+    <p>題庫包含：單選題：${singleChoiceCount} 題，複選題：${multipleChoiceCount} 題</p>
+    <p>請選擇題型並開始練習或測驗。</p>
+  `;
+}
+
+// 載入練習模式（顯示所有題目）
+function loadPracticeMode(data) {
+  // 取出所有題目
+  currentQuestions = data.questions;
+  // 渲染題目
+  renderQuiz();
+}
+
+// 載入測驗模式（隨機選擇 20 題單選題與 10 題複選題）
+function loadTestMode(data) {
+  // 分類單選題與複選題
+  const singleChoice = data.questions.filter(q => q.type === "single_choice");
+  const multipleChoice = data.questions.filter(q => q.type === "multiple_choice");
+
+  // 隨機選擇單選題 20 題，複選題 10 題
+  currentQuestions = [
+    ...getRandomQuestions(singleChoice, 20),
+    ...getRandomQuestions(multipleChoice, 10),
+  ];
+
+  // 渲染測驗題目
+  renderQuiz();
 }
 
 // 隨機選擇指定數量的題目
