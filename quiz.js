@@ -4,30 +4,54 @@ let currentQuestions = []; // 儲存當前題庫的題目
 function loadSubject() {
   // 取得選擇的科目名稱
   const subject = document.getElementById("subject").value;
-  
+
   // 若未選擇科目則不執行後續程式
   if (!subject) return;
 
   // 請求對應科目的題庫 JSON 檔案
-  fetch(`${subject}.json`)
-    .then(response => response.json()) // 將回應轉換為 JSON 格式
+  fetchSubjectData(subject)
     .then(data => {
       // 顯示科目的題庫資料摘要（如題目數量及題型）
       displaySubjectInfo(data);
 
       // 顯示模式選擇區塊
-      document.getElementById("mode-selection").style.display = "block";  // 顯示模式選擇區塊
+      document.getElementById("mode-selection").style.display = "block";
     })
     .catch(error => {
       // 顯示錯誤訊息
       console.error("Error loading subject:", error);
-      document.getElementById("quiz-container").innerHTML = "<p>無法載入題庫，請檢查檔案是否存在。</p>";
+      document.getElementById("quiz-container").innerHTML =
+        "<p>無法載入題庫，請檢查檔案是否存在。</p>";
+    });
+}
+
+// 共用函式：請求科目資料
+function fetchSubjectData(subject) {
+  return fetch(`${subject}.json`)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.json();
+    })
+    .then(data => {
+      if (!data.questions || !Array.isArray(data.questions)) {
+        throw new Error("Invalid data format: questions not found or not an array");
+      }
+      return data;
     });
 }
 
 // 顯示科目的題庫資料摘要（題目數量及題型）
 function displaySubjectInfo(data) {
   const subjectInfo = document.getElementById("subject-info");
+
+  // 確保 data.questions 存在且是陣列
+  if (!data.questions || !Array.isArray(data.questions)) {
+    subjectInfo.innerHTML = "<p>題庫資料格式錯誤，無法顯示。</p>";
+    return;
+  }
+
   // 計算題庫中單選題和複選題的數量
   const singleChoiceCount = data.questions.filter(q => q.type === "single_choice").length;
   const multipleChoiceCount = data.questions.filter(q => q.type === "multiple_choice").length;
@@ -42,10 +66,9 @@ function displaySubjectInfo(data) {
 // 選擇模式（練習模式或測驗模式）
 function selectMode(mode) {
   const subject = document.getElementById("subject").value;
-  
+
   // 請求對應科目的題庫 JSON 檔案
-  fetch(`${subject}.json`)
-    .then(response => response.json()) // 取得題庫 JSON
+  fetchSubjectData(subject)
     .then(data => {
       if (mode === "practice") {
         loadPracticeMode(data); // 載入練習模式
@@ -56,7 +79,8 @@ function selectMode(mode) {
     .catch(error => {
       // 顯示錯誤訊息
       console.error("Error loading subject:", error);
-      document.getElementById("quiz-container").innerHTML = "<p>無法載入題庫，請檢查檔案是否存在。</p>";
+      document.getElementById("quiz-container").innerHTML =
+        "<p>無法載入題庫，請檢查檔案是否存在。</p>";
     });
 }
 
