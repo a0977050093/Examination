@@ -4,7 +4,9 @@ let currentQuestions = []; // 儲存當前題庫的題目
 function loadSubject() {
   // 取得選擇的科目名稱
   const subject = document.getElementById("subject").value;
-  if (!subject) return; // 若未選擇科目則不執行後續程式
+  
+  // 若未選擇科目則不執行後續程式
+  if (!subject) return;
 
   // 請求對應科目的題庫 JSON 檔案
   fetch(`${subject}.json`)
@@ -14,7 +16,8 @@ function loadSubject() {
       displaySubjectInfo(data);
 
       // 依照用戶選擇的練習模式或測驗模式載入題目
-      if (document.querySelector('input[name="mode"]:checked').value === 'practice') {
+      const mode = document.querySelector('input[name="mode"]:checked');
+      if (mode && mode.value === 'practice') {
         loadPracticeMode(data); // 載入練習模式
       } else {
         loadTestMode(data); // 載入測驗模式
@@ -30,9 +33,11 @@ function loadSubject() {
 // 顯示科目的題庫資料摘要（題目數量及題型）
 function displaySubjectInfo(data) {
   const subjectInfo = document.getElementById("subject-info");
+  // 計算題庫中單選題和複選題的數量
   const singleChoiceCount = data.questions.filter(q => q.type === "single_choice").length;
   const multipleChoiceCount = data.questions.filter(q => q.type === "multiple_choice").length;
 
+  // 顯示科目的題庫信息
   subjectInfo.innerHTML = `
     <p>題庫包含：單選題：${singleChoiceCount} 題，複選題：${multipleChoiceCount} 題</p>
     <p>請選擇題型並開始練習或測驗。</p>
