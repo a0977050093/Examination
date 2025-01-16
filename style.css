@@ -41,6 +41,13 @@ select {
   background-repeat: no-repeat;
   background-position: right 10px center; /* 箭頭位置 */
   background-size: 12px; /* 箭頭大小 */
+  text-align: center; /* 文字水平置中 */
+  text-align-last: center; /* 最後一項文字置中（適用於選單展開時） */
+}
+
+/* 下拉式選單選項樣式 */
+select option {
+  text-align: center; /* 選項文字置中 */
 }
 
 /* 按鈕樣式 */
