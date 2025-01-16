@@ -95,7 +95,7 @@
       "type": "true_false",
       "number": "中14",
       "question": "無線電話音閘道器主機可最多同時介接4 部無線電機。",
-      "answer": true,
+      "answer": false,
       "reference": "機動數位微波系統訓練手冊 P4-6"
     },
     {
@@ -136,69 +136,76 @@
     {
       "type": "true_false",
       "number": "易20",
-      "question": "施桿B 之地樁分別在3、6、9 點鐘方向。",
+      "question": "桅桿B 之地樁分別在3、6、9 點鐘方向。",
       "answer": true,
       "reference": "機動數位微波系統訓練手冊 P5-3"
     },
     {
       "type": "true_false",
       "number": "易21",
-      "question": "風險管理的步驟，可區分為認定風險、預估損失、環渾處置、採取行動、評估績效等五個步驟。",
+      "question": "桅桿A 之地樁分別在3、6、9 點鐘方向。",
+      "answer": false,
+      "reference": "機動數位微波系統訓練手冊 P5-3"
+    },    
+    {
+      "type": "true_false",
+      "number": "易22",
+      "question": "風險管理的步驟，可區分為認定風險、預估損失、選擇處置、採取行動、評估績效等五個步驟。",
       "answer": true,
       "reference": "機動數位微波系統訓練手冊 P5-3"
     },
     {
       "type": "true_false",
-      "number": "易22",
+      "number": "易23",
       "question": "野外操演或訓練時，柴油發電機為微波車廂主要電力來源，若柴油發電機發生故障，應立即停止作業，並通知保修人員進行修復與排除，待修復後實施作業。",
       "answer": false,
       "reference": "機動數位微波系統訓練手冊 P5-8"
     },
     {
       "type": "true_false",
-      "number": "易23",
+      "number": "易24",
       "question": "備份作業原則以正確及完整的備份資料，除存放在作業場所外，應另外存放於其他場所，以防止作業場所發生災害時可能帶來的傷害，重要備份，以維持二種以上(不同時期)為原則。",
       "answer": false,
       "reference": "機動數位微波系統訓練手冊 P5-6"
     },
     {
       "type": "true_false",
-      "number": "易24",
+      "number": "易25",
       "question": "無線電話音閘道器係將VHF/UHF 無線電機用戶類比訊號轉換為數位訊號，以進入機動數位微波系統網路。",
       "answer": true,
       "reference": "機動數位微波系統訓練手冊 P4-6"
     },
     {
       "type": "true_false",
-      "number": "易25",
+      "number": "易26",
       "question": "發生地震時應緊急關機與迅速將電源切斷，待震幅較小後，迅速進行復原及搶修工作，並會同通信官實施清點裝備數量及查驗其完好性。",
       "answer": false,
       "reference": "機動數位微波系統訓練手冊 P5-7"
     },
     {
       "type": "true_false",
-      "number": "易26",
+      "number": "易27",
       "question": "機動數位微波系統與衛星系統，藉由E1 線介接公民營電信業者。",
       "answer": false,
       "reference": "機動數位微波系統訓練手冊 P4-14"
     },
     {
       "type": "true_false",
-      "number": "易27",
-      "question": "可介接數位交換機、衛星系統、機動微波系統及中華電信機房。",
+      "number": "易28",
+      "question": "機動數位微波系統與戰術區域通信系統，藉由T1 線可介接數位交換機、衛星系統、機動微波系統及中華電信機房。",
       "answer": true,
       "reference": "機動數位微波系統訓練手冊 P4-13"
     },
     {
       "type": "true_false",
-      "number": "易28",
+      "number": "易29",
       "question": "機動數位微波系統開設可隨意私設頻率實施通聯。",
       "answer": false,
       "reference": "機動數位微波系統訓練手冊 P5-6"
     },
     {
       "type": "true_false",
-      "number": "易29",
+      "number": "易30",
       "question": "乙太網路保密器將用戶端(LAN port)之封包資料，予以加密處理後傳送至對端(WAN port)。",
       "answer": true,
       "reference": "機動數位微波系統訓練手冊 P5-4"
