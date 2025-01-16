@@ -52,13 +52,14 @@ function displaySubjectInfo(data) {
     return;
   }
 
-  // 計算題庫中單選題和複選題的數量
+  // 計算題庫中單選題、複選題和是非題的數量
   const singleChoiceCount = data.questions.filter(q => q.type === "single_choice").length;
   const multipleChoiceCount = data.questions.filter(q => q.type === "multiple_choice").length;
+  const trueFalseCount = data.questions.filter(q => q.type === "true_false").length;
 
   // 顯示科目的題庫信息
   subjectInfo.innerHTML = `
-    <p>題庫包含：單選題：${singleChoiceCount} 題，複選題：${multipleChoiceCount} 題</p>
+    <p>題庫包含：單選題：${singleChoiceCount} 題，複選題：${multipleChoiceCount} 題，是非題：${trueFalseCount} 題</p>
     <p>請選擇題型並開始練習或測驗。</p>
   `;
 }
@@ -94,11 +95,13 @@ function loadPracticeMode(data) {
 function loadTestMode(data) {
   const singleChoice = data.questions.filter(q => q.type === "single_choice");
   const multipleChoice = data.questions.filter(q => q.type === "multiple_choice");
+  const trueFalse = data.questions.filter(q => q.type === "true_false");
 
-  // 隨機選擇 20 題單選題，10 題複選題
+  // 隨機選擇 20 題單選題，10 題複選題，10 題是非題
   currentQuestions = [
     ...getRandomQuestions(singleChoice, 20),
     ...getRandomQuestions(multipleChoice, 10),
+    ...getRandomQuestions(trueFalse, 10),
   ];
 
   renderQuiz(); // 渲染測驗題目
@@ -140,6 +143,11 @@ function renderOptions(question, index) {
     return question.options
       .map(option => `<label><input type="checkbox" name="q${index}" value="${option}"> ${option}</label>`)
       .join("<br>");
+  } else if (question.type === "true_false") {
+    // 是非題選項以 radio button 顯示
+    return `
+      <label><input type="radio" name="q${index}" value="true"> 是</label><br>
+      <label><input type="radio" name="q${index}" value="false"> 否</label>`;
   }
   return ""; // 若題目類型未定義，返回空字串
 }
@@ -165,6 +173,11 @@ function submitQuiz() {
       userAnswer = selected.sort().toString();
       // 檢查答案是否正確
       if (JSON.stringify(selected.sort()) === JSON.stringify(q.answer.sort())) score += 4; // 答對複選題加 4 分
+    } else if (q.type === "true_false") {
+      // 是非題取得被選中的值
+      const selected = [...inputs].find(input => input.checked);
+      userAnswer = selected ? selected.value === "true" : null;
+      if (userAnswer === q.answer) score += 2; // 答對是非題加 2 分
     }
 
     // 比較答案，顯示正確或錯誤
