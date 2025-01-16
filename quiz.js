@@ -59,7 +59,7 @@ function displaySubjectInfo(data) {
 
   // 顯示科目的題庫信息
   subjectInfo.innerHTML = `
-    <p>題庫包含：單選題：${singleChoiceCount} 題，複選題：${multipleChoiceCount} 題，是非題：${trueFalseCount} 題</p>
+    <p>題庫包含：<br>是非題：${trueFalseCount} 題</br><br>單選題：${singleChoiceCount} 題</br><br>複選題：${multipleChoiceCount} 題</br></p>
     <p>請選擇題型並開始練習或測驗。</p>
   `;
 }
