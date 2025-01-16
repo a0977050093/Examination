@@ -3,14 +3,14 @@
     {
       "type": "true_false",
       "number": "難1",
-      "question": "施擇 A 之地格分別在 2、6、10 點鐘方向。",
+      "question": "桅桿 A 之地樁分別在 2、6、10 點鐘方向。",
       "answer": true,
       "reference": "機動數位微波系統訓練手冊 P4-11"
     },
     {
       "type": "true_false",
       "number": "難2",
-      "question": "開設時無須等施擇升至定位即可將控總扣上地格並拉緊。",
+      "question": "開設時無須等軌桿升至定位即可將控總扣上地格並拉緊。",
       "answer": false,
       "reference": "機動數位微波系統訓練手冊 P4-13"
     },
@@ -45,7 +45,7 @@
     {
       "type": "true_false",
       "number": "中7",
-      "question": "37 系列跳頻無線電機可藉由網路電話交換機之介接與不同頻率之民用無線電系統通達。",
+      "question": "37 系列跳頻無線電機可藉由網路電話交換機之介接與不同頻率之民用無線電系統通連。",
       "answer": true,
       "reference": "機動數位微波系統訓練手冊 P4-9"
     },
