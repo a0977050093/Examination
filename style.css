@@ -16,12 +16,31 @@ h1 {
 /* 主要內容的容器樣式 */
 .container {
   width: 80%; /* 設定寬度為螢幕的 80% */
+  max-width: 600px; /* 最大寬度限制，避免在大螢幕上過寬 */
   margin: 20px auto; /* 上下間距 20px，左右置中 */
   background: #fff; /* 白色背景 */
   padding: 20px; /* 內部填充 20px */
   border: 1px solid #ccc; /* 邊框為淺灰色 */
   border-radius: 5px; /* 圓角設計 */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 添加輕微陰影提升立體感 */
+}
+
+/* 下拉式選單樣式 */
+select {
+  width: 100%; /* 寬度填滿父容器 */
+  padding: 10px; /* 內部填充 10px */
+  font-size: 16px; /* 字體大小 */
+  border: 1px solid #ccc; /* 邊框為淺灰色 */
+  border-radius: 5px; /* 圓角設計 */
+  margin-bottom: 10px; /* 與下方按鈕的間距 */
+  background-color: #fff; /* 白色背景 */
+  appearance: none; /* 移除預設樣式 */
+  -webkit-appearance: none; /* Safari 和 Chrome 支援 */
+  -moz-appearance: none; /* Firefox 支援 */
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>'); /* 自定義下拉箭頭 */
+  background-repeat: no-repeat;
+  background-position: right 10px center; /* 箭頭位置 */
+  background-size: 12px; /* 箭頭大小 */
 }
 
 /* 按鈕樣式 */
@@ -77,4 +96,35 @@ th {
   padding: 15px; /* 內填充 */
   border-radius: 5px; /* 圓角設計 */
   margin-top: 20px; /* 與上方元素間距 */
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+  .container {
+    width: 90%; /* 在小螢幕上增加寬度 */
+    padding: 15px; /* 減少內填充 */
+  }
+
+  h1 {
+    font-size: 24px; /* 標題字體縮小 */
+  }
+
+  select, .btn {
+    font-size: 14px; /* 下拉選單和按鈕字體縮小 */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 95%; /* 在更小的螢幕上進一步增加寬度 */
+    padding: 10px; /* 進一步減少內填充 */
+  }
+
+  h1 {
+    font-size: 20px; /* 標題字體進一步縮小 */
+  }
+
+  select, .btn {
+    font-size: 12px; /* 下拉選單和按鈕字體進一步縮小 */
+  }
 }
