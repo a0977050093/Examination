@@ -88,6 +88,12 @@ function selectMode(mode) {
 // 載入練習模式（顯示所有題目）
 function loadPracticeMode(data) {
   currentQuestions = data.questions; // 取出所有題目
+  // 隨機排列所有題目的選項
+  currentQuestions.forEach(question => {
+    if (question.type === "single_choice" || question.type === "multiple_choice") {
+      question = shuffleOptions(question);
+    }
+  });
   renderQuiz(); // 渲染所有題目
 }
 
@@ -104,6 +110,13 @@ function loadTestMode(data) {
     ...getRandomQuestions(trueFalse, 10),
   ];
 
+  // 隨機排列所有題目的選項
+  currentQuestions.forEach(question => {
+    if (question.type === "single_choice" || question.type === "multiple_choice") {
+      question = shuffleOptions(question);
+    }
+  });
+
   renderQuiz(); // 渲染測驗題目
 }
 
@@ -111,6 +124,30 @@ function loadTestMode(data) {
 function getRandomQuestions(questions, count) {
   const shuffled = questions.sort(() => Math.random() - 0.5); // 亂數打亂題目順序
   return shuffled.slice(0, count); // 取前 count 顆題目
+}
+
+// 隨機排列選項順序
+function shuffleOptions(question) {
+  // 複製原選項陣列
+  const optionsCopy = [...question.options];
+  const answer = question.answer;
+  
+  // 隨機排序選項
+  const shuffledOptions = optionsCopy.sort(() => Math.random() - 0.5);
+  
+  // 更新題目物件
+  question.options = shuffledOptions;
+  
+  // 如果是單選題，更新正確答案的索引
+  if (question.type === "single_choice") {
+    question.answer = shuffledOptions[optionsCopy.indexOf(answer)];
+  }
+  // 如果是複選題，更新所有正確答案的索引
+  else if (question.type === "multiple_choice") {
+    question.answer = answer.map(ans => shuffledOptions[optionsCopy.indexOf(ans)]);
+  }
+  
+  return question;
 }
 
 // 渲染測驗題目（以表格形式顯示）
