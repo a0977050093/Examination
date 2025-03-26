@@ -218,7 +218,7 @@ function submitQuiz() {
     }
 
     // 比較答案，顯示正確或錯誤
-    const isCorrect = userAnswer === q.answer ? "✔ 正確" : "✘ 錯誤";
+    const isCorrect = userAnswer === q.answer ? "✅ 正確" : "❌ 錯誤";
     resultHTML += `
       <p>Q${index + 1}: ${q.question} (${isCorrect})</p>
       <p>你的答案：${userAnswer || "未作答"}</p>
