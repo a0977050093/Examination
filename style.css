@@ -84,7 +84,7 @@ td {
 
 /* 奇數行背景色，用於區分行 */
 tr:nth-child(odd) {
-  background-color: #e6f7e6; /* 淺綠色背景，區分行與行之間 */
+  background-color: #98fb98; /* 淺綠色背景，區分行與行之間 */
 }
 
 /* 表格標題列樣式（如果有） */
