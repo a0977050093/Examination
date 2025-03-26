@@ -207,9 +207,10 @@ function submitQuiz() {
     } else if (q.type === "multiple_choice") {
       // 複選題取得所有被選中的值
       const selected = [...inputs].filter(input => input.checked).map(input => input.value);
-      userAnswer = selected.sort().toString();
-      // 檢查答案是否正確
-      if (JSON.stringify(selected.sort()) === JSON.stringify(q.answer.sort())) score += 4; // 答對複選題加 4 分
+      userAnswer = selected.sort(); // 先排序
+
+      // **修正比較方式**
+      if (arraysEqual(userAnswer, q.answer.sort())) score += 4; // 答對複選題加 4 分
     } else if (q.type === "true_false") {
       // 是非題取得被選中的值
       const selected = [...inputs].find(input => input.checked);
@@ -218,15 +219,20 @@ function submitQuiz() {
     }
 
     // 比較答案，顯示正確或錯誤
-    const isCorrect = userAnswer === q.answer ? "✅ 正確" : "❌ 錯誤";
+    const isCorrect = (q.type === "multiple_choice" ? arraysEqual(userAnswer, q.answer.sort()) : userAnswer === q.answer) ? "✅ 正確" : "❌ 錯誤";
     resultHTML += `
       <p>Q${index + 1}: ${q.question} (${isCorrect})</p>
-      <p>你的答案：${userAnswer || "未作答"}</p>
-      <p>正確答案：${q.answer}</p>
+      <p>你的答案：${userAnswer.length ? userAnswer.join(", ") : "未作答"}</p>
+      <p>正確答案：${q.answer.join(", ")}</p>
       <hr>`;
   });
 
   // 顯示總分
   resultHTML += `<p><strong>總得分：${score}/100</strong></p>`;
   document.getElementById("result").innerHTML = resultHTML;
+}
+
+// **新增這個函式來比較兩個陣列是否相同**
+function arraysEqual(arr1, arr2) {
+  return JSON.stringify(arr1) === JSON.stringify(arr2);
 }
