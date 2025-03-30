@@ -190,8 +190,12 @@ function renderOptions(question, index) {
 }
 
 // 提交測驗並顯示結果
+function arraysEqual(arr1, arr2) {
+  return JSON.stringify(arr1) === JSON.stringify(arr2);
+}
+
 function submitQuiz() {
-  // 防護性檢查：確保 currentQuestions 是有效的陣列
+  // 防護性檢查
   if (!Array.isArray(currentQuestions) || currentQuestions.length === 0) {
     alert("請先選擇科目並載入題目！");
     return;
@@ -213,7 +217,7 @@ function submitQuiz() {
       else if (q.type === "multiple_choice") {
         const selected = [...inputs].filter(input => input.checked).map(input => input.value);
         userAnswer = selected.sort();
-        if (arraysEqual(userAnswer, q.answer?.sort())) score += 4; // 加上 ?. 避免 q.answer 為 undefined
+        if (arraysEqual(userAnswer, q.answer.sort())) score += 4;
       }
       else if (q.type === "true_false") {
         const selected = [...inputs].find(input => input.checked);
@@ -221,13 +225,25 @@ function submitQuiz() {
         if (userAnswer === q.answer) score += 2;
       }
 
-      // 顯示結果
-      const isCorrect = /* 你的比較邏輯 */;
-      resultHTML += `<p>Q${index+1}: ${isCorrect}</p>`;
+      // 正確性判斷
+      const isCorrect = (q.type === "multiple_choice" 
+        ? arraysEqual(userAnswer, q.answer.sort()) 
+        : userAnswer === q.answer) ? "✅ 正確" : "❌ 錯誤";
+
+      // 顯示詳細結果
+      resultHTML += `
+        <p>Q${index + 1}: ${q.question} (${isCorrect})</p>
+        <p>你的答案：${userAnswer ? (Array.isArray(userAnswer) ? userAnswer.join(", ") : userAnswer) : "未作答"}</p>
+        <p>正確答案：${Array.isArray(q.answer) ? q.answer.join(", ") : q.answer}</p>
+        <hr>`;
     } catch (error) {
-      console.error(`第 ${index+1} 題處理錯誤:`, error);
+      console.error(`第 ${index + 1} 題處理錯誤:`, error);
     }
   });
 
+  // 計算百分比分數（假設滿分是 100）
+  const totalScore = Math.min(score, 100);
+  resultHTML += `<p><strong>總得分：${totalScore}/100</strong></p>`;
+  
   document.getElementById("result").innerHTML = resultHTML;
 }
