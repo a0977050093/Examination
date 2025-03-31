@@ -154,7 +154,7 @@ function handleSubjectSelection() {
   systemState.currentSubject = subjectId;
   domElements.currentSubject.textContent = domElements.subjectSelect.selectedOptions[0].text;
   
-  // 模擬載入題庫
+  // 載入題庫資料
   loadSubjectData(subjectId)
     .then(data => {
       systemState.questions = data.questions;
@@ -169,24 +169,22 @@ function handleSubjectSelection() {
 
 // 載入科目資料
 async function loadSubjectData(subjectId) {
-  const subjectInfo = document.getElementById("subject-info");
-
-  // 確保 data.questions 存在且是陣列
-  if (!data.questions || !Array.isArray(data.questions)) {
-    subjectInfo.innerHTML = "<p>題庫資料格式錯誤，無法顯示。</p>";
-    return;
+  try {
+    const response = await fetch(`data/${subjectId}.json`);
+    if (!response.ok) {
+      throw new Error('網路請求失敗');
+    }
+    const data = await response.json();
+    
+    if (!data.questions || !Array.isArray(data.questions)) {
+      throw new Error('題庫格式錯誤');
+    }
+    
+    return data;
+  } catch (error) {
+    console.error('載入題庫失敗:', error);
+    throw error;
   }
-
-  // 計算題庫中單選題、複選題和是非題的數量
-  const singleChoiceCount = data.questions.filter(q => q.type === "single_choice").length;
-  const multipleChoiceCount = data.questions.filter(q => q.type === "multiple_choice").length;
-  const trueFalseCount = data.questions.filter(q => q.type === "true_false").length;
-
-  // 顯示科目的題庫信息
-  subjectInfo.innerHTML = `
-    <p>題庫包含：<br>是非題：${trueFalseCount} 題</br><br>單選題：${singleChoiceCount} 題</br><br>複選題：${multipleChoiceCount} 題</br></p>
-    <p>請選擇題型並開始練習或測驗。</p>
-  `;
 }
 
 // 顯示科目資訊
@@ -203,6 +201,7 @@ function displaySubjectInfo(data) {
       <li>是非題：${trueFalseCount} 題</li>
       <li>總題數：${data.questions.length} 題</li>
     </ul>
+    <p>請選擇測驗模式開始練習或測驗</p>
   `;
   
   domElements.subjectInfo.style.display = 'block';
@@ -214,6 +213,8 @@ function selectMode(mode) {
   
   if (mode === 'practice') {
     domElements.customPractice.style.display = 'block';
+    domElements.quizInterface.style.display = 'none';
+    domElements.resultContainer.style.display = 'none';
   } else {
     startExamMode();
   }
@@ -239,6 +240,11 @@ function startCustomPractice() {
     ...getRandomQuestions(multiQuestions, multiCount)
   ];
   
+  if (systemState.currentQuiz.length === 0) {
+    alert('沒有足夠的題目可供練習');
+    return;
+  }
+  
   startQuiz('自訂練習');
 }
 
@@ -260,6 +266,8 @@ function startExamMode() {
 
 // 隨機選擇題目
 function getRandomQuestions(questionPool, count) {
+  if (!questionPool || questionPool.length === 0) return [];
+  
   const shuffled = [...questionPool].sort(() => 0.5 - Math.random());
   return shuffled.slice(0, Math.min(count, questionPool.length));
 }
@@ -273,7 +281,8 @@ function startQuiz(quizType) {
   domElements.modeSelection.style.display = 'none';
   domElements.customPractice.style.display = 'none';
   domElements.quizInterface.style.display = 'block';
-  domElements.quizTitle.textContent = `${systemState.currentSubject} - ${quizType}`;
+  domElements.resultContainer.style.display = 'none';
+  domElements.quizTitle.textContent = `${domElements.subjectSelect.selectedOptions[0].text} - ${quizType}`;
   
   // 顯示第一題
   showQuestion(0);
@@ -282,7 +291,8 @@ function startQuiz(quizType) {
 // 顯示題目
 function showQuestion(index) {
   if (index >= systemState.currentQuiz.length) {
-    return; // 所有題目已顯示
+    submitQuiz(); // 自動提交最後一題
+    return;
   }
   
   const question = systemState.currentQuiz[index];
@@ -374,10 +384,13 @@ function getUserAnswer(index, questionType) {
       .map(input => input.value)
       .sort();
   }
+  return null;
 }
 
 // 檢查答案
 function checkAnswer(question, userAnswer) {
+  if (!userAnswer) return false;
+  
   if (question.type === 'true_false') {
     return userAnswer === String(question.answer);
   }
@@ -392,25 +405,26 @@ function showQuizResults() {
   
   let resultsHtml = `
     <div class="result-summary">
-      <h4>測驗統計</h4>
-      <p>答對題數: <strong>${correctCount}/${totalQuestions}</strong></p>
-      <p>正確率: <strong>${percentage}%</strong></p>
+      <h3>測驗結果</h3>
+      <p>科目：${domElements.subjectSelect.selectedOptions[0].text}</p>
+      <p>答對題數：<strong>${correctCount}/${totalQuestions}</strong></p>
+      <p>正確率：<strong>${percentage}%</strong></p>
     </div>
     <div class="result-details">
-      <h4>詳細結果:</h4>
+      <h4>詳細結果：</h4>
   `;
   
   systemState.quizResults.forEach((result, index) => {
     resultsHtml += `
       <div class="result-item ${result.isCorrect ? 'correct' : 'incorrect'}">
-        <p><strong>第 ${index + 1} 題</strong>: ${result.question}</p>
-        <p>你的答案: ${result.userAnswer || '未作答'}</p>
-        <p>正確答案: ${Array.isArray(result.correctAnswer) ? 
-          result.correctAnswer.join(', ') : result.correctAnswer}</p>
+        <p><strong>第 ${index + 1} 題</strong>：${result.question}</p>
+        <p>你的答案：${formatAnswer(result.userAnswer)}</p>
+        <p>正確答案：${formatAnswer(result.correctAnswer)}</p>
         <p class="${result.isCorrect ? 'correct-answer' : 'wrong-answer'}">
           ${result.isCorrect ? '✓ 答對了' : '✗ 答錯了'}
         </p>
       </div>
+      <hr>
     `;
   });
   
@@ -419,6 +433,13 @@ function showQuizResults() {
   domElements.resultContent.innerHTML = resultsHtml;
   domElements.quizInterface.style.display = 'none';
   domElements.resultContainer.style.display = 'block';
+}
+
+// 格式化答案顯示
+function formatAnswer(answer) {
+  if (!answer) return '未作答';
+  if (Array.isArray(answer)) return answer.join('、');
+  return answer;
 }
 
 // 檢視錯誤題目
@@ -430,15 +451,14 @@ function reviewWrongAnswers() {
     return;
   }
   
-  let reviewHtml = '<h4>錯誤題目檢視:</h4>';
+  let reviewHtml = '<h3>錯誤題目檢視：</h3>';
   
   wrongAnswers.forEach((item, index) => {
     reviewHtml += `
       <div class="review-item">
-        <p><strong>錯誤題目 ${index + 1}</strong>: ${item.question}</p>
-        <p>你的錯誤答案: ${item.userAnswer || '未作答'}</p>
-        <p>正確答案: ${Array.isArray(item.correctAnswer) ? 
-          item.correctAnswer.join(', ') : item.correctAnswer}</p>
+        <p><strong>錯誤題目 ${index + 1}</strong>：${item.question}</p>
+        <p>你的答案：${formatAnswer(item.userAnswer)}</p>
+        <p>正確答案：${formatAnswer(item.correctAnswer)}</p>
       </div>
       <hr>
     `;
@@ -458,6 +478,7 @@ function resetSystemState() {
   
   // 重置UI
   domElements.subjectSelect.value = '';
+  domElements.currentSubject.textContent = '';
   domElements.subjectInfo.style.display = 'none';
   domElements.modeSelection.style.display = 'none';
   domElements.customPractice.style.display = 'none';
