@@ -169,33 +169,25 @@ function handleSubjectSelection() {
 
 // 載入科目資料
 async function loadSubjectData(subjectId) {
-  // 這裡替換為實際的資料載入邏輯
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve({
-        questions: [
-          {
-            type: "single_choice",
-            question: "下列哪項是正確的作法？",
-            options: ["選項一", "選項二", "正確選項"],
-            answer: "正確選項"
-          },
-          {
-            type: "multiple_choice",
-            question: "哪些是必須遵守的規定？（多選）",
-            options: ["規定一", "規定二", "規定三", "規定四"],
-            answer: ["規定一", "規定三"]
-          },
-          {
-            type: "true_false",
-            question: "這個陳述是否正確？",
-            options: ["是", "否"],
-            answer: true
-          }
-        ]
-      });
-    }, 500);
-  });
+  const subjectInfo = document.getElementById("subject-info");
+
+  // 確保 data.questions 存在且是陣列
+  if (!data.questions || !Array.isArray(data.questions)) {
+    subjectInfo.innerHTML = "<p>題庫資料格式錯誤，無法顯示。</p>";
+    return;
+  }
+
+  // 計算題庫中單選題、複選題和是非題的數量
+  const singleChoiceCount = data.questions.filter(q => q.type === "single_choice").length;
+  const multipleChoiceCount = data.questions.filter(q => q.type === "multiple_choice").length;
+  const trueFalseCount = data.questions.filter(q => q.type === "true_false").length;
+
+  // 顯示科目的題庫信息
+  subjectInfo.innerHTML = `
+    <p>題庫包含：<br>是非題：${trueFalseCount} 題</br><br>單選題：${singleChoiceCount} 題</br><br>複選題：${multipleChoiceCount} 題</br></p>
+    <p>請選擇題型並開始練習或測驗。</p>
+  `;
+}
 }
 
 // 顯示科目資訊
