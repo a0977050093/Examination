@@ -9,7 +9,9 @@ const systemState = {
   currentQuestionIndex: 0,
   quizAnswers: [],
   quizResults: [],
-  historyRecords: JSON.parse(localStorage.getItem('quizHistory')) || []
+  historyRecords: JSON.parse(localStorage.getItem('quizHistory')) || [],
+  isLoading: false,
+  error: null
 };
 
 // DOM元素快取
@@ -59,7 +61,8 @@ const domElements = {
   // 歷史紀錄
   historyContainer: document.getElementById('history-container'),
   historyList: document.getElementById('history-list'),
-  backToQuizBtn: document.getElementById('back-to-quiz-btn')
+  backToQuizBtn: document.getElementById('back-to-quiz-btn'),
+  deleteHistoryBtn: document.getElementById('delete-history-btn')
 };
 
 // 初始化系統
@@ -108,6 +111,17 @@ function bindEventListeners() {
   
   // 歷史紀錄
   domElements.backToQuizBtn.addEventListener('click', backToQuizFromHistory);
+  domElements.deleteHistoryBtn.addEventListener('click', confirmDeleteHistory);
+  
+  // 複選題自動保存答案
+  document.addEventListener('change', function(e) {
+    if (e.target.type === 'checkbox' && 
+        e.target.name.startsWith('q') && 
+        systemState.currentMode) {
+      const index = parseInt(e.target.name.substring(1));
+      saveAnswer(index, 'multiple_choice');
+    }
+  });
 }
 
 // 登入處理
@@ -116,14 +130,18 @@ function handleLogin() {
   
   if (!password) {
     domElements.passwordError.textContent = '請輸入密碼';
+    domElements.passwordInput.focus();
     return;
   }
   
+  // 實務上應使用雜湊比對而非明文
   if (password === '22143') {
     systemState.isAuthenticated = true;
     localStorage.setItem('isAuthenticated', 'true');
     domElements.authContainer.style.display = 'none';
     domElements.appContainer.style.display = 'block';
+    domElements.passwordInput.value = '';
+    domElements.passwordError.textContent = '';
   } else {
     domElements.passwordError.textContent = '密碼錯誤，請重新輸入';
     domElements.passwordInput.value = '';
@@ -141,8 +159,29 @@ function handleLogout() {
   resetSystemState();
 }
 
+// 重置系統狀態
+function resetSystemState() {
+  systemState.currentSubject = null;
+  systemState.currentMode = null;
+  systemState.questions = [];
+  systemState.currentQuiz = [];
+  systemState.currentQuestionIndex = 0;
+  systemState.quizAnswers = [];
+  systemState.quizResults = [];
+  
+  // 重置UI
+  domElements.subjectSelect.value = '';
+  domElements.subjectInfo.style.display = 'none';
+  domElements.modeSelection.style.display = 'none';
+  domElements.customPractice.style.display = 'none';
+  domElements.quizInterface.style.display = 'none';
+  domElements.resultContainer.style.display = 'none';
+  domElements.historyContainer.style.display = 'none';
+  domElements.currentSubject.textContent = '';
+}
+
 // 科目選擇處理
-function handleSubjectSelection() {
+async function handleSubjectSelection() {
   const subjectId = domElements.subjectSelect.value;
   
   if (!subjectId) {
@@ -153,17 +192,26 @@ function handleSubjectSelection() {
   systemState.currentSubject = subjectId;
   domElements.currentSubject.textContent = domElements.subjectSelect.selectedOptions[0].text;
   
-  // 載入題庫資料
-  loadSubjectData(subjectId)
-    .then(data => {
-      systemState.questions = data.questions;
-      displaySubjectInfo(data);
-      domElements.modeSelection.style.display = 'block';
-    })
-    .catch(error => {
-      console.error('載入題庫失敗:', error);
-      alert('載入題庫失敗，請稍後再試');
-    });
+  try {
+    // 顯示載入狀態
+    systemState.isLoading = true;
+    domElements.loadingOverlay.style.display = 'flex';
+    
+    // 載入題庫資料
+    const data = await loadSubjectData(subjectId);
+    systemState.questions = data.questions;
+    
+    displaySubjectInfo(data);
+    domElements.modeSelection.style.display = 'block';
+  } catch (error) {
+    console.error('載入題庫失敗:', error);
+    domElements.subjectDetails.innerHTML = `
+      <p class="error">載入題庫失敗: ${error.message || '請稍後再試'}</p>
+    `;
+  } finally {
+    systemState.isLoading = false;
+    domElements.loadingOverlay.style.display = 'none';
+  }
 }
 
 // 載入科目資料
@@ -171,7 +219,7 @@ async function loadSubjectData(subjectId) {
   try {
     const response = await fetch(`data/${subjectId}.json`);
     if (!response.ok) {
-      throw new Error('網路請求失敗');
+      throw new Error(`網路請求失敗: ${response.status}`);
     }
     const data = await response.json();
     
@@ -264,11 +312,22 @@ function startExamMode() {
   startQuiz('正式測驗');
 }
 
-// 隨機選擇題目
+// Fisher-Yates 洗牌演算法
+function shuffleArray(array) {
+  const newArray = [...array];
+  for (let i = newArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+  }
+  return newArray;
+}
+
+// 隨機選擇題目 (不重複)
 function getRandomQuestions(questionPool, count) {
   if (!questionPool || questionPool.length === 0) return [];
   
-  const shuffled = [...questionPool].sort(() => 0.5 - Math.random());
+  // 先洗牌再取前N個
+  const shuffled = shuffleArray(questionPool);
   return shuffled.slice(0, Math.min(count, questionPool.length));
 }
 
@@ -290,41 +349,60 @@ function startQuiz(quizType) {
   showQuestion(0);
 }
 
+// 檢查選項是否已被選擇
+function isOptionSelected(question, index, option) {
+  const savedAnswer = systemState.quizAnswers[index];
+  if (!savedAnswer) return false;
+  
+  if (question.type === 'multiple_choice') {
+    return savedAnswer.userAnswer.includes(option);
+  }
+  return savedAnswer.userAnswer === option;
+}
+
 // 顯示題目
 function showQuestion(index) {
-  // 檢查題目範圍
   if (index < 0 || index >= systemState.currentQuiz.length) {
     console.error('無效的題目索引:', index);
     return;
   }
 
   const question = systemState.currentQuiz[index];
-  console.log(`顯示第 ${index} 題:`, question);
+  systemState.currentQuestionIndex = index;
 
-  // 更新介面
+  // 更新進度顯示
   domElements.quizProgress.textContent = `題目 ${index + 1}/${systemState.currentQuiz.length}`;
+  domElements.quizProgress.setAttribute('aria-label', `第 ${index + 1} 題，共 ${systemState.currentQuiz.length} 題`);
   
   // 建立選項HTML
   let optionsHtml = '';
-  if (question.type === 'single_choice' || question.type === 'multiple_choice') {
+  if (question.type === 'single_choice') {
     optionsHtml = question.options.map((option, i) => `
-      <label class="option">
-        <input type="${question.type === 'single_choice' ? 'radio' : 'checkbox'}" 
-               name="q${index}" value="${option}" 
-               id="opt-${index}-${i}">
-        ${option}
+      <label class="option radio-option">
+        <input type="radio" name="q${index}" value="${option}" id="opt-${index}-${i}"
+               ${isOptionSelected(question, index, option) ? 'checked' : ''}>
+        <span class="radio-checkmark"></span>
+        <span class="option-text">${option}</span>
+      </label>
+    `).join('');
+  } else if (question.type === 'multiple_choice') {
+    optionsHtml = question.options.map((option, i) => `
+      <label class="option checkbox-option">
+        <input type="checkbox" name="q${index}" value="${option}" id="opt-${index}-${i}"
+               ${isOptionSelected(question, index, option) ? 'checked' : ''}>
+        <span class="checkbox-checkmark"></span>
+        <span class="option-text">${option}</span>
       </label>
     `).join('');
   } else if (question.type === 'true_false') {
     optionsHtml = `
-      <label class="option">
-        <input type="radio" name="q${index}" value="true" id="opt-${index}-true">
-        是
-      </label>
-      <label class="option">
-        <input type="radio" name="q${index}" value="false" id="opt-${index}-false">
-        否
-      </label>
+      <div class="select-dropdown">
+        <select id="true-false-select-${index}">
+          <option value="">-- 請選擇 --</option>
+          <option value="true" ${isOptionSelected(question, index, 'true') ? 'selected' : ''}>是</option>
+          <option value="false" ${isOptionSelected(question, index, 'false') ? 'selected' : ''}>否</option>
+        </select>
+      </div>
     `;
   }
 
@@ -341,16 +419,16 @@ function showQuestion(index) {
   `;
 
   // 綁定導航事件
-  bindNavigationEvents(index);
+  bindNavigationEvents(index, question.type);
 }
 
 // 綁定導航事件
-function bindNavigationEvents(index) {
+function bindNavigationEvents(index, questionType) {
   // 上一題按鈕
   const prevBtn = document.getElementById('prev-btn');
   if (prevBtn) {
     prevBtn.addEventListener('click', () => {
-      saveAnswer(index);
+      saveAnswer(index, questionType);
       showQuestion(index - 1);
     });
   }
@@ -359,7 +437,7 @@ function bindNavigationEvents(index) {
   const nextBtn = document.getElementById('next-btn');
   if (nextBtn) {
     nextBtn.addEventListener('click', () => {
-      if (!saveAnswer(index)) {
+      if (!saveAnswer(index, questionType)) {
         alert('請先選擇答案');
         return;
       }
@@ -373,11 +451,10 @@ function bindNavigationEvents(index) {
   }
 
   // 單選題自動跳轉
-  if (systemState.currentQuiz[index].type === 'single_choice' || 
-      systemState.currentQuiz[index].type === 'true_false') {
+  if (questionType === 'single_choice') {
     document.querySelectorAll(`input[name="q${index}"]`).forEach(input => {
       input.addEventListener('change', () => {
-        saveAnswer(index);
+        saveAnswer(index, questionType);
         if (index < systemState.currentQuiz.length - 1) {
           setTimeout(() => showQuestion(index + 1), 500);
         }
@@ -387,253 +464,268 @@ function bindNavigationEvents(index) {
 }
 
 // 保存答案
-function saveAnswer(index) {
+function saveAnswer(index, questionType) {
   const question = systemState.currentQuiz[index];
-  const userAnswer = getUserAnswer(index, question.type);
+  const userAnswer = getUserAnswer(index, questionType);
   
-  if (userAnswer === null || (Array.isArray(userAnswer) && userAnswer.length === 0)) {
+  // 複選題允許不選答案
+  if (questionType !== 'multiple_choice' && 
+      (userAnswer === null || (Array.isArray(userAnswer) && userAnswer.length === 0))) {
     return false;
   }
 
   systemState.quizAnswers[index] = {
     questionIndex: index,
     userAnswer: userAnswer,
-    isCorrect: checkAnswer(question, userAnswer)
+    isCorrect: checkAnswer(question, userAnswer),
+    questionType: question.type
   };
   
-  console.log(`已保存第 ${index} 題答案:`, userAnswer);
   return true;
-}
-
-// 獲取使用者答案
-function getUserAnswer(index, questionType) {
-  const inputs = document.querySelectorAll(`input[name="q${index}"]`);
-  
-  if (questionType === 'single_choice' || questionType === 'true_false') {
-    const selected = [...inputs].find(input => input.checked);
-    return selected ? selected.value : null;
-  } else if (questionType === 'multiple_choice') {
-    return [...inputs]
-      .filter(input => input.checked)
-      .map(input => input.value)
-      .sort();
-  }
-  return null;
 }
 
 // 檢查答案
 function checkAnswer(question, userAnswer) {
-  if (!userAnswer) return false;
-  
-  if (question.type === 'true_false') {
-    return userAnswer === String(question.answer);
+  if (!userAnswer || (Array.isArray(userAnswer) && userAnswer.length === 0)) {
+    return false;
   }
-  return JSON.stringify(userAnswer) === JSON.stringify(question.answer);
+  
+  switch(question.type) {
+    case 'single_choice':
+      return userAnswer === question.answer;
+      
+    case 'multiple_choice':
+      const correctAnswers = Array.isArray(question.answer) 
+        ? [...question.answer].sort() 
+        : [question.answer].sort();
+      const userAnswers = [...userAnswer].sort();
+      return JSON.stringify(userAnswers) === JSON.stringify(correctAnswers);
+      
+    case 'true_false':
+      return userAnswer === String(question.answer);
+      
+    default:
+      return false;
+  }
+}
+
+// 獲取使用者答案
+function getUserAnswer(index, questionType) {
+  const question = systemState.currentQuiz[index];
+  
+  switch(questionType) {
+    case 'single_choice':
+      const radio = document.querySelector(`input[name="q${index}"]:checked`);
+      return radio ? radio.value : null;
+      
+    case 'multiple_choice':
+      const checkboxes = document.querySelectorAll(`input[name="q${index}"]:checked`);
+      return Array.from(checkboxes).map(cb => cb.value);
+      
+    case 'true_false':
+      const select = document.getElementById(`true-false-select-${index}`);
+      return select ? select.value : null;
+      
+    default:
+      return null;
+  }
 }
 
 // 提交測驗
 function submitQuiz() {
-  // 收集答案
-  const results = [];
-  let score = 0;
+  // 確保最後一題答案已保存
+  const lastIndex = systemState.currentQuiz.length - 1;
+  const lastQuestion = systemState.currentQuiz[lastIndex];
+  saveAnswer(lastIndex, lastQuestion.type);
   
-  systemState.currentQuiz.forEach((question, index) => {
-    const userAnswer = systemState.quizAnswers[index]?.userAnswer || null;
-    const isCorrect = checkAnswer(question, userAnswer);
-    
-    if (isCorrect) {
-      score += question.type === 'single_choice' ? 3 : 
-               question.type === 'multiple_choice' ? 4 : 2;
-    }
-    
-    results.push({
-      question: question.question,
-      userAnswer,
-      correctAnswer: question.answer,
-      isCorrect
-    });
-  });
+  // 計算得分
+  const score = calculateScore();
+  const results = generateResults();
   
-  systemState.quizResults = results;
-  
-  // 儲存歷史紀錄
-  const record = {
-    date: new Date().toLocaleString('zh-TW'),
-    subject: systemState.currentSubject,
-    score,
-    total: systemState.currentQuiz.length,
-    details: results
-  };
-  
-  systemState.historyRecords.push(record);
-  localStorage.setItem('quizHistory', JSON.stringify(systemState.historyRecords));
+  // 保存歷史記錄
+  saveQuizHistory(score);
   
   // 顯示結果
-  showQuizResults();
+  displayResults(score, results);
 }
 
-// 顯示測驗結果
-function showQuizResults() {
-  const correctCount = systemState.quizResults.filter(r => r.isCorrect).length;
-  const totalQuestions = systemState.currentQuiz.length;
-  const percentage = Math.round((correctCount / totalQuestions) * 100);
-  
-  let resultsHtml = `
+// 計算分數
+function calculateScore() {
+  const total = systemState.quizAnswers.length;
+  const correct = systemState.quizAnswers.filter(a => a.isCorrect).length;
+  return Math.round((correct / total) * 100);
+}
+
+// 生成詳細結果
+function generateResults() {
+  return systemState.currentQuiz.map((question, index) => {
+    const userAnswer = systemState.quizAnswers[index]?.userAnswer || '未作答';
+    const isCorrect = systemState.quizAnswers[index]?.isCorrect;
+    
+    return {
+      question: question.question,
+      userAnswer: Array.isArray(userAnswer) ? userAnswer.join(', ') : userAnswer,
+      correctAnswer: Array.isArray(question.answer) ? question.answer.join(', ') : question.answer,
+      isCorrect: isCorrect,
+      explanation: question.explanation || ''
+    };
+  });
+}
+
+// 顯示結果頁面
+function displayResults(score, results) {
+  let html = `
     <div class="result-summary">
-      <h3>測驗結果</h3>
-      <p>科目：${domElements.subjectSelect.selectedOptions[0].text}</p>
-      <p>答對題數：<strong>${correctCount}/${totalQuestions}</strong></p>
-      <p>正確率：<strong>${percentage}%</strong></p>
+      <h3>測驗完成！</h3>
+      <p>您的得分: <span class="${score >= 60 ? 'correct-answer' : 'wrong-answer'}">${score}分</span></p>
+      <p>答對題數: ${results.filter(r => r.isCorrect).length} / ${results.length}</p>
     </div>
-    <div class="result-details">
-      <h4>詳細結果：</h4>
   `;
   
-  systemState.quizResults.forEach((result, index) => {
-    resultsHtml += `
+  results.forEach((result, index) => {
+    html += `
       <div class="result-item ${result.isCorrect ? 'correct' : 'incorrect'}">
-        <p><strong>第 ${index + 1} 題</strong>：${result.question}</p>
-        <p>你的答案：${formatAnswer(result.userAnswer)}</p>
-        <p>正確答案：${formatAnswer(result.correctAnswer)}</p>
-        <p class="${result.isCorrect ? 'correct-answer' : 'wrong-answer'}">
-          ${result.isCorrect ? '✓ 答對了' : '✗ 答錯了'}
-        </p>
+        <p><strong>題目 ${index + 1}:</strong> ${result.question}</p>
+        <p>您的答案: <span class="${result.isCorrect ? 'correct-answer' : 'wrong-answer'}">${result.userAnswer}</span></p>
+        ${!result.isCorrect ? `<p>正確答案: <span class="correct-answer">${result.correctAnswer}</span></p>` : ''}
+        ${result.explanation ? `<p class="explanation">說明: ${result.explanation}</p>` : ''}
       </div>
-      <hr>
     `;
   });
   
-  resultsHtml += `</div>`;
-  
-  domElements.resultContent.innerHTML = resultsHtml;
+  domElements.resultContent.innerHTML = html;
   domElements.quizInterface.style.display = 'none';
   domElements.resultContainer.style.display = 'block';
 }
 
-// 格式化答案顯示
-function formatAnswer(answer) {
-  if (!answer) return '未作答';
-  if (Array.isArray(answer)) return answer.join('、');
-  return answer;
+// 保存歷史記錄
+function saveQuizHistory(score) {
+  const record = {
+    date: new Date().toISOString(),
+    subject: systemState.currentSubject,
+    subjectName: domElements.subjectSelect.selectedOptions[0].text,
+    mode: systemState.currentMode,
+    score: score,
+    totalQuestions: systemState.currentQuiz.length,
+    correctAnswers: systemState.quizAnswers.filter(a => a.isCorrect).length,
+    details: systemState.quizAnswers.map(answer => ({
+      question: systemState.currentQuiz[answer.questionIndex].question,
+      userAnswer: answer.userAnswer,
+      isCorrect: answer.isCorrect
+    }))
+  };
+  
+  systemState.historyRecords.unshift(record);
+  localStorage.setItem('quizHistory', JSON.stringify(systemState.historyRecords));
 }
 
 // 檢視錯誤題目
 function reviewWrongAnswers() {
-  const wrongAnswers = systemState.quizResults.filter(r => !r.isCorrect);
+  const wrongAnswers = systemState.quizAnswers.filter(a => !a.isCorrect);
   
   if (wrongAnswers.length === 0) {
-    alert('恭喜！本次測驗全部答對！');
+    alert('本次測驗沒有答錯的題目！');
     return;
   }
   
-  let reviewHtml = '<h3>錯誤題目檢視：</h3>';
+  // 只顯示答錯的題目
+  systemState.currentQuiz = wrongAnswers.map(a => systemState.currentQuiz[a.questionIndex]);
+  systemState.quizAnswers = [];
+  systemState.currentQuestionIndex = 0;
   
-  wrongAnswers.forEach((item, index) => {
-    reviewHtml += `
-      <div class="review-item">
-        <p><strong>錯誤題目 ${index + 1}</strong>：${item.question}</p>
-        <p>你的答案：${formatAnswer(item.userAnswer)}</p>
-        <p>正確答案：${formatAnswer(item.correctAnswer)}</p>
+  // 進入複習模式
+  domElements.resultContainer.style.display = 'none';
+  domElements.quizInterface.style.display = 'block';
+  domElements.quizTitle.textContent = `${domElements.subjectSelect.selectedOptions[0].text} - 錯誤題目複習`;
+  
+  showQuestion(0);
+}
+
+  // 開始新測驗
+function resetForNewQuiz() {
+  if (systemState.currentMode === 'practice') {
+    domElements.resultContainer.style.display = 'none';
+    domElements.customPractice.style.display = 'block';
+  } else {
+    startExamMode();
+  }
+}
+
+// 顯示歷史記錄
+function showHistory() {
+  domElements.modeSelection.style.display = 'none';
+  domElements.historyContainer.style.display = 'block';
+  
+  if (systemState.historyRecords.length === 0) {
+    domElements.historyList.innerHTML = '<p>暫無歷史記錄</p>';
+    return;
+  }
+  
+  let html = '';
+  systemState.historyRecords.forEach((record, index) => {
+    html += `
+      <div class="history-item">
+        <h4>
+          <span>${record.subjectName} - ${record.mode === 'practice' ? '練習模式' : '測驗模式'}</span>
+          <span class="history-time">${formatDate(record.date)}</span>
+        </h4>
+        <p>得分: <span class="${record.score >= 60 ? 'correct-answer' : 'wrong-answer'}">${record.score}分</span></p>
+        <p>正確率: ${record.correctAnswers}/${record.totalQuestions}</p>
+        <button class="detail-btn" data-index="${index}">查看詳情</button>
+        <div class="history-details" id="details-${index}">
+          ${generateHistoryDetails(record.details)}
+        </div>
       </div>
-      <hr>
     `;
   });
   
-  domElements.resultContent.innerHTML = reviewHtml;
-}
-
-// 顯示歷史紀錄
-function showHistory() {
-  domElements.modeSelection.style.display = 'none';
-  domElements.subjectInfo.style.display = 'none';
-  domElements.historyContainer.style.display = 'block';
+  domElements.historyList.innerHTML = html;
   
-  const historyHtml = systemState.historyRecords.map((record, idx) => `
-    <div class="history-item">
-      <h4>測驗記錄 #${idx + 1}</h4>
-      <p>日期：${record.date}</p>
-      <p>科目：${record.subject}</p>
-      <p>得分：${record.score} / ${record.total}</p>
-      <button class="detail-btn" data-index="${idx}">查看詳情</button>
-    </div>
-    <hr>
-  `).join('');
-  
-  domElements.historyList.innerHTML = historyHtml || '<p>尚無歷史紀錄</p>';
-  
-  // 綁定查看詳情按鈕
+  // 綁定詳情按鈕事件
   document.querySelectorAll('.detail-btn').forEach(btn => {
     btn.addEventListener('click', function() {
       const index = this.getAttribute('data-index');
-      showHistoryDetail(index);
+      const details = document.getElementById(`details-${index}`);
+      details.classList.toggle('active');
+      this.textContent = details.classList.contains('active') ? '隱藏詳情' : '查看詳情';
     });
   });
 }
 
-// 顯示歷史詳情
-function showHistoryDetail(index) {
-  const record = systemState.historyRecords[index];
-  let detailHtml = `
-    <h3>測驗詳情 - ${record.date}</h3>
-    <p>科目：${record.subject}</p>
-    <p>得分：${record.score} / ${record.total}</p>
-    <div class="history-details">
-  `;
-  
-  record.details.forEach((item, qIdx) => {
-    detailHtml += `
-      <div class="question-result ${item.isCorrect ? 'correct' : 'wrong'}">
-        <p><strong>第 ${qIdx + 1} 題</strong>: ${item.question}</p>
-        <p>你的答案: ${formatAnswer(item.userAnswer)}</p>
-        <p>正確答案: ${formatAnswer(item.correctAnswer)}</p>
-        <p>${item.isCorrect ? '✓ 正確' : '✗ 錯誤'}</p>
-      </div>
-    `;
-  });
-  
-  detailHtml += `</div><button id="back-to-history" class="main-btn">返回歷史列表</button>`;
-  domElements.historyList.innerHTML = detailHtml;
-  
-  document.getElementById('back-to-history').addEventListener('click', showHistory);
+// 格式化日期
+function formatDate(dateString) {
+  const date = new Date(dateString);
+  return date.toLocaleString('zh-TW');
 }
 
-// 返回測驗從歷史紀錄
+// 生成歷史記錄詳情
+function generateHistoryDetails(details) {
+  return details.map((detail, i) => `
+    <div class="question-result ${detail.isCorrect ? 'correct' : 'wrong'}">
+      <p><strong>題目 ${i + 1}:</strong> ${detail.question}</p>
+      <p>您的答案: <span class="${detail.isCorrect ? 'correct-answer' : 'wrong-answer'}">${
+        Array.isArray(detail.userAnswer) ? detail.userAnswer.join(', ') : detail.userAnswer
+      }</span></p>
+    </div>
+  `).join('');
+}
+
+// 返回測驗
 function backToQuizFromHistory() {
   domElements.historyContainer.style.display = 'none';
-  domElements.modeSelection.style.display = 'block';
+  if (systemState.currentMode) {
+    domElements.modeSelection.style.display = 'block';
+  }
 }
 
-// 重置系統狀態
-function resetSystemState() {
-  systemState.currentSubject = null;
-  systemState.currentMode = null;
-  systemState.questions = [];
-  systemState.currentQuiz = [];
-  systemState.quizAnswers = [];
-  systemState.quizResults = [];
-  systemState.currentQuestionIndex = 0;
-  
-  // 重置UI
-  domElements.subjectSelect.value = '';
-  domElements.currentSubject.textContent = '';
-  domElements.subjectInfo.style.display = 'none';
-  domElements.modeSelection.style.display = 'none';
-  domElements.customPractice.style.display = 'none';
-  domElements.quizInterface.style.display = 'none';
-  domElements.resultContainer.style.display = 'none';
-  domElements.historyContainer.style.display = 'none';
+// 確認刪除歷史記錄
+function confirmDeleteHistory() {
+  if (confirm('確定要刪除所有歷史記錄嗎？此操作無法復原！')) {
+    systemState.historyRecords = [];
+    localStorage.removeItem('quizHistory');
+    showHistory();
+  }
 }
 
-// 開始新測驗
-function resetForNewQuiz() {
-  systemState.currentQuiz = [];
-  systemState.quizAnswers = [];
-  systemState.quizResults = [];
-  systemState.currentQuestionIndex = 0;
-  
-  domElements.resultContainer.style.display = 'none';
-  domElements.modeSelection.style.display = 'block';
-}
-
-// 系統初始化
-document.addEventListener('DOMContentLoaded', initSystem);
+// 初始化系統
+initSystem();
