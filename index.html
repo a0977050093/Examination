@@ -4,95 +4,98 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>線上題庫測驗系統</title>
-  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
-  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* 基础样式确保界面正常显示 */
+    body {
+      font-family: 'Microsoft JhengHei', Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    .container {
+      background: white;
+      border-radius: 5px;
+      padding: 15px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .btn {
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #3367d6;
+    }
+    select, input[type="number"] {
+      padding: 8px;
+      margin: 5px 0;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    label {
+      display: inline-block;
+      width: 120px;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- 載入指示器 -->
-  <div id="loading">
-    <div class="spinner"></div>
-    <p>載入中，請稍候...</p>
+  <h1 style="text-align: center;">線上題庫測驗系統</h1>
+
+  <!-- 科目選擇 -->
+  <div class="container">
+    <h3>選擇科目：</h3>
+    <select id="subject">
+      <option value="">-- 請選擇科目 --</option>
+      <option value="518訓練手冊_本職">518訓練手冊_本職學能</option>
+      <option value="衛星手冊_本職">衛星手冊_本職學能</option>
+      <option value="連(排)教範_本職">連(排)教範_本職學能</option>
+      <option value="部隊教範_本職">部隊教範_本職學能</option>
+      <option value="518操作保養_數位化">518操作保養_數位化班隊</option>
+      <option value="518組合訓練_數位化">518組合訓練_數位化班隊</option>
+      <option value="行政-人事教範">行政-人事教範</option>
+    </select>
+    <button class="btn" id="loadSubjectBtn">確定選擇</button>
   </div>
 
-  <!-- 密碼彈窗 -->
-  <div id="passwordModal" class="modal">
-    <div class="modal-content">
-      <h2>請輸入密碼</h2>
-      <p>此系統需要密碼才能使用</p>
-      <input type="password" id="passwordInput" placeholder="請輸入密碼" autocomplete="off">
-      <p id="passwordError" class="error"></p>
-      <button class="btn primary" onclick="checkPassword()">確認</button>
-    </div>
+  <!-- 顯示題庫資訊 -->
+  <div id="subject-info" class="container" style="display: none;"></div>
+
+  <!-- 模式選擇 -->
+  <div id="mode-selection" class="container" style="display: none;">
+    <h3>選擇模式：</h3>
+    <button class="btn" id="practiceModeBtn">練習模式</button>
+    <button class="btn" id="testModeBtn">測驗模式</button>
   </div>
 
-  <!-- 主內容 -->
-  <div id="mainContent">
-    <header>
-      <h1>線上題庫測驗系統</h1>
-    </header>
-
-    <main>
-      <!-- 科目選擇 -->
-      <section class="container card">
-        <h2>選擇科目：</h2>
-        <div class="form-group">
-          <select id="subject" class="form-control">
-            <option value="">-- 請選擇科目 --</option>
-            <option value="518訓練手冊_本職">518訓練手冊_本職學能</option>
-            <option value="衛星手冊_本職">衛星手冊_本職學能</option>
-            <option value="連(排)教範_本職">連(排)教範_本職學能</option>
-            <option value="部隊教範_本職">部隊教範_本職學能</option>
-            <option value="518操作保養_數位化">518操作保養_數位化班隊</option>
-            <option value="518組合訓練_數位化">518組合訓練_數位化班隊</option>
-            <option value="行政-人事教範">行政-人事教範</option>
-          </select>
-          <button class="btn primary" onclick="loadSubject()">確定選擇</button>
-        </div>
-      </section>
-
-      <!-- 題庫資訊 -->
-      <section id="subject-info" class="container card"></section>
-
-      <!-- 模式選擇 -->
-      <section id="mode-selection" class="container card">
-        <h2>選擇模式：</h2>
-        <div class="button-group">
-          <button class="btn primary" onclick="selectMode('practice')">練習模式</button>
-          <button class="btn primary" onclick="selectMode('test')">測驗模式</button>
-        </div>
-      </section>
-
-      <!-- 自定義練習 -->
-      <section id="customize-practice" class="container card">
-        <h2>自定義練習題數：</h2>
-        <div class="form-group">
-          <label for="singleCount">單選題數量：</label>
-          <input type="number" id="singleCount" min="0" placeholder="例如：5" class="form-control">
-          
-          <label for="multipleCount">複選題數量：</label>
-          <input type="number" id="multipleCount" min="0" placeholder="例如：3" class="form-control">
-          
-          <button class="btn primary" onclick="startCustomPractice()">開始練習</button>
-        </div>
-      </section>
-
-      <!-- 題目容器 -->
-      <section id="quiz-container" class="container card"></section>
-
-      <!-- 提交按鈕 -->
-      <section class="container">
-        <button class="btn primary" onclick="submitQuiz()">提交測驗</button>
-      </section>
-
-      <!-- 測驗結果 -->
-      <section id="result" class="container card"></section>
-    </main>
-
-    <footer class="footer">
-      <p>© 2025 線上題庫測驗系統 版權所有</p>
-    </footer>
+  <!-- 自定義練習 -->
+  <div id="customize-practice" class="container" style="display: none;">
+    <h3>自定義練習題數：</h3>
+    <label for="singleCount">單選題數量：</label>
+    <input type="number" id="singleCount" min="0" placeholder="例如 5">
+    <br>
+    <label for="multipleCount">複選題數量：</label>
+    <input type="number" id="multipleCount" min="0" placeholder="例如 3">
+    <br>
+    <button class="btn" id="startPracticeBtn">開始練習</button>
   </div>
 
-  <script src="js/script.js"></script>
+  <!-- 題目容器 -->
+  <div id="quiz-container" class="container"></div>
+
+  <!-- 提交測驗 -->
+  <div class="container">
+    <button class="btn" id="submitQuizBtn">提交測驗</button>
+  </div>
+
+  <!-- 測驗結果 -->
+  <div id="result" class="container"></div>
+
+  <script src="quiz.js"></script>
 </body>
 </html>
