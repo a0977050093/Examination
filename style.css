@@ -1,4 +1,4 @@
-/* 基礎重置與字體設定 - 增強版 */
+/* 基礎重置與字體設定 */
 * {
   margin: 0;
   padding: 0;
@@ -26,7 +26,7 @@ body {
   min-height: 100vh;
 }
 
-/* 載入動畫 - 增強效果 */
+/* 載入動畫 */
 #loading-overlay {
   position: fixed;
   top: 0;
@@ -57,7 +57,7 @@ body {
   100% { transform: rotate(360deg); }
 }
 
-/* 驗證介面 - 視覺強化 */
+/* 驗證介面 */
 #auth-container {
   position: fixed;
   top: 0;
@@ -102,7 +102,13 @@ body {
   color: var(--text-light);
 }
 
-/* 主系統樣式 - 佈局優化 */
+.error-msg {
+  color: var(--wrong-color);
+  margin: 10px 0;
+  min-height: 20px;
+}
+
+/* 主系統樣式 */
 #app-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -127,7 +133,7 @@ header {
   gap: 20px;
 }
 
-/* 模組卡片 - 互動增強 */
+/* 模組卡片 */
 .module-card {
   background: white;
   border-radius: 10px;
@@ -151,7 +157,11 @@ header {
   font-size: 20px;
 }
 
-/* 按鈕樣式 - 視覺層級強化 */
+.icon {
+  font-size: 24px;
+}
+
+/* 按鈕樣式 */
 .btn-group {
   display: flex;
   gap: 15px;
@@ -193,7 +203,13 @@ header {
   transform: translateY(-2px);
 }
 
-/* 表單元素 - 互動改進 */
+.result-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* 表單元素 */
 select, input {
   width: 100%;
   padding: 12px;
@@ -221,7 +237,7 @@ select:focus, input:focus {
   color: var(--text-dark);
 }
 
-/* 測驗介面 - 答題體驗優化 */
+/* 測驗介面 */
 #quiz-interface {
   display: none;
 }
@@ -259,6 +275,14 @@ select:focus, input:focus {
   padding-left: 35px;
   min-height: 25px;
   line-height: 25px;
+  transition: var(--transition);
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 4px;
+}
+
+.option:hover {
+  background: #f0f0f0;
 }
 
 .option input {
@@ -267,12 +291,13 @@ select:focus, input:focus {
   cursor: pointer;
   height: 0;
   width: 0;
+  margin-right: 10px;
 }
 
 .checkmark {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 10px;
+  left: 10px;
   height: 25px;
   width: 25px;
   background-color: #f1f1f1;
@@ -308,7 +333,7 @@ select:focus, input:focus {
   transform: rotate(45deg);
 }
 
-/* 測驗結果 - 視覺化呈現 */
+/* 測驗結果 */
 #result-content {
   margin: 25px 0;
 }
@@ -355,7 +380,15 @@ select:focus, input:focus {
   font-weight: 500;
 }
 
-/* 歷史紀錄區 - 新增樣式 */
+.review-item {
+  padding: 15px;
+  margin-bottom: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  border-left: 4px solid var(--wrong-color);
+}
+
+/* 歷史紀錄區 */
 .history-item {
   padding: 20px;
   margin-bottom: 15px;
@@ -390,7 +423,26 @@ select:focus, input:focus {
   background: var(--secondary-hover);
 }
 
-/* 導航按鈕 - 新增樣式 */
+.history-details {
+  margin-top: 20px;
+}
+
+.question-result {
+  padding: 15px;
+  margin-bottom: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+}
+
+.question-result.correct {
+  border-left: 4px solid var(--correct-color);
+}
+
+.question-result.wrong {
+  border-left: 4px solid var(--wrong-color);
+}
+
+/* 導航按鈕 */
 .navigation-buttons {
   display: flex;
   justify-content: space-between;
@@ -419,7 +471,21 @@ select:focus, input:focus {
   transform: none;
 }
 
-/* 響應式設計 - 全面優化 */
+/* 頁尾 */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+  color: var(--text-light);
+}
+
+.version {
+  font-size: 14px;
+  color: #999;
+  margin-top: 5px;
+}
+
+/* 響應式設計 */
 @media (max-width: 768px) {
   .module-card {
     padding: 20px;
@@ -432,7 +498,7 @@ select:focus, input:focus {
     padding: 15px;
   }
   
-  .btn-group {
+  .btn-group, .result-actions {
     flex-direction: column;
     gap: 12px;
   }
@@ -444,6 +510,11 @@ select:focus, input:focus {
   .question-text {
     font-size: 18px;
   }
+  
+  .navigation-buttons {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -454,5 +525,9 @@ select:focus, input:focus {
   .main-btn, .secondary-btn {
     padding: 10px 15px;
     font-size: 15px;
+  }
+  
+  .module-card {
+    padding: 15px;
   }
 }
