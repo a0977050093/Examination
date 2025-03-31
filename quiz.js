@@ -1,16 +1,16 @@
-// 全局变量
+// 全局變量
 let currentQuestions = [];
 let currentMode = "";
 let currentSubject = "";
 let testHistory = JSON.parse(localStorage.getItem("testHistory")) || [];
 
-// DOM加载完成后执行
+// DOM載入完成後執行
 document.addEventListener("DOMContentLoaded", function() {
-  // 初始化显示密码弹窗
+  // 初始化顯示密碼彈窗
   document.getElementById('passwordModal').style.display = 'flex';
   document.getElementById('mainContent').style.display = 'none';
   
-  // 添加Enter键支持
+  // 添加Enter鍵支持
   document.getElementById('passwordInput').addEventListener('keypress', function(e) {
     if (e.key === 'Enter') {
       checkPassword();
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-// 密码验证
+// 密碼驗證
 function checkPassword() {
   const password = document.getElementById('passwordInput').value.trim();
   const errorElement = document.getElementById('passwordError');
@@ -29,30 +29,30 @@ function checkPassword() {
   }
   
   if (password === '22143') {
-    // 密码正确，显示主内容
+    // 密碼正確，顯示主內容
     document.getElementById('passwordModal').style.display = 'none';
     document.getElementById('mainContent').style.display = 'block';
-    // 清空密码输入
+    // 清空密碼輸入
     document.getElementById('passwordInput').value = '';
   } else {
-    // 密码错误
+    // 密碼錯誤
     errorElement.textContent = '密碼錯誤，請重新輸入';
     document.getElementById('passwordInput').value = '';
     document.getElementById('passwordInput').focus();
   }
 }
 
-// 显示加载状态
+// 顯示載入狀態
 function showLoading() {
   document.getElementById('loading').style.display = 'flex';
 }
 
-// 隐藏加载状态
+// 隱藏載入狀態
 function hideLoading() {
   document.getElementById('loading').style.display = 'none';
 }
 
-// 加载科目数据
+// 載入科目數據
 async function loadSubject() {
   currentSubject = document.getElementById("subject").value;
   if (!currentSubject) {
@@ -65,6 +65,7 @@ async function loadSubject() {
     const data = await fetchSubjectData(currentSubject);
     displaySubjectInfo(data);
     document.getElementById("mode-selection").style.display = "block";
+    document.getElementById("subject-info").style.display = "block";
   } catch (error) {
     console.error("載入失敗:", error);
     document.getElementById("quiz-container").innerHTML = 
@@ -74,19 +75,19 @@ async function loadSubject() {
   }
 }
 
-// 获取科目数据
+// 獲取科目數據
 async function fetchSubjectData(subject) {
   const response = await fetch(`data/${subject}.json`);
-  if (!response.ok) throw new Error("Network response was not ok");
+  if (!response.ok) throw new Error("網路請求失敗");
   
   const data = await response.json();
   if (!data.questions || !Array.isArray(data.questions)) {
-    throw new Error("Invalid data format");
+    throw new Error("題庫格式錯誤");
   }
   return data;
 }
 
-// 显示科目信息
+// 顯示科目信息
 function displaySubjectInfo(data) {
   const subjectInfo = document.getElementById("subject-info");
   
@@ -96,26 +97,29 @@ function displaySubjectInfo(data) {
 
   subjectInfo.innerHTML = `
     <h3>題庫資訊</h3>
-    <p>總題數: ${data.questions.length} 題</p>
-    <ul>
-      <li>單選題: ${singleChoiceCount} 題</li>
-      <li>複選題: ${multipleChoiceCount} 題</li>
-      <li>是非題: ${trueFalseCount} 題</li>
+    <p>當前科目：${document.getElementById("subject").options[document.getElementById("subject").selectedIndex].text}</p>
+    <ul class="question-stats">
+      <li>總題數：${data.questions.length} 題</li>
+      <li>單選題：${singleChoiceCount} 題</li>
+      <li>複選題：${multipleChoiceCount} 題</li>
+      <li>是非題：${trueFalseCount} 題</li>
     </ul>
   `;
 }
 
-// 选择模式
+// 選擇模式
 function selectMode(mode) {
   currentMode = mode;
   if (mode === "practice") {
     document.getElementById("customize-practice").style.display = "block";
+    document.getElementById("quiz-container").innerHTML = "";
+    document.getElementById("result").innerHTML = "";
   } else if (mode === "test") {
     startTestMode();
   }
 }
 
-// 开始测验模式
+// 開始測驗模式
 async function startTestMode() {
   showLoading();
   try {
@@ -140,25 +144,27 @@ async function startTestMode() {
   }
 }
 
-// 随机选择题目
+// 隨機選擇題目
 function getRandomQuestions(questions, count) {
   const shuffled = [...questions].sort(() => Math.random() - 0.5);
   return shuffled.slice(0, count);
 }
 
-// 渲染题目
+// 渲染題目
 function renderQuiz() {
   const quizContainer = document.getElementById("quiz-container");
   quizContainer.innerHTML = `
     <h3>測驗題目 (共 ${currentQuestions.length} 題)</h3>
-    <table><tbody></tbody></table>
+    <div class="quiz-questions">
+      <table><tbody></tbody></table>
+    </div>
   `;
   
   const tbody = quizContainer.querySelector("tbody");
   currentQuestions.forEach((q, index) => {
     const row = document.createElement("tr");
     row.innerHTML = `
-      <td width="30">${index + 1}.</td>
+      <td width="40">${index + 1}.</td>
       <td>
         <div class="question-text">${q.question}</div>
         <div class="options">${renderOptions(q, index)}</div>
@@ -168,7 +174,7 @@ function renderQuiz() {
   });
 }
 
-// 渲染选项
+// 渲染選項
 function renderOptions(question, index) {
   if (question.type === "single_choice" || question.type === "multiple_choice") {
     return question.options.map(option => `
@@ -187,7 +193,7 @@ function renderOptions(question, index) {
   return "";
 }
 
-// 提交测验
+// 提交測驗
 function submitQuiz() {
   let score = 0;
   let correctCount = 0;
@@ -239,15 +245,16 @@ function submitQuiz() {
         <p><strong>第 ${index + 1} 題</strong>: ${q.question}</p>
         <p>你的答案: ${userAnswer || "未作答"}</p>
         <p>正確答案: ${Array.isArray(q.answer) ? q.answer.join(", ") : q.answer}</p>
+        <p class="result-feedback">${isCorrect ? '✓ 答對了！' : '✗ 答錯了'}</p>
       </div>
       <hr>
     `;
   });
 
-  // 记录测验结果
+  // 記錄測驗結果
   if (currentMode === "test") {
     const testRecord = {
-      date: new Date().toLocaleString(),
+      date: new Date().toLocaleString('zh-TW'),
       subject: currentSubject,
       score: score,
       correctCount: correctCount,
@@ -263,6 +270,7 @@ function submitQuiz() {
         <h4>測驗統計</h4>
         <p>總分: <strong>${score}/100</strong></p>
         <p>答對題數: <strong>${correctCount}/${currentQuestions.length}</strong></p>
+        <p>正確率: <strong>${Math.round((correctCount/currentQuestions.length)*100)}%</strong></p>
       </div>
       <button class="btn primary" onclick="viewTestHistory()">查看歷史成績</button>
     `;
@@ -271,7 +279,7 @@ function submitQuiz() {
   document.getElementById("result").innerHTML = resultHTML;
 }
 
-// 查看历史成绩
+// 查看歷史成績
 function viewTestHistory() {
   const subjectHistory = testHistory.filter(record => record.subject === currentSubject);
   
@@ -281,12 +289,12 @@ function viewTestHistory() {
   }
 
   let historyHTML = `
-    <h3>歷史成績 (${currentSubject})</h3>
+    <h3>歷史成績 (${document.getElementById("subject").options[document.getElementById("subject").selectedIndex].text})</h3>
     <div class="history-table">
       <table>
         <thead>
           <tr>
-            <th>日期</th>
+            <th>測驗日期</th>
             <th>分數</th>
             <th>答對題數</th>
             <th>操作</th>
@@ -301,7 +309,7 @@ function viewTestHistory() {
         <td>${record.date}</td>
         <td>${record.score}/100</td>
         <td>${record.correctCount}/${record.totalQuestions}</td>
-        <td><button class="btn secondary" onclick="showTestDetails(${index})">詳細</button></td>
+        <td><button class="btn secondary" onclick="showTestDetails(${index})">查看詳情</button></td>
       </tr>
     `;
   });
@@ -316,7 +324,7 @@ function viewTestHistory() {
   document.getElementById("result").innerHTML = historyHTML;
 }
 
-// 显示测验详情
+// 顯示測驗詳情
 function showTestDetails(index) {
   const record = testHistory[index];
   let detailsHTML = `
@@ -336,6 +344,7 @@ function showTestDetails(index) {
         <p><strong>第 ${qIndex + 1} 題</strong>: ${detail.question}</p>
         <p>你的答案: ${detail.userAnswer}</p>
         <p>正確答案: ${detail.correctAnswer}</p>
+        <p class="result-feedback">${detail.isCorrect ? '✓ 答對了' : '✗ 答錯了'}</p>
       </div>
       <hr>
     `;
@@ -349,7 +358,7 @@ function showTestDetails(index) {
   document.getElementById("result").innerHTML = detailsHTML;
 }
 
-// 返回测验
+// 返回測驗
 function backToQuiz() {
   document.getElementById("result").innerHTML = "";
 }
