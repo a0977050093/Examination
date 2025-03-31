@@ -188,7 +188,6 @@ async function loadSubjectData(subjectId) {
     <p>請選擇題型並開始練習或測驗。</p>
   `;
 }
-}
 
 // 顯示科目資訊
 function displaySubjectInfo(data) {
