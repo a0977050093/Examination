@@ -3,16 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-adsense-account" content="ca-pub-xxxxxxxxxxxx">
   <title>線上題庫測驗系統</title>
   <link rel="icon" href="data:;base64,iVBORw0KGgo=">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <!-- 加载指示器 -->
+  <!-- 載入指示器 -->
   <div id="loading">
     <div class="spinner"></div>
-    <p>加载中，请稍候...</p>
+    <p>載入中，請稍候...</p>
   </div>
 
   <!-- 密碼彈窗 -->
@@ -20,7 +19,7 @@
     <div class="modal-content">
       <h2>請輸入密碼</h2>
       <p>此系統需要密碼才能使用</p>
-      <input type="password" id="passwordInput" placeholder="輸入密碼" autocomplete="off">
+      <input type="password" id="passwordInput" placeholder="請輸入密碼" autocomplete="off">
       <p id="passwordError" class="error"></p>
       <button class="btn primary" onclick="checkPassword()">確認</button>
     </div>
@@ -68,10 +67,10 @@
         <h2>自定義練習題數：</h2>
         <div class="form-group">
           <label for="singleCount">單選題數量：</label>
-          <input type="number" id="singleCount" min="0" placeholder="例如 5" class="form-control">
+          <input type="number" id="singleCount" min="0" placeholder="例如：5" class="form-control">
           
           <label for="multipleCount">複選題數量：</label>
-          <input type="number" id="multipleCount" min="0" placeholder="例如 3" class="form-control">
+          <input type="number" id="multipleCount" min="0" placeholder="例如：3" class="form-control">
           
           <button class="btn primary" onclick="startCustomPractice()">開始練習</button>
         </div>
@@ -88,8 +87,12 @@
       <!-- 測驗結果 -->
       <section id="result" class="container card"></section>
     </main>
+
+    <footer class="footer">
+      <p>© 2023 線上題庫測驗系統 版權所有</p>
+    </footer>
   </div>
 
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
