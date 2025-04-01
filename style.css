@@ -362,9 +362,57 @@ select:focus, input:focus {
   background-color: var(--primary-color);
 }
 
-.option input[type="radio"]:checked ~ .radio-checkmark:after {
+/* 統一選項樣式 - 全部使用圓形選取框 */
+.option {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: var(--transition);
+  border: 1px solid var(--border-color);
+  min-height: 56px;
+}
+
+.option:hover {
+  background-color: var(--primary-light);
+  border-color: var(--primary-color);
+}
+
+/* 統一的選取框樣式 (全部使用圓形) */
+.option-checkmark {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%; /* 圓形 */
+  margin-right: 15px;
+  transition: var(--transition);
+}
+
+/* 隱藏原始input元素 */
+.option input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* 選中狀態 */
+.option input:checked ~ .option-checkmark {
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
+}
+
+/* 選取框內部的勾選標記 */
+.option input:checked ~ .option-checkmark:after {
   content: "";
   position: absolute;
+  display: block;
+}
+
+/* 單選題的選取標記 (小圓點) */
+.option.radio-option input:checked ~ .option-checkmark:after {
   width: 10px;
   height: 10px;
   background: white;
@@ -374,35 +422,12 @@ select:focus, input:focus {
   transform: translate(-50%, -50%);
 }
 
-/* 複選題樣式 */
-.checkbox-checkmark {
-  position: relative;
-  width: 20px;
-  height: 20px;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  margin-right: 15px;
-  transition: var(--transition);
-}
-
-.option input[type="checkbox"] {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-
-.option input[type="checkbox"]:checked ~ .checkbox-checkmark {
-  border-color: var(--primary-color);
-  background-color: var(--primary-color);
-}
-
-.option input[type="checkbox"]:checked ~ .checkbox-checkmark:after {
-  content: "";
-  position: absolute;
+/* 複選題的選取標記 (打勾) */
+.option.checkbox-option input:checked ~ .option-checkmark:after {
   left: 6px;
   top: 2px;
-  width: 6px;
-  height: 12px;
+  width: 5px;
+  height: 10px;
   border: solid white;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
