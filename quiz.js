@@ -360,7 +360,7 @@ function isOptionSelected(question, index, option) {
   return savedAnswer.userAnswer === option;
 }
 
-// 顯示題目
+// 顯示題目 (修改版，增加選項隨機排序)
 function showQuestion(index) {
   if (index < 0 || index >= systemState.currentQuiz.length) {
     console.error('無效的題目索引:', index);
@@ -374,10 +374,16 @@ function showQuestion(index) {
   domElements.quizProgress.textContent = `題目 ${index + 1}/${systemState.currentQuiz.length}`;
   domElements.quizProgress.setAttribute('aria-label', `第 ${index + 1} 題，共 ${systemState.currentQuiz.length} 題`);
   
+  // 複製選項陣列並隨機排序 (但保留原始答案)
+  let randomizedOptions = [...question.options];
+  if (question.type !== 'true_false') {
+    randomizedOptions = shuffleArray([...question.options]);
+  }
+
   // 建立選項HTML
   let optionsHtml = '';
   if (question.type === 'single_choice') {
-    optionsHtml = question.options.map((option, i) => `
+    optionsHtml = randomizedOptions.map((option, i) => `
       <label class="option radio-option">
         <input type="radio" name="q${index}" value="${option}" id="opt-${index}-${i}"
                ${isOptionSelected(question, index, option) ? 'checked' : ''}>
@@ -386,7 +392,7 @@ function showQuestion(index) {
       </label>
     `).join('');
   } else if (question.type === 'multiple_choice') {
-    optionsHtml = question.options.map((option, i) => `
+    optionsHtml = randomizedOptions.map((option, i) => `
       <label class="option checkbox-option">
         <input type="checkbox" name="q${index}" value="${option}" id="opt-${index}-${i}"
                ${isOptionSelected(question, index, option) ? 'checked' : ''}>
