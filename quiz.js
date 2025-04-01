@@ -383,24 +383,26 @@ function showQuestion(index) {
   // 建立選項HTML
   let optionsHtml = '';
   if (question.type === 'single_choice') {
-    optionsHtml = randomizedOptions.map((option, i) => `
-      <label class="option radio-option">
-        <input type="radio" name="q${index}" value="${option}" id="opt-${index}-${i}"
-               ${isOptionSelected(question, index, option) ? 'checked' : ''}>
-        <span class="radio-checkmark"></span>
-        <span class="option-text">${option}</span>
-      </label>
-    `).join('');
-  } else if (question.type === 'multiple_choice') {
-    optionsHtml = randomizedOptions.map((option, i) => `
-      <label class="option checkbox-option">
-        <input type="checkbox" name="q${index}" value="${option}" id="opt-${index}-${i}"
-               ${isOptionSelected(question, index, option) ? 'checked' : ''}>
-        <span class="checkbox-checkmark"></span>
-        <span class="option-text">${option}</span>
-      </label>
-    `).join('');
-  } else if (question.type === 'true_false') {
+  // 在showQuestion函數中的選項HTML生成部分
+if (question.type === 'single_choice') {
+  optionsHtml = randomizedOptions.map((option, i) => `
+    <label class="option radio-option">
+      <input type="radio" name="q${index}" value="${option}" id="opt-${index}-${i}"
+             ${isOptionSelected(question, index, option) ? 'checked' : ''}>
+      <span class="option-checkmark"></span>
+      <span class="option-text">${option}</span>
+    </label>
+  `).join('');
+} else if (question.type === 'multiple_choice') {
+  optionsHtml = randomizedOptions.map((option, i) => `
+    <label class="option checkbox-option">
+      <input type="checkbox" name="q${index}" value="${option}" id="opt-${index}-${i}"
+             ${isOptionSelected(question, index, option) ? 'checked' : ''}>
+      <span class="option-checkmark"></span>
+      <span class="option-text">${option}</span>
+    </label>
+  `).join('');
+} else if (question.type === 'true_false') {
     optionsHtml = `
       <div class="select-dropdown">
         <select id="true-false-select-${index}">
