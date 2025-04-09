@@ -222,13 +222,20 @@ async function fetchTopicData(topicId) {
       throw new Error(`網絡請求失敗: ${response.status}`);
     }
     const data = await response.json();
-    console.log('載入的題庫數據:', data); // 添加這一行以查看載入的數據
+    console.log('載入的題庫數據:', data); // 查看完整的題庫數據
 
     // 確保題庫格式正確
-    if (!data.questions || !Array.isArray(data.questions) || data.questions.some(q => !Array.isArray(q.options))) {
-      throw new Error('題庫格式錯誤，請檢查每個問題的選項');
+    if (!data.questions || !Array.isArray(data.questions)) {
+      throw new Error('題庫格式錯誤，請檢查題庫結構');
     }
     
+    data.questions.forEach((q, idx) => {
+      if (!q.options || !Array.isArray(q.options)) {
+        console.error(`問題 ${idx + 1} 的選項格式不正確:`, q);
+        throw new Error('題庫格式錯誤，請檢查每個問題的選項');
+      }
+    });
+
     return data;
   } catch (error) {
     console.error('載入題庫失敗:', error);
