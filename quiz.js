@@ -223,8 +223,9 @@ async function loadSubjectData(subjectId) {
     }
     const data = await response.json();
     
-    if (!data.questions || !Array.isArray(data.questions)) {
-      throw new Error('題庫格式錯誤');
+    // 確保題庫格式正確
+    if (!data.questions || !Array.isArray(data.questions) || data.questions.some(q => !Array.isArray(q.options))) {
+      throw new Error('題庫格式錯誤，請檢查每個問題的選項');
     }
     
     return data;
@@ -272,7 +273,8 @@ function selectMode(mode) {
 function startCustomPractice() {
   const singleCount = parseInt(domElements.singleCount.value) || 0;
   const multiCount = parseInt(domElements.multiCount.value) || 0;
-  
+  const trueFalseCount = 0; // 可以設定為0，因為自訂練習不一定需要是非題
+
   if (singleCount + multiCount === 0) {
     alert('請設定至少一種題型的數量');
     return;
@@ -281,13 +283,16 @@ function startCustomPractice() {
   // 篩選題目
   const singleQuestions = systemState.questions.filter(q => q.type === 'single_choice');
   const multiQuestions = systemState.questions.filter(q => q.type === 'multiple_choice');
+  const trueFalseQuestions = systemState.questions.filter(q => q.type === 'true_false');
   
   // 隨機選擇題目
   systemState.currentQuiz = [
-    ...getRandomQuestions(singleQuestions, singleCount),
-    ...getRandomQuestions(multiQuestions, multiCount)
+    ...getRandomQuestions(singleQuestions, Math.min(singleCount, singleQuestions.length)),
+    ...getRandomQuestions(multiQuestions, Math.min(multiCount, multiQuestions.length)),
+    ...getRandomQuestions(trueFalseQuestions, Math.min(trueFalseCount, trueFalseQuestions.length))
   ];
   
+  // 檢查是否有題目可供練習
   if (systemState.currentQuiz.length === 0) {
     alert('沒有足夠的題目可供練習');
     return;
@@ -303,12 +308,34 @@ function startExamMode() {
   const multiQuestions = systemState.questions.filter(q => q.type === 'multiple_choice');
   const trueFalseQuestions = systemState.questions.filter(q => q.type === 'true_false');
   
+  // 檢查是否有足夠的題目
+  const requiredSingle = 20;
+  const requiredMulti = 10;
+  const requiredTrueFalse = 5;
+
+  if (singleQuestions.length < requiredSingle) {
+      console.warn('沒有足夠的單選題來滿足測驗要求');
+  }
+  if (multiQuestions.length < requiredMulti) {
+      console.warn('沒有足夠的複選題來滿足測驗要求');
+  }
+  if (trueFalseQuestions.length < requiredTrueFalse) {
+      console.warn('沒有足夠的是非題來滿足測驗要求');
+  }
+  
+  // 隨機選擇題目
   systemState.currentQuiz = [
-    ...getRandomQuestions(singleQuestions, 20),
-    ...getRandomQuestions(multiQuestions, 10),
-    ...getRandomQuestions(trueFalseQuestions, 5)
+    ...getRandomQuestions(singleQuestions, Math.min(requiredSingle, singleQuestions.length)),
+    ...getRandomQuestions(multiQuestions, Math.min(requiredMulti, multiQuestions.length)),
+    ...getRandomQuestions(trueFalseQuestions, Math.min(requiredTrueFalse, trueFalseQuestions.length))
   ];
   
+  // 檢查是否有題目可供測驗
+  if (systemState.currentQuiz.length === 0) {
+      alert('沒有足夠的題目可供測驗');
+      return;
+  }
+
   startQuiz('正式測驗');
 }
 
@@ -360,7 +387,7 @@ function isOptionSelected(question, index, option) {
   return savedAnswer.userAnswer === option;
 }
 
-// 顯示題目 (修改版，增加選項隨機排序)
+// 顯示題目
 function showQuestion(index) {
   if (index < 0 || index >= systemState.currentQuiz.length) {
     console.error('無效的題目索引:', index);
@@ -373,8 +400,14 @@ function showQuestion(index) {
   // 更新進度顯示
   domElements.quizProgress.textContent = `題目 ${index + 1}/${systemState.currentQuiz.length}`;
   domElements.quizProgress.setAttribute('aria-label', `第 ${index + 1} 題，共 ${systemState.currentQuiz.length} 題`);
-  
-  // 複製選項陣列並隨機排序 (但保留原始答案)
+
+  // 檢查選項
+  if (!Array.isArray(question.options)) {
+    console.error('question.options 不是可迭代的:', question.options);
+    return; // 或者處理錯誤
+  }
+
+  // 複製選項陣列並隨機排序
   let randomizedOptions = [...question.options];
   if (question.type !== 'true_false') {
     randomizedOptions = shuffleArray([...question.options]);
@@ -382,28 +415,25 @@ function showQuestion(index) {
 
   // 建立選項HTML
   let optionsHtml = '';
-  // 單選題選項
-if (question.type === 'single_choice') {
-  optionsHtml = randomizedOptions.map((option, i) => `
-    <label class="option radio-option">
-      <input type="radio" name="q${index}" value="${option}" id="opt-${index}-${i}"
-             ${isOptionSelected(question, index, option) ? 'checked' : ''}>
-      <span class="option-checkmark"></span>
-      <span class="option-text">${option}</span>
-    </label>
-  `).join('');
-} 
-// 複選題選項
-else if (question.type === 'multiple_choice') {
-  optionsHtml = randomizedOptions.map((option, i) => `
-    <label class="option checkbox-option">
-      <input type="checkbox" name="q${index}" value="${option}" id="opt-${index}-${i}"
-             ${isOptionSelected(question, index, option) ? 'checked' : ''}>
-      <span class="option-checkmark"></span>
-      <span class="option-text">${option}</span>
-    </label>
-  `).join('');
-} else if (question.type === 'true_false') {
+  if (question.type === 'single_choice') {
+    optionsHtml = randomizedOptions.map((option, i) => `
+      <label class="option radio-option">
+        <input type="radio" name="q${index}" value="${option}" id="opt-${index}-${i}"
+               ${isOptionSelected(question, index, option) ? 'checked' : ''}>
+        <span class="option-checkmark"></span>
+        <span class="option-text">${option}</span>
+      </label>
+    `).join('');
+  } else if (question.type === 'multiple_choice') {
+    optionsHtml = randomizedOptions.map((option, i) => `
+      <label class="option checkbox-option">
+        <input type="checkbox" name="q${index}" value="${option}" id="opt-${index}-${i}"
+               ${isOptionSelected(question, index, option) ? 'checked' : ''}>
+        <span class="option-checkmark"></span>
+        <span class="option-text">${option}</span>
+      </label>
+    `).join('');
+  } else if (question.type === 'true_false') {
     optionsHtml = `
       <div class="select-dropdown">
         <select id="true-false-select-${index}">
@@ -650,91 +680,45 @@ function reviewWrongAnswers() {
   showQuestion(0);
 }
 
-  // 開始新測驗
+// 開始新測驗
 function resetForNewQuiz() {
-  if (systemState.currentMode === 'practice') {
-    domElements.resultContainer.style.display = 'none';
-    domElements.customPractice.style.display = 'block';
-  } else {
-    startExamMode();
-  }
+  resetSystemState();
+  domElements.modeSelection.style.display = 'block';
 }
 
-// 顯示歷史記錄
+// 顯示歷史紀錄
 function showHistory() {
-  domElements.modeSelection.style.display = 'none';
-  domElements.historyContainer.style.display = 'block';
+  // 清空歷史紀錄列表
+  domElements.historyList.innerHTML = '';
   
   if (systemState.historyRecords.length === 0) {
-    domElements.historyList.innerHTML = '<p>暫無歷史記錄</p>';
+    domElements.historyList.innerHTML = '<p>沒有歷史紀錄。</p>';
     return;
   }
   
-  let html = '';
-  systemState.historyRecords.forEach((record, index) => {
-    html += `
-      <div class="history-item">
-        <h4>
-          <span>${record.subjectName} - ${record.mode === 'practice' ? '練習模式' : '測驗模式'}</span>
-          <span class="history-time">${formatDate(record.date)}</span>
-        </h4>
-        <p>得分: <span class="${record.score >= 60 ? 'correct-answer' : 'wrong-answer'}">${record.score}分</span></p>
-        <p>正確率: ${record.correctAnswers}/${record.totalQuestions}</p>
-        <button class="detail-btn" data-index="${index}">查看詳情</button>
-        <div class="history-details" id="details-${index}">
-          ${generateHistoryDetails(record.details)}
-        </div>
-      </div>
-    `;
+  systemState.historyRecords.forEach(record => {
+    const listItem = document.createElement('li');
+    listItem.textContent = `${record.date}: ${record.subjectName} - ${record.score}分`;
+    domElements.historyList.appendChild(listItem);
   });
-  
-  domElements.historyList.innerHTML = html;
-  
-  // 綁定詳情按鈕事件
-  document.querySelectorAll('.detail-btn').forEach(btn => {
-    btn.addEventListener('click', function() {
-      const index = this.getAttribute('data-index');
-      const details = document.getElementById(`details-${index}`);
-      details.classList.toggle('active');
-      this.textContent = details.classList.contains('active') ? '隱藏詳情' : '查看詳情';
-    });
-  });
+
+  domElements.historyContainer.style.display = 'block';
 }
 
-// 格式化日期
-function formatDate(dateString) {
-  const date = new Date(dateString);
-  return date.toLocaleString('zh-TW');
-}
-
-// 生成歷史記錄詳情
-function generateHistoryDetails(details) {
-  return details.map((detail, i) => `
-    <div class="question-result ${detail.isCorrect ? 'correct' : 'wrong'}">
-      <p><strong>題目 ${i + 1}:</strong> ${detail.question}</p>
-      <p>您的答案: <span class="${detail.isCorrect ? 'correct-answer' : 'wrong-answer'}">${
-        Array.isArray(detail.userAnswer) ? detail.userAnswer.join(', ') : detail.userAnswer
-      }</span></p>
-    </div>
-  `).join('');
-}
-
-// 返回測驗
+// 返回測驗介面
 function backToQuizFromHistory() {
   domElements.historyContainer.style.display = 'none';
-  if (systemState.currentMode) {
-    domElements.modeSelection.style.display = 'block';
-  }
+  domElements.modeSelection.style.display = 'block';
 }
 
-// 確認刪除歷史記錄
+// 確認刪除歷史紀錄
 function confirmDeleteHistory() {
-  if (confirm('確定要刪除所有歷史記錄嗎？此操作無法復原！')) {
-    systemState.historyRecords = [];
+  if (confirm('確定要刪除所有歷史紀錄嗎？')) {
     localStorage.removeItem('quizHistory');
+    systemState.historyRecords = [];
     showHistory();
   }
 }
 
-// 初始化系統
+// 執行初始化
 initSystem();
