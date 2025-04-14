@@ -1,4 +1,4 @@
-// 系統狀態變數
+// 狀態管理強化版
 const applicationState = {
   currentUser: null,
   loggedIn: false,
@@ -214,32 +214,37 @@ async function handleTopicSelection() {
   }
 }
 
-// 載入科目數據
+// 強化版題庫載入函數
 async function fetchTopicData(topicId) {
   try {
     const response = await fetch(`data/${topicId}.json`);
-    if (!response.ok) {
-      throw new Error(`網絡請求失敗: ${response.status}`);
-    }
-    const data = await response.json();
-    console.log('載入的題庫數據:', data); // 查看完整的題庫數據
-
-    // 確保題庫格式正確
-    if (!data.questions || !Array.isArray(data.questions)) {
-      throw new Error('題庫格式錯誤，請檢查題庫結構');
-    }
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
     
-    data.questions.forEach((q, idx) => {
-      if (!q.options || !Array.isArray(q.options)) {
-        console.error(`問題 ${idx + 1} 的選項格式不正確:`, q);
-        throw new Error('題庫格式錯誤，請檢查每個問題的選項');
+    const data = await response.json();
+    
+    // 深度驗證題庫結構
+    if (!data.科目編號 || !data.科目名稱 || !Array.isArray(data.題庫)) {
+      throw new Error('題庫結構不完整');
+    }
+
+    data.題庫.forEach((q, i) => {
+      if (!q.type || !q.question || q.answer === undefined) {
+        throw new Error(`第 ${i+1} 題缺少必要欄位`);
+      }
+      
+      if (q.type !== 'true_false' && !Array.isArray(q.options)) {
+        throw new Error(`第 ${i+1} 題選項格式錯誤`);
+      }
+      
+      if (q.type === 'multiple_choice' && !Array.isArray(q.answer)) {
+        throw new Error(`第 ${i+1} 題答案應為陣列`);
       }
     });
 
     return data;
   } catch (error) {
     console.error('載入題庫失敗:', error);
-    throw error;
+    throw new Error(`載入失敗: ${error.message}`);
   }
 }
 
@@ -531,30 +536,78 @@ function saveUserAnswer(index, questionType) {
   return true;
 }
 
-// 驗證答案
+// 強化版答案驗證
 function validateAnswer(question, userAnswer) {
-  if (!userAnswer || (Array.isArray(userAnswer) && userAnswer.length === 0)) {
+  const normalize = (ans) => {
+    if (Array.isArray(ans)) return ans.sort().join(',');
+    return String(ans).trim();
+  };
+
+  try {
+    switch(question.type) {
+      case 'single_choice':
+        return normalize(userAnswer) === normalize(question.answer);
+        
+      case 'multiple_choice':
+        return normalize(userAnswer) === normalize(question.answer);
+        
+      case 'true_false':
+        return String(userAnswer) === String(question.answer);
+        
+      default:
+        return false;
+    }
+  } catch (error) {
+    console.error('答案驗證錯誤:', error);
     return false;
   }
-  
-  switch(question.type) {
-    case 'single_choice':
-      return userAnswer === question.answer;
-      
-    case 'multiple_choice':
-      const correctAnswers = Array.isArray(question.answer) 
-        ? [...question.answer].sort() 
-        : [question.answer].sort();
-      const submittedAnswers = [...userAnswer].sort();
-      return JSON.stringify(submittedAnswers) === JSON.stringify(correctAnswers);
-      
-    case 'true_false':
-      return userAnswer === String(question.answer);
-      
-    default:
-      return false;
-  }
 }
+
+// 強化錯誤處理的題目顯示
+function displayQuestion(index) {
+  try {
+    const question = applicationState.activeQuiz[index];
+    if (!question) throw new Error('無效的題目索引');
+
+    // 安全處理選項
+    const options = question.type !== 'true_false' 
+      ? [...(question.options || [])] 
+      : ['是', '否'];
+
+    // 構建選項HTML
+    let optionsHtml = '';
+    switch(question.type) {
+      case 'single_choice':
+        optionsHtml = options.map((opt, i) => `
+          <label class="option">
+            <input type="radio" name="q${index}" value="${opt}" 
+                   ${isSelected(index, opt) ? 'checked' : ''}>
+            ${opt}
+          </label>
+        `).join('');
+        break;
+        
+      case 'multiple_choice':
+        optionsHtml = options.map((opt, i) => `
+          <label class="option">
+            <input type="checkbox" name="q${index}" value="${opt}"
+                   ${isSelected(index, opt) ? 'checked' : ''}>
+            ${opt}
+          </label>
+        `).join('');
+        break;
+        
+      case 'true_false':
+        optionsHtml = `
+          <select id="tf-select-${index}">
+            <option value="">-- 請選擇 --</option>
+            <option value="true" ${isSelected(index, 'true') ? 'selected' : ''}>是</option>
+            <option value="false" ${isSelected(index, 'false') ? 'selected' : ''}>否</option>
+          </select>
+        `;
+        break;
+    }
+
 
 // 獲取用戶答案
 function getUserResponse(index, questionType) {
@@ -722,5 +775,32 @@ function confirmDeleteHistory() {
   }
 }
 
-// 執行初始化
-initializeApplication();
+    // 渲染題目
+    domElements.questionArea.innerHTML = `
+      <div class="question">${index + 1}. ${question.question}</div>
+      <div class="options">${optionsHtml}</div>
+      <div class="navigation">
+        ${index > 0 ? '<button id="prev-btn">上一題</button>' : ''}
+        <button id="next-btn">
+          ${index === applicationState.activeQuiz.length - 1 ? '提交' : '下一題'}
+        </button>
+      </div>
+    `;
+
+    // 綁定事件
+    bindQuestionEvents(index, question.type);
+    
+  } catch (error) {
+    console.error('顯示題目錯誤:', error);
+    domElements.questionArea.innerHTML = `
+      <div class="error">題目載入錯誤，請返回重試</div>
+      <button onclick="location.reload()">重新載入</button>
+    `;
+  }
+}
+
+// 初始化函數（確保DOM載入後執行）
+document.addEventListener('DOMContentLoaded', () => {
+  initializeApplication();
+  console.log('系統初始化完成');
+});
