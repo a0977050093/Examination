@@ -246,4 +246,1391 @@ function submitQuiz() {
   resultHTML += `<p><strong>總得分：${totalScore}/100</strong></p>`;
   
   document.getElementById("result").innerHTML = resultHTML;
+}// 系統狀態變數
+const systemState = {
+  currentUser: null,
+  isAuthenticated: false,
+  currentSubject: null,
+  currentMode: null,
+  questions: [],
+  currentQuiz: [],
+  currentQuestionIndex: 0,
+  quizAnswers: [],
+  quizResults: [],
+  historyRecords: JSON.parse(localStorage.getItem('quizHistory')) || [],
+  isLoading: false,
+  error: null
+};
+
+// DOM元素快取
+const domElements = {
+  // 驗證區
+  loadingOverlay: document.getElementById('loading-overlay'),
+  authContainer: document.getElementById('auth-container'),
+  passwordInput: document.getElementById('password-input'),
+  passwordError: document.getElementById('password-error'),
+  loginBtn: document.getElementById('login-btn'),
+  
+  // 主系統
+  appContainer: document.getElementById('app-container'),
+  logoutBtn: document.getElementById('logout-btn'),
+  currentSubject: document.getElementById('current-subject'),
+  
+  // 科目選擇
+  subjectSelect: document.getElementById('subject-select'),
+  selectSubjectBtn: document.getElementById('select-subject-btn'),
+  subjectInfo: document.getElementById('subject-info'),
+  subjectDetails: document.getElementById('subject-details'),
+  
+  // 模式選擇
+  modeSelection: document.getElementById('mode-selection'),
+  practiceModeBtn: document.getElementById('practice-mode-btn'),
+  examModeBtn: document.getElementById('exam-mode-btn'),
+  historyBtn: document.getElementById('history-btn'),
+  
+  // 練習設定
+  customPractice: document.getElementById('custom-practice'),
+  singleCount: document.getElementById('single-count'),
+  multiCount: document.getElementById('multi-count'),
+  startPracticeBtn: document.getElementById('start-practice-btn'),
+  
+  // 測驗介面
+  quizInterface: document.getElementById('quiz-interface'),
+  quizTitle: document.getElementById('quiz-title'),
+  quizProgress: document.getElementById('quiz-progress'),
+  questionContainer: document.getElementById('question-container'),
+  
+  // 結果區
+  resultContainer: document.getElementById('result-container'),
+  resultContent: document.getElementById('result-content'),
+  reviewBtn: document.getElementById('review-btn'),
+  newQuizBtn: document.getElementById('new-quiz-btn'),
+  
+  // 歷史紀錄
+  historyContainer: document.getElementById('history-container'),
+  historyList: document.getElementById('history-list'),
+  backToQuizBtn: document.getElementById('back-to-quiz-btn'),
+  deleteHistoryBtn: document.getElementById('delete-history-btn')
+};
+
+// 初始化系統
+function initSystem() {
+  // 模擬系統載入
+  setTimeout(() => {
+    domElements.loadingOverlay.style.display = 'none';
+    
+    // 檢查是否已登入
+    if (localStorage.getItem('isAuthenticated') === 'true') {
+      systemState.isAuthenticated = true;
+      domElements.authContainer.style.display = 'none';
+      domElements.appContainer.style.display = 'block';
+    } else {
+      domElements.authContainer.style.display = 'flex';
+    }
+  }, 1500);
+  
+  // 綁定事件監聽器
+  bindEventListeners();
 }
+
+// 綁定所有事件監聽器
+function bindEventListeners() {
+  // 登入相關
+  domElements.loginBtn.addEventListener('click', handleLogin);
+  domElements.passwordInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') handleLogin();
+  });
+  domElements.logoutBtn.addEventListener('click', handleLogout);
+  
+  // 科目選擇
+  domElements.selectSubjectBtn.addEventListener('click', handleSubjectSelection);
+  
+  // 模式選擇
+  domElements.practiceModeBtn.addEventListener('click', () => selectMode('practice'));
+  domElements.examModeBtn.addEventListener('click', () => selectMode('exam'));
+  domElements.historyBtn.addEventListener('click', showHistory);
+  
+  // 練習設定
+  domElements.startPracticeBtn.addEventListener('click', startCustomPractice);
+  
+  // 結果區
+  domElements.reviewBtn.addEventListener('click', reviewWrongAnswers);
+  domElements.newQuizBtn.addEventListener('click', resetForNewQuiz);
+  
+  // 歷史紀錄
+  domElements.backToQuizBtn.addEventListener('click', backToQuizFromHistory);
+  domElements.deleteHistoryBtn.addEventListener('click', confirmDeleteHistory);
+  
+  // 複選題自動保存答案
+  document.addEventListener('change', function(e) {
+    if (e.target.type === 'checkbox' && 
+        e.target.name.startsWith('q') && 
+        systemState.currentMode) {
+      const index = parseInt(e.target.name.substring(1));
+      saveAnswer(index, 'multiple_choice');
+    }
+  });
+}
+
+// 登入處理
+function handleLogin() {
+  const password = domElements.passwordInput.value.trim();
+  
+  if (!password) {
+    domElements.passwordError.textContent = '請輸入密碼';
+    domElements.passwordInput.focus();
+    return;
+  }
+  
+  // 實務上應使用雜湊比對而非明文
+  if (password === '22143') {
+    systemState.isAuthenticated = true;
+    localStorage.setItem('isAuthenticated', 'true');
+    domElements.authContainer.style.display = 'none';
+    domElements.appContainer.style.display = 'block';
+    domElements.passwordInput.value = '';
+    domElements.passwordError.textContent = '';
+  } else {
+    domElements.passwordError.textContent = '密碼錯誤，請重新輸入';
+    domElements.passwordInput.value = '';
+    domElements.passwordInput.focus();
+  }
+}
+
+// 登出處理
+function handleLogout() {
+  systemState.isAuthenticated = false;
+  localStorage.removeItem('isAuthenticated');
+  domElements.appContainer.style.display = 'none';
+  domElements.authContainer.style.display = 'flex';
+  domElements.passwordInput.value = '';
+  resetSystemState();
+}
+
+// 重置系統狀態
+function resetSystemState() {
+  systemState.currentSubject = null;
+  systemState.currentMode = null;
+  systemState.questions = [];
+  systemState.currentQuiz = [];
+  systemState.currentQuestionIndex = 0;
+  systemState.quizAnswers = [];
+  systemState.quizResults = [];
+  
+  // 重置UI
+  domElements.subjectSelect.value = '';
+  domElements.subjectInfo.style.display = 'none';
+  domElements.modeSelection.style.display = 'none';
+  domElements.customPractice.style.display = 'none';
+  domElements.quizInterface.style.display = 'none';
+  domElements.resultContainer.style.display = 'none';
+  domElements.historyContainer.style.display = 'none';
+  domElements.currentSubject.textContent = '';
+}
+
+// 科目選擇處理
+async function handleSubjectSelection() {
+  const subjectId = domElements.subjectSelect.value;
+  
+  if (!subjectId) {
+    alert('請選擇科目');
+    return;
+  }
+  
+  systemState.currentSubject = subjectId;
+  domElements.currentSubject.textContent = domElements.subjectSelect.selectedOptions[0].text;
+  
+  try {
+    // 顯示載入狀態
+    systemState.isLoading = true;
+    domElements.loadingOverlay.style.display = 'flex';
+    
+    // 載入題庫資料
+    const data = await loadSubjectData(subjectId);
+    systemState.questions = data.questions;
+    
+    displaySubjectInfo(data);
+    domElements.modeSelection.style.display = 'block';
+  } catch (error) {
+    console.error('載入題庫失敗:', error);
+    domElements.subjectDetails.innerHTML = `
+      <p class="error">載入題庫失敗: ${error.message || '請稍後再試'}</p>
+    `;
+  } finally {
+    systemState.isLoading = false;
+    domElements.loadingOverlay.style.display = 'none';
+  }
+}
+
+// 載入科目資料
+async function loadSubjectData(subjectId) {
+  try {
+    const response = await fetch(`data/${subjectId}.json`);
+    if (!response.ok) {
+      throw new Error(`網路請求失敗: ${response.status}`);
+    }
+    const data = await response.json();
+    
+    if (!data.questions || !Array.isArray(data.questions)) {
+      throw new Error('題庫格式錯誤');
+    }
+    
+    return data;
+  } catch (error) {
+    console.error('載入題庫失敗:', error);
+    throw error;
+  }
+}
+
+// 顯示科目資訊
+function displaySubjectInfo(data) {
+  const singleChoiceCount = data.questions.filter(q => q.type === "single_choice").length;
+  const multiChoiceCount = data.questions.filter(q => q.type === "multiple_choice").length;
+  const trueFalseCount = data.questions.filter(q => q.type === "true_false").length;
+  
+  domElements.subjectDetails.innerHTML = `
+    <p><strong>題庫統計：</strong></p>
+    <ul>
+      <li>單選題：${singleChoiceCount} 題</li>
+      <li>複選題：${multiChoiceCount} 題</li>
+      <li>是非題：${trueFalseCount} 題</li>
+      <li>總題數：${data.questions.length} 題</li>
+    </ul>
+    <p>請選擇測驗模式開始練習或測驗</p>
+  `;
+  
+  domElements.subjectInfo.style.display = 'block';
+}
+
+// 選擇模式
+function selectMode(mode) {
+  systemState.currentMode = mode;
+  
+  if (mode === 'practice') {
+    domElements.customPractice.style.display = 'block';
+    domElements.quizInterface.style.display = 'none';
+    domElements.resultContainer.style.display = 'none';
+    domElements.historyContainer.style.display = 'none';
+  } else {
+    startExamMode();
+  }
+}
+
+// 開始自訂練習
+function startCustomPractice() {
+  const singleCount = parseInt(domElements.singleCount.value) || 0;
+  const multiCount = parseInt(domElements.multiCount.value) || 0;
+  
+  if (singleCount + multiCount === 0) {
+    alert('請設定至少一種題型的數量');
+    return;
+  }
+  
+  // 篩選題目
+  const singleQuestions = systemState.questions.filter(q => q.type === 'single_choice');
+  const multiQuestions = systemState.questions.filter(q => q.type === 'multiple_choice');
+  
+  // 隨機選擇題目
+  systemState.currentQuiz = [
+    ...getRandomQuestions(singleQuestions, singleCount),
+    ...getRandomQuestions(multiQuestions, multiCount)
+  ];
+  
+  if (systemState.currentQuiz.length === 0) {
+    alert('沒有足夠的題目可供練習');
+    return;
+  }
+  
+  startQuiz('自訂練習');
+}
+
+// 開始測驗模式
+function startExamMode() {
+  // 測驗模式固定20題單選+10題複選+5題是非
+  const singleQuestions = systemState.questions.filter(q => q.type === 'single_choice');
+  const multiQuestions = systemState.questions.filter(q => q.type === 'multiple_choice');
+  const trueFalseQuestions = systemState.questions.filter(q => q.type === 'true_false');
+  
+  systemState.currentQuiz = [
+    ...getRandomQuestions(singleQuestions, 20),
+    ...getRandomQuestions(multiQuestions, 10),
+    ...getRandomQuestions(trueFalseQuestions, 5)
+  ];
+  
+  startQuiz('正式測驗');
+}
+
+// Fisher-Yates 洗牌演算法
+function shuffleArray(array) {
+  const newArray = [...array];
+  for (let i = newArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+  }
+  return newArray;
+}
+
+// 隨機選擇題目 (不重複)
+function getRandomQuestions(questionPool, count) {
+  if (!questionPool || questionPool.length === 0) return [];
+  
+  // 先洗牌再取前N個
+  const shuffled = shuffleArray(questionPool);
+  return shuffled.slice(0, Math.min(count, questionPool.length));
+}
+
+// 開始測驗
+function startQuiz(quizType) {
+  systemState.quizAnswers = [];
+  systemState.quizResults = [];
+  systemState.currentQuestionIndex = 0;
+  
+  // 更新介面
+  domElements.modeSelection.style.display = 'none';
+  domElements.customPractice.style.display = 'none';
+  domElements.quizInterface.style.display = 'block';
+  domElements.resultContainer.style.display = 'none';
+  domElements.historyContainer.style.display = 'none';
+  domElements.quizTitle.textContent = `${domElements.subjectSelect.selectedOptions[0].text} - ${quizType}`;
+  
+  // 顯示第一題
+  showQuestion(0);
+}
+
+// 檢查選項是否已被選擇
+function isOptionSelected(question, index, option) {
+  const savedAnswer = systemState.quizAnswers[index];
+  if (!savedAnswer) return false;
+  
+  if (question.type === 'multiple_choice') {
+    return savedAnswer.userAnswer.includes(option);
+  }
+  return savedAnswer.userAnswer === option;
+}
+
+// 顯示題目 (修改版，增加選項隨機排序)
+function showQuestion(index) {
+  if (index < 0 || index >= systemState.currentQuiz.length) {
+    console.error('無效的題目索引:', index);
+    return;
+  }
+
+  const question = systemState.currentQuiz[index];
+  systemState.currentQuestionIndex = index;
+
+  // 更新進度顯示
+  domElements.quizProgress.textContent = `題目 ${index + 1}/${systemState.currentQuiz.length}`;
+  domElements.quizProgress.setAttribute('aria-label', `第 ${index + 1} 題，共 ${systemState.currentQuiz.length} 題`);
+  
+  // 複製選項陣列並隨機排序 (但保留原始答案)
+  let randomizedOptions = [...question.options];
+  if (question.type !== 'true_false') {
+    randomizedOptions = shuffleArray([...question.options]);
+  }
+
+  // 建立選項HTML
+  let optionsHtml = '';
+  // 單選題選項
+if (question.type === 'single_choice') {
+  optionsHtml = randomizedOptions.map((option, i) => `
+    <label class="option radio-option">
+      <input type="radio" name="q${index}" value="${option}" id="opt-${index}-${i}"
+             ${isOptionSelected(question, index, option) ? 'checked' : ''}>
+      <span class="option-checkmark"></span>
+      <span class="option-text">${option}</span>
+    </label>
+  `).join('');
+} 
+// 複選題選項
+else if (question.type === 'multiple_choice') {
+  optionsHtml = randomizedOptions.map((option, i) => `
+    <label class="option checkbox-option">
+      <input type="checkbox" name="q${index}" value="${option}" id="opt-${index}-${i}"
+     let currentQuestions = []; // 儲存當前題庫的題目
+
+// 載入科目題庫
+function loadSubject() {
+  // 取得選擇的科目名稱
+  const subject = document.getElementById("subject").value;
+
+  // 若未選擇科目則不執行後續程式
+  if (!subject) return;
+
+  // 請求對應科目的題庫 JSON 檔案
+  fetchSubjectData(subject)
+    .then(data => {
+      // 顯示科目的題庫資料摘要（如題目數量及題型）
+      displaySubjectInfo(data);
+
+      // 顯示模式選擇區塊
+      document.getElementById("mode-selection").style.display = "block";
+    })
+    .catch(error => {
+      // 顯示錯誤訊息
+      console.error("Error loading subject:", error);
+      document.getElementById("quiz-container").innerHTML =
+        "<p>無法載入題庫，請檢查檔案是否存在。</p>";
+    });
+}
+
+// 共用函式：請求科目資料
+function fetchSubjectData(subject) {
+  return fetch(`${subject}.json`)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.json();
+    })
+    .then(data => {
+      if (!data.questions || !Array.isArray(data.questions)) {
+        throw new Error("Invalid data format: questions not found or not an array");
+      }
+      return data;
+    });
+}
+
+// 顯示科目的題庫資料摘要（題目數量及題型）
+function displaySubjectInfo(data) {
+  const subjectInfo = document.getElementById("subject-info");
+
+  // 確保 data.questions 存在且是陣列
+  if (!data.questions || !Array.isArray(data.questions)) {
+    subjectInfo.innerHTML = "<p>題庫資料格式錯誤，無法顯示。</p>";
+    return;
+  }
+
+  // 計算題庫中單選題、複選題和是非題的數量
+  const singleChoiceCount = data.questions.filter(q => q.type === "single_choice").length;
+  const multipleChoiceCount = data.questions.filter(q => q.type === "multiple_choice").length;
+  const trueFalseCount = data.questions.filter(q => q.type === "true_false").length;
+
+  // 顯示科目的題庫信息
+  subjectInfo.innerHTML = `
+    <p>題庫包含：<br>是非題：${trueFalseCount} 題</br><br>單選題：${singleChoiceCount} 題</br><br>複選題：${multipleChoiceCount} 題</br></p>
+    <p>請選擇題型並開始練習或測驗。</p>
+  `;
+}
+
+// 選擇模式（練習模式或測驗模式）
+function selectMode(mode) {
+  const subject = document.getElementById("subject").value;
+
+  // 請求對應科目的題庫 JSON 檔案
+  fetchSubjectData(subject)
+    .then(data => {
+      if (mode === "practice") {
+        loadPracticeMode(data); // 載入練習模式
+      } else if (mode === "test") {
+        loadTestMode(data); // 載入測驗模式
+      }
+    })
+    .catch(error => {
+      // 顯示錯誤訊息
+      console.error("Error loading subject:", error);
+      document.getElementById("quiz-container").innerHTML =
+        "<p>無法載入題庫，請檢查檔案是否存在。</p>";
+    });
+}
+
+// 載入練習模式（顯示所有題目）
+function loadPracticeMode(data) {
+  currentQuestions = data.questions; // 取出所有題目
+  // 隨機排列所有題目的選項
+  currentQuestions.forEach(question => {
+    if (question.type === "single_choice" || question.type === "multiple_choice") {
+      question = shuffleOptions(question);
+    }
+  });
+  renderQuiz(); // 渲染所有題目
+}
+
+// 載入測驗模式（隨機選擇 20 題單選題與 10 題複選題）
+function loadTestMode(data) {
+  const singleChoice = data.questions.filter(q => q.type === "single_choice");
+  const multipleChoice = data.questions.filter(q => q.type === "multiple_choice");
+  const trueFalse = data.questions.filter(q => q.type === "true_false");
+
+  // 隨機選擇 20 題單選題，10 題複選題，10 題是非題
+  currentQuestions = [
+    ...getRandomQuestions(singleChoice, 20),
+    ...getRandomQuestions(multipleChoice, 10),
+    ...getRandomQuestions(trueFalse, 10),
+  ];
+
+  // 隨機排列所有題目的選項
+  currentQuestions.forEach(question => {
+    if (question.type === "single_choice" || question.type === "multiple_choice") {
+      question = shuffleOptions(question);
+    }
+  });
+
+  renderQuiz(); // 渲染測驗題目
+}
+
+// 隨機選擇指定數量的題目
+function getRandomQuestions(questions, count) {
+  const shuffled = questions.sort(() => Math.random() - 0.5); // 亂數打亂題目順序
+  return shuffled.slice(0, count); // 取前 count 顆題目
+}
+
+// 隨機排列選項順序
+function shuffleOptions(question) {
+  // 複製原選項陣列
+  const optionsCopy = [...question.options];
+  const answer = question.answer;
+  
+  // 隨機排序選項
+  const shuffledOptions = optionsCopy.sort(() => Math.random() - 0.5);
+  
+  // 更新題目物件
+  question.options = shuffledOptions;
+  
+  // 如果是單選題，更新正確答案的索引
+  if (question.type === "single_choice") {
+    question.answer = shuffledOptions[optionsCopy.indexOf(answer)];
+  }
+  // 如果是複選題，更新所有正確答案的索引
+  else if (question.type === "multiple_choice") {
+    question.answer = answer.map(ans => shuffledOptions[optionsCopy.indexOf(ans)]);
+  }
+  
+  return question;
+}
+
+// 渲染測驗題目（以表格形式顯示）
+function renderQuiz() {
+  const quizContainer = document.getElementById("quiz-container");
+  quizContainer.innerHTML = `<table border="0" width="100%" cellpadding="5"><tbody></tbody></table>`;
+  const tbody = quizContainer.querySelector("tbody");
+
+  currentQuestions.forEach((q, index) => {
+    const row = document.createElement("tr");
+    row.innerHTML = `
+      <td align="right" valign="top">${index + 1}.</td> <!-- 題號 -->
+      <td>
+        <div style="margin-bottom: 10px;">${q.question}</div> <!-- 顯示題目 -->
+        <div>${renderOptions(q, index)}</div> <!-- 顯示選項 -->
+      </td>`;
+    tbody.appendChild(row);
+  });
+}
+
+// 根據題目類型渲染選項
+function renderOptions(question, index) {
+  if (question.type === "single_choice") {
+    // 單選題選項以 radio button 顯示
+    return question.options
+      .map(option => `<label><input type="radio" name="q${index}" value="${option}"> ${option}</label>`)
+      .join("<br>");
+  } else if (question.type === "multiple_choice") {
+    // 複選題選項以 checkbox 顯示
+    return question.options
+      .map(option => `<label><input type="checkbox" name="q${index}" value="${option}"> ${option}</label>`)
+      .join("<br>");
+  } else if (question.type === "true_false") {
+    // 是非題選項以 radio button 顯示
+    return `
+      <label><input type="radio" name="q${index}" value="true"> 是</label><br>
+      <label><input type="radio" name="q${index}" value="false"> 否</label>`;
+  }
+  return ""; // 若題目類型未定義，返回空字串
+}
+
+// 提交測驗並顯示結果
+function arraysEqual(arr1, arr2) {
+  return JSON.stringify(arr1) === JSON.stringify(arr2);
+}
+
+function submitQuiz() {
+  // 防護性檢查
+  if (!Array.isArray(currentQuestions) || currentQuestions.length === 0) {
+    alert("請先選擇科目並載入題目！");
+    return;
+  }
+
+  let score = 0;
+  let resultHTML = "<h3>測驗結果：</h3>";
+
+  currentQuestions.forEach((q, index) => {
+    const inputs = document.querySelectorAll(`[name="q${index}"]`);
+    let userAnswer = null;
+
+    try {
+      if (q.type === "single_choice") {
+        const selected = [...inputs].find(input => input.checked);
+        userAnswer = selected ? selected.value : null;
+        if (userAnswer === q.answer) score += 3;
+      }
+      else if (q.type === "multiple_choice") {
+        const selected = [...inputs].filter(input => input.checked).map(input => input.value);
+        userAnswer = selected.sort();
+        if (arraysEqual(userAnswer, q.answer.sort())) score += 4;
+      }
+      else if (q.type === "true_false") {
+        const selected = [...inputs].find(input => input.checked);
+        userAnswer = selected ? (selected.value === "true") : null;
+        if (userAnswer === q.answer) score += 2;
+      }
+
+      // 正確性判斷
+      const isCorrect = (q.type === "multiple_choice" 
+        ? arraysEqual(userAnswer, q.answer.sort()) 
+        : userAnswer === q.answer) ? "✅ 正確" : "❌ 錯誤";
+
+      // 顯示詳細結果
+      resultHTML += `
+        <p>Q${index + 1}: ${q.question} (${isCorrect})</p>
+        <p>你的答案：${userAnswer ? (Array.isArray(userAnswer) ? userAnswer.join(", ") : userAnswer) : "未作答"}</p>
+        <p>正確答案：${Array.isArray(q.answer) ? q.answer.join(", ") : q.answer}</p>
+        <hr>`;
+    } catch (error) {
+      console.error(`第 ${index + 1} 題處理錯誤:`, error);
+    }
+  });
+
+  // 計算百分比分數（假設滿分是 100）
+  const totalScore = Math.min(score, 100);
+  resultHTML += `<p><strong>總得分：${totalScore}/100</strong></p>`;
+  
+  document.getElementById("result").innerHTML = resultHTML;
+}// 系統狀態變數
+const systemState = {
+  currentUser: null,
+  isAuthenticated: false,
+  currentSubject: null,
+  currentMode: null,
+  questions: [],
+  currentQuiz: [],
+  currentQuestionIndex: 0,
+  quizAnswers: [],
+  quizResults: [],
+  historyRecords: JSON.parse(localStorage.getItem('quizHistory')) || [],
+  isLoading: false,
+  error: null
+};
+
+// DOM元素快取
+const domElements = {
+  // 驗證區
+  loadingOverlay: document.getElementById('loading-overlay'),
+  authContainer: document.getElementById('auth-container'),
+  passwordInput: document.getElementById('password-input'),
+  passwordError: document.getElementById('password-error'),
+  loginBtn: document.getElementById('login-btn'),
+  
+  // 主系統
+  appContainer: document.getElementById('app-container'),
+  logoutBtn: document.getElementById('logout-btn'),
+  currentSubject: document.getElementById('current-subject'),
+  
+  // 科目選擇
+  subjectSelect: document.getElementById('subject-select'),
+  selectSubjectBtn: document.getElementById('select-subject-btn'),
+  subjectInfo: document.getElementById('subject-info'),
+  subjectDetails: document.getElementById('subject-details'),
+  
+  // 模式選擇
+  modeSelection: document.getElementById('mode-selection'),
+  practiceModeBtn: document.getElementById('practice-mode-btn'),
+  examModeBtn: document.getElementById('exam-mode-btn'),
+  historyBtn: document.getElementById('history-btn'),
+  
+  // 練習設定
+  customPractice: document.getElementById('custom-practice'),
+  singleCount: document.getElementById('single-count'),
+  multiCount: document.getElementById('multi-count'),
+  startPracticeBtn: document.getElementById('start-practice-btn'),
+  
+  // 測驗介面
+  quizInterface: document.getElementById('quiz-interface'),
+  quizTitle: document.getElementById('quiz-title'),
+  quizProgress: document.getElementById('quiz-progress'),
+  questionContainer: document.getElementById('question-container'),
+  
+  // 結果區
+  resultContainer: document.getElementById('result-container'),
+  resultContent: document.getElementById('result-content'),
+  reviewBtn: document.getElementById('review-btn'),
+  newQuizBtn: document.getElementById('new-quiz-btn'),
+  
+  // 歷史紀錄
+  historyContainer: document.getElementById('history-container'),
+  historyList: document.getElementById('history-list'),
+  backToQuizBtn: document.getElementById('back-to-quiz-btn'),
+  deleteHistoryBtn: document.getElementById('delete-history-btn')
+};
+
+// 初始化系統
+function initSystem() {
+  // 模擬系統載入
+  setTimeout(() => {
+    domElements.loadingOverlay.style.display = 'none';
+    
+    // 檢查是否已登入
+    if (localStorage.getItem('isAuthenticated') === 'true') {
+      systemState.isAuthenticated = true;
+      domElements.authContainer.style.display = 'none';
+      domElements.appContainer.style.display = 'block';
+    } else {
+      domElements.authContainer.style.display = 'flex';
+    }
+  }, 1500);
+  
+  // 綁定事件監聽器
+  bindEventListeners();
+}
+
+// 綁定所有事件監聽器
+function bindEventListeners() {
+  // 登入相關
+  domElements.loginBtn.addEventListener('click', handleLogin);
+  domElements.passwordInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') handleLogin();
+  });
+  domElements.logoutBtn.addEventListener('click', handleLogout);
+  
+  // 科目選擇
+  domElements.selectSubjectBtn.addEventListener('click', handleSubjectSelection);
+  
+  // 模式選擇
+  domElements.practiceModeBtn.addEventListener('click', () => selectMode('practice'));
+  domElements.examModeBtn.addEventListener('click', () => selectMode('exam'));
+  domElements.historyBtn.addEventListener('click', showHistory);
+  
+  // 練習設定
+  domElements.startPracticeBtn.addEventListener('click', startCustomPractice);
+  
+  // 結果區
+  domElements.reviewBtn.addEventListener('click', reviewWrongAnswers);
+  domElements.newQuizBtn.addEventListener('click', resetForNewQuiz);
+  
+  // 歷史紀錄
+  domElements.backToQuizBtn.addEventListener('click', backToQuizFromHistory);
+  domElements.deleteHistoryBtn.addEventListener('click', confirmDeleteHistory);
+  
+  // 複選題自動保存答案
+  document.addEventListener('change', function(e) {
+    if (e.target.type === 'checkbox' && 
+        e.target.name.startsWith('q') && 
+        systemState.currentMode) {
+      const index = parseInt(e.target.name.substring(1));
+      saveAnswer(index, 'multiple_choice');
+    }
+  });
+}
+
+// 登入處理
+function handleLogin() {
+  const password = domElements.passwordInput.value.trim();
+  
+  if (!password) {
+    domElements.passwordError.textContent = '請輸入密碼';
+    domElements.passwordInput.focus();
+    return;
+  }
+  
+  // 實務上應使用雜湊比對而非明文
+  if (password === '22143') {
+    systemState.isAuthenticated = true;
+    localStorage.setItem('isAuthenticated', 'true');
+    domElements.authContainer.style.display = 'none';
+    domElements.appContainer.style.display = 'block';
+    domElements.passwordInput.value = '';
+    domElements.passwordError.textContent = '';
+  } else {
+    domElements.passwordError.textContent = '密碼錯誤，請重新輸入';
+    domElements.passwordInput.value = '';
+    domElements.passwordInput.focus();
+  }
+}
+
+// 登出處理
+function handleLogout() {
+  systemState.isAuthenticated = false;
+  localStorage.removeItem('isAuthenticated');
+  domElements.appContainer.style.display = 'none';
+  domElements.authContainer.style.display = 'flex';
+  domElements.passwordInput.value = '';
+  resetSystemState();
+}
+
+// 重置系統狀態
+function resetSystemState() {
+  systemState.currentSubject = null;
+  systemState.currentMode = null;
+  systemState.questions = [];
+  systemState.currentQuiz = [];
+  systemState.currentQuestionIndex = 0;
+  systemState.quizAnswers = [];
+  systemState.quizResults = [];
+  
+  // 重置UI
+  domElements.subjectSelect.value = '';
+  domElements.subjectInfo.style.display = 'none';
+  domElements.modeSelection.style.display = 'none';
+  domElements.customPractice.style.display = 'none';
+  domElements.quizInterface.style.display = 'none';
+  domElements.resultContainer.style.display = 'none';
+  domElements.historyContainer.style.display = 'none';
+  domElements.currentSubject.textContent = '';
+}
+
+// 科目選擇處理
+async function handleSubjectSelection() {
+  const subjectId = domElements.subjectSelect.value;
+  
+  if (!subjectId) {
+    alert('請選擇科目');
+    return;
+  }
+  
+  systemState.currentSubject = subjectId;
+  domElements.currentSubject.textContent = domElements.subjectSelect.selectedOptions[0].text;
+  
+  try {
+    // 顯示載入狀態
+    systemState.isLoading = true;
+    domElements.loadingOverlay.style.display = 'flex';
+    
+    // 載入題庫資料
+    const data = await loadSubjectData(subjectId);
+    systemState.questions = data.questions;
+    
+    displaySubjectInfo(data);
+    domElements.modeSelection.style.display = 'block';
+  } catch (error) {
+    console.error('載入題庫失敗:', error);
+    domElements.subjectDetails.innerHTML = `
+      <p class="error">載入題庫失敗: ${error.message || '請稍後再試'}</p>
+    `;
+  } finally {
+    systemState.isLoading = false;
+    domElements.loadingOverlay.style.display = 'none';
+  }
+}
+
+// 載入科目資料
+async function loadSubjectData(subjectId) {
+  try {
+    const response = await fetch(`data/${subjectId}.json`);
+    if (!response.ok) {
+      throw new Error(`網路請求失敗: ${response.status}`);
+    }
+    const data = await response.json();
+    
+    if (!data.questions || !Array.isArray(data.questions)) {
+      throw new Error('題庫格式錯誤');
+    }
+    
+    return data;
+  } catch (error) {
+    console.error('載入題庫失敗:', error);
+    throw error;
+  }
+}
+
+// 顯示科目資訊
+function displaySubjectInfo(data) {
+  const singleChoiceCount = data.questions.filter(q => q.type === "single_choice").length;
+  const multiChoiceCount = data.questions.filter(q => q.type === "multiple_choice").length;
+  const trueFalseCount = data.questions.filter(q => q.type === "true_false").length;
+  
+  domElements.subjectDetails.innerHTML = `
+    <p><strong>題庫統計：</strong></p>
+    <ul>
+      <li>單選題：${singleChoiceCount} 題</li>
+      <li>複選題：${multiChoiceCount} 題</li>
+      <li>是非題：${trueFalseCount} 題</li>
+      <li>總題數：${data.questions.length} 題</li>
+    </ul>
+    <p>請選擇測驗模式開始練習或測驗</p>
+  `;
+  
+  domElements.subjectInfo.style.display = 'block';
+}
+
+// 選擇模式
+function selectMode(mode) {
+  systemState.currentMode = mode;
+  
+  if (mode === 'practice') {
+    domElements.customPractice.style.display = 'block';
+    domElements.quizInterface.style.display = 'none';
+    domElements.resultContainer.style.display = 'none';
+    domElements.historyContainer.style.display = 'none';
+  } else {
+    startExamMode();
+  }
+}
+
+// 開始自訂練習
+function startCustomPractice() {
+  const singleCount = parseInt(domElements.singleCount.value) || 0;
+  const multiCount = parseInt(domElements.multiCount.value) || 0;
+  
+  if (singleCount + multiCount === 0) {
+    alert('請設定至少一種題型的數量');
+    return;
+  }
+  
+  // 篩選題目
+  const singleQuestions = systemState.questions.filter(q => q.type === 'single_choice');
+  const multiQuestions = systemState.questions.filter(q => q.type === 'multiple_choice');
+  
+  // 隨機選擇題目
+  systemState.currentQuiz = [
+    ...getRandomQuestions(singleQuestions, singleCount),
+    ...getRandomQuestions(multiQuestions, multiCount)
+  ];
+  
+  if (systemState.currentQuiz.length === 0) {
+    alert('沒有足夠的題目可供練習');
+    return;
+  }
+  
+  startQuiz('自訂練習');
+}
+
+// 開始測驗模式
+function startExamMode() {
+  // 測驗模式固定20題單選+10題複選+5題是非
+  const singleQuestions = systemState.questions.filter(q => q.type === 'single_choice');
+  const multiQuestions = systemState.questions.filter(q => q.type === 'multiple_choice');
+  const trueFalseQuestions = systemState.questions.filter(q => q.type === 'true_false');
+  
+  systemState.currentQuiz = [
+    ...getRandomQuestions(singleQuestions, 20),
+    ...getRandomQuestions(multiQuestions, 10),
+    ...getRandomQuestions(trueFalseQuestions, 5)
+  ];
+  
+  startQuiz('正式測驗');
+}
+
+// Fisher-Yates 洗牌演算法
+function shuffleArray(array) {
+  const newArray = [...array];
+  for (let i = newArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+  }
+  return newArray;
+}
+
+// 隨機選擇題目 (不重複)
+function getRandomQuestions(questionPool, count) {
+  if (!questionPool || questionPool.length === 0) return [];
+  
+  // 先洗牌再取前N個
+  const shuffled = shuffleArray(questionPool);
+  return shuffled.slice(0, Math.min(count, questionPool.length));
+}
+
+// 開始測驗
+function startQuiz(quizType) {
+  systemState.quizAnswers = [];
+  systemState.quizResults = [];
+  systemState.currentQuestionIndex = 0;
+  
+  // 更新介面
+  domElements.modeSelection.style.display = 'none';
+  domElements.customPractice.style.display = 'none';
+  domElements.quizInterface.style.display = 'block';
+  domElements.resultContainer.style.display = 'none';
+  domElements.historyContainer.style.display = 'none';
+  domElements.quizTitle.textContent = `${domElements.subjectSelect.selectedOptions[0].text} - ${quizType}`;
+  
+  // 顯示第一題
+  showQuestion(0);
+}
+
+// 檢查選項是否已被選擇
+function isOptionSelected(question, index, option) {
+  const savedAnswer = systemState.quizAnswers[index];
+  if (!savedAnswer) return false;
+  
+  if (question.type === 'multiple_choice') {
+    return savedAnswer.userAnswer.includes(option);
+  }
+  return savedAnswer.userAnswer === option;
+}
+
+// 顯示題目 (修改版，增加選項隨機排序)
+function showQuestion(index) {
+  if (index < 0 || index >= systemState.currentQuiz.length) {
+    console.error('無效的題目索引:', index);
+    return;
+  }
+
+  const question = systemState.currentQuiz[index];
+  systemState.currentQuestionIndex = index;
+
+  // 更新進度顯示
+  domElements.quizProgress.textContent = `題目 ${index + 1}/${systemState.currentQuiz.length}`;
+  domElements.quizProgress.setAttribute('aria-label', `第 ${index + 1} 題，共 ${systemState.currentQuiz.length} 題`);
+  
+  // 複製選項陣列並隨機排序 (但保留原始答案)
+  let randomizedOptions = [...question.options];
+  if (question.type !== 'true_false') {
+    randomizedOptions = shuffleArray([...question.options]);
+  }
+
+  // 建立選項HTML
+  let optionsHtml = '';
+  // 單選題選項
+if (question.type === 'single_choice') {
+  optionsHtml = randomizedOptions.map((option, i) => `
+    <label class="option radio-option">
+      <input type="radio" name="q${index}" value="${option}" id="opt-${index}-${i}"
+             ${isOptionSelected(question, index, option) ? 'checked' : ''}>
+      <span class="option-checkmark"></span>
+      <span class="option-text">${option}</span>
+    </label>
+  `).join('');
+} 
+// 複選題選項
+else if (question.type === 'multiple_choice') {
+  optionsHtml = randomizedOptions.map((option, i) => `
+    <label class="option checkbox-option">
+      <input type="checkbox" name="q${index}" value="${option}" id="opt-${index}-${i}"
+     ${isOptionSelected(question, index, option) ? 'checked' : ''}>
+      <span class="option-checkmark"></span>
+      <span class="option-text">${option}</span>
+    </label>
+  `).join('');
+} else if (question.type === 'true_false') {
+    optionsHtml = `
+      <div class="select-dropdown">
+        <select id="true-false-select-${index}">
+          <option value="">-- 請選擇 --</option>
+          <option value="true" ${isOptionSelected(question, index, 'true') ? 'selected' : ''}>是</option>
+          <option value="false" ${isOptionSelected(question, index, 'false') ? 'selected' : ''}>否</option>
+        </select>
+      </div>
+    `;
+  }
+
+  // 顯示題目和導航按鈕
+  domElements.questionContainer.innerHTML = `
+    <div class="question-text">${index + 1}. ${question.question}</div>
+    <div class="options">${optionsHtml}</div>
+    <div class="navigation-buttons">
+      ${index > 0 ? '<button id="prev-btn" class="nav-btn">上一題</button>' : ''}
+      <button id="next-btn" class="nav-btn">
+        ${index === systemState.currentQuiz.length - 1 ? '提交測驗' : '下一題'}
+      </button>
+    </div>
+  `;
+
+  // 綁定導航事件
+  bindNavigationEvents(index, question.type);
+}
+
+// 綁定導航事件
+function bindNavigationEvents(index, questionType) {
+  // 上一題按鈕
+  const prevBtn = document.getElementById('prev-btn');
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      saveAnswer(index, questionType);
+      showQuestion(index - 1);
+    });
+  }
+
+  // 下一題/提交按鈕
+  const nextBtn = document.getElementById('next-btn');
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      if (!saveAnswer(index, questionType)) {
+        alert('請先選擇答案');
+        return;
+      }
+      
+      if (index >= systemState.currentQuiz.length - 1) {
+        submitQuiz();
+      } else {
+        showQuestion(index + 1);
+      }
+    });
+  }
+
+  // 單選題自動跳轉
+  if (questionType === 'single_choice') {
+    document.querySelectorAll(`input[name="q${index}"]`).forEach(input => {
+      input.addEventListener('change', () => {
+        saveAnswer(index, questionType);
+        if (index < systemState.currentQuiz.length - 1) {
+          setTimeout(() => showQuestion(index + 1), 500);
+        }
+      });
+    });
+  }
+}
+
+// 保存答案
+function saveAnswer(index, questionType) {
+  const question = systemState.currentQuiz[index];
+  const userAnswer = getUserAnswer(index, questionType);
+  
+  // 複選題允許不選答案
+  if (questionType !== 'multiple_choice' && 
+      (userAnswer === null || (Array.isArray(userAnswer) && userAnswer.length === 0))) {
+    return false;
+  }
+
+  systemState.quizAnswers[index] = {
+    questionIndex: index,
+    userAnswer: userAnswer,
+    isCorrect: checkAnswer(question, userAnswer),
+    questionType: question.type
+  };
+  
+  return true;
+}
+
+// 檢查答案
+function checkAnswer(question, userAnswer) {
+  if (!userAnswer || (Array.isArray(userAnswer) && userAnswer.length === 0)) {
+    return false;
+  }
+  
+  switch(question.type) {
+    case 'single_choice':
+      return userAnswer === question.answer;
+      
+    case 'multiple_choice':
+      const correctAnswers = Array.isArray(question.answer) 
+        ? [...question.answer].sort() 
+        : [question.answer].sort();
+      const userAnswers = [...userAnswer].sort();
+      return JSON.stringify(userAnswers) === JSON.stringify(correctAnswers);
+      
+    case 'true_false':
+      return userAnswer === String(question.answer);
+      
+    default:
+      return false;
+  }
+}
+
+// 獲取使用者答案
+function getUserAnswer(index, questionType) {
+  const question = systemState.currentQuiz[index];
+  
+  switch(questionType) {
+    case 'single_choice':
+      const radio = document.querySelector(`input[name="q${index}"]:checked`);
+      return radio ? radio.value : null;
+      
+    case 'multiple_choice':
+      const checkboxes = document.querySelectorAll(`input[name="q${index}"]:checked`);
+      return Array.from(checkboxes).map(cb => cb.value);
+      
+    case 'true_false':
+      const select = document.getElementById(`true-false-select-${index}`);
+      return select ? select.value : null;
+      
+    default:
+      return null;
+  }
+}
+
+// 提交測驗
+function submitQuiz() {
+  // 確保最後一題答案已保存
+  const lastIndex = systemState.currentQuiz.length - 1;
+  const lastQuestion = systemState.currentQuiz[lastIndex];
+  saveAnswer(lastIndex, lastQuestion.type);
+  
+  // 計算得分
+  const score = calculateScore();
+  const results = generateResults();
+  
+  // 保存歷史記錄
+  saveQuizHistory(score);
+  
+  // 顯示結果
+  displayResults(score, results);
+}
+
+// 計算分數
+function calculateScore() {
+  const total = systemState.quizAnswers.length;
+  const correct = systemState.quizAnswers.filter(a => a.isCorrect).length;
+  return Math.round((correct / total) * 100);
+}
+
+// 生成詳細結果
+function generateResults() {
+  return systemState.currentQuiz.map((question, index) => {
+    const userAnswer = systemState.quizAnswers[index]?.userAnswer || '未作答';
+    const isCorrect = systemState.quizAnswers[index]?.isCorrect;
+    
+    return {
+      question: question.question,
+      userAnswer: Array.isArray(userAnswer) ? userAnswer.join(', ') : userAnswer,
+      correctAnswer: Array.isArray(question.answer) ? question.answer.join(', ') : question.answer,
+      isCorrect: isCorrect,
+      explanation: question.explanation || ''
+    };
+  });
+}
+
+// 顯示結果頁面
+function displayResults(score, results) {
+  let html = `
+    <div class="result-summary">
+      <h3>測驗完成！</h3>
+      <p>您的得分: <span class="${score >= 60 ? 'correct-answer' : 'wrong-answer'}">${score}分</span></p>
+      <p>答對題數: ${results.filter(r => r.isCorrect).length} / ${results.length}</p>
+    </div>
+  `;
+  
+  results.forEach((result, index) => {
+    html += `
+      <div class="result-item ${result.isCorrect ? 'correct' : 'incorrect'}">
+        <p><strong>題目 ${index + 1}:</strong> ${result.question}</p>
+        <p>您的答案: <span class="${result.isCorrect ? 'correct-answer' : 'wrong-answer'}">${result.userAnswer}</span></p>
+        ${!result.isCorrect ? `<p>正確答案: <span class="correct-answer">${result.correctAnswer}</span></p>` : ''}
+        ${result.explanation ? `<p class="explanation">說明: ${result.explanation}</p>` : ''}
+      </div>
+    `;
+  });
+  
+  domElements.resultContent.innerHTML = html;
+  domElements.quizInterface.style.display = 'none';
+  domElements.resultContainer.style.display = 'block';
+}
+
+// 保存歷史記錄
+function saveQuizHistory(score) {
+  const record = {
+    date: new Date().toISOString(),
+    subject: systemState.currentSubject,
+    subjectName: domElements.subjectSelect.selectedOptions[0].text,
+    mode: systemState.currentMode,
+    score: score,
+    totalQuestions: systemState.currentQuiz.length,
+    correctAnswers: systemState.quizAnswers.filter(a => a.isCorrect).length,
+    details: systemState.quizAnswers.map(answer => ({
+      question: systemState.currentQuiz[answer.questionIndex].question,
+      userAnswer: answer.userAnswer,
+      isCorrect: answer.isCorrect
+    }))
+  };
+  
+  systemState.historyRecords.unshift(record);
+  localStorage.setItem('quizHistory', JSON.stringify(systemState.historyRecords));
+}
+
+// 檢視錯誤題目
+function reviewWrongAnswers() {
+  const wrongAnswers = systemState.quizAnswers.filter(a => !a.isCorrect);
+  
+  if (wrongAnswers.length === 0) {
+    alert('本次測驗沒有答錯的題目！');
+    return;
+  }
+  
+  // 只顯示答錯的題目
+  systemState.currentQuiz = wrongAnswers.map(a => systemState.currentQuiz[a.questionIndex]);
+  systemState.quizAnswers = [];
+  systemState.currentQuestionIndex = 0;
+  
+  // 進入複習模式
+  domElements.resultContainer.style.display = 'none';
+  domElements.quizInterface.style.display = 'block';
+  domElements.quizTitle.textContent = `${domElements.subjectSelect.selectedOptions[0].text} - 錯誤題目複習`;
+  
+  showQuestion(0);
+}
+
+  // 開始新測驗
+function resetForNewQuiz() {
+  if (systemState.currentMode === 'practice') {
+    domElements.resultContainer.style.display = 'none';
+    domElements.customPractice.style.display = 'block';
+  } else {
+    startExamMode();
+  }
+}
+
+// 顯示歷史記錄
+function showHistory() {
+  domElements.modeSelection.style.display = 'none';
+  domElements.historyContainer.style.display = 'block';
+  
+  if (systemState.historyRecords.length === 0) {
+    domElements.historyList.innerHTML = '<p>暫無歷史記錄</p>';
+    return;
+  }
+  
+  let html = '';
+  systemState.historyRecords.forEach((record, index) => {
+    html += `
+      <div class="history-item">
+        <h4>
+          <span>${record.subjectName} - ${record.mode === 'practice' ? '練習模式' : '測驗模式'}</span>
+          <span class="history-time">${formatDate(record.date)}</span>
+        </h4>
+        <p>得分: <span class="${record.score >= 60 ? 'correct-answer' : 'wrong-answer'}">${record.score}分</span></p>
+        <p>正確率: ${record.correctAnswers}/${record.totalQuestions}</p>
+        <button class="detail-btn" data-index="${index}">查看詳情</button>
+        <div class="history-details" id="details-${index}">
+          ${generateHistoryDetails(record.details)}
+        </div>
+      </div>
+    `;
+  });
+  
+  domElements.historyList.innerHTML = html;
+  
+  // 綁定詳情按鈕事件
+  document.querySelectorAll('.detail-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const index = this.getAttribute('data-index');
+      const details = document.getElementById(`details-${index}`);
+      details.classList.toggle('active');
+      this.textContent = details.classList.contains('active') ? '隱藏詳情' : '查看詳情';
+    });
+  });
+}
+
+// 格式化日期
+function formatDate(dateString) {
+  const date = new Date(dateString);
+  return date.toLocaleString('zh-TW');
+}
+
+// 生成歷史記錄詳情
+function generateHistoryDetails(details) {
+  return details.map((detail, i) => `
+    <div class="question-result ${detail.isCorrect ? 'correct' : 'wrong'}">
+      <p><strong>題目 ${i + 1}:</strong> ${detail.question}</p>
+      <p>您的答案: <span class="${detail.isCorrect ? 'correct-answer' : 'wrong-answer'}">${
+        Array.isArray(detail.userAnswer) ? detail.userAnswer.join(', ') : detail.userAnswer
+      }</span></p>
+    </div>
+  `).join('');
+}
+
+// 返回測驗
+function backToQuizFromHistory() {
+  domElements.historyContainer.style.display = 'none';
+  if (systemState.currentMode) {
+    domElements.modeSelection.style.display = 'block';
+  }
+}
+
+// 確認刪除歷史記錄
+function confirmDeleteHistory() {
+  if (confirm('確定要刪除所有歷史記錄嗎？此操作無法復原！')) {
+    systemState.historyRecords = [];
+    localStorage.removeItem('quizHistory');
+    showHistory();
+  }
+}
+
+// 初始化系統
+initSystem();
