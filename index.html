@@ -5,146 +5,120 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>線上題庫測驗系統</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    /* 新增密碼彈窗樣式 */
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 1;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0,0,0,0.4);
-    }
-    
-    .modal-content {
-      background-color: #fefefe;
-      margin: 15% auto;
-      padding: 20px;
-      border: 1px solid #888;
-      width: 80%;
-      max-width: 400px;
-      text-align: center;
-      border-radius: 5px;
-    }
-    
-    .modal-content input {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      box-sizing: border-box;
-    }
-    
-    .modal-content button {
-      background-color: #4CAF50;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      margin: 5px;
-    }
-    
-    .modal-content button:hover {
-      background-color: #45a049;
-    }
-    
-    .error {
-      color: red;
-      margin-top: 10px;
-    }
-  </style>
 </head>
 <body>
-  <!-- 密碼彈窗 -->
-  <div id="passwordModal" class="modal">
-    <div class="modal-content">
-      <h2>請輸入密碼</h2>
-      <p>此系統需要密碼才能使用</p>
-      <input type="password" id="passwordInput" placeholder="輸入密碼">
-      <p id="passwordError" class="error"></p>
-      <button onclick="checkPassword()">確認</button>
+  <!-- 載入動畫 -->
+  <div id="loading-overlay">
+    <div class="spinner"></div>
+    <p>系統載入中，請稍候...</p>
+  </div>
+
+  <!-- 密碼驗證區 -->
+  <div id="auth-container">
+    <div class="auth-box">
+      <h2>系統登入</h2>
+      <p>請輸入密碼以使用題庫測驗系統</p>
+      <input type="password" id="password-input" placeholder="請輸入系統密碼" autocomplete="current-password">
+      <p id="password-error" class="error-msg" aria-live="polite"></p>
+      <button id="login-btn" class="main-btn">登入系統</button>
     </div>
   </div>
 
-  <!-- 主內容 (初始隱藏) -->
-  <div id="mainContent" style="display: none;">
-    <h1>線上題庫測驗系統</h1>
+  <!-- 主系統內容 -->
+  <div id="app-container" style="display:none;">
+    <header>
+      <h1>線上題庫測驗系統</h1>
+      <div class="header-info">
+        <span id="current-subject"></span>
+        <button id="logout-btn" class="secondary-btn">登出系統</button>
+      </div>
+    </header>
 
-    <!-- 科目選擇 -->
-    <div class="container">
-      <h3>選擇科目：</h3>
-      <select id="subject">
-        <option value=""></option>
-        <option value="518訓練手冊_本職">518訓練手冊_本職學能</option>
-      <option value="衛星手冊_本職">衛星手冊_本職學能</option>
-      <option value="連(排)教範_本職">連(排)教範_本職學能</option>
-      <option value="部隊教範_本職">部隊教範_本職學能</option>
-      <option value="518操作保養_數位化">518操作保養_數位化班隊</option>
-      <option value="518組合訓練_數位化">518組合訓練_數位化班隊</option>
-      <option value="行政-人事教範">行政-人事教範</option>
-      </select>
-      <button class="btn" onclick="loadSubject()">確定選擇</button>
-    </div>
+    <main>
+      <!-- 科目選擇區 -->
+      <section class="module-card">
+        <h3><span class="icon">📚</span> 選擇測驗科目</h3>
+        <select id="subject-select" aria-label="選擇測驗科目">
+          <option value="">-- 請選擇科目 --</option>
+          <option value="行政-人事教範">000.行政-人事教範</option>
+          <option value="518訓練手冊_本職">001.518訓練手冊_本職學能</option>
+          <option value="衛星手冊_本職">002.衛星手冊_本職學能</option>
+          <option value="連(排)教範_本職">003.連(排)教範_本職學能</option>
+          <option value="部隊教範_本職">004.部隊教範_本職學能</option>
+          <option value="518操作保養_數位化">005.518操作保養_數位化班隊</option>
+          <option value="518組合訓練_數位化">007.518組合訓練_數位化班隊</option>
 
-    <!-- 顯示題庫資訊，如題目數量和題型 -->
-    <div id="subject-info" class="container"></div>
+          
+        </select>
+        <button id="select-subject-btn" class="main-btn">確認選擇</button>
+      </section>
 
-    <!-- 顯示模式選擇區塊，當科目選擇後顯示 -->
-    <div id="mode-selection" class="container" style="display: none;">
-      <h3>選擇模式：</h3>
-      <button class="btn" onclick="selectMode('practice')">練習模式</button>
-      <button class="btn" onclick="selectMode('test')">測驗模式</button>
-    </div>
+      <!-- 題庫資訊區 -->
+      <section id="subject-info" class="module-card" style="display:none;">
+        <h3><span class="icon">ℹ️</span> 題庫資訊</h3>
+        <div id="subject-details"></div>
+      </section>
 
-    <!-- 顯示自定義練習題數區塊 -->
-    <div id="customize-practice" class="container" style="display: none;">
-      <h3>自定義練習題數：</h3>
-      <label for="singleCount">單選題數量：</label>
-      <input type="number" id="singleCount" min="0" placeholder="例如 5">
-      <br>
-      <label for="multipleCount">複選題數量：</label>
-      <input type="number" id="multipleCount" min="0" placeholder="例如 3">
-      <br>
-      <button class="btn" onclick="startCustomPractice()">開始練習</button>
-    </div>
+      <!-- 模式選擇區 -->
+      <section id="mode-selection" class="module-card" style="display:none;">
+        <h3><span class="icon">🎯</span> 選擇測驗模式</h3>
+        <div class="btn-group">
+          <button id="practice-mode-btn" class="main-btn">練習模式</button>
+          <button id="exam-mode-btn" class="main-btn">測驗模式</button>
+          <button id="history-btn" class="secondary-btn">歷史紀錄</button>
+        </div>
+      </section>
 
-    <!-- 顯示題目容器 -->
-    <div id="quiz-container" class="container"></div>
+      <!-- 自訂練習設定區 -->
+      <section id="custom-practice" class="module-card" style="display:none;">
+        <h3><span class="icon">✍️</span> 自訂練習設定</h3>
+        <div class="form-row">
+          <label for="single-count">單選題數量：</label>
+          <input type="number" id="single-count" min="0" value="5" aria-label="單選題數量">
+        </div>
+        <div class="form-row">
+          <label for="multi-count">複選題數量：</label>
+          <input type="number" id="multi-count" min="0" value="3" aria-label="複選題數量">
+        </div>
+        <button id="start-practice-btn" class="main-btn">開始練習</button>
+      </section>
 
-    <!-- 提交測驗按鈕 -->
-    <div class="container">
-      <button class="btn" onclick="submitQuiz()">提交測驗</button>
-    </div>
+      <!-- 測驗進行區 -->
+      <section id="quiz-interface" class="module-card" style="display:none;">
+        <div class="quiz-header">
+          <h2 id="quiz-title"></h2>
+          <div id="quiz-progress" aria-live="polite"></div>
+        </div>
+        <div id="question-container"></div>
+      </section>
 
-    <!-- 顯示測驗結果區塊 -->
-    <div id="result" class="container"></div>
+      <!-- 測驗結果區 -->
+      <section id="result-container" class="module-card" style="display:none;">
+        <h3><span class="icon">📊</span> 測驗結果</h3>
+        <div id="result-content"></div>
+        <div class="result-actions">
+          <button id="review-btn" class="secondary-btn">檢視錯誤題目</button>
+          <button id="new-quiz-btn" class="main-btn">開始新測驗</button>
+        </div>
+      </section>
+
+      <!-- 歷史紀錄區 -->
+      <section id="history-container" class="module-card" style="display:none;">
+        <h3><span class="icon">🕒</span> 測驗歷史紀錄</h3>
+        <div class="history-actions">
+          <button id="delete-history-btn" class="secondary-btn">刪除所有歷史紀錄</button>
+        </div>
+        <div id="history-list"></div>
+        <button id="back-to-quiz-btn" class="main-btn">返回測驗</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 線上題庫測驗系統 版權所有</p>
+      <p class="version">系統版本: v1.3.0</p>
+    </footer>
   </div>
 
-  <!-- 引入外部的 JavaScript -->
   <script src="quiz.js"></script>
-  
-  <script>
-    // 顯示密碼彈窗
-    window.onload = function() {
-      document.getElementById('passwordModal').style.display = 'block';
-    };
-    
-    // 檢查密碼
-    function checkPassword() {
-      const password = document.getElementById('passwordInput').value;
-      const errorElement = document.getElementById('passwordError');
-      
-      if (password === '22143') {
-        // 密碼正確，隱藏彈窗，顯示主內容
-        document.getElementById('passwordModal').style.display = 'none';
-        document.getElementById('mainContent').style.display = 'block';
-      } else {
-        // 密碼錯誤，顯示錯誤訊息
-        errorElement.textContent = '密碼錯誤，請重新輸入';
-      }
-    }
-  </script>
 </body>
 </html>
