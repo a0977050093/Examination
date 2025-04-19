@@ -341,6 +341,14 @@ select:focus, input:focus {
   border-color: var(--primary-color);
 }
 
+/* 重置瀏覽器預設樣式 */
+.option input[type="radio"],
+.option input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
 /* 選取框共用樣式 */
 .option-checkmark {
   position: relative;
@@ -358,7 +366,7 @@ select:focus, input:focus {
 
 /* 複選題 - 方形選取框 */
 .option.checkbox-option .option-checkmark {
-  border-radius: 4px;
+  border-radius: 0; /* 明確設為方形 */
 }
 
 /* 隱藏原始input元素 */
