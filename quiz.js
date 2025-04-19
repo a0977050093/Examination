@@ -120,7 +120,7 @@ function handleLogin() {
         return;
     }
   
-    if (password === '348362') {
+    if (password === '王嘉靖') {
         systemState.isAuthenticated = true;
         localStorage.setItem('isAuthenticated', 'true');
         domElements.authContainer.style.display = 'none';
