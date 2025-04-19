@@ -40,13 +40,19 @@
         <h3><span class="icon">📚</span> 選擇測驗科目</h3>
         <select id="subject-select" aria-label="選擇測驗科目">
           <option value="">-- 請選擇科目 --</option>
+          
+          <option value="">-- 本職學能分頁 --</option>
           <option value="行政-人事教範">000.行政-人事教範</option>
           <option value="518訓練手冊_本職">001.518訓練手冊_本職學能</option>
           <option value="衛星手冊_本職">002.衛星手冊_本職學能</option>
           <option value="連(排)教範_本職">003.連(排)教範_本職學能</option>
           <option value="部隊教範_本職">004.部隊教範_本職學能</option>
+
+          <option value="">-- 數位化班隊分頁 --</option>
           <option value="518操作保養_數位化">005.518操作保養_數位化班隊</option>
           <option value="518組合訓練_數位化">007.518組合訓練_數位化班隊</option>
+
+          <option value="">-- 士官高級班分頁 --</option>
 
           
         </select>
@@ -74,11 +80,11 @@
         <h3><span class="icon">✍️</span> 自訂練習設定</h3>
         <div class="form-row">
           <label for="single-count">單選題數量：</label>
-          <input type="number" id="single-count" min="0" value="5" aria-label="單選題數量">
+          <input type="number" id="single-count" min="0" value="20" aria-label="單選題數量">
         </div>
         <div class="form-row">
           <label for="multi-count">複選題數量：</label>
-          <input type="number" id="multi-count" min="0" value="3" aria-label="複選題數量">
+          <input type="number" id="multi-count" min="0" value="10" aria-label="複選題數量">
         </div>
         <button id="start-practice-btn" class="main-btn">開始練習</button>
       </section>
