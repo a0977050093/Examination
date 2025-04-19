@@ -67,7 +67,7 @@ function initSystem() {
         domElements.authContainer.style.display = systemState.isAuthenticated ? 'none' : 'flex';
         domElements.appContainer.style.display = systemState.isAuthenticated ? 'block' : 'none';
     }, 1500);
-  
+    
     bindEventListeners();
 }
 
@@ -356,7 +356,7 @@ function startQuiz(quizType) {
     systemState.quizAnswers = [];
     systemState.quizResults = [];
     systemState.currentQuestionIndex = 0;
-    
+  
     domElements.modeSelection.style.display = 'none';
     domElements.customPractice.style.display = 'none';
     domElements.quizInterface.style.display = 'block';
@@ -379,7 +379,7 @@ function isOptionSelected(question, index, option) {
     return savedAnswer.userAnswer === option;
 }
 
-// 顯示題目 (增加選項隨機排序)
+// 顯示題目 (使用圓形核選框顯示是非題)
 function showQuestion(index) {
     if (index < 0 || index >= systemState.currentQuiz.length) {
         console.error('無效的題目索引:', index);
@@ -417,7 +417,7 @@ function showQuestion(index) {
         </label>
         `).join('');
     } 
-    // 複選題選項
+    // 複選題選擇
     else if (question.type === 'multiple_choice') {
         optionsHtml = randomizedOptions.map((option, i) => `
         <label class="option checkbox-option">
@@ -428,13 +428,16 @@ function showQuestion(index) {
         `).join('');
     } else if (question.type === 'true_false') {
         optionsHtml = `
-        <div class="select-dropdown">
-            <select id="true-false-select-${index}">
-                <option value="">-- 請選擇 --</option>
-                <option value="true" ${isOptionSelected(question, index, 'true') ? 'selected' : ''}>是</option>
-                <option value="false" ${isOptionSelected(question, index, 'false') ? 'selected' : ''}>否</option>
-            </select>
-        </div>
+        <label class="option radio-option">
+            <input type="radio" name="q${index}" value="true" id="true-${index}" ${isOptionSelected(question, index, 'true') ? 'checked' : ''}>
+            <span class="option-checkmark"></span>
+            <span class="option-text">是</span>
+        </label>
+        <label class="option radio-option">
+            <input type="radio" name="q${index}" value="false" id="false-${index}" ${isOptionSelected(question, index, 'false') ? 'checked' : ''}>
+            <span class="option-checkmark"></span>
+            <span class="option-text">否</span>
+        </label>
         `;
     }
 
@@ -553,9 +556,15 @@ function getUserAnswer(index, questionType) {
             return Array.from(checkboxes).map(cb => cb.value);
             
         case 'true_false':
-            const select = document.getElementById(`true-false-select-${index}`);
-            return select ? select.value : null;
-            
+            const trueFalseRadioTrue = document.querySelector(`input[name="q${index}"][value="true"]`);
+            const trueFalseRadioFalse = document.querySelector(`input[name="q${index}"][value="false"]`);
+            if (trueFalseRadioTrue && trueFalseRadioTrue.checked) {
+                return 'true';
+            } 
+            if (trueFalseRadioFalse && trueFalseRadioFalse.checked) {
+                return 'false';
+            }
+            return null; // 若無選擇
         default:
             return null;
     }
