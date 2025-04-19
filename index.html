@@ -40,28 +40,24 @@
         <h3><span class="icon">📚</span> 選擇測驗科目</h3>
         <select id="subject-select" aria-label="選擇測驗科目">
           <option value="">-- 請選擇科目 --</option>
-          <option value=""></option>
           
-          <option value="">-- 本職學能分頁 --</option>
-          <option value=""></option>
-          <option value="行政-人事教範">000.行政-人事教範</option>
-          <option value="518訓練手冊_本職">001.518訓練手冊_本職學能</option>
-          <option value="衛星手冊_本職">002.衛星手冊_本職學能</option>
-          <option value="連(排)教範_本職">003.連(排)教範_本職學能</option>
-          <option value="部隊教範_本職">004.部隊教範_本職學能</option>
-          <option value=""></option>
-          
-          <option value="">-- 數位化班隊分頁 --</option>
-          <option value=""></option>
-          <option value="518操作保養_數位化">002.518操作保養_數位化班隊</option>
-          <option value="518組合訓練_數位化">003.518組合訓練_數位化班隊</option>
-          <option value=""></option>
-          
-          <option value="">-- 士官高級班分頁 --</option>
-          <option value=""></option>
-          <option value="陸軍衛星設備操作手冊_士高準則">001.陸軍衛星設備操作手冊</option>
-          <option value="陸軍37系列跳頻無線電機操作手冊_士高準則">002.陸軍37系列跳頻無線電機操作手冊</option>
-          
+          <optgroup label="本職學能">
+            <option value="行政-人事教範">000.行政-人事教範</option>
+            <option value="518訓練手冊_本職">001.518訓練手冊_本職學能</option>
+            <option value="衛星手冊_本職">002.衛星手冊_本職學能</option>
+            <option value="連(排)教範_本職">003.連(排)教範_本職學能</option>
+            <option value="部隊教範_本職">004.部隊教範_本職學能</option>
+          </optgroup>
+
+          <optgroup label="數位化班隊">
+            <option value="518操作保養_數位化">001.518操作保養_數位化班隊</option>
+            <option value="518組合訓練_數位化">002.518組合訓練_數位化班隊</option>
+          </optgroup>
+
+          <optgroup label="士官高級班">
+            <option value="陸軍衛星設備操作手冊_士高準則">001.陸軍衛星設備操作手冊</option>
+            <option value="陸軍37系列跳頻無線電機操作手冊_士高準則">002.陸軍37系列跳頻無線電機操作手冊</option>
+          </optgroup>
         </select>
         <button id="select-subject-btn" class="main-btn">確認選擇</button>
       </section>
@@ -86,16 +82,16 @@
       <section id="custom-practice" class="module-card" style="display:none;">
         <h3><span class="icon">✍️</span> 自訂練習設定</h3>
         <div class="form-row">
-          <label for="true_false-count">是非題數量：</label>
-          <input type="number" id="true_false-count" min="0" value="0" aria-label="是非題數量">
+          <label for="true_false_count">是非題數量：</label>
+          <input type="number" id="true_false_count" min="0" value="0" aria-label="是非題數量">
         </div>
         <div class="form-row">
-          <label for="single-count">單選題數量：</label>
-          <input type="number" id="single-count" min="0" value="20" aria-label="單選題數量">
+          <label for="single_count">單選題數量：</label>
+          <input type="number" id="single_count" min="0" value="20" aria-label="單選題數量">
         </div>
         <div class="form-row">
-          <label for="multi-count">複選題數量：</label>
-          <input type="number" id="multi-count" min="0" value="10" aria-label="複選題數量">
+          <label for="multi_count">複選題數量：</label>
+          <input type="number" id="multi_count" min="0" value="10" aria-label="複選題數量">
         </div>
         <button id="start-practice-btn" class="main-btn">開始練習</button>
       </section>
@@ -131,7 +127,7 @@
     </main>
 
     <footer>
-      <p>© 2025 線上題庫測驗系統 版權所有</p>
+      <p>© 2025 線上題庫測驗系統 版權所有 </p>
       <p class="version">系統版本: v1.3.0</p>
     </footer>
   </div>
