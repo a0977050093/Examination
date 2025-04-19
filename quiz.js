@@ -75,7 +75,7 @@ function initSystem() {
         domElements.authContainer.style.display = systemState.isAuthenticated ? 'none' : 'flex';
         domElements.appContainer.style.display = systemState.isAuthenticated ? 'block' : 'none';
     }, 1500);
-
+  
     // 綁定事件監聽器
     bindEventListeners();
 }
@@ -113,13 +113,13 @@ function bindEventListeners() {
 // 登入處理
 function handleLogin() {
     const password = domElements.passwordInput.value.trim();
-
+  
     if (!password) {
         domElements.passwordError.textContent = '請輸入密碼';
         domElements.passwordInput.focus();
         return;
     }
-
+  
     if (password === '348362') {
         systemState.isAuthenticated = true;
         localStorage.setItem('isAuthenticated', 'true');
@@ -127,11 +127,11 @@ function handleLogin() {
         domElements.appContainer.style.display = 'block';
         domElements.passwordInput.value = '';
         domElements.passwordError.textContent = '';
-
+        
         // 自動播放音樂
         const music = document.getElementById('background-music');
         music.play(); // 播放音樂
-        music.loop = true; // 若希望音樂無限迴圈播放，可以設置 loop 為 true
+        music.loop = true; // 若希望音樂無限迴圈播放
     } else {
         domElements.passwordError.textContent = '密碼錯誤，請重新輸入';
         domElements.passwordInput.value = '';
@@ -158,7 +158,7 @@ function resetSystemState() {
     systemState.currentQuestionIndex = 0;
     systemState.quizAnswers = [];
     systemState.quizResults = [];
-
+  
     domElements.subjectSelect.value = '';
     domElements.subjectInfo.style.display = 'none';
     domElements.modeSelection.style.display = 'none';
@@ -215,7 +215,7 @@ async function handleSubjectSelection() {
     } catch (error) {
         console.error('載入題庫失敗:', error);
         domElements.subjectDetails.innerHTML = `
-        <p class="error">載入題庫失敗: ${error.message || '請稍後再試'}</p>
+            <p class="error">載入題庫失敗: ${error.message || '請稍後再試'}</p>
         `;
     } finally {
         systemState.isLoading = false;
@@ -538,7 +538,7 @@ function checkAnswer(question, userAnswer) {
 // 獲取使用者答案
 function getUserAnswer(index, questionType) {
     const question = systemState.currentQuiz[index];
-    
+  
     switch(questionType) {
         case 'single_choice':
             const radio = document.querySelector(`input[name="q${index}"]:checked`);
