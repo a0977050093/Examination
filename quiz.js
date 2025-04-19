@@ -120,18 +120,20 @@ function handleLogin() {
         return;
     }
   
-    if (password === '王嘉靖') {
+    if (password === '1qaz2WSX') {
         systemState.isAuthenticated = true;
         localStorage.setItem('isAuthenticated', 'true');
         domElements.authContainer.style.display = 'none';
         domElements.appContainer.style.display = 'block';
         domElements.passwordInput.value = '';
         domElements.passwordError.textContent = '';
-        
-        // 自動播放音樂
-        const music = document.getElementById('background-music');
-        music.play(); // 播放音樂
-        music.loop = true; // 若希望音樂無限迴圈播放
+
+        // 讓用戶選擇是否啟用音樂
+        if (confirm("您希望啟用背景音樂嗎？")) {
+            const music = document.getElementById('background-music');
+            music.play(); // 播放音樂
+            music.loop = true; // 若希望音樂無限迴圈播放
+        }
     } else {
         domElements.passwordError.textContent = '密碼錯誤，請重新輸入';
         domElements.passwordInput.value = '';
@@ -298,6 +300,20 @@ function startCustomPractice() {
     }
     if (multiCount > multiQuestions.length) {
         alert(`可用的複選題數量為 ${multiQuestions.length}，請重新設定。`);
+        return;
+    }
+
+    // 檢查題庫類型設定
+    if (true_falseCount > 0 && !true_falseQuestions.length) {
+        alert('所選題庫中沒有是非題，請選擇另一個題庫或調整設定。');
+        return;
+    }
+    if (singleCount > 0 && !singleQuestions.length) {
+        alert('所選題庫中沒有單選題，請選擇另一個題庫或調整設定。');
+        return;
+    }
+    if (multiCount > 0 && !multiQuestions.length) {
+        alert('所選題庫中沒有複選題，請選擇另一個題庫或調整設定。');
         return;
     }
 
@@ -538,7 +554,7 @@ function checkAnswer(question, userAnswer) {
 // 獲取使用者答案
 function getUserAnswer(index, questionType) {
     const question = systemState.currentQuiz[index];
-  
+    
     switch(questionType) {
         case 'single_choice':
             const radio = document.querySelector(`input[name="q${index}"]:checked`);
