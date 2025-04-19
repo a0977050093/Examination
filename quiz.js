@@ -42,6 +42,7 @@ const domElements = {
   
   // 練習設定
   customPractice: document.getElementById('custom-practice'),
+  true_falseCount: document.getElementById('trun_false-count'),
   singleCount: document.getElementById('single-count'),
   multiCount: document.getElementById('multi-count'),
   startPracticeBtn: document.getElementById('start-practice-btn'),
@@ -236,14 +237,14 @@ async function loadSubjectData(subjectId) {
 
 // 顯示科目資訊
 function displaySubjectInfo(data) {
+  const truefalseCount = data.questions.filter(q => q.type === "true_false").length;
   const singleChoiceCount = data.questions.filter(q => q.type === "single_choice").length;
   const multiChoiceCount = data.questions.filter(q => q.type === "multiple_choice").length;
-  const trueFalseCount = data.questions.filter(q => q.type === "true_false").length;
   
   domElements.subjectDetails.innerHTML = `
     <p><strong>題庫統計：</strong></p>
     <ul>
-      <li>是非題：${trueFalseCount} 題</li>
+      <li>是非題：${truefalseCount} 題</li>
       <li>單選題：${singleChoiceCount} 題</li>
       <li>複選題：${multiChoiceCount} 題</li>
       <li>總題數：${data.questions.length} 題</li>
@@ -270,20 +271,23 @@ function selectMode(mode) {
 
 // 開始自訂練習
 function startCustomPractice() {
+  const true_falseCount = parseInt(domElements.true_falseCount.value) || 0;
   const singleCount = parseInt(domElements.singleCount.value) || 0;
   const multiCount = parseInt(domElements.multiCount.value) || 0;
   
-  if (singleCount + multiCount === 0) {
+  if (true_falseCount + singleCount + multiCount === 0) {
     alert('請設定至少一種題型的數量');
     return;
   }
   
   // 篩選題目
+  const true_falseQuestions = systemState.questions.filter(q => q.type === 'true_false_choice');
   const singleQuestions = systemState.questions.filter(q => q.type === 'single_choice');
   const multiQuestions = systemState.questions.filter(q => q.type === 'multiple_choice');
   
   // 隨機選擇題目
   systemState.currentQuiz = [
+    ...getRandomQuestions(true_falseQuestions, true_falseCount),
     ...getRandomQuestions(singleQuestions, singleCount),
     ...getRandomQuestions(multiQuestions, multiCount)
   ];
@@ -298,7 +302,7 @@ function startCustomPractice() {
 
 // 開始測驗模式
 function startExamMode() {
-  // 測驗模式固定20題單選+10題複選+5題是非
+  // 測驗模式固定20題單選+10題複選+10題是非
   const singleQuestions = systemState.questions.filter(q => q.type === 'single_choice');
   const multiQuestions = systemState.questions.filter(q => q.type === 'multiple_choice');
   const trueFalseQuestions = systemState.questions.filter(q => q.type === 'true_false');
@@ -306,7 +310,7 @@ function startExamMode() {
   systemState.currentQuiz = [
     ...getRandomQuestions(singleQuestions, 20),
     ...getRandomQuestions(multiQuestions, 10),
-    ...getRandomQuestions(trueFalseQuestions, 5)
+    ...getRandomQuestions(trueFalseQuestions, 10)
   ];
   
   startQuiz('正式測驗');
