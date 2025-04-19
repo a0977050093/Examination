@@ -135,7 +135,7 @@ function handleLogin() {
   }
   
   // 實務上應使用雜湊比對而非明文
-  if (password === '22143') {
+  if (password === '348362') {
     systemState.isAuthenticated = true;
     localStorage.setItem('isAuthenticated', 'true');
     domElements.authContainer.style.display = 'none';
@@ -243,9 +243,9 @@ function displaySubjectInfo(data) {
   domElements.subjectDetails.innerHTML = `
     <p><strong>題庫統計：</strong></p>
     <ul>
+      <li>是非題：${trueFalseCount} 題</li>
       <li>單選題：${singleChoiceCount} 題</li>
       <li>複選題：${multiChoiceCount} 題</li>
-      <li>是非題：${trueFalseCount} 題</li>
       <li>總題數：${data.questions.length} 題</li>
     </ul>
     <p>請選擇測驗模式開始練習或測驗</p>
