@@ -42,9 +42,9 @@ const domElements = {
   
   // 練習設定（更新ID）
   customPractice: document.getElementById('custom-practice'),
-  true_falseCount: document.getElementById('true_false_count'), // 注意ID
-  singleCount: document.getElementById('single-count'),
-  multiCount: document.getElementById('multi-count'),
+  true_falseCount: document.getElementById('true_false_count'),
+  singleCount: document.getElementById('single_count'),
+  multiCount: document.getElementById('multi_count'),
   startPracticeBtn: document.getElementById('start-practice-btn'),
   
   // 測驗介面
@@ -167,22 +167,44 @@ function resetSystemState() {
 // 科目選擇處理
 async function handleSubjectSelection() {
   const subjectId = domElements.subjectSelect.value;
-  
+
   if (!subjectId) {
     alert('請選擇科目');
     return;
   }
-  
+
   systemState.currentSubject = subjectId;
   domElements.currentSubject.textContent = domElements.subjectSelect.selectedOptions[0].text;
-  
+
   try {
     systemState.isLoading = true;
     domElements.loadingOverlay.style.display = 'flex';
-    
+
     const data = await loadSubjectData(subjectId);
     systemState.questions = data.questions;
+
+    // 顯示題型的可用性
+    const availableTypes = {
+      true_false: false,
+      single_choice: false,
+      multiple_choice: false
+    };
     
+    for (const question of systemState.questions) {
+      if (question.type === 'true_false') {
+        availableTypes.true_false = true;
+      } else if (question.type === 'single_choice') {
+        availableTypes.single_choice = true;
+      } else if (question.type === 'multiple_choice') {
+        availableTypes.multiple_choice = true;
+      }
+    }
+
+    // 設置自訂練習的題型選項顯示或隱藏
+    domElements.true_falseCount.disabled = !availableTypes.true_false;
+    domElements.singleCount.disabled = !availableTypes.single_choice;
+    domElements.multiCount.disabled = !availableTypes.multiple_choice;
+
     displaySubjectInfo(data);
     domElements.modeSelection.style.display = 'block';
   } catch (error) {
@@ -251,38 +273,41 @@ function selectMode(mode) {
 
 // 開始自訂練習
 function startCustomPractice() {
-  // 檢查 DOM 元素是否存在
-  if (!domElements.true_falseCount || !domElements.singleCount || !domElements.multiCount) {
-    alert('某些設定未正確載入，請重新加載頁面.');
-    return;
-  }
-
   const true_falseCount = parseInt(domElements.true_falseCount.value) || 0;
   const singleCount = parseInt(domElements.singleCount.value) || 0;
   const multiCount = parseInt(domElements.multiCount.value) || 0;
-  
-  if (true_falseCount + singleCount + multiCount === 0) {
-    alert('請設定至少一種題型的數量');
-    return;
-  }
-  
+
   // 篩選題目
   const true_falseQuestions = systemState.questions.filter(q => q.type === 'true_false');
   const singleQuestions = systemState.questions.filter(q => q.type === 'single_choice');
   const multiQuestions = systemState.questions.filter(q => q.type === 'multiple_choice');
-  
+
+  // 檢查可用題型數量
+  if (true_falseCount > true_falseQuestions.length) {
+    alert(`可用的是非題數量為 ${true_falseQuestions.length}，請重新設定。`);
+    return;
+  }
+  if (singleCount > singleQuestions.length) {
+    alert(`可用的單選題數量為 ${singleQuestions.length}，請重新設定。`);
+    return;
+  }
+  if (multiCount > multiQuestions.length) {
+    alert(`可用的複選題數量為 ${multiQuestions.length}，請重新設定。`);
+    return;
+  }
+
   // 隨機選擇題目
   systemState.currentQuiz = [
     ...getRandomQuestions(true_falseQuestions, true_falseCount),
     ...getRandomQuestions(singleQuestions, singleCount),
     ...getRandomQuestions(multiQuestions, multiCount)
   ];
-  
+
   if (systemState.currentQuiz.length === 0) {
     alert('沒有足夠的題目可供練習');
     return;
   }
-  
+
   startQuiz('自訂練習');
 }
 
@@ -363,7 +388,7 @@ function showQuestion(index) {
   // 更新進度顯示
   domElements.quizProgress.textContent = `題目 ${index + 1}/${systemState.currentQuiz.length}`;
   domElements.quizProgress.setAttribute('aria-label', `第 ${index + 1} 題，共 ${systemState.currentQuiz.length} 題`);
-  
+
   // 複製選項陣列並隨機排序 (但保留原始答案)
   let randomizedOptions = [...question.options];
   if (question.type !== 'true_false') {
@@ -372,13 +397,12 @@ function showQuestion(index) {
 
   // 建立選項HTML
   let optionsHtml = '';
-  
+
   // 單選題選項
   if (question.type === 'single_choice') {
     optionsHtml = randomizedOptions.map((option, i) => `
       <label class="option radio-option">
-        <input type="radio" name="q${index}" value="${option}" id="opt-${index}-${i}"
-               ${isOptionSelected(question, index, option) ? 'checked' : ''}>
+        <input type="radio" name="q${index}" value="${option}" id="opt-${index}-${i}" ${isOptionSelected(question, index, option) ? 'checked' : ''}>
         <span class="option-checkmark"></span>
         <span class="option-text">${option}</span>
       </label>
@@ -388,8 +412,7 @@ function showQuestion(index) {
   else if (question.type === 'multiple_choice') {
     optionsHtml = randomizedOptions.map((option, i) => `
       <label class="option checkbox-option">
-        <input type="checkbox" name="q${index}" value="${option}" id="opt-${index}-${i}"
-               ${isOptionSelected(question, index, option) ? 'checked' : ''}>
+        <input type="checkbox" name="q${index}" value="${option}" id="opt-${index}-${i}" ${isOptionSelected(question, index, option) ? 'checked' : ''}>
         <span class="option-checkmark"></span>
         <span class="option-text">${option}</span>
       </label>
@@ -412,9 +435,7 @@ function showQuestion(index) {
     <div class="options">${optionsHtml}</div>
     <div class="navigation-buttons">
       ${index > 0 ? '<button id="prev-btn" class="nav-btn">上一題</button>' : ''}
-      <button id="next-btn" class="nav-btn">
-        ${index === systemState.currentQuiz.length - 1 ? '提交測驗' : '下一題'}
-      </button>
+      <button id="next-btn" class="nav-btn">${index === systemState.currentQuiz.length - 1 ? '提交測驗' : '下一題'}</button>
     </div>
   `;
 
@@ -441,7 +462,7 @@ function bindNavigationEvents(index, questionType) {
         alert('請先選擇答案');
         return;
       }
-      
+
       if (index >= systemState.currentQuiz.length - 1) {
         submitQuiz();
       } else {
