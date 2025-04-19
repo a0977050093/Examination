@@ -16,50 +16,42 @@ const systemState = {
 
 // DOM元素快取
 const domElements = {
-    // 驗證區
     loadingOverlay: document.getElementById('loading-overlay'),
     authContainer: document.getElementById('auth-container'),
     passwordInput: document.getElementById('password-input'),
     passwordError: document.getElementById('password-error'),
     loginBtn: document.getElementById('login-btn'),
 
-    // 主系統
     appContainer: document.getElementById('app-container'),
     logoutBtn: document.getElementById('logout-btn'),
     currentSubject: document.getElementById('current-subject'),
 
-    // 科目選擇
     subjectSelect: document.getElementById('subject-select'),
     selectSubjectBtn: document.getElementById('select-subject-btn'),
     subjectInfo: document.getElementById('subject-info'),
     subjectDetails: document.getElementById('subject-details'),
 
-    // 模式選擇
     modeSelection: document.getElementById('mode-selection'),
     practiceModeBtn: document.getElementById('practice-mode-btn'),
     examModeBtn: document.getElementById('exam-mode-btn'),
     historyBtn: document.getElementById('history-btn'),
 
-    // 練習設定（更新ID）
     customPractice: document.getElementById('custom-practice'),
     true_falseCount: document.getElementById('true_false_count'),
     singleCount: document.getElementById('single_count'),
     multiCount: document.getElementById('multi_count'),
     startPracticeBtn: document.getElementById('start-practice-btn'),
 
-    // 測驗介面
     quizInterface: document.getElementById('quiz-interface'),
     quizTitle: document.getElementById('quiz-title'),
     quizProgress: document.getElementById('quiz-progress'),
     questionContainer: document.getElementById('question-container'),
 
-    // 結果區
     resultContainer: document.getElementById('result-container'),
     resultContent: document.getElementById('result-content'),
     reviewBtn: document.getElementById('review-btn'),
     newQuizBtn: document.getElementById('new-quiz-btn'),
 
-    // 歷史紀錄
     historyContainer: document.getElementById('history-container'),
     historyList: document.getElementById('history-list'),
     backToQuizBtn: document.getElementById('back-to-quiz-btn'),
@@ -76,7 +68,6 @@ function initSystem() {
         domElements.appContainer.style.display = systemState.isAuthenticated ? 'block' : 'none';
     }, 1500);
   
-    // 綁定事件監聽器
     bindEventListeners();
 }
 
@@ -89,25 +80,18 @@ function bindEventListeners() {
     domElements.logoutBtn.addEventListener('click', handleLogout);
 
     domElements.selectSubjectBtn.addEventListener('click', handleSubjectSelection);
-
+    
     domElements.practiceModeBtn.addEventListener('click', () => selectMode('practice'));
     domElements.examModeBtn.addEventListener('click', () => selectMode('exam'));
     domElements.historyBtn.addEventListener('click', showHistory);
 
     domElements.startPracticeBtn.addEventListener('click', startCustomPractice);
-
+    
     domElements.reviewBtn.addEventListener('click', reviewWrongAnswers);
     domElements.newQuizBtn.addEventListener('click', resetForNewQuiz);
 
     domElements.backToQuizBtn.addEventListener('click', backToQuizFromHistory);
     domElements.deleteHistoryBtn.addEventListener('click', confirmDeleteHistory);
-
-    document.addEventListener('change', function(e) {
-        if (e.target.type === 'checkbox' && e.target.name.startsWith('q') && systemState.currentMode) {
-            const index = parseInt(e.target.name.substring(1));
-            saveAnswer(index, 'multiple_choice');
-        }
-    });
 }
 
 // 登入處理
@@ -119,20 +103,20 @@ function handleLogin() {
         domElements.passwordInput.focus();
         return;
     }
-  
-    if (password === '1qaz2WSX') {
+
+    if (password === '348362') {
         systemState.isAuthenticated = true;
         localStorage.setItem('isAuthenticated', 'true');
         domElements.authContainer.style.display = 'none';
         domElements.appContainer.style.display = 'block';
         domElements.passwordInput.value = '';
         domElements.passwordError.textContent = '';
-
+        
         // 讓用戶選擇是否啟用音樂
         if (confirm("您希望啟用背景音樂嗎？")) {
             const music = document.getElementById('background-music');
             music.play(); // 播放音樂
-            music.loop = true; // 若希望音樂無限迴圈播放
+            music.loop = true; // 音樂無限循環
         }
     } else {
         domElements.passwordError.textContent = '密碼錯誤，請重新輸入';
@@ -372,15 +356,14 @@ function startQuiz(quizType) {
     systemState.quizAnswers = [];
     systemState.quizResults = [];
     systemState.currentQuestionIndex = 0;
-  
-    // 更新介面
+    
     domElements.modeSelection.style.display = 'none';
     domElements.customPractice.style.display = 'none';
     domElements.quizInterface.style.display = 'block';
     domElements.resultContainer.style.display = 'none';
     domElements.historyContainer.style.display = 'none';
     domElements.quizTitle.textContent = `${domElements.subjectSelect.selectedOptions[0].text} - ${quizType}`;
-  
+    
     // 顯示第一題
     showQuestion(0);
 }
@@ -410,10 +393,15 @@ function showQuestion(index) {
     domElements.quizProgress.textContent = `題目 ${index + 1}/${systemState.currentQuiz.length}`;
     domElements.quizProgress.setAttribute('aria-label', `第 ${index + 1} 題，共 ${systemState.currentQuiz.length} 題`);
 
-    // 複製選項陣列並隨機排序 (但保留原始答案)
-    let randomizedOptions = [...question.options];
-    if (question.type !== 'true_false') {
+    // 檢查 options 是否存在且為數組
+    let randomizedOptions = [];
+    if (question.options && Array.isArray(question.options)) {
         randomizedOptions = shuffleArray([...question.options]);
+    } else if (question.type === 'true_false') {
+        randomizedOptions = ["是", "否"]; // 對於是非題，給予預設選項
+    } else {
+        console.error('Question options not found or not iterable:', question);
+        return;
     }
 
     // 建立選項HTML
@@ -605,7 +593,7 @@ function generateResults() {
             userAnswer: Array.isArray(userAnswer) ? userAnswer.join(', ') : userAnswer,
             correctAnswer: Array.isArray(question.answer) ? question.answer.join(', ') : question.answer,
             isCorrect: isCorrect,
-            explanation: question.explanation || ''
+            explanation: question.reference || ''
         };
     });
 }
@@ -626,7 +614,7 @@ function displayResults(score, results) {
             <p><strong>題目 ${index + 1}:</strong> ${result.question}</p>
             <p>您的答案: <span class="${result.isCorrect ? 'correct-answer' : 'wrong-answer'}">${result.userAnswer}</span></p>
             ${!result.isCorrect ? `<p>正確答案: <span class="correct-answer">${result.correctAnswer}</span></p>` : ''}
-            ${result.explanation ? `<p class="explanation">說明: ${result.explanation}</p>` : ''}
+            ${result.explanation ? `<p class="explanation">參考資料: ${result.explanation}</p>` : ''}
         </div>
         `;
     });
@@ -721,7 +709,7 @@ function showHistory() {
     
     // 綁定詳情按鈕事件
     document.querySelectorAll('.detail-btn').forEach(btn => {
-        btn.addEventListener('click', function() {
+        btn.addEventListener('click', function () {
             const index = this.getAttribute('data-index');
             const details = document.getElementById(`details-${index}`);
             details.classList.toggle('active');
