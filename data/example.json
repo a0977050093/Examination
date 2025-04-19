@@ -1,0 +1,46 @@
+{
+  "subject_id": "sample_subject",
+  "subject_name": "範例科目",
+  "questions": [
+    {
+      "type": "true_false",
+      "question": "地球是平的。",
+      "answer": "false",
+      "reference": "地球是近似球體的行星，這一點已被科學證實。"
+    },
+    {
+      "type": "single_choice",
+      "question": "以下哪個行星被稱為紅色星球？",
+      "options": ["金星", "火星", "木星", "土星"],
+      "answer": "火星",
+      "reference": "火星因其表面富含氧化鐵（鐵銹）而呈現紅色。"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "以下哪些是哺乳動物的特徵？",
+      "options": ["有毛髮", "產卵繁殖", "哺乳", "冷血"],
+      "answer": ["有毛髮", "哺乳"],
+      "reference": "哺乳動物通常有毛髮並哺乳，屬於溫血動物。"
+    },
+    {
+      "type": "fill_in",
+      "question": "水的化學式是 ________。",
+      "answer": "H2O",
+      "reference": "水的化學式由兩個氫原子和一個氧原子組成，寫作 H2O。"
+    },
+    {
+      "type": "single_choice",
+      "question": "太陽系中最大的行星是？",
+      "options": ["地球", "火星", "木星", "天王星"],
+      "answer": "木星",
+      "reference": "木星是太陽系中最大的行星，其體積足以容納1300個地球。"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "以下哪些元素是氣體？",
+      "options": ["氧氣", "鐵", "氫氣", "金"],
+      "answer": ["氧氣", "氫氣"],
+      "reference": "氧氣和氫氣在常溫下為氣態元素。"
+    }
+  ]
+}
