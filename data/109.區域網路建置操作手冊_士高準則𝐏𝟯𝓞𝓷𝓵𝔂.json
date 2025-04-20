@@ -1,0 +1,587 @@
+{
+	"questions": [
+		{
+			"type": "single_choice",
+			"question": "1. OSI中的哪一層使用了4個基本程序:定址、封裝、路由、解封裝？",
+			"options": [
+				"網路層",
+				"交換層",
+				"路由層",
+				"以上皆非"
+			],
+			"answer": "網路層",
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "2. 延伸ACL檢查port number的語法，如果要檢查小於port number，指令要使用哪些參數？",
+			"options": [
+				"eq",
+				"lt",
+				"gt",
+				"less"
+			],
+			"answer": "lt",
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "3. 下列哪種模式會將超過安全MAC允許數量的封包丟棄，直至移除足夠數量的安全MAC位址或增加最大MAC數目，並會發送安全違規的通知？",
+			"options": [
+				"Protect",
+				"Restrict",
+				"Shutdown",
+				"以上皆是"
+			],
+			"answer": "Restrict",
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "4. 關於8521的敘述，下列何者錯誤:",
+			"options": [
+				"使用兩對銅線可達到5.7Mbps數據傳輸服務，並根據傳輸距離選擇適當的傳輸速率",
+				"服務的範圍最遠可達到7公里",
+				"內建4個高速網路連接埠(RJ-45接頭)可提供用戶作為內部網路連接使用",
+				"兩個電話埠(RJ-11接頭)可提供用戶端作為廣域網路的連接使用"
+			],
+			"answer": "使用兩對銅線可達到5.7Mbps數據傳輸服務，並根據傳輸距離選擇適當的傳輸速率",
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "5. 關於VTP(Vlan Trunk Protocal)的敘述，下列何者錯誤？",
+			"options": [
+				"Server模式:在模式下可以建立、修改即刪除本地vlan，並產生VTP更新封包，也接收其他server的VTP更新封包來修改本地vlan資訊",
+				"Client模式:在模式下無法自行建立、修改即刪除本地vlan，也無法產生VTP更新封包，但可以接收VTP更新封包並根據更新更新封包來建立、修改及刪除本地vlan",
+				"Transparent模式:此模式下不可建立、修改即刪除本地vlan",
+				"Transparent模式:在模式下只會協助傳送VTP更新封包，不會根據VTP更新封包來修改本地vlan"
+			],
+			"answer": "Transparent模式:此模式下不可建立、修改即刪除本地vlan",
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "6. 關於EIA/TIA-568接頭標準，下列敘述何者錯誤？",
+			"options": [
+				"EIA/TIA-568A規格，其排列順序為白綠、綠、白橙、藍、白藍、橙、白棕、棕",
+				"EIA/TIA-568B規格，其排列順序為白橙、橙、白綠、藍、白藍、綠、白棕、棕",
+				"一般網路線兩頭皆為EIA/TIA-568A規格",
+				"所謂的跳線(Cross Over Link)，這種線專門用來串連兩個相同的設備，如電腦、HUB等。製作時網路線的一端使用568A規格，另一端使用568B規格"
+			],
+			"answer": "一般網路線兩頭皆為EIA/TIA-568A規格",
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "7. 關於A/TIA-568線材規格，下列敘述何者錯誤？",
+			"options": [
+				"Category4:速率20Mbps，用於10BaseT及4Mbps Token Ring",
+				"Category5:速率100Mbps，用於100BaseTX",
+				"Category6:特性頻率可達200MHz，如155Mbps ATM",
+				"Category7:特性頻率可達300MHz，如155/622Mbps ATM"
+			],
+			"answer": "Category7:特性頻率可達300MHz，如155/622Mbps ATM",
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "8. 關於網路線製作的敘述，下列何者正確?",
+			"options": [
+				"一般常見的網路線材為UTP跟VTP",
+				"網路線所使用的接頭為RJ-11接頭",
+				"常見的網路線兩端皆為EIA/TIA-568A規格",
+				"若製作跳線，接頭一端使用EIA/TIA-568A，另一端使用EIA/TIA-568B規格"
+			],
+			"answer": "若製作跳線，接頭一端使用EIA/TIA-568A，另一端使用EIA/TIA-568B規格",
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "9. 關於傳輸介質的敘述，下列何者錯誤?",
+			"options": [
+				"常見有雙絞線、同軸電纜、光纖及無線電等介質",
+				"雙絞線是由8對帶彩色標記的電線絞合再一起",
+				"同軸電纜還被廣泛應用於透過電線傳輸高射頻信號的媒體，尤其是有線電視信號",
+				"光纜使用玻璃或塑膠光纖將光脈衝從來源設備導致目的設備"
+			],
+			"answer": "雙絞線是由8對帶彩色標記的電線絞合再一起",
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "10. 關於指令的敘述，下列何者錯誤?",
+			"options": [
+				"s1(config)#vlan 10:建立編號為10的vlan",
+				"s1(config-vlan)#name blue:設定交換器名稱為blue",
+				"s1(config-if)#switchport access vlan 10:將某個埠指定給vlan 10",
+				"s1#show vlan:檢查vlan的狀態"
+			],
+			"answer": "s1(config-vlan)#name blue:設定交換器名稱為blue",
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "11. 關於EIA/TIA-568接頭標準，下列敘述何者正確？",
+			"options": [
+				"EIA/TIA-568定義兩種接頭規格，EIA/TIA-568A及EIA/TIA-568B，",
+				"目前大多EIA/TIA-568B，其排列順序為白綠、綠、白橙、藍、白藍、橙、白棕、棕",
+				"10Base-T與100Bass-T的乙太網路架構中，僅使用第1、2、4、6芯線",
+				"RJ-45插槽的腳位即Pinl為RX+、Pin2為RX、Pin4為TX+、Pin6為TX-"
+			],
+			"answer": "EIA/TIA-568定義兩種接頭規格，EIA/TIA-568A及EIA/TIA-568B，",
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "12. 關於tracert指令，下列敘述何者正確？",
+			"options": [
+				"主要用於顯示資料封包送達目的地主機所經過的路徑，並記錄經過的中繼節點清單與花費時間",
+				"可查看電腦的IP Address、子網路遮罩、閘道器等設定",
+				"搭配參數 -d，為設定等待傳送逾時或回應答覆的時間。",
+				"用以顯示與IP、TCP、UDP和ICMP協定相關的統計資料"
+			],
+			"answer": "主要用於顯示資料封包送達目的地主機所經過的路徑，並記錄經過的中繼節點清單與花費時間",
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "13. 關於8521最遠延伸距離，下列何者正確？",
+			"options": [
+				"200公尺",
+				"1公里",
+				"5公里",
+				"7公里"
+			],
+			"answer": "7公里",
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "14. 關於數位用戶迴路橋接器的敘述，下列何者錯誤？",
+			"options": [
+				"8521能在兩對銅線上提供雙向最高各5.7Mbps的傳輸速率",
+				"8521內鍵有四個高速網路連接埠、兩個電話埠，沒有console埠。",
+				"8521設定方法有分橋接模式及路由模式兩種",
+				"橋接模式是一端提供資訊訊號(CO)，另一端為接收訊號端(CPE)"
+			],
+			"answer": "8521能在兩對銅線上提供雙向最高各5.7Mbps的傳輸速率",
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "15. 查看IP Address、子網路遮照、閘道器等設定值時宜使用下列哪一個指令？",
+			"options": [
+				"ipconfig",
+				"ping",
+				"netstat",
+				"tracert"
+			],
+			"answer": "ipconfig",
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "16. 設定ASA5505/5506防火牆時，要使用哪個方法？",
+			"options": [
+				"使用ASDM",
+				"使用ADSL",
+				"使用ADSM",
+				"以上皆是"
+			],
+			"answer": "使用ASDM",
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "17. 當通聯距離超過500公尺時，可用何種方法延伸電路，下列何者為非？",
+			"options": [
+				"加密式無線網路",
+				"光纖",
+				"518系統",
+				"85XX系列橋接器"
+			],
+			"answer": "加密式無線網路",
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "18. 關於存取清單(ACL)的敘述，何者錯誤？",
+			"options": [
+				"在網路介面啟動ACL時要注意方向性，所謂方向性即是封包是進入或離開介面的動作",
+				"執行時，會先執行第1項ACL，測試是否符合條件；如果符合扔會執行第2項以後的ACL。",
+				"ACL的動作就只有deny及permit兩種，permit表示允許封包通過，deny則表示阻擋封包通過。",
+				"標準ACL只能檢查封包的來源，延伸ACL能檢查封包的來源、目的、協定及服務等4種條件。"
+			],
+			"answer": "執行時，會先執行第1項ACL，測試是否符合條件；如果符合扔會執行第2項以後的ACL。",
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "19. 關於網路線製作的敘述，下列何者錯誤？",
+			"options": [
+				"一般常見的網路線材為UTP跟VTP。",
+				"網路線所使用的接頭為RJ-45接頭。",
+				"若製作跳線，接頭一端使用EIA/TIA-568A，另一端使用EIA/TIA-568B規格。",
+				"網路線的最大傳輸距離為100公尺。"
+			],
+			"answer": "一般常見的網路線材為UTP跟VTP。",
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "20. 關於數位用戶迴路橋接器的敘述，下列何者錯誤？",
+			"options": [
+				"8500能在一對銅線上提供雙向最高各2.3Mbps的傳輸速率。",
+				"服務範圍可達7公里，可應用於延伸通信距離使用。",
+				"8500/8521的預設IP為12.168.1.254，因此需將電腦IP改成192.168.1.254才可連接。",
+				"瀏覽器輸入IP後，會跳出輸入帳號密碼之畫面，帳號密碼皆為admin。"
+			],
+			"answer": "8500/8521的預設IP為12.168.1.254，因此需將電腦IP改成192.168.1.254才可連接。",
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "1. 下列何者屬於傳輸媒介?",
+			"options": [
+				"雙絞線",
+				"電源線",
+				"無線電",
+				"光纖",
+				"同軸電纜"
+			],
+			"answer": [
+				"雙絞線",
+				"無線電",
+				"光纖",
+				"同軸電纜"
+			],
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "2. 區域網路作業型態有哪些?",
+			"options": [
+				"齊頭式網路作業方式",
+				"對等式網路作業方式",
+				"主從式網路作業方式",
+				"分散式網路作業方式",
+				"集中式網路作業方式"
+			],
+			"answer": [
+				"對等式網路作業方式",
+				"主從式網路作業方式"
+			],
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "3. LEEE將OIS中的資料連結層區分為下列何者?",
+			"options": [
+				"IP",
+				"LLC",
+				"LTP",
+				"MNP",
+				"MAC"
+			],
+			"answer": [
+				"LLC",
+				"MAC"
+			],
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "4. OSI中的網路層功能為何?",
+			"options": [
+				"定址",
+				"解封裝",
+				"分段",
+				"壓縮",
+				"路由"
+			],
+			"answer": [
+				"定址",
+				"解封裝",
+				"路由"
+			],
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "5. 常用的UDP通訊協定有哪些?",
+			"options": [
+				"HTTP",
+				"TFTP",
+				"FTP",
+				"DNS",
+				"DHCP"
+			],
+			"answer": [
+				"TFTP",
+				"DNS",
+				"DHCP"
+			],
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "6. 下列哪些vlan編號保留給其他協定使用?",
+			"options": [
+				"vlan100",
+				"vlan999",
+				"vlan1003",
+				"vlan101",
+				"vlan1005"
+			],
+			"answer": [
+				"vlan1003",
+				"vlan1005"
+			],
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "7. 機動式數位微波與陸區建立tunnel的IP不能設為以下何者?",
+			"options": [
+				"10.42.2.1",
+				"192.168.1.1",
+				"10.42.3.1",
+				"192.168.100.1",
+				"192.168.3.1"
+			],
+			"answer": [
+				"10.42.2.1",
+				"10.42.3.1"
+			],
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "8. BNS主網站「自動阻斷」顯示異常一查詢BNS主網站總表，「自動阻斷」欄位顯示「X」或「未回傳」，則依下列步驟檢查?",
+			"options": [
+				"BNS系統更新作業不完整:須更新BNS系統最新版本與資料庫。",
+				"如顯示「E」訊息，則代表未更新到5.0版本資料庫，須至下載區重新下載更新。",
+				"如顯示「X」訊息，則代表未更新到5.0版本資料庫，須至下載區重新下載更新。",
+				"如系統顯示「未回傳」訊息，表示未安裝到最版BNS Service。",
+				"如系統顯示「未安裝」訊息，表示未安裝最版BNS Service。"
+			],
+			"answer": [
+				"BNS系統更新作業不完整:須更新BNS系統最新版本與資料庫。",
+				"如顯示「X」訊息，則代表未更新到5.0版本資料庫，須至下載區重新下載更新。",
+				"如系統顯示「未回傳」訊息，表示未安裝到最版BNS Service。"
+			],
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "9. 如忘記交換器特權密碼，可以使用以下方法找回密碼；下列何者正確?",
+			"options": [
+				"將電源移除，要接上時，同時按住switch mode鍵，開機畫面會跳入「switch:」。",
+				"接著我們輸入 dir flash:之後，將密碼備份起來",
+				"接著我們輸入show flash:之後，將密碼備份起來。",
+				"重開機後，會沒有任何的config在設備內，我們輸入「show flash」，會看到剛剛重新命名後的檔案config.text.bak，接著將此檔案重新命名為running-config後，輸入「show run」即可看到密碼",
+				"將電源移除，要接上時，同時按住switch mode鍵，開機畫面會跳入「switch#」"
+			],
+			"answer": [
+				"將電源移除，要接上時，同時按住switch mode鍵，開機畫面會跳入「switch:」。",
+				"接著我們輸入 dir flash:之後，將密碼備份起來",
+				"重開機後，會沒有任何的config在設備內，我們輸入「show flash」，會看到剛剛重新命名後的檔案config.text.bak，接著將此檔案重新命名為running-config後，輸入「show run」即可看到密碼"
+			],
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "10. 以下那些屬於port security?",
+			"options": [
+				"S1(config-if)#switchport port-security",
+				"S1(config-if)#switchport port-security maximum2",
+				"S1(config-if)#switchport security violation noshutdown",
+				"S1#reduce mac-address-table",
+				"S1#show port-security address"
+			],
+			"answer": [
+				"S1(config-if)#switchport port-security",
+				"S1(config-if)#switchport port-security maximum2",
+				"S1#show port-security address"
+			],
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "11. 關於交換器的敘述，下列何者錯誤?",
+			"options": [
+				"交換器可以轉寄訊息到特定的主機",
+				"交換器沒有提供圖形化介面(GUI)",
+				"我們無法利用遠端登入城市對交換器做存取",
+				"Console線一端為RS232，另一端採用RJ11的接頭用以連接電腦",
+				"每台交換器都有一個主控台通訊埠，我們稱之為Gigabit Port"
+			],
+			"answer": [
+				"交換器沒有提供圖形化介面(GUI)",
+				"我們無法利用遠端登入城市對交換器做存取",
+				"Console線一端為RS232，另一端採用RJ11的接頭用以連接電腦",
+				"每台交換器都有一個主控台通訊埠，我們稱之為Gigabit Port"
+			],
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "12. 關於VTP可設定的模式，下列選項何者正確？",
+			"options": [
+				"Server模式",
+				"Client模式",
+				"Router模式",
+				"Transparent模式",
+				"以上皆是"
+			],
+			"answer": [
+				"Server模式",
+				"Client模式",
+				"Transparent模式"
+			],
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "13. 關於設定vlan的指令，下列對指令之敘述何者正確？",
+			"options": [
+				"s1(config)#vlan 10:建立編號為10的vlan",
+				"s1(config-vlan)#name blue:vlan名稱為blue",
+				"s1(config)#interface fa0/1",
+				"s1(config)#switchport access vlan 10:將fa0/1指定給vlan 10",
+				"以上皆是"
+			],
+			"answer": [
+				"s1(config)#vlan 10:建立編號為10的vlan",
+				"s1(config-vlan)#name blue:vlan名稱為blue",
+				"s1(config)#interface fa0/1",
+				"s1(config)#switchport access vlan 10:將fa0/1指定給vlan 10",
+				"以上皆是"
+			],
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "14. 關於EIA/TIA-568接頭標準，下列敘述何者正確:",
+			"options": [
+				"EIA/TIA-568A規格，其排列順序為白綠、綠、白橙、藍、白藍、橙、白棕、棕",
+				"EIA/TIA-568B規格，其排列順序為白橙、橙、白綠、藍、白藍、綠、白棕、棕",
+				"一般網路線兩頭皆為EIA/TIA-568A規格",
+				"一般網路線兩頭皆為EIA/TIA-568B規格",
+				"跳線(Cross Over Link)，這種線專門用來串聯兩個相同的設備，如電腦、HUB等。"
+			],
+			"answer": [
+				"EIA/TIA-568A規格，其排列順序為白綠、綠、白橙、藍、白藍、橙、白棕、棕",
+				"EIA/TIA-568B規格，其排列順序為白橙、橙、白綠、藍、白藍、綠、白棕、棕",
+				"一般網路線兩頭皆為EIA/TIA-568B規格",
+				"跳線(Cross Over Link)，這種線專門用來串聯兩個相同的設備，如電腦、HUB等。"
+			],
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "15. 延伸型ACL可針對封包那些條件作篩選？",
+			"options": [
+				"來源",
+				"目的",
+				"協定",
+				"服務",
+				"以上皆是"
+			],
+			"answer": [
+				"來源",
+				"目的",
+				"協定",
+				"服務",
+				"以上皆是"
+			],
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "16. 關於VTP(Vlan Trunk Protocal)建立的敘述，下列何者正確？",
+			"options": [
+				"交換器之間的連線必為主幹模式(TRUNK)",
+				"交換器之間有一台作為server",
+				"所設定的VTP密碼不能跟server端相同，避免產生衝突",
+				"所有交換器的VTP Domain必須相同",
+				"以上皆是"
+			],
+			"answer": [
+				"交換器之間的連線必為主幹模式(TRUNK)",
+				"交換器之間有一台作為server",
+				"所有交換器的VTP Domain必須相同"
+			],
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "17. 下列關於路由表之敘述，何者正確？",
+			"options": [
+				"C為connected直接與路由器相連的網路",
+				"L為local表本地網路",
+				"S為static靜態的路由信息",
+				"O為option路由選項",
+				"以上皆是"
+			],
+			"answer": [
+				"C為connected直接與路由器相連的網路",
+				"L為local表本地網路",
+				"S為static靜態的路由信息"
+			],
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "18. 運用8521橋接模式可延伸實體距離至幾公里？下列何者為非？",
+			"options": [
+				"1公里",
+				"10公里",
+				"7公里",
+				"8公里",
+				"17公里"
+			],
+			"answer": [
+				"1公里",
+				"10公里",
+				"8公里",
+				"17公里"
+			],
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "19. 8521架設時，需要哪些步驟完成橋接模式？",
+			"options": [
+				"將兩端背板DSL埠以被覆線接上",
+				"將8521一端設定為COE端",
+				"將8521一端設定為CPE端",
+				"將8521一端設定為CO端",
+				"將8521一端設定為COP端"
+			],
+			"answer": [
+				"將兩端背板DSL埠以被覆線接上",
+				"將8521一端設定為CPE端",
+				"將8521一端設定為CO端"
+			],
+			"reference": "區域網路建置操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "20. 下列哪些為8521用戶迴路橋接器之主機介面？",
+			"options": [
+				"1個電話埠",
+				"4個電話埠",
+				"2個電話埠",
+				"2個高速網路連接埠",
+				"4個高速網路連接埠"
+			],
+			"answer": [
+				"2個電話埠",
+				"4個高速網路連接埠"
+			],
+			"reference": "區域網路建置操作手冊"
+		}
+	]
+}

@@ -1,0 +1,869 @@
+{
+	"questions": [
+		{
+			"type": "single_choice",
+			"question": "1. 何者為數位傳輸群組?",
+			"options": [
+				"Digital Transmission Group",
+				"Assign",
+				"Set Up",
+				"Traffic Metering"
+			],
+			"answer": "Digital Transmission Group",
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "2. 何者非至CCTS的直接連線鏈路?",
+			"options": [
+				"CCTS 連線至商用 T1 交換機",
+				"CCTS 連線至 CCTS",
+				"CCTS 連線至 CCES(V)1/2",
+				"CCES 連線至 RAU"
+			],
+			"answer": "CCES 連線至 RAU",
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "3. 何者為中繼線組群?",
+			"options": [
+				"Trunk Group Cluster",
+				"Assignments",
+				"Flood Search Link Status",
+				"Major Equipment Status"
+			],
+			"answer": "Trunk Group Cluster",
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "4. 關於多波道鏈路的多路衰減因素不包括?",
+			"options": [
+				"無線電頻率",
+				"路徑距離",
+				"地球物理變數",
+				"操作手心情"
+			],
+			"answer": "操作手心情",
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "5. 關於多波道鏈路的多路衰減？下列敘述何者為非?",
+			"options": [
+				"路徑長度加倍衰減強度也會增加",
+				"溼熱的氣候比乾冷的氣候衰減嚴重",
+				"多山地區比平坦地區衰減嚴重",
+				"晚上比白天衰減情形嚴重"
+			],
+			"answer": "多山地區比平坦地區衰減嚴重",
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "6. 在IMSE網路中造成EMI的最常見成因包括",
+			"options": [
+				"同點干擾情形",
+				"場際干擾情況",
+				"可用頻率資源的限制",
+				"以上皆是"
+			],
+			"answer": "以上皆是",
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "7. 關於多波道鏈路於傳播過程中的損失。下列敘述何者正確",
+			"options": [
+				"在沒有反射或吸收材質的地區造成的損失，稱為自由空間內的傳播損失",
+				"自由空間內的傳播損失會隨著頻率與距離而增加",
+				"Clear Wave軟體對LOS以外的預測會用到繞射與對流層傳播模式",
+				"以上皆是"
+			],
+			"answer": "以上皆是",
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "8. 關於多波道鏈路的鏈路臨界！下列敘述何者錯誤?",
+			"options": [
+				"接收信號強度與無線電接收器臨界值之差異稱為鏈路臨界",
+				"鏈路臨界越大無線電傳播中止的情況就越多",
+				"傳播中止代表無線電位元錯誤率過高而無法操作",
+				"接收信號強度比無線電接收器臨界值低時會造成傳播中止"
+			],
+			"answer": "鏈路臨界越大無線電傳播中止的情況就越多",
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "9. 關於建立多波道鏈路的場地選擇，下列敘述何者錯誤?",
+			"options": [
+				"樹蔭、人為建造物與地形特徵並不影響UHF及更高頻率的信號傳播",
+				"各種阻礙都可能會增加傳播路徑的損耗，減少路徑可靠程度",
+				"天線可儘量架高以減少天然與人為遮蔽物的阻礙",
+				"天線高度增加後須使用較長的傳輸電纜，鏈路品質將因而下降"
+			],
+			"answer": "樹蔭、人為建造物與地形特徵並不影響UHF及更高頻率的信號傳播",
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "10. 多波道鏈路若出現同點干擾的情形。網路規劃人員可採何種措施?",
+			"options": [
+				"將發射與接收天線放置於不同的天線桿，相隔距離愈遠愈好",
+				"利用當地的地形隔離同點內的無線電",
+				"將同點內的天線極化方式作不同組合，以減低不想要的信號強度",
+				"以上皆是"
+			],
+			"answer": "以上皆是",
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "11. 關於影響多波道鏈路的氣候因素。下列何者正確?",
+			"options": [
+				"鏈路衰減程度會隨溫度改變",
+				"冰凍低溫時對多波道鏈路影響不大",
+				"溫暖高溫時對多波道鏈路影響甚鉅",
+				"以上皆是"
+			],
+			"answer": "以上皆是",
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "12. 關於多波道鏈路天線偏極與方向性增益特性。下列何者正確?",
+			"options": [
+				"接收天線與發射天線的偏極方向必須一致",
+				"天線偏極方向不同損耗可能增加至30dB",
+				"將天線偏極方向改為垂直偏極可增加頻率的再利用",
+				"以上皆是"
+			],
+			"answer": "以上皆是",
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "13. 每當 CCTS (節點交換機) 關閉其交換機間鏈路並移動到新位置時。必須啟動何種程序?",
+			"options": [
+				"關閉",
+				"移動",
+				"閒置",
+				"複製"
+			],
+			"answer": "複製",
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "14. 複製程序可將用戶的完整複製資訊 (於複製過程中) 放置到何種設備上？",
+			"options": [
+				"多波道",
+				"無線電入口",
+				"交換機",
+				"主官機動用戶"
+			],
+			"answer": "交換機",
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "15. 所有總成的電纜連接，均顯示在何處?",
+			"options": [
+				"訊號入口面板",
+				"電源入口面板",
+				"電源介面總成",
+				"插線面板"
+			],
+			"answer": "訊號入口面板",
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "16. 除非另有規定，所有連接到 CCTS 及 CCES(V)3 電纜，均應連接到何處的信號入口面板?",
+			"options": [
+				"後視右側",
+				"後視左側",
+				"後視上側",
+				"後視下側"
+			],
+			"answer": "後視右側",
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "17. 故障隔離檢查表用來執行何種故障檢修程序的快速總覽?",
+			"options": [
+				"重大",
+				"普通",
+				"輕微",
+				"微小"
+			],
+			"answer": "重大",
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "18. 下列IMSE車廂何者具有路由器?",
+			"options": [
+				"CCTS ",
+				"CCES(V)3",
+				"CCES(V)2 ",
+				"以上皆是"
+			],
+			"answer": "以上皆是",
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "19. 關於IMSE交換機LAN的配置數？下列何者錯誤?",
+			"options": [
+				"CCTS具2個LAN",
+				"CCES(V)3具4個LAN",
+				"CCES(V)2具3個LAN",
+				"CCES(V)1具2個LAN"
+			],
+			"answer": "CCES(V)2具3個LAN",
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "20. 關於CCTS車廂分配！下列何者錯誤？",
+			"options": [
+				"六軍團7部",
+				"通校2部",
+				"十軍團6部",
+				"八軍團5部"
+			],
+			"answer": "通校2部",
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "21. 關於CCES(V)3車廂分配，下列何者錯誤?",
+			"options": [
+				"六軍團2部",
+				"陸軍司令部2部",
+				"通校1部",
+				"十軍團1部"
+			],
+			"answer": "六軍團2部",
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "22. 關於CCES(V)2車廂分配！下列何者錯誤？",
+			"options": [
+				"六軍團19部",
+				"通校2部",
+				"十軍團19部",
+				"八軍團18部"
+			],
+			"answer": "通校2部",
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "23. 關於CCES(V)1車廂分配！下列何者錯誤？",
+			"options": [
+				"六軍團25部",
+				"通校3部",
+				"後校2部",
+				"十軍團16部"
+			],
+			"answer": "通校3部",
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "24. 關於陸區交換機車廂分配數量！下列何者錯誤？",
+			"options": [
+				"六軍團52部",
+				"通校2部",
+				"十軍團42部",
+				"八軍團41部"
+			],
+			"answer": "通校2部",
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "25. 關於陸區交換機車廂分配數量，下列何者錯誤?",
+			"options": [
+				"CCTS 20部",
+				"CCES(V)3 6部",
+				"CCES(V)2 57部",
+				"CCES(V)1 61部"
+			],
+			"answer": "CCTS 20部",
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "26. 關於IMSE的IP設定？A級的分配原則下列為何錯誤?",
+			"options": [
+				"六軍團：42",
+				"十軍團：74",
+				"通校及後校：38",
+				"八軍團：119"
+			],
+			"answer": "通校及後校：38",
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "27. 關於IMSE的IP設定？A級的分配原則下列為何錯誤?",
+			"options": [
+				"CCTS：1-32",
+				"CCES(V)3：33-64",
+				"CCES(V)2：65-128",
+				"以上皆是"
+			],
+			"answer": "以上皆是",
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "28. 關於CCTS的車廂編號。下列何者為是",
+			"options": [
+				"6234",
+				"6358",
+				"6266",
+				"6208"
+			],
+			"answer": "6208",
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "29. 關於CCES(V)3的車廂編號，下列何者為非?",
+			"options": [
+				"6202",
+				"6235",
+				"6264",
+				"6250"
+			],
+			"answer": "6202",
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "single_choice",
+			"question": "30. 關於CCES(V)2的車廂編號。下列何者為非?",
+			"options": [
+				"6299",
+				"6268",
+				"6311",
+				"6201"
+			],
+			"answer": "6201",
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "1. 鏈路故障隔離檢查表包含哪四個欄位？",
+			"options": [
+				"步驟：依照號碼順序執行檢查表",
+				"指示：鏈路故障檢修過程中應執行或不應執行的動作",
+				"來自鏈路故障檢修協助人員的答覆",
+				"為更進一步隔離故障所需執行的步驟",
+				"為減少隔離故障所需執行的步驟"
+			],
+			"answer": [
+				"步驟：依照號碼順序執行檢查表",
+				"指示：鏈路故障檢修過程中應執行或不應執行的動作",
+				"來自鏈路故障檢修協助人員的答覆",
+				"為更進一步隔離故障所需執行的步驟"
+			],
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "2. DNS伺服器可使用的模式分為？",
+			"options": [
+				"主要同位體 ",
+				"特權的次等",
+				"快取記憶",
+				"智慧選擇"
+			],
+			"answer": [
+				"主要同位體 ",
+				"特權的次等",
+				"快取記憶"
+			],
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "3. 何者為關閉鏈路命令功能表路徑？",
+			"options": [
+				"Link Management",
+				"Open/Close Link",
+				"Node Management",
+				"Digital Transmission Group",
+				"Switch Operations"
+			],
+			"answer": [
+				"Link Management",
+				"Open/Close Link"
+			],
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "4. 何者為報告間隔功能表路徑？",
+			"options": [
+				"Node Management",
+				"Traffic Metering",
+				"Set Up",
+				"Report Intervals",
+				"Digital Transmission Group"
+			],
+			"answer": [
+				"Node Management",
+				"Traffic Metering",
+				"Set Up",
+				"Report Intervals"
+			],
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "5. 何者為閘道/商用功能表路徑？",
+			"options": [
+				"Node Management",
+				"T1 Transmission Group Routing",
+				"Gateway / Commercial",
+				"T1",
+				"Traffic Metering"
+			],
+			"answer": [
+				"Node Management",
+				"T1 Transmission Group Routing",
+				"Gateway / Commercial",
+				"T1"
+			],
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "6. 何者為連線診斷測試29數位傳輸群組功能表路徑？",
+			"options": [
+				"Maintenance and Diagnostics",
+				"On-Line Diagnostic Tests",
+				"29",
+				"Switch Operations",
+				"Switch Classmarks"
+			],
+			"answer": [
+				"Maintenance and Diagnostics",
+				"On-Line Diagnostic Tests",
+				"29"
+			],
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "7. 何者為中繼線組群功能表路徑？",
+			"options": [
+				"Node Management",
+				"Trunk Group Cluster",
+				"Traffic Metering",
+				"Set Up",
+				"Assignments"
+			],
+			"answer": [
+				"Node Management",
+				"Trunk Group Cluster"
+			],
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "8. 何者為分配功能表路徑？",
+			"options": [
+				"Node Management",
+				"Traffic Metering",
+				"Set Up",
+				"Assignments",
+				"Link Management"
+			],
+			"answer": [
+				"Node Management",
+				"Traffic Metering",
+				"Set Up",
+				"Assignments"
+			],
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "9. 何者為主要裝備狀態功能表路徑？",
+			"options": [
+				"Information Displays",
+				"Major Equipment Status",
+				"Node Management",
+				"Digital Transmission Group",
+				"Traffic Metering "
+			],
+			"answer": [
+				"Information Displays",
+				"Major Equipment Status"
+			],
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "10. 何者為數位傳輸群組畫面功能表路徑？",
+			"options": [
+				"Node Management",
+				"Digital Transmission Group",
+				"Traffic Metering ",
+				"Set Up",
+				"Periodic Print Reports"
+			],
+			"answer": [
+				"Node Management",
+				"Digital Transmission Group"
+			],
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "11. 何者為至 CCTS 的直接連線鏈路？",
+			"options": [
+				"CCTS 連線至商用 T1 交換機",
+				"CCTS 連線至 CCTS",
+				"CCTS 連線至 CCES(V)1/2 ",
+				"CCTS 連線至 CCES(V)3",
+				"CCES 連線至 RAU"
+			],
+			"answer": [
+				"CCTS 連線至商用 T1 交換機",
+				"CCTS 連線至 CCTS",
+				"CCTS 連線至 CCES(V)1/2 ",
+				"CCTS 連線至 CCES(V)3"
+			],
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "12. 何者為CCTS 連線至 CCES(V)3 故障隔離檢查表步驟？",
+			"options": [
+				"CCES(V)3 安裝插線面板迴接 DTG，且 CCTS 執行迴路測試 (AOD 29)",
+				"CCTS安裝插線面板迴接 DTG，且CCES(V)3 執行迴路測試 (AOD 29)",
+				"CCTS 在 SEP TFOCA 2 連結電纜接頭安裝光纖迴接接頭，且執行迴路測試 (AOD 29)",
+				"CCTS 執行DS3 無線電 RF 迴路測試 ",
+				"LOS(V)3 執行DS3 無線電射頻 (RF) 迴路測試"
+			],
+			"answer": [
+				"CCES(V)3 安裝插線面板迴接 DTG，且 CCTS 執行迴路測試 (AOD 29)",
+				"CCTS安裝插線面板迴接 DTG，且CCES(V)3 執行迴路測試 (AOD 29)",
+				"CCTS 在 SEP TFOCA 2 連結電纜接頭安裝光纖迴接接頭，且執行迴路測試 (AOD 29)"
+			],
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "13. DNVT在嘗試登入網路前，未聽到錯誤音調，故障隔離檢查表步驟為何？",
+			"options": [
+				"檢查話筒音量控制",
+				"檢查連接到 DNVT 接線柱的電纜",
+				"查信號入口面板光纖接頭",
+				"檢查信號入口面板T1接頭",
+				"檢查信號入口面板同軸電纜接頭"
+			],
+			"answer": [
+				"檢查話筒音量控制",
+				"檢查連接到 DNVT 接線柱的電纜"
+			],
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "14. 若用戶無法登入網路，故障隔離檢查表步驟為何？",
+			"options": [
+				"檢查用戶個人密碼",
+				"檢查用戶電話號碼",
+				"檢查黑名單",
+				"檢查信號入口面板光纖接頭",
+				"檢查信號入口面板T1接頭 "
+			],
+			"answer": [
+				"檢查用戶個人密碼",
+				"檢查用戶電話號碼",
+				"檢查黑名單"
+			],
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "15. 由CCTS 細部信號流程圖可得知哪些DTG可接收來自7206路由器資訊訊號？",
+			"options": [
+				"DTG2、9、7",
+				"DTG8、17、18",
+				"DTG21、22",
+				"DTG4、6",
+				"DTG15、16"
+			],
+			"answer": [
+				"DTG2、9、7",
+				"DTG8、17、18",
+				"DTG21、22"
+			],
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "16. 由CCTS 細部信號流程圖可得知哪些DTG訊號會經過NRZ插線面板？",
+			"options": [
+				"DTG4、6",
+				"DTG15、16",
+				"DTG2、9",
+				"DTG7、8",
+				"DTG17、18"
+			],
+			"answer": [
+				"DTG4、6",
+				"DTG15、16"
+			],
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "17. 由CCTS 細部信號流程圖可得知哪些DTG訊號會經過LIA/FECTA？",
+			"options": [
+				"DTG4、6",
+				"DTG15、16",
+				"DTG2、3",
+				"DTG5、9",
+				"DTG6、18"
+			],
+			"answer": [
+				"DTG4、6",
+				"DTG15、16"
+			],
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "18. 由CCTS 細部信號流程圖可得知哪些DTG訊號會經過TCBL插線面板？",
+			"options": [
+				"DTG4、6",
+				"DTG15、16",
+				"DTG2、9",
+				"DTG7、8",
+				"DTG17、18"
+			],
+			"answer": [
+				"DTG4、6",
+				"DTG15、16"
+			],
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "19. 由CCTS 細部信號流程圖可得知哪些DTG訊號會經過第一部四倍多工器？",
+			"options": [
+				"DTG2、3",
+				"DTG4、9",
+				"DTG5、6",
+				"DTG7、8",
+				"DTG17、18"
+			],
+			"answer": [
+				"DTG2、3",
+				"DTG4、9",
+				"DTG5、6",
+				"DTG7、8"
+			],
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "20. 在IMSE網路中造成EMI的最常見成因包括？",
+			"options": [
+				"同點干擾情形",
+				"場際干擾情況",
+				"可用頻率資源的限制",
+				"電子戰的威脅效應"
+			],
+			"answer": [
+				"同點干擾情形",
+				"場際干擾情況",
+				"可用頻率資源的限制",
+				"電子戰的威脅效應"
+			],
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "21. 建構多波道鏈路時必須考慮的因素包括？",
+			"options": [
+				"傳播過程中的損失",
+				"菲涅耳區淨空",
+				"多路衰減",
+				"鏈路臨界",
+				"路徑可靠程度"
+			],
+			"answer": [
+				"傳播過程中的損失",
+				"菲涅耳區淨空",
+				"多路衰減",
+				"鏈路臨界",
+				"路徑可靠程度"
+			],
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "22. 關於多波道鏈路的多路衰減因素包括?",
+			"options": [
+				"無線電頻率",
+				"路徑距離",
+				"地球物理變數",
+				"氣象變數"
+			],
+			"answer": [
+				"無線電頻率",
+				"路徑距離",
+				"地球物理變數",
+				"氣象變數"
+			],
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "23. 關於多波道鏈路的多路衰減，下列敘述何者為是?",
+			"options": [
+				"路徑長度加倍衰減強度也會增加",
+				"溼熱的氣候比乾冷的氣候衰減嚴重",
+				"多山地區比平坦地區衰減嚴重",
+				"白天比晚上衰減情形嚴重"
+			],
+			"answer": [
+				"路徑長度加倍衰減強度也會增加",
+				"溼熱的氣候比乾冷的氣候衰減嚴重",
+				"白天比晚上衰減情形嚴重"
+			],
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "24. 關於多波道鏈路於傳播過程中的損失，下列敘述何者正確？",
+			"options": [
+				"在沒有反射或吸收材質的地區造成的損失，稱為自由空間內的傳播損失",
+				"自由空間內的傳播損失會隨著頻率與距離而增加",
+				"Clear Wave軟體對LOS以外的預測會用到繞射與對流層傳播模式",
+				"繞射與對流層傳播模式比LOS產生更多損耗"
+			],
+			"answer": [
+				"在沒有反射或吸收材質的地區造成的損失，稱為自由空間內的傳播損失",
+				"自由空間內的傳播損失會隨著頻率與距離而增加",
+				"Clear Wave軟體對LOS以外的預測會用到繞射與對流層傳播模式",
+				"繞射與對流層傳播模式比LOS產生更多損耗"
+			],
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "25. 關於多波道鏈路的鏈路臨界，下列敘述何者正確？",
+			"options": [
+				"接收信號強度與無線電接受器臨界值之差異稱為鏈路臨界",
+				"鏈路臨界越大無線電傳播中止的情況就越多",
+				"傳播中止代表無線電位元錯誤率過高而無法操作",
+				"接收信號強度比無線電接收器臨界值低時會造成傳播中止"
+			],
+			"answer": [
+				"接收信號強度與無線電接受器臨界值之差異稱為鏈路臨界",
+				"傳播中止代表無線電位元錯誤率過高而無法操作",
+				"接收信號強度比無線電接收器臨界值低時會造成傳播中止"
+			],
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "26. 關於建立多波道鏈路的場地選擇，下列敘述何者正確？",
+			"options": [
+				"樹蔭、人為建造物與地形特徵並不影響UHF及更高頻率的信號傳播",
+				"各種阻礙都可能會增加傳播路徑的損耗，減少路徑可靠程度",
+				"天線可儘量架高以減少天然與人為遮蔽物的阻礙",
+				"天線高度增加後須使用較長的傳輸電纜，鏈路品質將因而下降"
+			],
+			"answer": [
+				"各種阻礙都可能會增加傳播路徑的損耗，減少路徑可靠程度",
+				"天線可儘量架高以減少天然與人為遮蔽物的阻礙",
+				"天線高度增加後須使用較長的傳輸電纜，鏈路品質將因而下降"
+			],
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "27. 多波道鏈路若出現同點干擾的情形，網路規劃人員可採何種措施？",
+			"options": [
+				"將發射與接收天線放置於不同的天線桿，相隔距離愈遠愈好",
+				"利用當地的地形隔離同點內的無線電",
+				"將同點內的天線極化方式作不同組合，以減低不想要的信號強度",
+				"加強無線電機信號發射功率"
+			],
+			"answer": [
+				"將發射與接收天線放置於不同的天線桿，相隔距離愈遠愈好",
+				"利用當地的地形隔離同點內的無線電",
+				"將同點內的天線極化方式作不同組合，以減低不想要的信號強度"
+			],
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "28. IMSE網路可能遇到的場際干擾狀況可分為?",
+			"options": [
+				"平行鏈路干擾",
+				"上射干擾",
+				"垂直鏈路干擾",
+				"下射干擾"
+			],
+			"answer": [
+				"平行鏈路干擾",
+				"上射干擾"
+			],
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "29. 戰術區域通信系統之戰術數據網路的組成為何？",
+			"options": [
+				"路由器",
+				"非同步傳輸模式交換機",
+				"舊有介面轉接器/傳向誤差校正傳輸轉接器",
+				"動態主機配置協定及網域名稱伺服器",
+				"用戶"
+			],
+			"answer": [
+				"路由器",
+				"非同步傳輸模式交換機",
+				"舊有介面轉接器/傳向誤差校正傳輸轉接器",
+				"動態主機配置協定及網域名稱伺服器",
+				"用戶"
+			],
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		},
+		{
+			"type": "multiple_choice",
+			"question": "30. 下列IMSE車廂何者具有路由器?",
+			"options": [
+				"CCTS",
+				"CCES(V)3",
+				"CCES(V)2",
+				"CCES(V)1"
+			],
+			"answer": [
+				"CCTS",
+				"CCES(V)3",
+				"CCES(V)2",
+				"CCES(V)1"
+			],
+			"reference": "資通電軍戰術區域通信系統操作手冊"
+		}
+	]
+}
