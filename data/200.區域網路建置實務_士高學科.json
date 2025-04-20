@@ -1,0 +1,1116 @@
+{
+	"questions": [
+		{
+			"type": "true_false",
+			"number": "是非1",
+			"question": "「請問SNMP通訊協定採用伺服器模式-伺服器模式來蒐集及處理網路裝置相關資訊？",
+			"answer": false,
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "true_false",
+			"number": "是非2",
+			"question": "請問SNMP網路管理標準組成為安全性及資料庫結構？",
+			"answer": false,
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "true_false",
+			"number": "是非3",
+			"question": "請問SSH是由傳輸層協定、使用者認證協定及連線協定三個主要協定組成？",
+			"answer": true,
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "true_false",
+			"number": "是非4",
+			"question": "請問Telnet與SSH(Secure Shell)是由安全性、網路協定、端口號、連接方式、兼容性等5種組成?",
+			"answer": true,
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "true_false",
+			"number": "是非5",
+			"question": "請問負責國軍網路及相關軟、硬體設備管理政策與制度之規劃、修訂、督導及考核是由各軍種司令部所頒布嗎?",
+			"answer": false,
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "true_false",
+			"number": "是非6",
+			"question": "請問將 ACL 套用到網路介面埠，是使用 ip access-group +使用編號 指令將規則套用在介面埠?",
+			"answer": true,
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "true_false",
+			"number": "是非7",
+			"question": "請問 VLAN實際可以使用的 VLAN ID 範圍為0-4095?",
+			"answer": false,
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "true_false",
+			"number": "是非8",
+			"question": "請問0和4095是保留的 VLAN ID，0用於表示預設 VLAN，4095用於表示整個網路的廣播",
+			"answer": true,
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "true_false",
+			"number": "是非9",
+			"question": "請問10.67.41.0/25通配遮罩為0.0.0.128?",
+			"answer": false,
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "true_false",
+			"number": "是非10",
+			"question": "請問10.67.67.0/24子網路遮罩為255.255.255.128?",
+			"answer": false,
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "true_false",
+			"number": "是非11",
+			"question": "請問10.67.67.0/24通配遮罩為0.0.0.192?",
+			"answer": false,
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "true_false",
+			"number": "是非12",
+			"question": "請問ACL設定類型有標準型、延伸型及多樣型?",
+			"answer": false,
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "true_false",
+			"number": "是非13",
+			"question": "請問OSPF區域編號範圍為1-65534嗎?",
+			"answer": false,
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "true_false",
+			"number": "是非14",
+			"question": "請問單一路由是路由模式的其中一種嗎?",
+			"answer": false,
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "true_false",
+			"number": "是非15",
+			"question": "請問路由模式是靜態路由、預設路由及動態路由三種類型嗎?",
+			"answer": true,
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "true_false",
+			"number": "是非16",
+			"question": "請問10.67.41.0/25通配遮罩為0.0.0.128嗎?",
+			"answer": false,
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "true_false",
+			"number": "是非17",
+			"question": "請問ARP協定可以用來將目標網路未知的訊息回傳給原本的主機?",
+			"answer": false,
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "true_false",
+			"number": "是非18",
+			"question": "請問DHCP在傳輸層是使用UDP協定嗎?",
+			"answer": true,
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "true_false",
+			"number": "是非19",
+			"question": "請問Layer2交換器位於OSI七層中實體層嗎?",
+			"answer": false,
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "true_false",
+			"number": "是非20",
+			"question": "請問Layer3交換器位於OSI七層中的網路層嗎?",
+			"answer": true,
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "true_false",
+			"number": "是非21",
+			"question": "請問OSPF為靜態路由嗎?",
+			"answer": false,
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "true_false",
+			"number": "是非22",
+			"question": "請問running-config是屬於交換器記憶體中的永久性記憶體嗎?",
+			"answer": false,
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "true_false",
+			"number": "是非23",
+			"question": "請問SSH是使用明文來傳輸數據嗎?",
+			"answer": false,
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "true_false",
+			"number": "是非24",
+			"question": "請問SSH是透過服務埠號22來做傳輸嗎?",
+			"answer": true,
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "true_false",
+			"number": "是非25",
+			"question": "請問TCP/IP是由應用層、傳輸層、網路層及實體成等四層組成嗎?",
+			"answer": false,
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "true_false",
+			"number": "是非26",
+			"question": "請問TCP協定與UDP協定是在應用層嗎?",
+			"answer": false,
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "true_false",
+			"number": "是非27",
+			"question": "請問Telnet是使用明文來傳輸數據嗎?",
+			"answer": true,
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "true_false",
+			"number": "是非28",
+			"question": "請問要刪除儲存在交換器上的NVRAM的組態要輸入earse startup-config ?",
+			"answer": true,
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "true_false",
+			"number": "是非29",
+			"question": "請問集線器位於OSI七層中的實體層嗎?",
+			"answer": true,
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "true_false",
+			"number": "是非30",
+			"question": "請問靜態路由的AD值為110嗎?",
+			"answer": false,
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇1",
+			"question": "在區域網路當中，下列哪一個術語最能相當於VLAN一詞?",
+			"options": [
+				"碰撞網域",
+				"廣播網路",
+				"子網路",
+				"單一交換器"
+			],
+			"answer": "廣播網路",
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇2",
+			"question": "請問SNMP通訊協定採用哪種模式來收集及處理網路裝置相關資訊?",
+			"options": [
+				"用戶端-用戶端模式",
+				"伺服器模式-伺服器模式",
+				"用戶端-伺服器模式",
+				"以上皆非"
+			],
+			"answer": "用戶端-伺服器模式",
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇3",
+			"question": "請問下列何者可以用來控制網路流量的存取?",
+			"options": [
+				"ACL",
+				"SNMP",
+				"TCP/IP",
+				"VLAN"
+			],
+			"answer": "ACL",
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇4",
+			"question": "請問下列何者為 ACL 套用到網路介面埠之命令?",
+			"options": [
+				"ip access-group",
+				"router ospf",
+				"ip address",
+				"ip access-list"
+			],
+			"answer": "ip access-group",
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇5",
+			"question": "請問下列何者為網路監控技術協定?",
+			"options": [
+				"SNMP",
+				"FTP",
+				"WEB",
+				"ACL"
+			],
+			"answer": "SNMP",
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇6",
+			"question": "請問下列哪一指令會提供交換器的產品ID和序號?",
+			"options": [
+				"show license",
+				"show liicense",
+				"show ip interface",
+				"show version"
+			],
+			"answer": "show version",
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇7",
+			"question": "請問下列哪一個不是SSH協定組成?",
+			"options": [
+				"傳輸層協定",
+				"使用者認證協定",
+				"連線協定",
+				"簡易網路管理協定"
+			],
+			"answer": "簡易網路管理協定",
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇8",
+			"question": "請問下列哪一個通配遮罩包含所有10.66.128.0( 255.255.240.0)的IP?",
+			"options": [
+				"0.0.0.0",
+				"0.0.248.255",
+				"0.0.15.255",
+				"0.0.0.255"
+			],
+			"answer": "0.0.15.255",
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇9",
+			"question": "請問下列哪一種路由通訊協定屬於鏈路狀態路由通訊協定?",
+			"options": [
+				"RIPV1",
+				"RIPV1",
+				"EIGRP",
+				"OSPF"
+			],
+			"answer": "OSPF",
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇10",
+			"question": "請問兩台緊鄰路由器何時會進入雙向狀態?",
+			"options": [
+				"在雙方都收到Hellow資訊後",
+				"交換拓樸資料庫之後",
+				"當它們只連到DR或BDR後",
+				"在它們必須交換RID資訊的時候"
+			],
+			"answer": "在雙方都收到Hellow資訊後",
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇11",
+			"question": "請問金鑰長度必須大於多少bits才可以順利啟用SSH v2。",
+			"options": [
+				"128",
+				"256",
+				"512",
+				"1024"
+			],
+			"answer": "1024",
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇12",
+			"question": "請問下列何者為 VLAN實際可以使用的 VLAN ID 範圍?",
+			"options": [
+				"1-4096",
+				"0-4095",
+				"1-4094",
+				"0-4094"
+			],
+			"answer": "1-4094",
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇13",
+			"question": "下列何者不是靜態遶送的優點?",
+			"options": [
+				"路由器CPU的額外負擔較少",
+				"路由器間沒有用到頻寬",
+				"增加安全性",
+				"自動地復原遺失路徑"
+			],
+			"answer": "自動地復原遺失路徑",
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇14",
+			"question": "下列何者被稱為進階的距離向量遶送協定?",
+			"options": [
+				"BGP",
+				"OSPF",
+				"EIGRP",
+				"RIP"
+			],
+			"answer": "EIGRP",
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇15",
+			"question": "子網路遮罩為255.255.255.224的子網路，最多可以分配多少個IP位址給主機?",
+			"options": [
+				"62",
+				"30",
+				"126",
+				"14"
+			],
+			"answer": "30",
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇16",
+			"question": "當封包被遶送穿越網路時，封包的 會在每個中繼站改變，但 則不會?",
+			"options": [
+				"IP位址，MAC位址",
+				"埠號，IP位址",
+				"IP位址，埠號",
+				"MAC位址，IP位址"
+			],
+			"answer": "MAC位址，IP位址",
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇17",
+			"question": "請問10.67.67.0/24子網路遮罩為多少?",
+			"options": [
+				"255.255.255.0",
+				"255.255.255.128",
+				"255.255.255.192",
+				"255.255.255.224"
+			],
+			"answer": "255.255.255.0",
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇18",
+			"question": "請問10.67.67.0/24通配遮罩為多少?",
+			"options": [
+				"0.0.0.255",
+				"0.0.0.128",
+				"0.0.0.192",
+				"0.0.0.224"
+			],
+			"answer": "0.0.0.255",
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇19",
+			"question": "請問保留的 VLAN ID為0表示為何?",
+			"options": [
+				"預設 VLAN",
+				"預設閘道",
+				"預設路由",
+				"無意義"
+			],
+			"answer": "預設 VLAN",
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇20",
+			"question": "請問保留的 VLAN ID為4095表示為何?",
+			"options": [
+				"整個網路的廣播",
+				"單一網路的廣播",
+				"群組網路的廣播",
+				"各點網路廣播"
+			],
+			"answer": "整個網路的廣播",
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇21",
+			"question": "請問哪個指令可以在cisco路由器上設定telnet密碼?",
+			"options": [
+				"line telnet 0",
+				"line vty 0",
+				"line aux 0 3",
+				"line console 0"
+			],
+			"answer": "line vty 0",
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇22",
+			"question": "下列何者不是STP要處理的問題?",
+			"options": [
+				"廣播風暴",
+				"閘道冗餘",
+				"裝置接收到相同訊框的多份複本",
+				"MAC過濾表時常更新"
+			],
+			"answer": "閘道冗餘",
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇23",
+			"question": "下列何者是在VLAN中訊框加標的目的?",
+			"options": [
+				"跨VLAN遶送",
+				"網路封包加密",
+				"主幹鏈路上的訊框識別",
+				"存取鏈路上的訊框識別"
+			],
+			"answer": "主幹鏈路上的訊框識別",
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇24",
+			"question": "在OSPF中，Hello會送往哪個IP位址?",
+			"options": [
+				"224.0.0.5",
+				"224.0.0.9",
+				"224.0.0.10",
+				"224.0.0.1"
+			],
+			"answer": "224.0.0.5",
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇25",
+			"question": "哪一個指令可以讓你知道某個IP存取清單是否有作用在某個介面上",
+			"options": [
+				"show ip port",
+				"show access-list",
+				"show ip interface",
+				"show ip access-list interface"
+			],
+			"answer": "show ip interface",
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇26",
+			"question": "送往224.0.0.6的更新目的地是哪種OSPF路由器?",
+			"options": [
+				"DR",
+				"ASBR",
+				"ABR",
+				"所有OSPF路由器"
+			],
+			"answer": "DR",
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇27",
+			"question": "請問Switch(config)#line console 0命令之後可以接著執行什麼?",
+			"options": [
+				"設定telnet密碼",
+				"關閉console",
+				"設定console的密碼",
+				"關閉控制台連線"
+			],
+			"answer": "設定console的密碼",
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇28",
+			"question": "請問下列哪個介面為交換器設定IP位址?",
+			"options": [
+				"interface vlan 1",
+				"interface vty 0 3",
+				"interface fastEthernet 0/1",
+				"interface gigabyteEthernet 0/1"
+			],
+			"answer": "interface vlan 1",
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇29",
+			"question": "請問下列哪個指令可以檢視所有存取清單的完整內容?",
+			"options": [
+				"show all access-list",
+				"show access-list",
+				"show ip interface",
+				"show ip interface brief"
+			],
+			"answer": "show all access-list",
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇30",
+			"question": "請問下列關於GRE的敘述何者有誤?",
+			"options": [
+				"GRE無狀態，且無流量控制",
+				"GRE具有安全性",
+				"GRE對隧道封包需要至少24位元組的額外資料負擔",
+				"GRE在標頭使用協定型態欄位，所以任何在第三層協定都可以用來穿越隧道。"
+			],
+			"answer": "GRE具有安全性",
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選1",
+			"question": "請問SSH由哪三個主要協定組成?",
+			"options": [
+				"傳輸層協定",
+				"使用者認證協定",
+				"連線協定",
+				"以上皆非"
+			],
+			"answer": [
+				"傳輸層協定",
+				"使用者認證協定",
+				"連線協定"
+			],
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選2",
+			"question": "請問Telnet與SSH(Secure Shell)差異有哪5種?",
+			"options": [
+				"安全性",
+				"網路協定",
+				"端口號",
+				"連接方式",
+				"兼容性"
+			],
+			"answer": [
+				"安全性",
+				"網路協定",
+				"端口號",
+				"連接方式",
+				"兼容性"
+			],
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選3",
+			"question": "請問下列何者為非SNMP通訊協定採用哪種模式?",
+			"options": [
+				"用戶端-用戶端",
+				"伺服器模式-伺服器模式",
+				"伺服器模式-用戶端",
+				"以上皆是"
+			],
+			"answer": [
+				"用戶端-用戶端",
+				"伺服器模式-伺服器模式"
+			],
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選4",
+			"question": "請問下列何者為SNMP網路管理標準組成有哪些?",
+			"options": [
+				"應用層通訊協定",
+				"資料庫結構",
+				"使用者協定",
+				"安全性"
+			],
+			"answer": [
+				"應用層通訊協定",
+				"資料庫結構"
+			],
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選5",
+			"question": "請問下列何者可以用來限制網路的存取?",
+			"options": [
+				"ACL",
+				"Firewall",
+				"Switch",
+				"Router"
+			],
+			"answer": [
+				"ACL",
+				"Firewall"
+			],
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選6",
+			"question": "請問下列何者為非 ACL 套用到網路介面埠之命令?",
+			"options": [
+				"ip access-group",
+				"router ospf",
+				"ip address",
+				"ip access-list "
+			],
+			"answer": [
+				"router ospf",
+				"ip address",
+				"ip access-list "
+			],
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選7",
+			"question": "請問下列何者為非 VLAN實際可以使用的 VLAN ID 範圍?",
+			"options": [
+				"1-4096",
+				"0-4095",
+				"1-4094",
+				"0-4094"
+			],
+			"answer": [
+				"1-4096",
+				"0-4095",
+				"0-4094"
+			],
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選8",
+			"question": "請問下列何者為路由類型有哪些?",
+			"options": [
+				"靜態路由",
+				"預設路由",
+				"動態路由",
+				"單一路由"
+			],
+			"answer": [
+				"靜態路由",
+				"預設路由",
+				"動態路由"
+			],
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選9",
+			"question": "請問下列何者為非OSPF程序ID範圍?",
+			"options": [
+				"1-65534",
+				"1-65535",
+				"1-65536",
+				"1-65537"
+			],
+			"answer": [
+				"1-65534",
+				"1-65535",
+				"1-65537"
+			],
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選10",
+			"question": "請問下列何者為ACL 設定類型有哪些?",
+			"options": [
+				"標準型",
+				"延伸型",
+				"命名型",
+				"多樣型"
+			],
+			"answer": [
+				"標準型",
+				"延伸型",
+				"命名型"
+			],
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選11",
+			"question": "請問下列何者為非10.67.67.0/24通配遮罩?",
+			"options": [
+				"0.0.0.255",
+				"0.0.0.128",
+				"0.0.0.192",
+				"0.0.0.224"
+			],
+			"answer": [
+				"0.0.0.128",
+				"0.0.0.192",
+				"0.0.0.224"
+			],
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選12",
+			"question": "請問下列何者為非OSPF區域編號範圍?",
+			"options": [
+				"0-4,294,967,295",
+				"0-4,294,967,205",
+				"0-4,294,967,296",
+				"0-4,294,967,395"
+			],
+			"answer": [
+				"0-4,294,967,205",
+				"0-4,294,967,296",
+				"0-4,294,967,395"
+			],
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選13",
+			"question": "下列哪些描述是在描述IP位址10.16.3.65/23?",
+			"options": [
+				"子網路位址為10.16.3.0 255.255.254.0",
+				"此子網路的最低主機位址為10.16.2.1 255.255.254.0",
+				"子網路的最後一個有效主機位址為10.16.2.254 255.255.254.0",
+				"此子網路的廣播位址為10.16.3.255 255.255.254.0",
+				"這個網路沒有做子網路切割10.16.3.255 255.255.254.0"
+			],
+			"answer": [
+				"此子網路的最低主機位址為10.16.2.1 255.255.254.0",
+				"此子網路的廣播位址為10.16.3.255 255.255.254.0"
+			],
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選14",
+			"question": "關於ip route 172.16.4.0 255.255.255.0 192.168.4.2命令那些選項敘述是正確的?",
+			"options": [
+				"這是用來建立靜態路由的命令",
+				"它是使用預設的管理性距離",
+				"這是用來設定預設路由的命令",
+				"位址來源的子網路遮罩是255.255.255.0",
+				"這是用來建立殞根型網路的命令"
+			],
+			"answer": [
+				"這是用來建立靜態路由的命令",
+				"它是使用預設的管理性距離",
+				"位址來源的子網路遮罩是255.255.255.0"
+			],
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選15",
+			"question": "以下那些敘述可以描述路由器上執行OSPF所用的程序識別嗎?",
+			"options": [
+				"具有本機的意義",
+				"具有全域的意義",
+				"識別OSPF資料庫中的特定實例所需的",
+				"選擇性的參數，只有路由器執行多份OSPF程序時才是必要的",
+				"同一個OSPF區域中的所有路徑都必須有相同的程序ID，才能交換路徑"
+			],
+			"answer": [
+				"具有本機的意義",
+				"選擇性的參數，只有路由器執行多份OSPF程序時才是必要的"
+			],
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選16",
+			"question": "下列哪些方法可以確保只有1台特定主機能夠連到交換器的F0/3埠?",
+			"options": [
+				"設定F0/3埠安全性，以接受該主機MAC位址以外的交通",
+				"設定主機的MAC位址為對應F0/3埠的靜態項目",
+				"在F0/3設定進入的存取控制清單，僅允許主機IP位址的交通",
+				"設定F0/3埠安全性，只接受該主機MAC位址的交通"
+			],
+			"answer": [
+				"設定主機的MAC位址為對應F0/3埠的靜態項目",
+				"設定F0/3埠安全性，只接受該主機MAC位址的交通"
+			],
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選17",
+			"question": "請問下列哪些是SSH協定組成?",
+			"options": [
+				"傳輸層協定",
+				"使用者認證協定",
+				"連線協定",
+				"簡易網路管理協定"
+			],
+			"answer": [
+				"傳輸層協定",
+				"使用者認證協定",
+				"連線協定"
+			],
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選18",
+			"question": "下列那些是STP要處理的問題?",
+			"options": [
+				"廣播風暴",
+				"閘道冗餘",
+				"裝置接收到相同訊框的多份複本",
+				"MAC過濾表時常更新"
+			],
+			"answer": [
+				"廣播風暴",
+				"裝置接收到相同訊框的多份複本",
+				"MAC過濾表時常更新"
+			],
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選19",
+			"question": "下列那些是靜態遶送的優點?",
+			"options": [
+				"路由器CPU的額外負擔較少",
+				"路由器間沒有用到頻寬",
+				"增加安全性",
+				"自動地復原遺失路徑"
+			],
+			"answer": [
+				"路由器CPU的額外負擔較少",
+				"路由器間沒有用到頻寬",
+				"增加安全性"
+			],
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選20",
+			"question": "請問Telnet與SSH(Secure Shell)差異有哪些?",
+			"options": [
+				"安全性",
+				"網路協定",
+				"端口號",
+				"連接方式",
+				"兼容性"
+			],
+			"answer": [
+				"安全性",
+				"網路協定",
+				"端口號",
+				"連接方式",
+				"兼容性"
+			],
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選21",
+			"question": "下列哪些指令可以識別使用trunking協定的交換器介面，也就是目前以VLAN trunk運作的介面?",
+			"options": [
+				"show trunks",
+				"show interface",
+				"show interface switchport",
+				"show interface trunk"
+			],
+			"answer": [
+				"show interface",
+				"show interface switchport",
+				"show interface trunk"
+			],
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選22",
+			"question": "下列哪一個為標準型IP ACL的有效編號?",
+			"options": [
+				"19",
+				"218",
+				"87",
+				"187"
+			],
+			"answer": [
+				"19",
+				"87"
+			],
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選23",
+			"question": "請問設定OSPF的路由器沒有形成緊鄰關係，應該要檢查哪些設定?",
+			"options": [
+				"程序ID",
+				"區域號碼",
+				"Hello與Dead計時器",
+				"IP位址/子網路遮罩"
+			],
+			"answer": [
+				"區域號碼",
+				"Hello與Dead計時器",
+				"IP位址/子網路遮罩"
+			],
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選24",
+			"question": "請問下列何者非集線器位於OSI七層中的哪一層?",
+			"options": [
+				"會談層",
+				"實體層",
+				"資料連接層",
+				"應用層"
+			],
+			"answer": [
+				"會談層",
+				"資料連接層",
+				"應用層"
+			],
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選25",
+			"question": "請問下列何者非指令會用來建立備援組態?",
+			"options": [
+				"copy running backup",
+				"copy running-config startup-config",
+				"config mem",
+				"write earse"
+			],
+			"answer": [
+				"copy running backup",
+				"config mem",
+				"write earse"
+			],
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選26",
+			"question": "請問何者非DHCP在傳輸層使用下列哪個協定?",
+			"options": [
+				"IP",
+				"TCP",
+				"UDP",
+				"ARP"
+			],
+			"answer": [
+				"IP",
+				"TCP",
+				"ARP"
+			],
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選27",
+			"question": "請問下列何者為非指令可以用來判斷特定介面是否有啟用存取清單?",
+			"options": [
+				"show access-lists",
+				"show interface",
+				"show ip interface",
+				"show interface access-lists"
+			],
+			"answer": [
+				"show access-lists",
+				"show interface",
+				"show interface access-lists"
+			],
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選28",
+			"question": "請問何者為非單一主機IP通配遮罩為多少?",
+			"options": [
+				"0.0.0.1",
+				"0.0.0.0",
+				"0.0.0.255",
+				"0.0.0.127"
+			],
+			"answer": [
+				"0.0.0.1",
+				"0.0.0.255",
+				"0.0.0.127"
+			],
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選29",
+			"question": "請問何者為非10.67.41.0/25通配遮罩為多少?",
+			"options": [
+				"0.0.0.0",
+				"0.0.0.127",
+				"0.0.0.63",
+				"0.0.0.31"
+			],
+			"answer": [
+				"0.0.0.0",
+				"0.0.0.63",
+				"0.0.0.31"
+			],
+			"reference": "區域網路建置實務"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選30",
+			"question": "請問下列何者為非OSPF路由指令?",
+			"options": [
+				"network 10.0.0.0 0.0.0.255 area 1",
+				"ip route 10.10.10.0 255.255.255.0 fastEthernet 0/1",
+				"ip route 10.10.10.0 255.255.255.0 10.166.15.250",
+				"network 10.0.0.0 0.0.0.255"
+			],
+			"answer": [
+				"ip route 10.10.10.0 255.255.255.0 fastEthernet 0/1",
+				"ip route 10.10.10.0 255.255.255.0 10.166.15.250",
+				"network 10.0.0.0 0.0.0.255"
+			],
+			"reference": "區域網路建置實務"
+		}
+	]
+}
