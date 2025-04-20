@@ -1,0 +1,1137 @@
+{
+	"questions": [
+		{
+			"type": "true_false",
+			"number": "是非1",
+			"question": "IMSE系統部署前交換機之小組命令由網管中心發出",
+			"answer": true,
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非2",
+			"question": "交換機車廂內之SVOW可以對DVOW之語音訊號加密及解密。",
+			"answer": true,
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非3",
+			"question": "在信號流程視窗中鏈路正常的顏色為綠色",
+			"answer": true,
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非4",
+			"question": "於資料庫載入過程中，交換多工單元面板上的狀態指示燈會由紅色離線燈 (OFF LINE) 切換至黃色待機燈 (STBY)，再至綠色燈 (ACTIVE)",
+			"answer": true,
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非5",
+			"question": "當系統實施遠端多波道接線面板回路測試正常，兩端GRC-408E之RF及DATA發射與接收燈應亮。",
+			"answer": false,
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非6",
+			"question": "數位語音勤務波道保密器，沒有輸入密鑰時ALARM亮起?",
+			"answer": false,
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非7",
+			"question": "BB2測試於 16QAM/QPSK 模式下選擇 BB2I 或 BB2Q 測試。",
+			"answer": false,
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非8",
+			"question": "CCES(V)3有10個用戶接線盒(J-BOX)。",
+			"answer": true,
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非9",
+			"question": "CCTS可提供4個區域網路",
+			"answer": false,
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非10",
+			"question": "CCTS有2片DLPMA卡。",
+			"answer": false,
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非11",
+			"question": "CCTS有2張HSBIC卡。",
+			"answer": false,
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非12",
+			"question": "OFFLINE BER測試目的在測試整條鏈路的位元錯誤率。",
+			"answer": true,
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非13",
+			"question": "車廂必置於發電機上風處約45度角位置，且車頭盡量朝向道路。",
+			"answer": true,
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非14",
+			"question": "當實施LOOP BACK LOOP測試時，由己方多波道設定，由對方交換機觀察結果。",
+			"answer": true,
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非15",
+			"question": "CCES(V)1/2之T1語音介面為DTG7",
+			"answer": true,
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非16",
+			"question": "CCTS之QMUX將8個DTG多工處理為1個QTGM",
+			"answer": false,
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非17",
+			"question": "CCTS可提供1個T1介面",
+			"answer": true,
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非18",
+			"question": "CCTS車廂內有5部中繼保密器(TED)",
+			"answer": false,
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非19",
+			"question": "GRC408-E螢幕中CALL，亮起代表撥號中",
+			"answer": false,
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非20",
+			"question": "IMSE交換機電話直通電路的用戶屬性設定為174",
+			"answer": false,
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非21",
+			"question": "LOS(V)4內TFOCA2 FOM之電源由五伏電源供應器提供。",
+			"answer": true,
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非22",
+			"question": "小組作業命令中UNCLASSIFIED為機密等級。",
+			"answer": false,
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非23",
+			"question": "天線極化方式V代表水平極化方式。",
+			"answer": false,
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非24",
+			"question": "每個J-1077接線盒可提供12個電話用戶。",
+			"answer": true,
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非25",
+			"question": "單列電路卡巢(SRN)不具有勤務波道功能。",
+			"answer": true,
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非26",
+			"question": "群組獵線最多可執行32組",
+			"answer": true,
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非27",
+			"question": "路由器7206使用LAN1連接路由器3640。",
+			"answer": false,
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非28",
+			"question": "戰術區域通信系統小組命令中BT代表本文開始與結束。",
+			"answer": true,
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非29",
+			"question": "戰術區域通信系統中，延伸節點組長由多波道台長兼任。",
+			"answer": false,
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非30",
+			"question": "鏈路故障排除步驟為迴路測試",
+			"answer": true,
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇1",
+			"question": "GRC-408E的MCR上RF▼燈恆亮可能原因為何?",
+			"options": [
+				"無接收信號",
+				"主從關係未設定",
+				"正在使用勤務波道",
+				"未設定震鈴碼"
+			],
+			"answer": "無接收信號",
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇2",
+			"question": "IMSE交換機AOD37可測試",
+			"options": [
+				"DTG",
+				"TGC",
+				"TSB/RSB",
+				"CH"
+			],
+			"answer": "TSB/RSB",
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇3",
+			"question": "IMSE交換機OCP面板之DVOW設定鍵為何?",
+			"options": [
+				"SETUP/1",
+				"EDIT/2",
+				"TEST/3 ",
+				"HOLD/4"
+			],
+			"answer": "SETUP/1",
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇4",
+			"question": "IMSE車廂故障排除時，完成多波道車廂DTG迴路測試失敗，多波道車廂FOM迴路測試成功，代表LOS(V)3之？",
+			"options": [
+				"亂碼器",
+				"射頻模組",
+				"基頻模組",
+				"QMUX 可能故障"
+			],
+			"answer": "QMUX 可能故障",
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇5",
+			"question": "IMSE陸區系統中電台開設時，應先啟動何種電源",
+			"options": [
+				"主要電源",
+				"備用電源",
+				"緊急電源",
+				"室內電源"
+			],
+			"answer": "備用電源",
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇6",
+			"question": "陸區系統裝備編碼原則中，下列何者不是CCES(V)1延伸節點交換機車廂",
+			"options": [
+				"6354",
+				"6364",
+				"6650",
+				"6380"
+			],
+			"answer": "6650",
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇7",
+			"question": "陸區系統裝備編碼原則中，下列何者不是CCES(V)2延伸節點交換機車廂",
+			"options": [
+				"6354",
+				"6284",
+				"6300",
+				"6320"
+			],
+			"answer": "6354",
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇8",
+			"question": "預先登入單一號碼於Preaffiliation視窗中要點選何選項?",
+			"options": [
+				"List",
+				"Single",
+				"Add",
+				"Modify"
+			],
+			"answer": "Single",
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇9",
+			"question": "實施BB2迴路測試時，在何種模式下會區分 BB2Q與BB2I測試？",
+			"options": [
+				"16QAM",
+				"CM",
+				"FM",
+				"FSK"
+			],
+			"answer": "FSK",
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇10",
+			"question": "CCES(V)2可提供多少區域網路?",
+			"options": [
+				"4",
+				"3",
+				"2",
+				"1"
+			],
+			"answer": "2",
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇11",
+			"question": "CCES(V)2標準資料庫DTG2的語音傳輸率是?",
+			"options": [
+				"256Kbps",
+				"512Kbps",
+				"1024Kbps",
+				"4096Kbps"
+			],
+			"answer": "512Kbps",
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇12",
+			"question": "SVOW最多可儲存幾組密鑰?",
+			"options": [
+				"16",
+				"4",
+				"2",
+				"1"
+			],
+			"answer": "2",
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇13",
+			"question": "中繼保密器簡稱為何?",
+			"options": [
+				"SVOW",
+				"OCP",
+				"TED",
+				"DVOW"
+			],
+			"answer": "TED",
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇14",
+			"question": "正常狀況下，SVOW之PARITY燈熄滅時，表示",
+			"options": [
+				"有密鑰",
+				"無密鑰",
+				"故障",
+				"電力不足"
+			],
+			"answer": "有密鑰",
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇15",
+			"question": "光纖電纜線長度有幾公尺?",
+			"options": [
+				"1000",
+				"2000",
+				"3000",
+				"4000"
+			],
+			"answer": "1000",
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇16",
+			"question": "多波道車廂如作LOOP BACK迴路測試，其測試結果由何處觀察？",
+			"options": [
+				"對方交換機",
+				"交換機",
+				"己方GRC-408E",
+				"對方GRC-408E"
+			],
+			"answer": "對方交換機",
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇17",
+			"question": "何種卡片主要用來提供數位會談電話的連接?",
+			"options": [
+				"FEDTG卡",
+				"CCU2卡",
+				"MTG卡",
+				"DCBU卡"
+			],
+			"answer": "DCBU卡",
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇18",
+			"question": "何種卡片可提供兩個獨立的相同電路，可在「傳統」模式或者是「加強」模式下操作?",
+			"options": [
+				"FEDTG卡",
+				"CCU2卡",
+				"MTG卡",
+				"DCBU卡"
+			],
+			"answer": "FEDTG卡",
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇19",
+			"question": "指定轉接最多可以同時進行幾個?",
+			"options": [
+				"10",
+				"20",
+				"30",
+				"40"
+			],
+			"answer": "40",
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇20",
+			"question": "GRC-408 E的通信距離為多少公里？",
+			"options": [
+				"40",
+				"25",
+				"15",
+				"10"
+			],
+			"answer": "40",
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇21",
+			"question": "GRC-408E下之OFF-LINE BER測試，其BER值不可大於多少？",
+			"options": [
+				"10E-04",
+				"10E-05",
+				"10E-03",
+				"10E-02"
+			],
+			"answer": "10E-04",
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇22",
+			"question": "GRC-408E波道間隔為何?",
+			"options": [
+				"25KHZ",
+				"125KHZ",
+				"100KHZ",
+				"50KHZ"
+			],
+			"answer": "125KHZ",
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇23",
+			"question": "LOS(V)4車廂配附幾台GRC-408E無線電機?",
+			"options": [
+				"4",
+				"2",
+				"8",
+				"12"
+			],
+			"answer": "2",
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇24",
+			"question": "下列何項非GRC-408E之調變方式?",
+			"options": [
+				"QPSK",
+				"FSK",
+				"16QAM",
+				"KSK"
+			],
+			"answer": "KSK",
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇25",
+			"question": "大延伸交換機車廂英文縮寫為何?",
+			"options": [
+				"CCES",
+				"CCES(V)3",
+				"LOS(V)3",
+				"RAP"
+			],
+			"answer": "CCES(V)3",
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇26",
+			"question": "小組命令中功率位階M為?",
+			"options": [
+				"低功率",
+				"中功率",
+				"高功率",
+				"自動"
+			],
+			"answer": "中功率",
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇27",
+			"question": "當建立跨軍團鏈路時，作業命令中Link Description 會顯示?",
+			"options": [
+				"Normal",
+				"Gateway",
+				"Through",
+				"Between"
+			],
+			"answer": "Gateway",
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇28",
+			"question": "電池庫可提供最少多久的緊急電源？",
+			"options": [
+				"5分鐘",
+				"10分鐘",
+				"15分鐘",
+				"20分鐘"
+			],
+			"answer": "10分鐘",
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇29",
+			"question": "戰術區域通信系統小組命令PP代表？",
+			"options": [
+				"閃急電",
+				"即刻到",
+				"優先電",
+				"尋常電"
+			],
+			"answer": "優先電",
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇30",
+			"question": "戰術區域通信系統中，何者介面可與KY-1000A交換機連接？",
+			"options": [
+				"T1",
+				"OC3",
+				"E1",
+				"DS3"
+			],
+			"answer": "T1",
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選1",
+			"question": "PIA可否同時連接兩台車廂，提供電源輸出？",
+			"options": [
+				"可以。但僅於緊急狀況下使用，且時間不可過長。",
+				"可以。並須注意LOAD1連接交換機車廂，LOAD2連接多波道車廂",
+				"可以且正常",
+				"不可以",
+				"以上皆非"
+			],
+			"answer": [
+				"可以。但僅於緊急狀況下使用，且時間不可過長。",
+				"可以。並須注意LOAD1連接交換機車廂，LOAD2連接多波道車廂"
+			],
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選2",
+			"question": "請敘述IMSE系統中，振鈴碼如何指配？",
+			"options": [
+				"CCES（V）3＝11",
+				"CCES（V）1/2＝12",
+				"LOS（V）4＝13",
+				"LOS（V）3＝14",
+				"以上皆是"
+			],
+			"answer": [
+				"CCES（V）3＝11",
+				"CCES（V）1/2＝12",
+				"LOS（V）4＝13"
+			],
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選3",
+			"question": "請敘述IMSE系統中CCTS標準資料庫各DTG的配置？",
+			"options": [
+				"QTGM1：2.3.4.9",
+				"QTGM2：5.6.7.8",
+				"QTGM3：15.16.17.18",
+				"QTGM1：15.16.17.18",
+				"以上皆非"
+			],
+			"answer": [
+				"QTGM1：2.3.4.9",
+				"QTGM2：5.6.7.8",
+				"QTGM3：15.16.17.18"
+			],
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選4",
+			"question": "LOS(V)4車廂作中繼時，插線面板會使用哪些插孔？",
+			"options": [
+				"LOS 1的RCV",
+				"LOS 2的XMT",
+				"LOS 3的CLK",
+				"LOS 1的CLK",
+				"LOS 2的RCV",
+				"LOS 3的XMT"
+			],
+			"answer": [
+				"LOS 1的RCV",
+				"LOS 2的XMT",
+				"LOS 1的CLK",
+				"LOS 2的RCV"
+			],
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選5",
+			"question": "IMSE系統中何種車廂可作為多波道鏈路之中繼台？",
+			"options": [
+				"LOS(V)3",
+				"LOS(V)4",
+				"LOS(V)2",
+				"CCES(V)3"
+			],
+			"answer": [
+				"LOS(V)3",
+				"LOS(V)4"
+			],
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選6",
+			"question": "CCES(V)3(大延伸節點交換機) 有哪幾種介面可與外部網路連接？",
+			"options": [
+				"T1介面",
+				"RS422介面",
+				"ATM(非同步傳輸模組交換機) OC3 UNI介面",
+				"線路終端單元與雙重光纜數據機",
+				"以上皆是"
+			],
+			"answer": [
+				"T1介面",
+				"RS422介面",
+				"ATM(非同步傳輸模組交換機) OC3 UNI介面",
+				"線路終端單元與雙重光纜數據機"
+			],
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選7",
+			"question": "3640路由器前面板提供哪些接頭?",
+			"options": [
+				"T1",
+				"CONSOL",
+				"AUX PORT",
+				"E1"
+			],
+			"answer": [
+				"CONSOL",
+				"AUX PORT"
+			],
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選8",
+			"question": "SVOW(勤務波道保密器)中，LOAD 位置與 CIPHER 位置有何不同？",
+			"options": [
+				"LOAD 位置是讓密鑰啟動使用",
+				"LOAD 位置是讓密鑰置放儲存",
+				"CIPHER位置是讓密鑰置放儲存",
+				"CIPHER 位置是讓密鑰啟動使用",
+				"以上皆是"
+			],
+			"answer": [
+				"LOAD 位置是讓密鑰置放儲存",
+				"CIPHER 位置是讓密鑰啟動使用"
+			],
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選9",
+			"question": "25米天線架設方式有幾種？",
+			"options": [
+				"悍馬車架設",
+				"FUSO車架設",
+				"電動架設",
+				"GIN POLE起重桅桿架設",
+				"以上皆是"
+			],
+			"answer": [
+				"悍馬車架設",
+				"FUSO車架設",
+				"GIN POLE起重桅桿架設"
+			],
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選10",
+			"question": "近端LOS(V)3車廂中DIU之LOR紅燈亮起代表什麼意思?該如何解決?",
+			"options": [
+				"紅燈：表示所選擇之時脈不同步或時脈不存在",
+				"鍵入 <2ND> +5，再鍵入7",
+				"鍵入 <2ND> +5，再鍵入8",
+				"紅燈：表示所選擇之時脈同步或時脈存在",
+				"以上皆非"
+			],
+			"answer": [
+				"紅燈：表示所選擇之時脈不同步或時脈不存在",
+				"鍵入 <2ND> +5，再鍵入7"
+			],
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選11",
+			"question": "試說明陸區系統電話用戶有哪幾種優先層級？",
+			"options": [
+				"閃急 (FO) ",
+				"急 (F)",
+				"立即 (I)",
+				"優先 (P)",
+				"尋常 (R)"
+			],
+			"answer": [
+				"閃急 (FO) ",
+				"急 (F)",
+				"立即 (I)",
+				"優先 (P)",
+				"尋常 (R)"
+			],
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選12",
+			"question": "下列敘述交換機車廂何者為真?",
+			"options": [
+				"CCTS車廂程式為AN/TTC-55A/B",
+				"CCES(V)3車廂程式為AN/TTC-54(V)3A/B",
+				"CCES(V)2車廂程式為AN/TTC-54(V)2A/B",
+				"CCES(V)1車廂程式為AN/TTC-54(V)1A/B"
+			],
+			"answer": [
+				"CCTS車廂程式為AN/TTC-55A/B",
+				"CCES(V)3車廂程式為AN/TTC-54(V)3A/B",
+				"CCES(V)2車廂程式為AN/TTC-54(V)2A/B",
+				"CCES(V)1車廂程式為AN/TTC-54(V)1A/B"
+			],
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選13",
+			"question": "密鑰注入器之功能特性為何？",
+			"options": [
+				"儲存、更新及輸出陸區系統中各式之密鑰",
+				"儲存數量：最多12組密鑰",
+				"電源供給：DC-9V電池",
+				"儲存數量：最多16組密鑰",
+				"儲存及輸出陸區系統中各式之密鑰"
+			],
+			"answer": [
+				"電源供給：DC-9V電池",
+				"儲存數量：最多16組密鑰",
+				"儲存及輸出陸區系統中各式之密鑰"
+			],
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選14",
+			"question": "車廂有那兩種接地？",
+			"options": [
+				"電源接地",
+				"信號接地",
+				"射頻信號接地",
+				"車廂接地",
+				"以上皆非"
+			],
+			"answer": [
+				"電源接地",
+				"射頻信號接地"
+			],
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選15",
+			"question": "戰術區域通信系統故障排除中交換機車廂如何察覺發生故障?",
+			"options": [
+				"工作站鏈路呈現紅色",
+				"工作站的System Log 出現故障訊息",
+				"TED失去同步",
+				"裝備故障指示器燈亮"
+			],
+			"answer": [
+				"工作站鏈路呈現紅色",
+				"工作站的System Log 出現故障訊息",
+				"TED失去同步",
+				"裝備故障指示器燈亮"
+			],
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選16",
+			"question": "多波道系統一般故障排除步驟為何?",
+			"options": [
+				"找出警報和指示器",
+				"區分故障",
+				"找出故障",
+				"隔離故障至CCA卡"
+			],
+			"answer": [
+				"找出警報和指示器",
+				"區分故障",
+				"找出故障",
+				"隔離故障至CCA卡"
+			],
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選17",
+			"question": "DIU若電源燈號出現異常時，應如何處置？",
+			"options": [
+				"首先執行關機，即將電源放在OFF",
+				"打開電源，觀察燈號異常是否依舊，並作成記號",
+				"檢查發電機是否正常",
+				"檢查所有導線是否連接妥當"
+			],
+			"answer": [
+				"首先執行關機，即將電源放在OFF",
+				"打開電源，觀察燈號異常是否依舊，並作成記號",
+				"檢查所有導線是否連接妥當"
+			],
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選18",
+			"question": "LOS(V)3車廂內遠端QTGM迴接測試之插線有那些孔？",
+			"options": [
+				"QTGM的RCV",
+				"LOS 1的RCV",
+				"DS3 FOM的CLK",
+				"QTGM的XMT"
+			],
+			"answer": [
+				"QTGM的RCV",
+				"QTGM的XMT"
+			],
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選19",
+			"question": "DLOS之使用時機為何？",
+			"options": [
+				"為克服特殊地形地貌時",
+				"指揮所位置選定，既有電台饋線無法有效延伸時",
+				"於大廈、建築物內擔任固定電台時",
+				"指揮官下達架設命令時"
+			],
+			"answer": [
+				"為克服特殊地形地貌時",
+				"指揮所位置選定，既有電台饋線無法有效延伸時",
+				"於大廈、建築物內擔任固定電台時"
+			],
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選20",
+			"question": "交換多工單元作業程式和資料庫可使用哪兩種方式載入?",
+			"options": [
+				"AUTO",
+				"MANUAL",
+				"LOAD",
+				"RESTART"
+			],
+			"answer": [
+				"AUTO",
+				"MANUAL"
+			],
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選21",
+			"question": "下列說明戰術區域通信系統之DNS為真?",
+			"options": [
+				"一般為7xy-imse.army.mil.tw",
+				"一般為7xy.imse.army.mil.tw",
+				"x代表學校或資電群最後一位數",
+				"y代表連隊號碼"
+			],
+			"answer": [
+				"一般為7xy-imse.army.mil.tw",
+				"x代表學校或資電群最後一位數",
+				"y代表連隊號碼"
+			],
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選22",
+			"question": "試述SVOW及TED之功用？",
+			"options": [
+				"TED：提供DVOW通信的加密與解密。",
+				"SVOW：提供DVOW通信的加密與解密。",
+				"SVOW：對數位傳輸群組中繼鏈路作加密及解密之動作。",
+				"TED：對數位傳輸群組中繼鏈路作加密及解密之動作。",
+				"以上皆是"
+			],
+			"answer": [
+				"SVOW：提供DVOW通信的加密與解密。",
+				"TED：對數位傳輸群組中繼鏈路作加密及解密之動作。"
+			],
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選23",
+			"question": "鏈路故障排除步驟為何？",
+			"options": [
+				"察覺鏈路發生故障",
+				"建立輔助通信",
+				"執行裝備檢查",
+				"使用勤務波道排除故障",
+				"迴路測試"
+			],
+			"answer": [
+				"察覺鏈路發生故障",
+				"建立輔助通信",
+				"執行裝備檢查",
+				"使用勤務波道排除故障",
+				"迴路測試"
+			],
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選24",
+			"question": "車廂中之QMUX之功能為何？",
+			"options": [
+				"將 CCTS 送來之 QTGM 信號解多工成四個 DTG",
+				"將 LOS (V) 3 車廂中四台 GRC-408E 所接收之四個 DTG 多工成一個 QTGM",
+				"提供2條16kbps 勤務波道，於LOS (V) 3中僅使用1條。",
+				"分配交換機與多波道時脈。",
+				"將DTG信號實施調變或解調變功能。"
+			],
+			"answer": [
+				"將 CCTS 送來之 QTGM 信號解多工成四個 DTG",
+				"將 LOS (V) 3 車廂中四台 GRC-408E 所接收之四個 DTG 多工成一個 QTGM",
+				"提供2條16kbps 勤務波道，於LOS (V) 3中僅使用1條。"
+			],
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選25",
+			"question": "PIA(電源介面總成)中的208VAC(伏交流)、LOAD1(負載1)、LOAD2(負載2)及插座等四種電路斷器其安培數各為多少？",
+			"options": [
+				"208VAC(伏交流)：120安培",
+				"208VAC(伏交流)：100安培",
+				"插座：20安培",
+				"LOAD1(負載1)：63安培",
+				"LOAD2(負載2)：50安培"
+			],
+			"answer": [
+				"208VAC(伏交流)：100安培",
+				"插座：20安培",
+				"LOAD1(負載1)：63安培",
+				"LOAD2(負載2)：50安培"
+			],
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選26",
+			"question": "鏈路啟始的程序為何？",
+			"options": [
+				"檢查同步狀態、建立勤務波道通聯",
+				"FEDTG (改良型前向誤差數位傳輸群組)卡核對、DTG(數位傳輸群組) 參數核對",
+				"鏈路啟始指令下達、檢查鏈路狀態",
+				"撥打車廂電話、迴波測試",
+				"以上皆非"
+			],
+			"answer": [
+				"檢查同步狀態、建立勤務波道通聯",
+				"FEDTG (改良型前向誤差數位傳輸群組)卡核對、DTG(數位傳輸群組) 參數核對",
+				"鏈路啟始指令下達、檢查鏈路狀態",
+				"撥打車廂電話、迴波測試"
+			],
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選27",
+			"question": "保密語音勤務波道主要是哪些裝置所組成？",
+			"options": [
+				"DIU 數位語音勤務波道介面單元。",
+				"ICU 介面控制單元。",
+				"SVOW 語音勤務波道保密器。",
+				"QMUX 四倍多工機。",
+				"以上皆是"
+			],
+			"answer": [
+				"DIU 數位語音勤務波道介面單元。",
+				"ICU 介面控制單元。",
+				"SVOW 語音勤務波道保密器。"
+			],
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選28",
+			"question": "下列何者為戰術區域通信系統故障排除之總類？",
+			"options": [
+				"BB1測試",
+				"BB2測試",
+				"OFFLINE BER測試",
+				"近端接線面板迴路測試",
+				"遠端接線面板迴路測試"
+			],
+			"answer": [
+				"BB1測試",
+				"BB2測試",
+				"OFFLINE BER測試",
+				"近端接線面板迴路測試",
+				"遠端接線面板迴路測試"
+			],
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選29",
+			"question": "戰術區域通信系統電話用戶優先等級，共有哪些等級區分？",
+			"options": [
+				"Z",
+				"O",
+				"P",
+				"R"
+			],
+			"answer": [
+				"P",
+				"R"
+			],
+			"reference": "戰術區域通信系統組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選30",
+			"question": "GRC-408E調變方式有那些？",
+			"options": [
+				"8QAM",
+				"16QAM",
+				"QPSK",
+				"FSK",
+				"FM"
+			],
+			"answer": [
+				"16QAM",
+				"QPSK",
+				"FSK"
+			],
+			"reference": "戰術區域通信系統組合訓練"
+		}
+	]
+}

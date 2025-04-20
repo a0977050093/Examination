@@ -1,0 +1,777 @@
+{
+	"questions": [
+		{
+			"type": "true_false",
+			"number": "是非1",
+			"question": "架設中心位置選定通常位於指揮所內部及邊緣或附近，野戰時為便於機動應視地形狀況可設置於情報中心附近或車上之外側邊緣。",
+			"answer": false,
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非2",
+			"question": "野戰被覆線的連接，務使緊密堅牢，力求保持線路上之張力，以及良好的導電與絕緣的功能，也就是保持原來被覆線的特性。",
+			"answer": true,
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非3",
+			"question": "野戰被覆線接續包膠布時，防損膠布先從接頭中央向右包紮至被覆上約2.5公分，再將膠布纏回過蛇口結，至另一端被覆上2.5公分，再纏回接頭中央為止。",
+			"answer": false,
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非4",
+			"question": "野戰被覆線接續包膠布時，防損膠布從接頭中央向右包紮至被覆上約5公分，再將膠布纏回過蛇口結，至另一端被覆上5公分，再纏回接頭中央為止，包紮完成後，再用手搓揉，必須再用手搓揉，使接頭上防水膠布縫隙密合。",
+			"answer": true,
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非5",
+			"question": "有敵情顧慮時，交換中心開設應力求對空及地面之遮蔽與隱蔽。",
+			"answer": true,
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非6",
+			"question": "被覆線接續時，其餘線要求需能纏繞至裸線至少3圈。",
+			"answer": true,
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非7",
+			"question": "野戰被覆線接續包防水膠布時，務須用力貼緊膠布後，再用手搓揉。",
+			"answer": true,
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非8",
+			"question": "標示牌製作要領必須使用防潮、防風、防曬之材料，標示則以方便辨識為主，並無安全洩密上的考慮。",
+			"answer": false,
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非9",
+			"question": "線路巡查方式依線路性質及距離遠近而定，遠距離線路，則採分區巡查方式實施。",
+			"answer": false,
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非10",
+			"question": "線路敷設改為高架時，在支架物上端及底部分別固定，加掛標示牌並留餘線。",
+			"answer": true,
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非11",
+			"question": "小型絡車盤(DR-8)可容納被覆線500公尺。",
+			"answer": false,
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非12",
+			"question": "中型絡車盤(RL-159)可容納被覆線1600公尺。",
+			"answer": true,
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非13",
+			"question": "交換中心為一種設施，視線路多寡、單位大小而決定。",
+			"answer": false,
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非14",
+			"question": "扭結固定法作業要領為在線環分開時，各反轉180度互相重疊。",
+			"answer": true,
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非15",
+			"question": "架設中心功用為中繼線及用戶線之起點或末端之會集點。",
+			"answer": true,
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非16",
+			"question": "架設中心設立可減少交換中心人員擁擠。",
+			"answer": true,
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非17",
+			"question": "被覆線接續時，依規定需去除被覆八公分長。",
+			"answer": false,
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非18",
+			"question": "野戰被覆線之斷線張力為90.2公斤。",
+			"answer": true,
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非19",
+			"question": "野戰被覆線每英里重量淨重20.9公斤。",
+			"answer": false,
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非20",
+			"question": "標示牌製作要領通常為長方形，長為6公分、寬為2公分。",
+			"answer": true,
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇1",
+			"question": "何種固定法作業要領為在線環分開時，各反轉180度互相重疊?",
+			"options": [
+				"桅索結固定法",
+				"雙環結固定法",
+				"蛇口桅索結固定法",
+				"扭結固定法"
+			],
+			"answer": "扭結固定法",
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇2",
+			"question": "何種固定法作業要領為放鬆線路繞支架物一周，並留餘線約60公分?",
+			"options": [
+				"桅索結固定法",
+				"環結固定法",
+				"蛇口結固定法",
+				"扭結固定法"
+			],
+			"answer": "桅索結固定法",
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇3",
+			"question": "被覆線接續時，去被覆是利用何項工具量被覆7公分，並將該工具凹槽處朝上，夾住被覆後去除。",
+			"options": [
+				"尖嘴鉗",
+				"鱷魚鉗",
+				"老虎鉗",
+				"斜口鉗"
+			],
+			"answer": "老虎鉗",
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇4",
+			"question": "野戰線路架設中之地下埋設的優點，下列何者為非?",
+			"options": [
+				"電路穩定",
+				"維護簡便",
+				"不受天候與溫度影響",
+				"敵火及車輛不易損壞電路"
+			],
+			"answer": "維護簡便",
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇5",
+			"question": "何種固定法作業要領為右手線環平放於左手線環上?",
+			"options": [
+				"桅索結固定法",
+				"雙環結固定法",
+				"蛇口桅索結",
+				"扭結固定法"
+			],
+			"answer": "雙環結固定法",
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇6",
+			"question": "何種固定法作業要領須將結緊貼於地面?",
+			"options": [
+				"桅索結固定法",
+				"雙環結固定法",
+				"蛇口桅索結固定法",
+				"扭結固定法"
+			],
+			"answer": "蛇口桅索結固定法",
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇7",
+			"question": "何種固定法使用時機不適用於長距離跨越?",
+			"options": [
+				"桅索結固定法",
+				"雙環結固定法",
+				"蛇口桅索結固定法",
+				"扭結固定法"
+			],
+			"answer": "扭結固定法",
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇8",
+			"question": "何種固定法使用時機為地面敷設?",
+			"options": [
+				"桅索結固定法",
+				"雙環結固定法",
+				"編籃結固定法",
+				"扭結固定法"
+			],
+			"answer": "雙環結固定法",
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇9",
+			"question": "何種設施功用為負責線路測試?",
+			"options": [
+				"交換中心",
+				"通信中心",
+				"架設中心",
+				"作戰中心"
+			],
+			"answer": "架設中心",
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇10",
+			"question": "架設中心為中繼線及用戶線之何處?",
+			"options": [
+				"起點之會集點",
+				"末端之會集點",
+				"以上皆是",
+				"以上皆非"
+			],
+			"answer": "以上皆是",
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇11",
+			"question": "中型絡車架其名稱為?",
+			"options": [
+				"RL-31",
+				"CE-11",
+				"RL-27",
+				"RL-47"
+			],
+			"answer": "RL-31",
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇12",
+			"question": "手持式放線軸其名稱為?",
+			"options": [
+				"RL-27",
+				"RL-31",
+				"RL-47",
+				"CE-11"
+			],
+			"answer": "RL-27",
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇13",
+			"question": "何種設施位置選定通常位於指揮所內及邊緣或附近?",
+			"options": [
+				"交換中心",
+				"通信中心",
+				"架設中心",
+				"作戰中心"
+			],
+			"answer": "架設中心",
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇14",
+			"question": "蛇口桅索結固定法繞支架物一圈，留餘線約幾公分並打一個平結拉緊?",
+			"options": [
+				"50公分",
+				"60公分",
+				"70公分",
+				"80公分"
+			],
+			"answer": "60公分",
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇15",
+			"question": "野戰交換機(KY-32)總機開設由幾人編成?",
+			"options": [
+				"三人",
+				"四人",
+				"五人",
+				"六人"
+			],
+			"answer": "三人",
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇16",
+			"question": "野戰被覆線接續完成後須包防損膠布?",
+			"options": [
+				"3公分",
+				"5公分",
+				"7公分",
+				"10公分"
+			],
+			"answer": "10公分",
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇17",
+			"question": "野戰被覆線接續的步驟，何者為非?",
+			"options": [
+				"量距離",
+				"打結",
+				"纏線",
+				"去銅線"
+			],
+			"answer": "去銅線",
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇18",
+			"question": "野戰被覆線接續時，需去除被覆幾公分?",
+			"options": [
+				"5公分",
+				"6公分",
+				"7公分",
+				"8公分"
+			],
+			"answer": "7公分",
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇19",
+			"question": "野戰被覆線接續時，需使結距離兩端被覆各幾公分?",
+			"options": [
+				"0.7公分",
+				"0.9公分",
+				"0.5公分",
+				"1.2公分"
+			],
+			"answer": "0.7公分",
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇20",
+			"question": "野戰被覆線接續量距離時，量取線頭距離為",
+			"options": [
+				"5公分",
+				"6公分",
+				"7公分",
+				"8公分"
+			],
+			"answer": "7公分",
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選1",
+			"question": "架設中心的功用為何?",
+			"options": [
+				"為中繼線及用戶線之起點或末端之會集點",
+				"負責線路測試",
+				"減少交換中心人員擁擠",
+				"負責指揮通信部隊",
+				"打擊進犯敵軍"
+			],
+			"answer": [
+				"為中繼線及用戶線之起點或末端之會集點",
+				"負責線路測試",
+				"減少交換中心人員擁擠"
+			],
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選2",
+			"question": "雙環結固定法的使用時機為何?",
+			"options": [
+				"地面敷設",
+				"適用於野戰被覆線的緊急架設",
+				"能套入支架物",
+				"野戰電纜架設時，可做編籃結、編織結、纏索結的固定",
+				"高架線路臨時性的固定"
+			],
+			"answer": [
+				"地面敷設",
+				"能套入支架物",
+				"野戰電纜架設時，可做編籃結、編織結、纏索結的固定"
+			],
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選3",
+			"question": "交換中心選擇一般要領有哪些?",
+			"options": [
+				"避免吵雜與噪音之處所",
+				"避免光線直接照射在交換機面版與人員臉上之場所",
+				"交道便利要道之處",
+				"避免曝曬與潮濕之地區",
+				"選擇正常供電、遮風避雨之處所"
+			],
+			"answer": [
+				"避免吵雜與噪音之處所",
+				"避免光線直接照射在交換機面版與人員臉上之場所",
+				"避免曝曬與潮濕之地區",
+				"選擇正常供電、遮風避雨之處所"
+			],
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選4",
+			"question": "有敵情顧慮的交換中心位置之選擇為何？",
+			"options": [
+				"便於土工作業之處",
+				"距離指揮所不宜太遠，以免增加警戒防衛上之困難",
+				"開設於無線電台旁",
+				"需設於交通便利處",
+				"力求對空及地面之遮蔽與隱蔽"
+			],
+			"answer": [
+				"便於土工作業之處",
+				"距離指揮所不宜太遠，以免增加警戒防衛上之困難",
+				"力求對空及地面之遮蔽與隱蔽"
+			],
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選5",
+			"question": "野戰被覆線有那些特性?",
+			"options": [
+				"線材柔軟，富有彈性",
+				"斷線張力90.2公斤",
+				"通信距離約20公里",
+				"多元乙烯為內部絕緣",
+				"塑膠質尼龍為外層被覆"
+			],
+			"answer": [
+				"線材柔軟，富有彈性",
+				"斷線張力90.2公斤",
+				"通信距離約20公里",
+				"多元乙烯為內部絕緣",
+				"塑膠質尼龍為外層被覆"
+			],
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選6",
+			"question": "各種架設方式中使用地面敷設有什麼優點?",
+			"options": [
+				"通信不受地形影響",
+				"架設及撤收迅速",
+				"所需線料和時間較多",
+				"伸縮性大，訓練較易",
+				"對核子武器爆炸影響較小"
+			],
+			"answer": [
+				"架設及撤收迅速",
+				"伸縮性大，訓練較易"
+			],
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選7",
+			"question": "下列手持式放線軸品名程式何者為非?",
+			"options": [
+				"RL-159",
+				"RL-27D",
+				"RL-66",
+				"RL-88",
+				"RL-87"
+			],
+			"answer": [
+				"RL-159",
+				"RL-66",
+				"RL-88",
+				"RL-87"
+			],
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選8",
+			"question": "野戰數位交換機前面板由那些組成?",
+			"options": [
+				"數據接口和話筒接口",
+				"燈號及標示板",
+				"揚聲器",
+				"功能鍵",
+				"LCD液晶顯示幕"
+			],
+			"answer": [
+				"數據接口和話筒接口",
+				"燈號及標示板",
+				"揚聲器",
+				"功能鍵",
+				"LCD液晶顯示幕"
+			],
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選9",
+			"question": "在KY-32MA交換機資料庫設定中「用戶線號碼」功能有那些?",
+			"options": [
+				"INS BY POS",
+				"INS BY NUM",
+				"DEL BY POS",
+				"DEL BY NUM",
+				"RESET"
+			],
+			"answer": [
+				"INS BY POS",
+				"INS BY NUM",
+				"DEL BY POS",
+				"DEL BY NUM"
+			],
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選10",
+			"question": "下列那些是野戰交換機?",
+			"options": [
+				"SB-22",
+				"SB-86",
+				"KY-32MX",
+				"KY-32MA",
+				"KY-1000A"
+			],
+			"answer": [
+				"SB-22",
+				"SB-86",
+				"KY-32MX",
+				"KY-32MA"
+			],
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選11",
+			"question": "雙環結使用時機何者為非?",
+			"options": [
+				"高架線路臨時性的固定",
+				"能套入支架物（如木樁，籬笆柱等）",
+				"要穩定牢固",
+				"適合長距離跨越",
+				"地面敷設"
+			],
+			"answer": [
+				"高架線路臨時性的固定",
+				"要穩定牢固",
+				"適合長距離跨越"
+			],
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選12",
+			"question": "下列何項為被覆線接線步驟?",
+			"options": [
+				"量距離",
+				"去被覆",
+				"打結",
+				"纏線",
+				"包膠布"
+			],
+			"answer": [
+				"量距離",
+				"去被覆",
+				"打結",
+				"纏線",
+				"包膠布"
+			],
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選13",
+			"question": "野戰線路故障的種類及原因有哪些?",
+			"options": [
+				"斷線",
+				"短路",
+				"通地",
+				"混線",
+				"纏線"
+			],
+			"answer": [
+				"斷線",
+				"短路",
+				"通地",
+				"混線"
+			],
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選14",
+			"question": "下列中型絡車盤品名程式何者為非?",
+			"options": [
+				"RL-159",
+				"RL-149",
+				"RL-66",
+				"RL-88",
+				"RL-87"
+			],
+			"answer": [
+				"RL-149",
+				"RL-66",
+				"RL-88",
+				"RL-87"
+			],
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選15",
+			"question": "野戰線路故障的種類及原因有哪些?",
+			"options": [
+				"斷線",
+				"短路",
+				"通地",
+				"混線",
+				"串線"
+			],
+			"answer": [
+				"斷線",
+				"短路",
+				"通地",
+				"混線"
+			],
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選16",
+			"question": "下列何者是野戰數位交換機「中繼線首碼表」收碼長度的正常範圍?",
+			"options": [
+				"00",
+				"08",
+				"16",
+				"32",
+				"48"
+			],
+			"answer": [
+				"00",
+				"08",
+				"16"
+			],
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選17",
+			"question": "野戰數位交換機(KY-32)在下列電壓都是正常的?",
+			"options": [
+				"18",
+				"21",
+				"24",
+				"27",
+				"30"
+			],
+			"answer": [
+				"21",
+				"24",
+				"27"
+			],
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選18",
+			"question": "KY-32交換機中，電源卡(PWRB)提供系統哪些卡片的電力?",
+			"options": [
+				"ALC",
+				"COT",
+				"LDT",
+				"RDT",
+				"DTK"
+			],
+			"answer": [
+				"ALC",
+				"COT",
+				"LDT",
+				"RDT"
+			],
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選19",
+			"question": "KY-32交換機裝備組成中，何者屬於測試儀表組?",
+			"options": [
+				"三用電表",
+				"地阻表",
+				"充電機",
+				"電腦連接線",
+				"查線用話機"
+			],
+			"answer": [
+				"三用電表",
+				"地阻表",
+				"查線用話機"
+			],
+			"reference": "有線電通信系統綜合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選20",
+			"question": "野戰數位交換機的用戶量特性適合那些單位使用?",
+			"options": [
+				"聯兵旅",
+				"營級",
+				"連級",
+				"排級",
+				"班"
+			],
+			"answer": [
+				"聯兵旅",
+				"營級",
+				"連級"
+			],
+			"reference": "有線電通信系統綜合訓練"
+		}
+	]
+}

@@ -1,0 +1,744 @@
+{
+	"questions": [
+		{
+			"type": "true_false",
+			"number": "是非1",
+			"question": "HR-93、HR-105、MHR-112VHF波道間隔均可提供選擇12.5KHz與25KHz",
+			"answer": false,
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "true_false",
+			"number": "是非2",
+			"question": "HR-93、HR-105、MHR-112VHF發射功率均可提供選擇，最高輸出功率為5W",
+			"answer": false,
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "true_false",
+			"number": "是非3",
+			"question": "MHR-112 VHF具備可接收２組（含）以上不同頻段（HF及VHF）的語音訊息。",
+			"answer": false,
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "true_false",
+			"number": "是非4",
+			"question": "MHR-112內建GPS全球定位系統，提供自動回報功能，可快速了解成員部署或移動狀況",
+			"answer": true,
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "true_false",
+			"number": "是非5",
+			"question": "MHR-112以全雙工技術允許進行雙向通信之無線電機",
+			"answer": true,
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "true_false",
+			"number": "是非6",
+			"question": "主機具備優先級通道的設定功能，當優先級通道發話時，將優先排序在通話的群組。",
+			"answer": false,
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "true_false",
+			"number": "是非7",
+			"question": "區分VHF、VHF/UHF等二種型式，為傳統類比與現代數位技術整合的新世代SDR雙模機",
+			"answer": true,
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "true_false",
+			"number": "是非8",
+			"question": "當接收者收到圖片後可直接顯示照片在銀幕上，並且可得知此照片附加資訊。",
+			"answer": true,
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "true_false",
+			"number": "是非9",
+			"question": "MHR-112手持式無線電機多功能鍵盤動態功能鍵，是與螢幕所顯示的動態功能所對映使用",
+			"answer": true,
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "true_false",
+			"number": "是非10",
+			"question": "MHR-112手持式無線電機輕巧便於攜帶，適用階層為營、連、排、班。",
+			"answer": false,
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "true_false",
+			"number": "是非11",
+			"question": "MHR-112手持式無線電機調製方式僅提供FM調頻模式",
+			"answer": false,
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "true_false",
+			"number": "是非12",
+			"question": "MHR-112具有可接收２組（含）以上不同頻段（Frequency band，VHF及UHF）的語音訊息",
+			"answer": true,
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "true_false",
+			"number": "是非13",
+			"question": "主機配賦有兩顆鋰電池及一組鋰電池充電座",
+			"answer": true,
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "true_false",
+			"number": "是非14",
+			"question": "所謂「T1」為24個頻道×8位元/頻道＝192位元，每24個頻道加上一個訊框位元＝193位元/框；193位元/框 ×8000訊框/秒＝1544000位元/秒，即1.544Mbps＝T1的頻寬。",
+			"answer": true,
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "true_false",
+			"number": "是非15",
+			"question": "待機時主機顯示環境雜訊 (Noise Floor)數值，可作為判斷接收環境雜訊參考，待機時訊號如為：-126～-120 dBm則收訊狀況可判斷為尚可",
+			"answer": true,
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "true_false",
+			"number": "是非16",
+			"question": "待機時主機顯示環境雜訊 (Noise Floor)數值，可作為判斷接收環境雜訊參考，待機時訊號如為：雜訊<-126 dBm則收訊狀況可判斷為劣等",
+			"answer": false,
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "true_false",
+			"number": "是非17",
+			"question": "接收信號時主機顯示數值為RSSI(接收信號強度指示)，作為主機在接收訊號時的度量，以分貝（dB）為單位表示，如接收時訊號數值為：-95~-105 dBm則接收狀況可判斷為尚可",
+			"answer": false,
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "true_false",
+			"number": "是非18",
+			"question": "無線電主機提供藍芽功能，可擴充裝置作為話筒耳機收音使用",
+			"answer": false,
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "true_false",
+			"number": "是非19",
+			"question": "緊急呼叫功能鍵，按下時無線電主機將自動以最大功率對所有無線電主機發送求救訊息",
+			"answer": false,
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "true_false",
+			"number": "是非20",
+			"question": "鋰電池在充滿電狀況下於接收/發射/待機，比率為10%/10%/80%的情境下，主機可正常運作使用的時間可達≧10小時。",
+			"answer": true,
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇1",
+			"question": "GPS引擎設定中，人員可以設定GPS的定位模式、節電功能與無線電機的GPS更新頻率，其中更新頻率可選擇？",
+			"options": [
+				"1~10秒",
+				"15~25秒",
+				"10~20秒",
+				"0~30秒"
+			],
+			"answer": "1~10秒",
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇2",
+			"question": "下列何者非MHR-112手持式無線電機可支援的通訊協定？",
+			"options": [
+				"DTMF",
+				"P25",
+				"P35",
+				"5 tone"
+			],
+			"answer": "P35",
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇3",
+			"question": "主機後操作人員可由人機介面動態功能鍵按鈕內按下「 」，進入「功能設定」頁面來進行無線電機之基本設定。",
+			"options": [
+				"選項",
+				"選單",
+				"設定",
+				"進入"
+			],
+			"answer": "選單",
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇4",
+			"question": "主機提供單機單頻中繼功能R&R（Radio and Repeater，當來訊時，自動啟用中繼功能，直接當作中繼台使用，通訊距離可增加通訊範圍多廣？",
+			"options": [
+				"1倍",
+				"2倍",
+				"3倍",
+				"4倍"
+			],
+			"answer": "4倍",
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇5",
+			"question": "主機提供類比系統下語音數位化，並配合何種加密機制？作為確保通信傳輸安全。",
+			"options": [
+				"AES-64",
+				"ACS-128",
+				"AES-256",
+				"ACE-512"
+			],
+			"answer": "AES-256",
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇6",
+			"question": "在訊息資料夾調閱功能內可查看資料何者為非？",
+			"options": [
+				"文字訊息儲存匣",
+				"圖片儲存匣",
+				"語音通話錄音儲存匣",
+				"人員登入紀錄儲存匣"
+			],
+			"answer": "人員登入紀錄儲存匣",
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇7",
+			"question": "無線電具備勤務時間自動收發話錄音功能，功能開啟後無線電便可執行通話自動錄音，其收錄內容為？",
+			"options": [
+				"收錄接收語音",
+				"收錄發話語音",
+				"收話及發話時都將錄音",
+				"依需求設定收話或發話錄音"
+			],
+			"answer": "收話及發話時都將錄音",
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇8",
+			"question": "開機後面板即顯示開機畫面，並進行開機自我檢測，開機自我檢測時間約為",
+			"options": [
+				"5~10秒",
+				"10~15秒",
+				"15~25秒",
+				"25~35秒"
+			],
+			"answer": "25~35秒",
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇9",
+			"question": "MHR-112 VHF構型頻率範圍為",
+			"options": [
+				"發射頻率30~88MHz；接收30~88MHz、225~400MHz",
+				"發射頻率30~87.975MHz；接收30~97.975MHz、225~520MHz",
+				"發射頻率30~87.975MHz；接收30~400MHz",
+				"發射頻率30~88MHz；接收30~520MHz"
+			],
+			"answer": "發射頻率30~88MHz；接收30~88MHz、225~400MHz",
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇10",
+			"question": "MHR-112手持式無線電機於任務性質頻率集（Z1）內，共設置了幾組預置波道？",
+			"options": [
+				"8組",
+				"12組",
+				"16組",
+				"32組"
+			],
+			"answer": "16組",
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇11",
+			"question": "MHR-112手持式無線電機於任務性質頻率集（Z1）內，設置與在空機實施通聯波道為何?",
+			"options": [
+				"波道3、波道4",
+				"波道5、波道6",
+				"波道7、波道8",
+				"波道9、波道10"
+			],
+			"answer": "波道7、波道8",
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇12",
+			"question": "MHR-112手持式無線電機於任務性質頻率集（Z1）內，設置與其他VHF設備通聯波道為何?",
+			"options": [
+				"波道3、波道4",
+				"波道5、波道6",
+				"波道7、波道8",
+				"波道9、波道10"
+			],
+			"answer": "波道9、波道10",
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇13",
+			"question": "內建記憶體可提供儲存錄音記事，通話紀錄及語音回放等功能，最多可儲存多少小時語音紀錄?",
+			"options": [
+				"64小時",
+				"72小時",
+				"89小時",
+				"128小時"
+			],
+			"answer": "72小時",
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇14",
+			"question": "主機配賦鋰電池長時間不使用仍須充電、放電保養，保養週期不得超過？",
+			"options": [
+				"每日",
+				"每週",
+				"每月",
+				"每季"
+			],
+			"answer": "每季",
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇15",
+			"question": "主機無法開機，電源指示燈不亮，可能原因以下何者為非？",
+			"options": [
+				"電池超過使用年限",
+				"電池可能未正確安裝",
+				"電池電壓過低或電池電量已耗盡",
+				"電池處污點或受損而導致接觸不良"
+			],
+			"answer": "電池超過使用年限",
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇16",
+			"question": "接收訊號時聲音小、斷斷續續或無聲，可能原因何者為非？",
+			"options": [
+				"電池電壓過低",
+				"發話按鍵損壞",
+				"超過有效通訊範圍",
+				"喇叭模組損壞"
+			],
+			"answer": "發話按鍵損壞",
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇17",
+			"question": "無線電具緊急通話功能，當人員觸發此功能何者為非?",
+			"options": [
+				"無線電機以最大瓦數進行信號發射",
+				"自動打開GPS功能並回報當前位置",
+				"指定通話群組或對象進行接收",
+				"自動清除參數避免洩密"
+			],
+			"answer": "自動清除參數避免洩密",
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇18",
+			"question": "無線電機可依任務需求來限制人員發話時間，可設定單次按下發話鍵所發話的時間，何者為非?",
+			"options": [
+				"10秒",
+				"60秒",
+				"90秒",
+				"無限制"
+			],
+			"answer": "10秒",
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇19",
+			"question": "無線電機提供可依任務調整發射功率，其中選項何者為非？",
+			"options": [
+				"0.5W",
+				"1W",
+				"2W",
+				"5W"
+			],
+			"answer": "0.5W",
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇20",
+			"question": "操作手可切換不同頻道集來符合當前任務及作戰所需，一組頻道集預置了16組波道，其主機可利用頻道集最多可預置幾組波道?",
+			"options": [
+				"256組",
+				"240組",
+				"512組",
+				"1024組"
+			],
+			"answer": "1024組",
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選1",
+			"question": "MHR-112 U/V構型頻率範圍為",
+			"options": [
+				"發射頻率30~88MHz",
+				"接收頻率30~88MHz",
+				"接收及發射頻率30~520MHz",
+				"接收頻率225~400MHz"
+			],
+			"answer": [
+				"發射頻率30~88MHz",
+				"接收頻率30~88MHz",
+				"接收頻率225~400MHz"
+			],
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選2",
+			"question": "MHR-112於數位模式下可提供數據傳輸最高速率/每秒，何者為非？",
+			"options": [
+				"9.2Kbit",
+				"19200bit",
+				"9600bit",
+				"12Kbit"
+			],
+			"answer": [
+				"9.2Kbit",
+				"9600bit",
+				"12Kbit"
+			],
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選3",
+			"question": "MHR-112適用階層為何？",
+			"options": [
+				"班",
+				"排",
+				"連",
+				"營"
+			],
+			"answer": [
+				"班",
+				"排"
+			],
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選4",
+			"question": "MHR-112 VHF構型所配賦件何者是",
+			"options": [
+				"鋰電池充電座(含變壓器)",
+				"天線延伸座(含轉接頭)",
+				"外接式送受話器",
+				"抗噪耳機(含PTT連接線)"
+			],
+			"answer": [
+				"鋰電池充電座(含變壓器)",
+				"天線延伸座(含轉接頭)",
+				"外接式送受話器"
+			],
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選5",
+			"question": "接收信號時顯示RSSI(接收信號強度指示)數值為訊號強度的度量，代表通信品質及穩定性，何者為是？",
+			"options": [
+				"訊號>-95dBm(優)",
+				"-85～-95dBm(可)",
+				"-95～-105dBm(差)",
+				"訊號<-105dBm(劣)"
+			],
+			"answer": [
+				"-85～-95dBm(可)",
+				"-95～-105dBm(差)",
+				"訊號<-105dBm(劣)"
+			],
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選6",
+			"question": "在訊息資料夾調閱功能內可查看資料何者為是？",
+			"options": [
+				"文字訊息儲存匣",
+				"圖片儲存匣",
+				"語音通話錄音儲存匣",
+				"人員登入紀錄儲存匣"
+			],
+			"answer": [
+				"文字訊息儲存匣",
+				"圖片儲存匣",
+				"語音通話錄音儲存匣"
+			],
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選7",
+			"question": "在日期時間設定中，操作手可以設定無線電機的螢幕亮度、日期，提供選擇何者為是？",
+			"options": [
+				"日期、時間",
+				"時區",
+				"日期格式",
+				"小時格式"
+			],
+			"answer": [
+				"日期、時間",
+				"時區",
+				"日期格式",
+				"小時格式"
+			],
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選8",
+			"question": "無線電具緊急通話功能，當人員觸發此功能何者為是?",
+			"options": [
+				"無線電機以最大瓦數進行信號發射",
+				"自動打開GPS功能並回報當前位置",
+				"指定通話群組或對象進行接收",
+				"自動清除參數避免洩密"
+			],
+			"answer": [
+				"無線電機以最大瓦數進行信號發射",
+				"自動打開GPS功能並回報當前位置",
+				"指定通話群組或對象進行接收"
+			],
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選9",
+			"question": "無線電具備勤務時間自動收發話錄音功能，功能開啟後無線電便可執行通話自動錄音，其收錄內容為？",
+			"options": [
+				"收錄接收語音",
+				"收錄發話語音",
+				"收話及發話時都將錄音",
+				"依需求設定收話或發話錄音"
+			],
+			"answer": [
+				"收錄接收語音",
+				"收錄發話語音",
+				"收話及發話時都將錄音"
+			],
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選10",
+			"question": "主機配賦鋰電池長時間不使用仍須充電、放電保養，保養週期不得超過？？",
+			"options": [
+				"每日",
+				"每週",
+				"每月",
+				"每季"
+			],
+			"answer": [
+				"每日",
+				"每週",
+				"每月"
+			],
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選11",
+			"question": "主機前面板提供按鍵為",
+			"options": [
+				"動態功能鍵",
+				"語音備忘錄鍵",
+				"四向移動鍵",
+				"快捷鍵"
+			],
+			"answer": [
+				"動態功能鍵",
+				"四向移動鍵",
+				"快捷鍵"
+			],
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選12",
+			"question": "在鬧鐘設定中，提供二組鬧鐘自行設定，且類型可選擇哪幾種方式進行鬧鐘提醒",
+			"options": [
+				"僅一次",
+				"每日",
+				"每週",
+				"每月"
+			],
+			"answer": [
+				"僅一次",
+				"每日",
+				"每週"
+			],
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選13",
+			"question": "主機配賦鋰電池長時間不使用仍須充電、放電保養，保養週期不得超過多久，何者為非)",
+			"options": [
+				"每日",
+				"每週",
+				"每月",
+				"每季"
+			],
+			"answer": [
+				"每日",
+				"每週",
+				"每月"
+			],
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選14",
+			"question": "內建記憶體可提供儲存錄音記事，通話紀錄及語音回放等功能，最多可儲存多少小時語音紀錄?何者為非?",
+			"options": [
+				"64小時",
+				"72小時",
+				"89小時",
+				"128小時"
+			],
+			"answer": [
+				"64小時",
+				"89小時",
+				"128小時"
+			],
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選15",
+			"question": "待機時顯示環境雜訊(Noise Floor)數值，為主機在接收環境下之收訊狀況判斷，何者正確?",
+			"options": [
+				"雜訊<-126dBm(優)",
+				"-126～-120dBm(可)",
+				"-120～-114dBm(差)",
+				"雜訊>-114dBm(劣)"
+			],
+			"answer": [
+				"雜訊<-126dBm(優)",
+				"-126～-120dBm(可)",
+				"-120～-114dBm(差)",
+				"雜訊>-114dBm(劣)"
+			],
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選16",
+			"question": "MHR-112可依需求調整調變模式，具有那幾種調變模式可供使用",
+			"options": [
+				"定頻模式",
+				"定頻加密模式",
+				"跳頻模式",
+				"跳頻加密模式"
+			],
+			"answer": [
+				"定頻模式",
+				"定頻加密模式"
+			],
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選17",
+			"question": "在訊息資料夾調閱功能內可查看資料為何?",
+			"options": [
+				"文字訊息儲存匣",
+				"圖片儲存匣",
+				"語音通話錄音儲存匣",
+				"人員登入紀錄儲存匣"
+			],
+			"answer": [
+				"文字訊息儲存匣",
+				"圖片儲存匣",
+				"語音通話錄音儲存匣"
+			],
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選18",
+			"question": "下列何者非MHR-112手持式無線電機可支援的通訊協定",
+			"options": [
+				"DTMF",
+				"P25",
+				"P35",
+				"tone"
+			],
+			"answer": [
+				"DTMF",
+				"P25",
+				"tone"
+			],
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選19",
+			"question": "無線電具備勤務時間自動收發話錄音功能，功能開啟後無線電便可執行通話自動錄音，其收錄內容何者為非?",
+			"options": [
+				"僅收錄接收語音",
+				"僅收錄發話語音",
+				"收話及發話時都將錄音",
+				"依需求設定收話或發話錄音"
+			],
+			"answer": [
+				"僅收錄接收語音",
+				"僅收錄發話語音",
+				"依需求設定收話或發話錄音"
+			],
+			"reference": "MHR-112手持式無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選20",
+			"question": "MHR-112主機採用採AES進階加密標準，並可由管理者寫入/抹除金鑰，其加密金鑰達幾位元?何者為非?",
+			"options": [
+				"64位元",
+				"128位元",
+				"256位元",
+				"512位元"
+			],
+			"answer": [
+				"64位元",
+				"128位元",
+				"512位元"
+			],
+			"reference": "MHR-112手持式無線電機簡介"
+		}
+	]
+}

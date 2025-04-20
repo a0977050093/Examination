@@ -1,0 +1,738 @@
+{
+	"questions": [
+		{
+			"type": "true_false",
+			"number": "是非1",
+			"question": "RF-7850M-HH背負型無線電機開機程序為將波道鈕選擇至1-13任一波道，即完成開機。",
+			"answer": true,
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "true_false",
+			"number": "是非2",
+			"question": "RF-7850M對空無線電機若無建立密鑰，調為CT模式時通信機會以連續響音提醒尚未指配密鑰。",
+			"answer": true,
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "true_false",
+			"number": "是非3",
+			"question": "RF-7850M對空無線電機面板接收或發射圖示若顯示R為接收、顯示T為發射。",
+			"answer": true,
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "true_false",
+			"number": "是非4",
+			"question": "安裝RF-7850MM-NGVS車載式無線電機時，功放射頻線一端連接功率放大器J2接頭。",
+			"answer": false,
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "true_false",
+			"number": "是非5",
+			"question": "RF-7850M-NGVS功率放大器最大功率輸出為50瓦。",
+			"answer": true,
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "true_false",
+			"number": "是非6",
+			"question": "RF-7850M對空無線電機車載式電源供應器CH指示燈若亮黃色為低流充電中。",
+			"answer": false,
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "true_false",
+			"number": "是非7",
+			"question": "RF-7850M對空無線電機具備有雙PTT發話按鍵。",
+			"answer": true,
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "true_false",
+			"number": "是非8",
+			"question": "RF-7850M對空無線電機面板GPS資訊獲取圖示若在閃爍表示資料正在更新。",
+			"answer": true,
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "true_false",
+			"number": "是非9",
+			"question": "RF-7850M對空無線電機發射/接收天線接頭為BNC接頭。",
+			"answer": false,
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "true_false",
+			"number": "是非10",
+			"question": "RF-7850M對空無線電機鍵盤[APPS] [7]為無線電程式編輯的選單。",
+			"answer": false,
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "true_false",
+			"number": "是非11",
+			"question": "RF-7850M對空無線電機鍵盤[LT] [3]為鍵盤/顯示器的背光控制選單。",
+			"answer": true,
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "true_false",
+			"number": "是非12",
+			"question": "RF-7850M對空無線電機，車載式發射功率可使用HIGH+10瓦。",
+			"answer": false,
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "true_false",
+			"number": "是非13",
+			"question": "RF-7850M對空無線電機，背負式發射功率最高可達50瓦。",
+			"answer": false,
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "true_false",
+			"number": "是非14",
+			"question": "RF-7850M對空無線電機，電池的平均工作時間為18小時。",
+			"answer": true,
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "true_false",
+			"number": "是非15",
+			"question": "RF-7850M對空無線電機工作波段僅有超高頻(UHF)。",
+			"answer": false,
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "true_false",
+			"number": "是非16",
+			"question": "RF-7850M對空無線電機車載電源分配單元J1為DC IN直流電源輸入接頭。",
+			"answer": false,
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "true_false",
+			"number": "是非17",
+			"question": "RF-7850M對空無線電機其型式分為RF-7850MM-NGVS背負式無線電機以及RF-7850MM-HH車載型無線電機。",
+			"answer": false,
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "true_false",
+			"number": "是非18",
+			"question": "RF-7850M對空無線電機預置波道數量為25個。",
+			"answer": true,
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "true_false",
+			"number": "是非19",
+			"question": "RF-7850M對空無線電機調製方式分為調頻(FM)、調幅(AM)。",
+			"answer": true,
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "true_false",
+			"number": "是非20",
+			"question": "RF-7850M對空無線電機頻率範圍為225-400兆赫(MHz)。",
+			"answer": false,
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇1",
+			"question": "RF-7850M對空無線電機Have Quick跳頻模式，使用頻率範圍為?",
+			"options": [
+				"30-87.975MHz",
+				"225-400MHz",
+				"108-520MHz",
+				"30-512MHz"
+			],
+			"answer": "225-400MHz",
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇2",
+			"question": "以下何者為RF-7850M對空無線電機面板定頻網路型態顯示文字?",
+			"options": [
+				"HQ",
+				"QL2",
+				"FF",
+				"QL3"
+			],
+			"answer": "FF",
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇3",
+			"question": "以下何者為RF-7850M對空無線電機面板通信模式密語顯示文",
+			"options": [
+				"RT",
+				"CT",
+				"PT",
+				"ET"
+			],
+			"answer": "CT",
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇4",
+			"question": "當RF-7850M對空無線電機收發頻率為109MHz其調變(MOD)能設定為何?",
+			"options": [
+				"FSK",
+				"ASK",
+				"以上皆是",
+				"以上皆非"
+			],
+			"answer": "以上皆是",
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇5",
+			"question": "RF-7850M對空無線電機車載式電源供應座充電完成CH指示燈顯示顏色為?",
+			"options": [
+				"黃色",
+				"紅色",
+				"熄滅",
+				"綠色"
+			],
+			"answer": "熄滅",
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇6",
+			"question": "RF-7850M對空無線電機將旋轉開關拉出旋轉到什麼定位，便可啟用遠端KDU功能?",
+			"options": [
+				"R",
+				"Z",
+				"T",
+				"F"
+			],
+			"answer": "R",
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇7",
+			"question": "RF-7850M對空無線電機將旋轉開關拉出旋轉到什麼定位，便會將所有程式編輯變數歸零，包括加密變數和使用者資料?",
+			"options": [
+				"R",
+				"Z",
+				"T",
+				"F"
+			],
+			"answer": "Z",
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇8",
+			"question": "以下何者為RF-7850M對空無線電機可存取無線電機程式編輯的選單功能鍵?",
+			"options": [
+				"[LT][3]",
+				"[SQL][1]",
+				"[APPS][7]",
+				"[PGM][9]"
+			],
+			"answer": "[PGM][9]",
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇9",
+			"question": "車載式電源供應座低流充電CH指示燈顯示顏色為?",
+			"options": [
+				"閃紅",
+				"閃黃",
+				"閃綠",
+				"熄滅"
+			],
+			"answer": "閃黃",
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇10",
+			"question": "當RF-7850M對空無線電機面板鎖定時，要快按 [CLR] 鍵幾次可將前面板解鎖?",
+			"options": [
+				"3",
+				"4",
+				"5",
+				"6"
+			],
+			"answer": "5",
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇11",
+			"question": "RF-7850MM-HH背負式無線電機所需電源為?",
+			"options": [
+				"8-11伏特直流",
+				"9-12伏特交流",
+				"10-13伏特直流",
+				"11-14伏特直流"
+			],
+			"answer": "10-13伏特直流",
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇12",
+			"question": "RF-7850MM-NGVS車載式電源供應座所需電源為?",
+			"options": [
+				"8-32伏特直流",
+				"9-33伏特交流",
+				"10-34伏特直流",
+				"11-35伏特交流。"
+			],
+			"answer": "9-33伏特交流",
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇13",
+			"question": "RF-7850M對空無線電機多功能接頭可連接項目以下何者為非?",
+			"options": [
+				"喇叭",
+				"電腦",
+				"功率放大器",
+				"操作顯示單元KDU"
+			],
+			"answer": "喇叭",
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇14",
+			"question": "RF-7850M對空無線電機車載型功率放大器功率輸入值為幾瓦?",
+			"options": [
+				"1-8W",
+				"2-9W",
+				"3-10W",
+				"4-11W。"
+			],
+			"answer": "2-9W",
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇15",
+			"question": "RF-7850M對空無線電機其頻率範圍為?",
+			"options": [
+				"30-87.975MHz",
+				"220-399.9999MHz",
+				"30-512MHz",
+				"108-520MHz。"
+			],
+			"answer": "30-512MHz",
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇16",
+			"question": "RF-7850M對空無線電機發射功率HIGH+可達幾瓦?",
+			"options": [
+				"5瓦",
+				"10瓦",
+				"15瓦",
+				"20瓦"
+			],
+			"answer": "10瓦",
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇17",
+			"question": "RF-7850M對空無線電機發射功率MED可達幾瓦?",
+			"options": [
+				"0.1瓦",
+				"0.5瓦",
+				"1.5瓦",
+				"2瓦"
+			],
+			"answer": "2瓦",
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇18",
+			"question": "RF-7850M對空無線電機預置波道數量為幾個?",
+			"options": [
+				"13",
+				"15",
+				"20",
+				"25"
+			],
+			"answer": "25",
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇19",
+			"question": "以下何者為RF-7850MM-HH背負式無線電機所需配件?",
+			"options": [
+				"功放射頻線",
+				"網路信號線",
+				"喇叭音源線",
+				"RS232連接線"
+			],
+			"answer": "網路信號線",
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇20",
+			"question": "以下何者為RF-7850MM-NGVS車載式無線電機所需配件?",
+			"options": [
+				"電池充電器",
+				"裝備袋",
+				"操作顯示單元固定座",
+				"頭戴式耳機"
+			],
+			"answer": "操作顯示單元固定座",
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選1",
+			"question": "以下何者為RF-7850M對空無線電機使用之跳頻邏輯?",
+			"options": [
+				"A09",
+				"Have QuicK",
+				"SINCGARS",
+				"Quicklook"
+			],
+			"answer": [
+				"Have QuicK",
+				"SINCGARS",
+				"Quicklook"
+			],
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選2",
+			"question": "以下何者為RF-7850M對空無線電機使用之靜音方式?",
+			"options": [
+				"NOISE",
+				"TONE",
+				"Digital",
+				"P25"
+			],
+			"answer": [
+				"NOISE",
+				"TONE",
+				"Digital"
+			],
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選3",
+			"question": "RF-7850M對空無線電機有幾個分段旋鈕可預置波道，下列何者為非？",
+			"options": [
+				"11",
+				"12",
+				"13",
+				"14"
+			],
+			"answer": [
+				"11",
+				"12",
+				"14"
+			],
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選4",
+			"question": "以下何者為RF-7850M對空無線電機使用之加密邏輯?",
+			"options": [
+				"AES64",
+				"AES256",
+				"Citadel128",
+				"Citadel512"
+			],
+			"answer": [
+				"AES256",
+				"Citadel128"
+			],
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選5",
+			"question": "以下何者為RF-7850MM-NGVS車載式無線電機可使用的發射功率?",
+			"options": [
+				"0.25瓦",
+				"2瓦",
+				"5瓦",
+				"10瓦"
+			],
+			"answer": [
+				"0.25瓦",
+				"2瓦",
+				"5瓦"
+			],
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選6",
+			"question": "以下何者為RF-7850MM-HH背負式無線電機所需配件?",
+			"options": [
+				"裝備袋",
+				"頭戴式耳機",
+				"多功能接頭",
+				"網路連接線"
+			],
+			"answer": [
+				"裝備袋",
+				"頭戴式耳機"
+			],
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選7",
+			"question": "以下何者為RF-7850MM-NGVS車載式無線電機所需配件？",
+			"options": [
+				"功放射頻線",
+				"天線包",
+				"GPS射頻線",
+				"電池充電器"
+			],
+			"answer": [
+				"功放射頻線",
+				"GPS射頻線"
+			],
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選8",
+			"question": "以下何者為RF-7850M對空無線電機使用之天線型式?",
+			"options": [
+				"鞭型長天線",
+				"車載式鞭型天線",
+				"魚竿型天線",
+				"鞭型短天線"
+			],
+			"answer": [
+				"鞭型長天線",
+				"車載式鞭型天線",
+				"鞭型短天線"
+			],
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選9",
+			"question": "RF-7850M對空無線電機多功能接頭具備有USB格式連接阜有幾個，下列何者為非?",
+			"options": [
+				"1",
+				"2",
+				"3",
+				"4"
+			],
+			"answer": [
+				"1",
+				"3",
+				"4"
+			],
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選10",
+			"question": "RF-7850M對空無線電機車載式電源供給座具有下列何者顯示燈號?",
+			"options": [
+				"閃黃",
+				"閃紅",
+				"閃綠",
+				"黃"
+			],
+			"answer": [
+				"閃黃",
+				"閃紅",
+				"黃"
+			],
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選11",
+			"question": "以下何者為RF-7850M對空無線電機使用之工作波段?",
+			"options": [
+				"HF高頻",
+				"VHF特高頻",
+				"UHF特高頻",
+				"LF低頻"
+			],
+			"answer": [
+				"VHF特高頻",
+				"UHF特高頻"
+			],
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選12",
+			"question": "下列何者非RF-7850M對空無線電機Have Quick跳頻頻率範圍?",
+			"options": [
+				"30-87.975MHz",
+				"225-400MHz",
+				"30-512MHz",
+				"108-520MHz"
+			],
+			"answer": [
+				"30-87.975MHz",
+				"30-512MHz",
+				"108-520MHz"
+			],
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選13",
+			"question": "下列何者非RF-7850M對空無線電機SINCGARS跳頻頻率範圍?",
+			"options": [
+				"30-87.975MHz",
+				"225-400MHz",
+				"30-512MHz",
+				"108-520MHz"
+			],
+			"answer": [
+				"225-400MHz",
+				"30-512MHz",
+				"108-520MHz"
+			],
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選14",
+			"question": "下列何者非RF-7850M對空無線電機操作按鍵雜音抑制開關功能?",
+			"options": [
+				"[LT][3]",
+				"[SQL][1]",
+				"[APPS][7]",
+				"[PGM][9]"
+			],
+			"answer": [
+				"[LT][3]",
+				"[APPS][7]",
+				"[PGM][9]"
+			],
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選15",
+			"question": "下列何者非RF-7850M對空無線電機操作按鍵可存取應用程式的選單功能?",
+			"options": [
+				"[LT][3]",
+				"[SQL][1]",
+				"[APPS][7]",
+				"[PGM][9]"
+			],
+			"answer": [
+				"[LT][3]",
+				"[SQL][1]",
+				"[PGM][9]"
+			],
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選16",
+			"question": "下列何者為RF-7850M對空無線電機操作按鍵可向左或向右移動游標功能?",
+			"options": [
+				"[2]",
+				"[4]",
+				"[6]",
+				"[8]"
+			],
+			"answer": [
+				"[4]",
+				"[6]"
+			],
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選17",
+			"question": "下列何者為RF-7850M對空無線電機操作按鍵可向上或向下移動游標功能?",
+			"options": [
+				"[2]",
+				"[4]",
+				"[6]",
+				"[8]"
+			],
+			"answer": [
+				"[2]",
+				"[8]"
+			],
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選18",
+			"question": "RF-7850MM-NGVS車載式無線電機，功放控制線連接至功率放大器何處，下列何者為非?",
+			"options": [
+				"J7接頭",
+				"J8接頭",
+				"J9接頭",
+				"J10接頭"
+			],
+			"answer": [
+				"J7接頭",
+				"J8接頭",
+				"J9接頭"
+			],
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選19",
+			"question": "RF-7850MM-NGVS車載式無線電機，射頻導線(UHF)連接至功率放大器何處，下列何者為非?",
+			"options": [
+				"J1接頭",
+				"J2接頭",
+				"J3接頭",
+				"J4接頭"
+			],
+			"answer": [
+				"J1接頭",
+				"J2接頭",
+				"J4接頭"
+			],
+			"reference": "RF-7850對空無線電機簡介"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選20",
+			"question": "RF-7850MM-NGVS車載式無線電機，功放射頻線連接至功率放大器何處，下列何者為非?",
+			"options": [
+				"J1接頭",
+				"J2接頭",
+				"J3接頭",
+				"J4接頭"
+			],
+			"answer": [
+				"J2接頭",
+				"J3接頭",
+				"J4接頭"
+			],
+			"reference": "RF-7850對空無線電機簡介"
+		}
+	]
+}

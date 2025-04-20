@@ -1,0 +1,1113 @@
+{
+	"questions": [
+		{
+			"type": "true_false",
+			"number": "是非1",
+			"question": "「車載終端台」的天線碟盤直徑為3米。",
+			"answer": false,
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非2",
+			"question": "全球定位系統提供車尾東南西北的指向，以配合天線控制軟體自動搜索與抓取衛星。",
+			"answer": false,
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非3",
+			"question": "多工器CX-950e使用網路線銜接T1時，其使用的色對為4.5.接腳藍色對與1.2.接腳橙色對。",
+			"answer": true,
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非4",
+			"question": "低雜訊放大器LNA能將下鏈頻率的射頻訊號轉換成調複機的中頻訊號。",
+			"answer": false,
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非5",
+			"question": "配接市電前，先著絕緣手套切斷電源開關量測電壓正常後連接；連接時，先接地線再接火線，拆除時先拆火線再拆地線。",
+			"answer": true,
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非6",
+			"question": "數位信標接收機DTR能將微弱的衛星下鏈頻率訊號先行放大後再經由線路傳送至車內機件。",
+			"answer": false,
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非7",
+			"question": "10/100乙太網路卡其接頭型式為RJ-45。",
+			"answer": true,
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非8",
+			"question": "中新二號ST-2在台灣桃園地區觀測時：方位角為237度，俯仰角為43度。",
+			"answer": true,
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非9",
+			"question": "中新二號ST-2的軌道，在東經88度北緯0度的位置。",
+			"answer": true,
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非10",
+			"question": "升頻轉換器能將調複機送來的中頻訊號，轉換成上鏈頻率的射頻訊號。",
+			"answer": true,
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非11",
+			"question": "作業位置遠離微波站或高壓傳輸線與鐵塔等干擾源。",
+			"answer": true,
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非12",
+			"question": "完成CDMA設定後，執行其語音通連時，多工器的電話號碼為6碼。",
+			"answer": true,
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非13",
+			"question": "完成MCPC設定後，執行其語音通連時，多工器的電話號碼為5碼。",
+			"answer": true,
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非14",
+			"question": "維星衛星通信系統，使用的通信衛星名稱為「海事衛星INMARSAT」。",
+			"answer": false,
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非15",
+			"question": "諸元表、密件、保密器按規定使用及管制清點。",
+			"answer": true,
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非16",
+			"question": "「車載終端VT」為本軍維星衛星通信系統的建置站台裝備之一。",
+			"answer": true,
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非17",
+			"question": "「車載網管主台」的天線碟盤直徑為1米。",
+			"answer": false,
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非18",
+			"question": "「車載網管主台TSNMS」為本軍維星衛星通信系統的建置站台裝備之一。",
+			"answer": true,
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非19",
+			"question": "「固定終端台」的天線碟盤直徑為2.4米。",
+			"answer": false,
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非20",
+			"question": "「固定網管主台FSNMS」為本軍維星衛星通信系統的建置站台裝備之一。",
+			"answer": false,
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非21",
+			"question": "CDMA調複機之主要功能為提供視訊會議。",
+			"answer": false,
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非22",
+			"question": "功率放大器可以提供衛星天線所需之發射功率。",
+			"answer": true,
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非23",
+			"question": "可攜終端PT天線本體，功能鍵聲響２聲為天線自動對星。",
+			"answer": true,
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非24",
+			"question": "可攜終端PT天線本體，功能鍵聲響３聲為天線收藏。",
+			"answer": true,
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非25",
+			"question": "全球定位系統提供天線系統所在地的經度、緯度與距離海平面的高度等資料。",
+			"answer": true,
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非26",
+			"question": "為避免車體有滑動的危險，車載終端開設時「場地的坡度」不可超過5度。",
+			"answer": false,
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非27",
+			"question": "執行「天線微調」時，天線系統監控伺服器顯示器欄位，AZ為方位角。",
+			"answer": true,
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非28",
+			"question": "執行「天線微調」時，天線系統監控伺服器顯示器欄位，EL為極化角。",
+			"answer": false,
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非29",
+			"question": "執行「天線微調」時，天線系統監控伺服器顯示器欄位，POL為俯仰角。",
+			"answer": false,
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非30",
+			"question": "維星車載終端「CDMA系統」其傳輸頻寬最大為64Kbps。",
+			"answer": true,
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇1",
+			"question": "維星「CDMA分碼多工展頻鏈路」其傳輸頻寬最大為何？",
+			"options": [
+				"256Kbps",
+				"384Kbps",
+				"64Kbps",
+				"512Kbps"
+			],
+			"answer": "64Kbps",
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇2",
+			"question": "維星CDMA分碼多工展頻鏈路，通聯時使用何種保密器?",
+			"options": [
+				"星安二號",
+				"安平八號",
+				"安通六號",
+				"星安一號保密器"
+			],
+			"answer": "星安二號",
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇3",
+			"question": "維星MCPC多路載波定頻鏈路，通聯時使用何種保密器?",
+			"options": [
+				"星安一號",
+				"安平八號",
+				"安通六號",
+				"星安二號"
+			],
+			"answer": "星安二號",
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇4",
+			"question": "維星車載終端VT「冷氣主機」數量有?",
+			"options": [
+				"1部",
+				"2部",
+				"3部",
+				"4部"
+			],
+			"answer": "2部",
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇5",
+			"question": "維星車載終端VT「完成自動對星」後，下列狀態何者為正常?",
+			"options": [
+				"鎖定OK",
+				"C/N 3dB",
+				"信號強度-50dBm",
+				"鎖定失敗"
+			],
+			"answer": "鎖定OK",
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇6",
+			"question": "維星車載終端VT「排風扇開關」位置在?",
+			"options": [
+				"機櫃1內",
+				"機櫃2內",
+				"車廂右側面板上方",
+				"車廂左側面板上方"
+			],
+			"answer": "車廂左側面板上方",
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇7",
+			"question": "本軍衛星通信系統MCPC為何種架構之網路系統?",
+			"options": [
+				"星狀架構",
+				"樹狀架構",
+				"網狀架構",
+				"環狀架構"
+			],
+			"answer": "網狀架構",
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇8",
+			"question": "維星車載終端VT「KVM裝備」中不包含下列何者？",
+			"options": [
+				"鍵盤",
+				"瑩幕",
+				"鏡頭",
+				"滑鼠"
+			],
+			"answer": "鏡頭",
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇9",
+			"question": "維星車載終端VT「天線系統監控伺服器」系統設定-確認-執行時間多長?",
+			"options": [
+				"倒數30秒",
+				"倒數60秒",
+				"倒數150秒",
+				"倒數300秒"
+			],
+			"answer": "倒數30秒",
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇10",
+			"question": "維星車載終端VT「天線電源控制單元PCU」在完成哪項步驟後，面板燈才會恒亮?",
+			"options": [
+				"系統電源ON",
+				"輔助電源ON",
+				"駕駛控制面板CTP系統電源ON",
+				"主電源ON"
+			],
+			"answer": "駕駛控制面板CTP系統電源ON",
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇11",
+			"question": "維星車載終端VT「天線緊急停止裝置」位置在?",
+			"options": [
+				"車廂左側面板中間",
+				"車廂右側面板中間",
+				"機櫃1內",
+				"機櫃2內"
+			],
+			"answer": "車廂右側面板中間",
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇12",
+			"question": "維星車載終端VT「保密器登入」密碼可能是下列何者？",
+			"options": [
+				"254687318",
+				"1234",
+				"54627",
+				"1678017"
+			],
+			"answer": "254687318",
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇13",
+			"question": "維星車載終端VT「保密器登入」密碼輸入後，按壓何鍵確認？",
+			"options": [
+				"A鏈",
+				"B鏈",
+				"C鏈",
+				"D鏈"
+			],
+			"answer": "A鏈",
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇14",
+			"question": "維星車載終端VT「保密器登入」密碼輸入錯誤幾次，將會帳號鎖住並可能使密鑰清除？",
+			"options": [
+				"１次",
+				"3次",
+				"5次",
+				"7次"
+			],
+			"answer": "5次",
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇15",
+			"question": "維星衛星通信系統，使用的「通信衛星」名稱為？",
+			"options": [
+				"中新二號 ST-2",
+				"中新一號ST-1",
+				"中新四號ST-4",
+				"中新三號ST-3"
+			],
+			"answer": "中新二號 ST-2",
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇16",
+			"question": "Code Division Multiple Access 簡稱CDMA，中文譯意為何?",
+			"options": [
+				"分頻多工",
+				"分時多工",
+				"分碼多工",
+				"分極多工"
+			],
+			"answer": "分碼多工",
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇17",
+			"question": "Multiple Channel Per Carrier簡稱MCPC，中文譯意為何?",
+			"options": [
+				"多路載波",
+				"單路載波",
+				"分時多工",
+				"分時多工"
+			],
+			"answer": "多路載波",
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇18",
+			"question": "中新二號ST-2在台灣地區觀測時，其「方位角AZ」約為？",
+			"options": [
+				"121度",
+				"24度",
+				"298度",
+				"237度"
+			],
+			"answer": "237度",
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇19",
+			"question": "中新二號ST-2在台灣桃園地區觀測時，其「俯仰角EL」約為？",
+			"options": [
+				"15度",
+				"24度",
+				"43度",
+				"60度"
+			],
+			"answer": "43度",
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇20",
+			"question": "本軍衛星通信系統CDMA為何種架構之網路系統?",
+			"options": [
+				"星狀架構",
+				"樹狀架構",
+				"網狀架構",
+				"環狀架構"
+			],
+			"answer": "星狀架構",
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇21",
+			"question": "完成車身接地時應將地棒打入地面至幾分之幾處?",
+			"options": [
+				"三分之一",
+				"三分之二",
+				"二分之一",
+				"四分之一"
+			],
+			"answer": "三分之二",
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇22",
+			"question": "海事衛星行動電話，探險家500型撥打主官行動電話時，何者正確?",
+			"options": [
+				"+886932001345#",
+				"00886932001345#",
+				"008860932001345#",
+				"+886932001345撥出鏈"
+			],
+			"answer": "00886932001345#",
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇23",
+			"question": "海事衛星行動電話，探險家500型撥打市話時「冠首碼」為何?",
+			"options": [
+				"00",
+				"0",
+				"+",
+				"#"
+			],
+			"answer": "00",
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇24",
+			"question": "海事衛星行動電話，探險家500型撥打市話時「終止碼」為何?",
+			"options": [
+				"00",
+				"0",
+				"+",
+				"#"
+			],
+			"answer": "#",
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇25",
+			"question": "海事衛星行動電話，探險家500型撥打市話時「衛星國碼」為何?",
+			"options": [
+				"00",
+				"0",
+				"886",
+				"870"
+			],
+			"answer": "886",
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇26",
+			"question": "執行「天線微調」時，天線控制器ACU-4000顯示器欄位，POL意義為何?",
+			"options": [
+				"方位角",
+				"俯仰角",
+				"極化角",
+				"直角"
+			],
+			"answer": "極化角",
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇27",
+			"question": "陸軍維星衛星通信系統，下列何者為CDMA調複機一般操作範圍?",
+			"options": [
+				"2100MHz",
+				"1450MHz",
+				"950MHz",
+				"450MHz"
+			],
+			"answer": "950MHz",
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇28",
+			"question": "陸軍維星衛星通信系統，下列何者為MCPC調複機一般操作範圍?",
+			"options": [
+				"2100MHz",
+				"1450MHz",
+				"950MHz",
+				"450MHz"
+			],
+			"answer": "1450MHz",
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇29",
+			"question": "陸軍維星衛星通信系統，未建置哪一種站台裝備?",
+			"options": [
+				"車載終端VT",
+				"可攜終端PT",
+				"固定網管主台FTNMS",
+				"固定終端FT"
+			],
+			"answer": "固定網管主台FTNMS",
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇30",
+			"question": "維星衛星通信系統，使用的「通信衛星」位置所在的經緯度為何？",
+			"options": [
+				"東經121度北緯24度",
+				"東經121度北緯0度",
+				"東經88度北緯24度",
+				"東經88度北緯0度"
+			],
+			"answer": "東經88度北緯0度",
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選1",
+			"question": "請問「MCPC資料調複機」通連時，面板燈號應有哪些燈恒亮綠燈?(陸軍衛星裝備操作手冊P2-128)",
+			"options": [
+				"ON LINE燈",
+				"UNIT STATUS燈",
+				"RX TRAFFIC燈",
+				"TX TRAFFIC燈"
+			],
+			"answer": [
+				"ON LINE燈",
+				"UNIT STATUS燈",
+				"RX TRAFFIC燈",
+				"TX TRAFFIC燈"
+			],
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選2",
+			"question": "下列哪些步驟是：維星車載終端「車廂電源開啟」的執行項目? (陸軍衛星裝備操作手冊P2-63)",
+			"options": [
+				"1ψ220V總電源",
+				"冷氣主機1",
+				"冷氣主機2",
+				"執行CMC"
+			],
+			"answer": [
+				"1ψ220V總電源",
+				"冷氣主機1",
+				"冷氣主機2"
+			],
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選3",
+			"question": "以下選項哪些是維星衛星通信系統之視訊裝備-攜行箱內主要的組成? (陸軍衛星裝備操作手冊P2-53)",
+			"options": [
+				"網路線",
+				"電源線",
+				"內建攝影鏡頭/瑩幕",
+				"遙控器"
+			],
+			"answer": [
+				"網路線",
+				"電源線",
+				"內建攝影鏡頭/瑩幕",
+				"遙控器"
+			],
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選4",
+			"question": "維星衛星通信系統，機櫃１的「天線電源控制單元PCU」操作步驟有哪些項目?(陸軍衛星裝備操作手冊P2-74)",
+			"options": [
+				"1ψ110V總電源－開關",
+				"主電源－開關",
+				"輔助電源－開關",
+				"系統電源－開關"
+			],
+			"answer": [
+				"主電源－開關",
+				"輔助電源－開關",
+				"系統電源－開關"
+			],
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選5",
+			"question": "完成MCPC設定後，執行其語音通連時，多工器的電話號碼為幾碼，下列選項何者錯誤?",
+			"options": [
+				"4碼",
+				"5碼",
+				"6碼",
+				"10碼"
+			],
+			"answer": [
+				"4碼",
+				"6碼",
+				"10碼"
+			],
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選6",
+			"question": "車載終端台，系統開設時其架設地點選擇為何?",
+			"options": [
+				"最好遠離微波鐵塔及高壓電傳輸線",
+				"車載停放位置以平坦地面為主",
+				"車載停放位置在斜坡上的坡度不可超過20度",
+				"車載停放位置在斜坡上的坡度不可超過10度"
+			],
+			"answer": [
+				"最好遠離微波鐵塔及高壓電傳輸線",
+				"車載停放位置以平坦地面為主",
+				"車載停放位置在斜坡上的坡度不可超過20度"
+			],
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選7",
+			"question": "車載終端台，系統開設時其架設地點選擇為何?(陸軍衛星裝備操作手冊P2-57)",
+			"options": [
+				"車輛停放大樹旁，比較清涼",
+				"車輛停放電纜線附近，容易取電",
+				"車輛避免停放土質鬆軟處",
+				"車輛避免停放斜坡處"
+			],
+			"answer": [
+				"車輛避免停放土質鬆軟處",
+				"車輛避免停放斜坡處"
+			],
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選8",
+			"question": "車載終端台，系統開設時要伸起油壓腳柱時應做好哪些步驟?(陸軍衛星裝備操作手冊P2-58)",
+			"options": [
+				"放開車輛煞車",
+				"車輛引擎關閉",
+				"踩下車輛煞車",
+				"發動車輛引擎"
+			],
+			"answer": [
+				"踩下車輛煞車",
+				"發動車輛引擎"
+			],
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選9",
+			"question": "下列哪些是維星車載終端之「開啟站台軟體」的選項? (陸軍衛星裝備操作手冊P2-35)",
+			"options": [
+				"執行-CMC軟體",
+				"執行-檔案傳輸軟體",
+				"執行-SC站台控制器軟體",
+				"執行-小畫家軟體"
+			],
+			"answer": [
+				"執行-CMC軟體",
+				"執行-檔案傳輸軟體",
+				"執行-SC站台控制器軟體"
+			],
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選10",
+			"question": "以下哪些選項是維星車載終端「天線電源開啟」的步驟? (陸軍衛星裝備操作手冊P2-72)",
+			"options": [
+				"啟動HPA高功率放大器在-38dBm以下",
+				"電源控制單元PCU",
+				"駕駛控制面板CTP",
+				"天線控制單元ACU電源"
+			],
+			"answer": [
+				"電源控制單元PCU",
+				"駕駛控制面板CTP",
+				"天線控制單元ACU電源"
+			],
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選11",
+			"question": "下列選項哪些是維星車載終端「電源控制面板」由左至右，在同一排位置的電源開關?(陸軍衛星裝備操作手冊P2-36)",
+			"options": [
+				"車廂外照明",
+				"AC to DC Power",
+				"油壓腳柱",
+				"I/O插座"
+			],
+			"answer": [
+				"車廂外照明",
+				"AC to DC Power",
+				"I/O插座"
+			],
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選12",
+			"question": "請問維星衛星通信系統之CDMA調複機主要可做哪些功能?(陸軍衛星裝備操作手冊P2-79)",
+			"options": [
+				"語音(電話)",
+				"數據(檔案傳輸)",
+				"視訊會議",
+				"點對點視訊"
+			],
+			"answer": [
+				"語音(電話)",
+				"數據(檔案傳輸)"
+			],
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選13",
+			"question": "維星系統水平系統操作流程為何?",
+			"options": [
+				"油壓腳柱電源開關",
+				"控制器電源開關",
+				"油壓泵浦開關",
+				"馬達電源開關"
+			],
+			"answer": [
+				"油壓腳柱電源開關",
+				"控制器電源開關",
+				"油壓泵浦開關",
+				"馬達電源開關"
+			],
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選14",
+			"question": "維星系統動中通油壓腳柱操作步驟為何?",
+			"options": [
+				"開啟AC泵浦",
+				"按下綠色START啟用無線遙控器",
+				"按下紅色START啟用無線遙控器",
+				"開啟操作面板電源開關"
+			],
+			"answer": [
+				"開啟AC泵浦",
+				"按下綠色START啟用無線遙控器",
+				"開啟操作面板電源開關"
+			],
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選15",
+			"question": "維星衛星通信系統系統啟始準備工作執行動作為何?",
+			"options": [
+				"發動車輛引擎",
+				"升起油壓腳柱",
+				"手動電壓調整",
+				"調整車身水平"
+			],
+			"answer": [
+				"發動車輛引擎",
+				"升起油壓腳柱",
+				"調整車身水平"
+			],
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選16",
+			"question": "請問「CDMA訊令調複機」待機時，面板燈號應有哪些燈亮?(陸軍衛星裝備操作手冊P2-82)",
+			"options": [
+				"同步燈",
+				"發射燈",
+				"接收燈",
+				"資料燈"
+			],
+			"answer": [
+				"同步燈",
+				"發射燈",
+				"接收燈"
+			],
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選17",
+			"question": "請問「MCPC訊令調複機」待機時，面板燈號應有哪些燈亮?(陸軍衛星裝備操作手冊P6-16)",
+			"options": [
+				"ON LINE燈",
+				"UNIT STATUS燈",
+				"RX TRAFFIC燈",
+				"TX TRAFFIC燈"
+			],
+			"answer": [
+				"ON LINE燈",
+				"UNIT STATUS燈",
+				"RX TRAFFIC燈"
+			],
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選18",
+			"question": "全球定位系統(GPS)可提供哪些資料?(陸軍衛星裝備操作手冊P2-15)",
+			"options": [
+				"經度",
+				"緯度",
+				"距海平面的高度",
+				"溫度"
+			],
+			"answer": [
+				"經度",
+				"緯度",
+				"距海平面的高度"
+			],
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選19",
+			"question": "請問維星車載終端「MCPC電路申請」需要設定的選項有哪些？(陸軍衛星裝備操作手冊P2-31)",
+			"options": [
+				"檔案名稱",
+				"站台名稱",
+				"電路類型",
+				"資料傳輸率"
+			],
+			"answer": [
+				"站台名稱",
+				"電路類型",
+				"資料傳輸率"
+			],
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選20",
+			"question": "請問維星衛星通信系統中「SAT-02星安二號保密器」未登入前，下列哪些燈應恒亮綠燈?(陸軍衛星裝備操作手冊P2-99)",
+			"options": [
+				"LAN燈",
+				"系統燈",
+				"密鑰燈",
+				"WAN燈"
+			],
+			"answer": [
+				"系統燈",
+				"密鑰燈"
+			],
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選21",
+			"question": "請問本軍維星衛星通信系統，主要建置哪幾種站台裝備?(陸軍衛星裝備操作手冊P1-44)",
+			"options": [
+				"車載網管主台TSNMS",
+				"車載終端VT",
+				"可攜終端PT",
+				"固定終端FT"
+			],
+			"answer": [
+				"車載網管主台TSNMS",
+				"車載終端VT",
+				"可攜終端PT",
+				"固定終端FT"
+			],
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選22",
+			"question": "操作哪些項目會被要求「身份驗證」?(陸軍衛星裝備操作手冊P2-17)",
+			"options": [
+				"高功率放大器",
+				"保密器",
+				"伺服器",
+				"SC站台控制器"
+			],
+			"answer": [
+				"保密器",
+				"伺服器",
+				"SC站台控制器"
+			],
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選23",
+			"question": "請問維星衛星通信系統中「SAT-02星安二號保密器」下列哪些可能為登入密碼? (陸軍衛星裝備操作手冊P2-17)",
+			"options": [
+				"123145672",
+				"AVNY41",
+				"604450",
+				"985436724"
+			],
+			"answer": [
+				"123145672",
+				"985436724"
+			],
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選24",
+			"question": "維星衛星通信系統-SC站台控制器-左下方顯示「已註冊」前，須先執行下列哪些項目?(陸軍衛星裝備操作手冊P2-17)",
+			"options": [
+				"執行-網管功能/申請入網",
+				"輸入-身份驗證",
+				"輸入-站台安全碼",
+				"執行-電路申請"
+			],
+			"answer": [
+				"執行-網管功能/申請入網",
+				"輸入-身份驗證",
+				"輸入-站台安全碼"
+			],
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選25",
+			"question": "請問「CDMA資料調複機」通連時，面板燈號應有哪些燈亮?(陸軍衛星裝備操作手冊P2-82)?",
+			"options": [
+				"同步燈",
+				"發射燈",
+				"接收燈",
+				"數據燈"
+			],
+			"answer": [
+				"同步燈",
+				"發射燈",
+				"接收燈",
+				"數據燈"
+			],
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選26",
+			"question": "CDMA調複機的功用為何?",
+			"options": [
+				"具備T1專線高速傳輸功能",
+				"係配合網路管理系統運作所需之必要裝備",
+				"負責展頻調變與解調",
+				"站台電路申請與釋回等工作"
+			],
+			"answer": [
+				"係配合網路管理系統運作所需之必要裝備",
+				"負責展頻調變與解調",
+				"站台電路申請與釋回等工作"
+			],
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選27",
+			"question": "MCPC調複機的功用為何?",
+			"options": [
+				"具備T1專線高速傳輸功能",
+				"負責展頻調變與解調",
+				"透過乙太網路溝通網管訊息",
+				"配合多工器之銜接與處理"
+			],
+			"answer": [
+				"具備T1專線高速傳輸功能",
+				"配合多工器之銜接與處理"
+			],
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選28",
+			"question": "下列何者為維星衛星通信系統MCPC調複機之裝備特性?",
+			"options": [
+				"收發頻率範圍950-2250MHz",
+				"調變方式區分BPSK、QPSK",
+				"工作電壓100-240交流電",
+				"具備T1專線高速傳輸功能，配合多工器之銜接與處理"
+			],
+			"answer": [
+				"收發頻率範圍950-2250MHz",
+				"調變方式區分BPSK、QPSK",
+				"具備T1專線高速傳輸功能，配合多工器之銜接與處理"
+			],
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選29",
+			"question": "下列何者為維星衛星通信系統功率放大器之裝備特性?",
+			"options": [
+				"頻率範圍 13.75～14.5GHz",
+				"頻率間隔125KHz",
+				"轉換增益50dB",
+				"工作電壓220V"
+			],
+			"answer": [
+				"頻率範圍 13.75～14.5GHz",
+				"頻率間隔125KHz",
+				"工作電壓220V"
+			],
+			"reference": "衛星通信系統裝備操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選30",
+			"question": "下列何者為維星衛星通信系統系統啟始電源啟始執行動作?",
+			"options": [
+				"啟動發電機",
+				"手動電壓調整",
+				"執行天線微調",
+				"開啟機櫃迴路開關"
+			],
+			"answer": [
+				"啟動發電機",
+				"手動電壓調整",
+				"開啟機櫃迴路開關"
+			],
+			"reference": "衛星通信系統裝備操作與保養"
+		}
+	]
+}

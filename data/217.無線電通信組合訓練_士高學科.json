@@ -1,0 +1,1147 @@
+{
+	"questions": [
+		{
+			"type": "true_false",
+			"number": "是非1",
+			"question": "37系列通裝所配附之車裝天線形式為垂直極化。",
+			"answer": true,
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非2",
+			"question": "天線架設完畢，需再控繩上繫上黃色色帶標示及夜間警示。",
+			"answer": true,
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非3",
+			"question": "車裝型跳頻無線電機若有需要應先「發動載具引擎」，再開啟「車裝架控制器電源」，最後再開啟「通信主機電源」。",
+			"answer": true,
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非4",
+			"question": "無線電系統各電網係按指揮系統以現有編裝構成網路，附屬台以不超過6個為原則。",
+			"answer": false,
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非5",
+			"question": "發射時人員可以觸摸或靠近天線。",
+			"answer": false,
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非6",
+			"question": "戰情網為供指揮所對各營級、戰鬥支援部隊、勤務支援部隊及直屬連，構成無線電通信。",
+			"answer": false,
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非7",
+			"question": "中繼台設置目的為克服路邊障礙及延伸天線距離。",
+			"answer": false,
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非8",
+			"question": "地棒應植入地面40公分以上。",
+			"answer": false,
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非9",
+			"question": "清模狀態下，顯示器會顯示無BK無密式，須重新灌密式及密鑰資料，即解除警告顯示。",
+			"answer": true,
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非10",
+			"question": "開機通行碼輸入錯誤次數達6次時，會清除A07系統參數及A09保密模組資料。",
+			"answer": false,
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非11",
+			"question": "當發話端在定明／跳明模式時，LCD會警示「警告：要加密模式！」。",
+			"answer": false,
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非12",
+			"question": "當發話端在定明／跳明模式時，發話時話筒可聽到每一秒一個短促的聲音。",
+			"answer": true,
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非13",
+			"question": "跳頻模式時，通信雙方同時為TOD開啟時，則系統時間差距不可超過15分鐘，否則無法通連。",
+			"answer": false,
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非14",
+			"question": "操作模式選擇旋鈕在「注入」時，按PWD鍵，輸入通行碼，當輸入錯誤次數達6次時，須由高階管理者解鎖。",
+			"answer": false,
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非15",
+			"question": "聯合電報紙限用藍色及黑色墨水書寫。",
+			"answer": true,
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非16",
+			"question": "37系列通裝所配附之車裝天線形式為水平極化。",
+			"answer": false,
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非17",
+			"question": "中繼台開設時，通信頻率之選定及天線架設位置必須依各無線電機之特性及限制為考量，避免同位干擾。",
+			"answer": true,
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非18",
+			"question": "中繼台開設時，通信頻率之選定及天線架設位置必須依各無線電機之特性及限制為考量，避免電磁干擾。",
+			"answer": false,
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非19",
+			"question": "台之編成台長負責電台位置選定、電台指揮作業及勤務。",
+			"answer": true,
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非20",
+			"question": "台之編成須由一員台長及駕駛兼話務士(兵)一員組成。",
+			"answer": true,
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非21",
+			"question": "台之編成駕駛兼話務士(兵)負責電台開設及作業勤務。",
+			"answer": true,
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非22",
+			"question": "全(方)向性天線之配件中，地樁共五支。",
+			"answer": false,
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非23",
+			"question": "架設全(方)向性天線時，固定底座盤需使用二根地樁。",
+			"answer": true,
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非24",
+			"question": "架設全(方)向性天線時，固定底座盤需將地樁以60度角敲入。",
+			"answer": false,
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非25",
+			"question": "架設過程若因不按步驟而導致人員受傷及裝備損壞，應立即停止訓練。",
+			"answer": true,
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非26",
+			"question": "密鑰(BK)、密式與月份有密切之關聯性，且密鑰計有現用、備用兩種。",
+			"answer": false,
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非27",
+			"question": "通信機若未安裝A10模組，亦能接收其他主機回報的定位資料。",
+			"answer": true,
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非28",
+			"question": "臺兵取控繩板，量取距離，將控繩掛鉤由外向內勾住地樁第二個孔洞。",
+			"answer": false,
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非29",
+			"question": "臺兵連接第六、七節桿、將上下節天線連接，並取４卷控繩及長射頻導線，將一型天線、長射頻導線及控繩掛鉤由內向外固定於天線座上。",
+			"answer": true,
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "true_false",
+			"number": "是非30",
+			"question": "臺長兩手將第七節桅桿中段舉至頭上，並配合臺兵口令及速度向臺兵方向前推，助臺兵起桿。",
+			"answer": false,
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇1",
+			"question": "收發狀態故障信息表A2電壓駐波比過大可能原因，下列何者錯誤?",
+			"options": [
+				"天線饋線沒接好",
+				"匹配器損壞",
+				"天線斷線或短路",
+				"更換A07模組"
+			],
+			"answer": "更換A07模組",
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇2",
+			"question": "何者為供指揮所對各營級、戰鬥支援部隊、勤務支援部隊及直屬連，構成無線電通信?",
+			"options": [
+				"戰情網",
+				"中繼台",
+				"指揮官網",
+				"民網"
+			],
+			"answer": "指揮官網",
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇3",
+			"question": "無線電干擾處置步驟，下列何者錯誤?",
+			"options": [
+				"辨認干擾",
+				"透過干擾停止工作",
+				"報告干擾",
+				"透過干擾繼續工作"
+			],
+			"answer": "透過干擾停止工作",
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇4",
+			"question": "無線電系統各電網係按指揮系統以現有編裝構成網路，附屬台以不超過幾個為原則，採共波制，未經核准，不得越級或橫向連絡?",
+			"options": [
+				"4",
+				"5",
+				"6",
+				"7"
+			],
+			"answer": "7",
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇5",
+			"question": "裝備使用前的預防重點中，下列何者正確?",
+			"options": [
+				"裝備是否能夠持續遂行任務?",
+				"裝備是否能夠順利遂行任務?",
+				"裝備是否能夠順利遂行下次任務?",
+				"裝備是否能依處理程序排除所有故障警示?"
+			],
+			"answer": "裝備是否能夠順利遂行任務?",
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇6",
+			"question": "裝備使用後的預防重點中，下列何者錯誤?",
+			"options": [
+				"裝備是否能夠順利遂行下次任務?",
+				"裝備是否完成保存前的預防保養勤務?",
+				"裝備是否完成補保作業與磨損更換?",
+				"裝備是否能依處理程序排除所有故障警示?"
+			],
+			"answer": "裝備是否能依處理程序排除所有故障警示?",
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇7",
+			"question": "37系列通裝所配附之車裝天線形式為何?",
+			"options": [
+				"水平極化",
+				"垂降極化",
+				"垂直極化",
+				"平面極化"
+			],
+			"answer": "垂直極化",
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇8",
+			"question": "中繼及轉發功能應注意何者事項以避免同為干擾，下列何者錯誤?",
+			"options": [
+				"收發頻率應隔開5%以上",
+				"收發頻率應隔開10%以上",
+				"收發天線應距離1.5公尺以上",
+				"以上皆是"
+			],
+			"answer": "收發頻率應隔開5%以上",
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇9",
+			"question": "什麼設置目的為克服地形障礙及延伸通信距離?",
+			"options": [
+				"中繼台",
+				"調頻台",
+				"管制台",
+				"附屬台"
+			],
+			"answer": "中繼台",
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇10",
+			"question": "各通信模式之使用時機，下列何者錯誤?",
+			"options": [
+				"定明緊急救難用",
+				"跳明本島平戰時主(備)用",
+				"跳密本島平戰時主(備)用",
+				"跳密外島戰時主(備)用"
+			],
+			"answer": "跳明本島平戰時主(備)用",
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇11",
+			"question": "車輛發動前，須確認何者事項，以避免突波造成裝備損壞?",
+			"options": [
+				"通信主機及車裝控制器確認電源是否關閉",
+				"檢查紅白接正極，綠黑接負極",
+				"通信主機及車裝控制器確認電源是否開啟",
+				"裝備是否確實連接"
+			],
+			"answer": "通信主機及車裝控制器確認電源是否關閉",
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇12",
+			"question": "兩輛通信悍馬車停放之距離，必須相差多少公尺以上?",
+			"options": [
+				"10",
+				"20",
+				"30",
+				"40"
+			],
+			"answer": "40",
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇13",
+			"question": "波道旋鈕轉至清除位置後，幾秒內未被轉離清除位置，則系統之各項參數設定值將全部被清除，下列何者正確?",
+			"options": [
+				"3",
+				"4",
+				"5",
+				"6"
+			],
+			"answer": "5",
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇14",
+			"question": "清模狀態下，顯示器會顯示什麼內容，須重新灌密式及密鑰資料，即解除警告顯示",
+			"options": [
+				"有BK無密式",
+				"無BK無密式",
+				"無BK有密式",
+				"有BK有密式"
+			],
+			"answer": "無BK無密式",
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇15",
+			"question": "辯證及反辯證時機，下列何者錯誤?",
+			"options": [
+				"在通信中斷後，再連絡時",
+				"對可疑電台加入通信網時",
+				"定期點名時",
+				"發送重要機密文件時"
+			],
+			"answer": "定期點名時",
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇16",
+			"question": "中繼台開設時，通信頻率之選定及天線架設位置必須依各無線電機之特性及限制為考量，避免?",
+			"options": [
+				"異位干擾",
+				"同位干擾",
+				"電磁干擾",
+				"通信干擾"
+			],
+			"answer": "同位干擾",
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇17",
+			"question": "天線架設需再控繩上繫什麼標示或夜間警示?",
+			"options": [
+				"反光背心",
+				"交管棒",
+				"色帶",
+				"螢光棒"
+			],
+			"answer": "色帶",
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇18",
+			"question": "台之編成台兵工作為何?",
+			"options": [
+				"電台位置選定",
+				"電台指揮作業及勤務",
+				"以上皆是",
+				"負責電台開設及作業勤務"
+			],
+			"answer": "負責電台開設及作業勤務",
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇19",
+			"question": "台之編成台長負責什麼選定、電台指揮作業及勤務?",
+			"options": [
+				"台兵位置",
+				"電台位置",
+				"地棒",
+				"警示帶"
+			],
+			"answer": "電台位置",
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇20",
+			"question": "台之編成須由1員台長及駕駛兼話務士(兵)幾員組成?",
+			"options": [
+				"2",
+				"1",
+				"4",
+				"3"
+			],
+			"answer": "1",
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇21",
+			"question": "全(方)向性天線之配件中，地樁共幾支?",
+			"options": [
+				"4",
+				"5",
+				"6",
+				"7"
+			],
+			"answer": "6",
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇22",
+			"question": "地棒應植入地面多少公分以上?",
+			"options": [
+				"20",
+				"30",
+				"40",
+				"50"
+			],
+			"answer": "30",
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇23",
+			"question": "架設全(方)向性天線時，固定底座盤需使用幾根地樁?",
+			"options": [
+				"1",
+				"2",
+				"5",
+				"4"
+			],
+			"answer": "2",
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇24",
+			"question": "架設全(方)向性天線時，固定底座盤需將地樁以幾度角敲入?",
+			"options": [
+				"35",
+				"40",
+				"45",
+				"55"
+			],
+			"answer": "45",
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇25",
+			"question": "密鑰(BK)、密式與什麼有密切之關聯性?",
+			"options": [
+				"月份",
+				"年份",
+				"日期",
+				"無關聯性"
+			],
+			"answer": "年份",
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇26",
+			"question": "通行碼超過幾次錯誤，會清除系統參數，並同時導致A09模組清除密式及密鑰?",
+			"options": [
+				"5",
+				"4",
+				"3",
+				"2"
+			],
+			"answer": "5",
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇27",
+			"question": "無線電發射時人員不可倚靠或觸摸什麼，以避免發生危險?",
+			"options": [
+				"話筒",
+				"揚聲器",
+				"主機",
+				"天線"
+			],
+			"answer": "天線",
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇28",
+			"question": "開機通行碼輸入錯誤次數達6次時，何者正確?",
+			"options": [
+				"清除A09保密模組資料",
+				"需由高階管理者解鎖",
+				"清除A07系統參數",
+				"無法開機"
+			],
+			"answer": "需由高階管理者解鎖",
+			"reference": "無線電通信組合训练"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇29",
+			"question": "當發話端在定明／跳明模式時，發話時會有什麼特別警示，下列何者錯誤?",
+			"options": [
+				"話筒可聽到每一秒一個短促的聲音",
+				"話筒可聽到每一秒一個長音",
+				"在LCD警示「警告：非加密模式！」",
+				"以上皆非"
+			],
+			"answer": "話筒可聽到每一秒一個長音",
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇30",
+			"question": "跳頻模式時，通信雙方同時為TOD開啟時，則系統時間差距不可超過幾分鐘，否則無法通連?",
+			"options": [
+				"10",
+				"15",
+				"20",
+				"25"
+			],
+			"answer": "10",
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選1",
+			"question": "車裝電源導線應如何連接電瓶接頭?",
+			"options": [
+				"紅白為「正極」",
+				"紅白為「負極」",
+				"綠黑為「負極」",
+				"綠黑為「正極」"
+			],
+			"answer": [
+				"紅白為「正極」",
+				"綠黑為「負極」"
+			],
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選2",
+			"question": "口述命令應包含哪些事項，下列何者正確?",
+			"options": [
+				"狀況",
+				"任務",
+				"執行",
+				"行動準據",
+				"勤務支援",
+				"指揮與通資電"
+			],
+			"answer": [
+				"狀況",
+				"任務",
+				"執行",
+				"勤務支援",
+				"指揮與通資電"
+			],
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選3",
+			"question": "天線架設需再控繩上繫什麼標示，以下何者錯誤?",
+			"options": [
+				"反光背心",
+				"交管棒",
+				"色帶或夜間警示",
+				"螢光棒",
+				"警棍"
+			],
+			"answer": [
+				"反光背心",
+				"交管棒",
+				"螢光棒",
+				"警棍"
+			],
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選4",
+			"question": "無線電發射時人員不可倚靠或觸摸什麼，以避免發生危險，以下何者錯誤?",
+			"options": [
+				"話筒",
+				"揚聲器",
+				"主機",
+				"天線",
+				"短射頻導線"
+			],
+			"answer": [
+				"話筒",
+				"揚聲器",
+				"主機",
+				"短射頻導線"
+			],
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選5",
+			"question": "地棒應植入地面多少公分以上，下列何者錯誤?",
+			"options": [
+				"20",
+				"30",
+				"40",
+				"50",
+				"60"
+			],
+			"answer": [
+				"20",
+				"40",
+				"50",
+				"60"
+			],
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選6",
+			"question": "電台開設流程之指揮程序，下列何者正確?",
+			"options": [
+				"就器材集合",
+				"檢查服裝儀容",
+				"驗（清）槍",
+				"檢查裝備器材",
+				"臺兵下達安全規定"
+			],
+			"answer": [
+				"就器材集合",
+				"檢查服裝儀容",
+				"驗（清）槍",
+				"檢查裝備器材"
+			],
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選7",
+			"question": "電台開設作業，下列何者為台長作業?",
+			"options": [
+				"通信機搬至悍馬車上",
+				"地棒植入地面",
+				"連接長、短射頻",
+				"送受話器、GPS天線",
+				"揚聲器"
+			],
+			"answer": [
+				"通信機搬至悍馬車上",
+				"連接長、短射頻",
+				"送受話器、GPS天線",
+				"揚聲器"
+			],
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選8",
+			"question": "電台開設作業，下列何者為台長作業?",
+			"options": [
+				"５根桿節連接",
+				"起桿",
+				"取底座盤及兩根地樁",
+				"將前、後、左、右４根地樁，以斜角４５°角打入地面固定"
+			],
+			"answer": [
+				"起桿",
+				"取底座盤及兩根地樁",
+				"將前、後、左、右４根地樁，以斜角４５°角打入地面固定"
+			],
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選9",
+			"question": "兩輛通信悍馬車停放之距離，必須相差多少公尺以上，下列何者錯誤?",
+			"options": [
+				"10",
+				"20",
+				"30",
+				"40"
+			],
+			"answer": [
+				"10",
+				"20",
+				"30"
+			],
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選10",
+			"question": "什麼設置目的為克服地形障礙及延伸通信距離，下列何者為非?",
+			"options": [
+				"附屬台",
+				"中繼台",
+				"管制台",
+				"調頻台"
+			],
+			"answer": [
+				"附屬台",
+				"管制台",
+				"調頻台"
+			],
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選11",
+			"question": "聯合電報紙限用哪些顏色墨水書寫?",
+			"options": [
+				"黑色",
+				"紅色",
+				"藍色",
+				"綠色",
+				"橙色"
+			],
+			"answer": [
+				"黑色",
+				"藍色"
+			],
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選12",
+			"question": "跳頻無線電機開機前應先確認哪些事項?",
+			"options": [
+				"電源",
+				"送受話器",
+				"簿冊",
+				"天線",
+				"掛板"
+			],
+			"answer": [
+				"電源",
+				"送受話器",
+				"天線"
+			],
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選13",
+			"question": "通行碼超過幾次錯誤，會清除系統參數，並同時導致A09模組清除密式及密鑰，下列何者非?",
+			"options": [
+				"2",
+				"3",
+				"4",
+				"5"
+			],
+			"answer": [
+				"2",
+				"3",
+				"4"
+			],
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選14",
+			"question": "開機通行碼輸入錯誤次數達6次時，何者為正確?",
+			"options": [
+				"清除A09保密模組資料",
+				"清除A07系統參數",
+				"需由高階管理者解鎖",
+				"通信主機會鎖定",
+				"不會清除A07系統參數"
+			],
+			"answer": [
+				"需由高階管理者解鎖",
+				"通信主機會鎖定",
+				"不會清除A07系統參數"
+			],
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選15",
+			"question": "由高階管理者解鎖時，解鎖通行碼輸入錯誤次數達6次時，何者為正確?",
+			"options": [
+				"清除A07系統參數",
+				"清除A09保密模組資料",
+				"再由高階管理者解鎖",
+				"不會清除A07系統參數",
+				"不會清除A09保密模組資料"
+			],
+			"answer": [
+				"清除A07系統參數",
+				"清除A09保密模組資料"
+			],
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選16",
+			"question": "全(方)向性天線之配件中，地樁共幾支，下列何者為非?",
+			"options": [
+				"4",
+				"5",
+				"6",
+				"7",
+				"3"
+			],
+			"answer": [
+				"4",
+				"5",
+				"7",
+				"3"
+			],
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選17",
+			"question": "架設全(方)向性天線時，固定底座盤需使用幾根地樁，下列何者為非?",
+			"options": [
+				"1",
+				"2",
+				"5",
+				"4"
+			],
+			"answer": [
+				"1",
+				"5",
+				"4"
+			],
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選18",
+			"question": "架設全(方)向性天線時，固定底座盤需將地樁以幾度角敲入，下列何者為非?",
+			"options": [
+				"35",
+				"40",
+				"45",
+				"55",
+				"65"
+			],
+			"answer": [
+				"35",
+				"40",
+				"55",
+				"65"
+			],
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選19",
+			"question": "操作模式選擇旋鈕在「注入」時，按PWD鍵，輸入通行碼，當輸入錯誤次數達6次時，何者為錯誤?",
+			"options": [
+				"清除A07系統參數",
+				"清除A09保密模組資料",
+				"由高階管理者解鎖",
+				"通信主機會鎖定",
+				"不會清除A07系統參數"
+			],
+			"answer": [
+				"由高階管理者解鎖",
+				"通信主機會鎖定",
+				"不會清除A07系統參數"
+			],
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選20",
+			"question": "高階管理者解鎖鍵，下列何者錯誤?",
+			"options": [
+				"RATE/3",
+				"ERF/5",
+				"SEL/7",
+				"RSV1/8",
+				"KEY/2"
+			],
+			"answer": [
+				"RATE/3",
+				"ERF/5",
+				"SEL/7",
+				"RSV1/8"
+			],
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選21",
+			"question": "台之編成台長負責什麼工作?",
+			"options": [
+				"勤務",
+				"電台位置選定",
+				"電台指揮作業",
+				"地棒植入",
+				"組裝天線"
+			],
+			"answer": [
+				"勤務",
+				"電台位置選定",
+				"電台指揮作業"
+			],
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選22",
+			"question": "密鑰(BK)、密式與什麼有密切之關聯性，且密鑰計有哪些?",
+			"options": [
+				"月份",
+				"年份",
+				"現用",
+				"堪用",
+				"備用"
+			],
+			"answer": [
+				"年份",
+				"現用",
+				"備用"
+			],
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選23",
+			"question": "在跳頻模式下，若選定「TOD功能開啟」，通連雙方之時間差不得超過多少分鐘，否則無法通連，下列何者錯誤?",
+			"options": [
+				"1",
+				"3",
+				"5",
+				"6",
+				"10"
+			],
+			"answer": [
+				"1",
+				"3",
+				"5",
+				"6"
+			],
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選24",
+			"question": "用戶碼為0000～9999，前兩碼及後兩碼分別為?",
+			"options": [
+				"群呼碼",
+				"個呼碼",
+				"網呼",
+				"電呼",
+				"總呼"
+			],
+			"answer": [
+				"群呼碼",
+				"個呼碼"
+			],
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選25",
+			"question": "週期性廣播GPS資料之選項，下列何者正確?",
+			"options": [
+				"10台1分鐘",
+				"10台2分鐘",
+				"20台2分鐘",
+				"30台3分鐘",
+				"20台1分鐘"
+			],
+			"answer": [
+				"10台1分鐘",
+				"10台2分鐘",
+				"20台2分鐘",
+				"30台3分鐘"
+			],
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選26",
+			"question": "週期性廣播GPS資料之選項以「30台5分鐘」為例，各台廣播間格為幾秒，下列何者錯誤?",
+			"options": [
+				"2",
+				"4",
+				"6",
+				"8",
+				"10"
+			],
+			"answer": [
+				"2",
+				"4",
+				"8",
+				"10"
+			],
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選27",
+			"question": "聯合無線電網路圖內容下列何者正確?",
+			"options": [
+				"標題、生效日期",
+				"通信網名稱",
+				"裝備料號",
+				"駐地（座標）",
+				"保密區分"
+			],
+			"answer": [
+				"標題、生效日期",
+				"通信網名稱",
+				"駐地（座標）",
+				"保密區分"
+			],
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選28",
+			"question": "傳呼模式選擇有下列哪些?",
+			"options": [
+				"網呼",
+				"群呼",
+				"個呼",
+				"總呼",
+				"對呼"
+			],
+			"answer": [
+				"網呼",
+				"群呼",
+				"個呼"
+			],
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選29",
+			"question": "裝備使用中的預防重點，下列何者正確?",
+			"options": [
+				"裝備是否能夠順利遂行任務?",
+				"裝備是否能夠持續遂行任務?",
+				"裝備是否能依處理程序排除所有故障警示?",
+				"裝備故障指示、告警功能是否正常?",
+				"裝備是否完成保存前的預防保養勤務?"
+			],
+			"answer": [
+				"裝備是否能夠持續遂行任務?",
+				"裝備是否能依處理程序排除所有故障警示?"
+			],
+			"reference": "無線電通信組合訓練"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選30",
+			"question": "中繼台開設時，通信頻率之選定及天線架設位置必須依各無線電機之特性及限制為考量，需避免什麼，下列何者為非?",
+			"options": [
+				"異位干擾",
+				"同位干擾",
+				"電磁干擾",
+				"通信干擾"
+			],
+			"answer": [
+				"異位干擾",
+				"電磁干擾",
+				"通信干擾"
+			],
+			"reference": "無線電通信組合訓練"
+		}
+	]
+}

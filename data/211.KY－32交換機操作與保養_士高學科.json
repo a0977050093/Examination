@@ -1,0 +1,772 @@
+{
+	"questions": [
+		{
+			"type": "true_false",
+			"number": "是非1",
+			"question": "KY-32野戰交換機中繼線介接中，COT局線介面卡可連接至電信局或其他交換機COT局線介面卡，可達雙向通連。",
+			"answer": false,
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非2",
+			"question": "KY-32野戰交換機共計有22個卡片槽位，除了7個特定槽位設定為PWR、DTK、MFR、CPC、DSM及ITC槽外，其餘的15個槽位IOC1~15為FreePort，可安裝EMT、COT、RDT、LDT、ALC、DLC等介面卡。",
+			"answer": true,
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非3",
+			"question": "路由迂迴指分機自動抓取外線時，若主用的中繼群組外線都在忙線時，系統便會自動根據第二組備用的中繼群組尋找空閒的外線給該分機。",
+			"answer": true,
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非4",
+			"question": "隨我記憶轉接設定，此功能使本地的電話號碼轉移到別的分機上，不用時須注意轉回原來分機，此功能必須在原分機或目前所轉移去的分機上操作才能生效。",
+			"answer": true,
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非5",
+			"question": "2部KY-32野戰交換機互相由不同局號做通連及接線時，若A端使用COT局線中繼，B端需銜接至ALC類比用戶。",
+			"answer": true,
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非6",
+			"question": "KY-32野戰交換機中繼卡片DTK，可提供32個通道，傳輸率為1.544Kbps。",
+			"answer": false,
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非7",
+			"question": "KY-32野戰交換機可供選擇的中繼有COT、RDT、LDT、EMT、T1。",
+			"answer": true,
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非8",
+			"question": "KY-32野戰交換機資料庫設定，中繼線等級內DIR代表訊號方向，設定值若為MASK代表閉鎖。",
+			"answer": true,
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非9",
+			"question": "KY-32野戰交換機資料庫設定，用戶線首碼表內ROUTE SET選項為收碼長度。",
+			"answer": false,
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非10",
+			"question": "KY-32野戰交換機資料庫設定中，用戶線等級僅能設定該用戶線的DAY CLASS及NIGHT CLASS，其餘均無用意。",
+			"answer": false,
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非11",
+			"question": "KY-32野戰交換機之充電機可作為市電中斷後之備用電源。",
+			"answer": false,
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非12",
+			"question": "KY-32野戰交換機之電腦連接線（RS-232）可作為兩部以上交換機堆疊擴充連接用。",
+			"answer": false,
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非13",
+			"question": "KY-32野戰交換機四台擴充堆疊時最大容量為80門。",
+			"answer": false,
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非14",
+			"question": "KY-32野戰交換機組成中，交換機主體之功能是提供系統交換、接續、彙接等各項功能。",
+			"answer": true,
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非15",
+			"question": "KY-32野戰交換機開設時，接地地棒應植入地下深30公分即地棒2/3之長度以上。",
+			"answer": true,
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非16",
+			"question": "KY-32野戰交換機資料庫設定，用戶線首碼表內FUNC為首碼功能，設定值若為INDIC TRK，是表示撥打內線。",
+			"answer": false,
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非17",
+			"question": "KY-32野戰交換機資料庫設定，用戶線首碼表內FUNC為首碼功能，設定值若為XYL，是表示撥打人工台。",
+			"answer": false,
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非18",
+			"question": "KY-32野戰交換機電源輸入/輸出為直流24V電源線接口，可連接蓄電池或充電機。",
+			"answer": true,
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非19",
+			"question": "每張ALC用戶介面卡可提供2個數位用戶通道。",
+			"answer": false,
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "true_false",
+			"number": "是非20",
+			"question": "每張ALC用戶介面卡可提供2個類比用戶通道。",
+			"answer": true,
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇1",
+			"question": "KY-32野戰交換機之「中央處理器卡」標示為？",
+			"options": [
+				"MFR",
+				"CPC",
+				"ACP",
+				"KPB"
+			],
+			"answer": "CPC",
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇2",
+			"question": "KY-32野戰交換機資料庫設定中，設定中繼線等級T1通道時，T1 LIN碼框編碼方式可分為哪兩種？",
+			"options": [
+				"DTMF/DP、AMI",
+				"B83S/HDB3、ANI",
+				"T1、E1",
+				"B8ZS/HDB3、AMI"
+			],
+			"answer": "B8ZS/HDB3、AMI",
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇3",
+			"question": "KY-32野戰交換機資料庫設定用戶線等級選項中，CALL FOR功能為何？",
+			"options": [
+				"轉移呼叫號碼",
+				"熱線號碼",
+				"遇忙轉移電話",
+				"無應答轉移電話"
+			],
+			"answer": "轉移呼叫號碼",
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇4",
+			"question": "KY-32野戰數位交換機之介面卡中，負責系統分機、中繼、人工台及語音交換，提供系統時序及音源，並有會談功能的介面卡為",
+			"options": [
+				"中央處理卡",
+				"複頻放碼卡",
+				"數位交換網路卡",
+				"電源卡"
+			],
+			"answer": "數位交換網路卡",
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇5",
+			"question": "KY-32野戰交換機，用戶線首碼表FUNC選項中，INDIC TRK代表何種意思？",
+			"options": [
+				"指定中繼",
+				"人工台",
+				"內線用戶",
+				"對外出局"
+			],
+			"answer": "指定中繼",
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇6",
+			"question": "Y-32野戰交換機之ALC卡片為何種卡片?",
+			"options": [
+				"類比用戶介面卡",
+				"局線介面卡",
+				"磁石介面卡",
+				"數位中繼介面卡"
+			],
+			"answer": "類比用戶介面卡",
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇7",
+			"question": "KY-32野戰交換機之COT卡片為何種卡片?",
+			"options": [
+				"類比用戶介面卡",
+				"局線介面卡",
+				"磁石介面卡",
+				"數位中繼介面卡"
+			],
+			"answer": "局線介面卡",
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇8",
+			"question": "KY-32野戰交換機用戶線首碼表設定中，何者為無線電入口FUNC的選項？",
+			"options": [
+				"RADIO",
+				"INDIC TRK",
+				"SPEC FUNC",
+				"XYL"
+			],
+			"answer": "RADIO",
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇9",
+			"question": "KY-32野戰交換機資料庫設定中，於何處設定首碼號碼及首碼功能？",
+			"options": [
+				"用戶線號碼",
+				"系統參數",
+				"用戶線首碼表",
+				"中繼線首碼表"
+			],
+			"answer": "用戶線首碼表",
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇10",
+			"question": "數位中繼卡DTK(T1)之通道有幾個？",
+			"options": [
+				"32個",
+				"1024個",
+				"12個",
+				"24個"
+			],
+			"answer": "24個",
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇11",
+			"question": "KY-32野戰交換機隨我記憶轉接設定，此功在何種功能表內設定？",
+			"options": [
+				"中繼線等級",
+				"掛勾鍵功能表",
+				"特殊鍵功能表",
+				"用戶線首碼表"
+			],
+			"answer": "特殊鍵功能表",
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇12",
+			"question": "KY-2000A野戰電話機使用於區電式系統需調整至何種模式？",
+			"options": [
+				"DTMF/CB",
+				"DP/CB",
+				"PTP",
+				"以上皆可"
+			],
+			"answer": "PTP",
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇13",
+			"question": "KY-2000A電話機在PTP模式時，須裝上幾顆1.5V電池？",
+			"options": [
+				"1",
+				"2",
+				"3",
+				"4"
+			],
+			"answer": "3",
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇14",
+			"question": "KY-32野戰交換機之DSN卡片為何種卡片?",
+			"options": [
+				"數位交換網路卡",
+				"中央處理器卡",
+				"電源卡",
+				"介面測試卡"
+			],
+			"answer": "數位交換網路卡",
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇15",
+			"question": "KY-32野戰交換機之介面卡中，可銜接數位中繼信號T１之卡片為？",
+			"options": [
+				"EMT",
+				"DTK",
+				"LDT",
+				"RDT"
+			],
+			"answer": "DTK",
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇16",
+			"question": "KY-32野戰交換機之介面卡中，何種用以連接區電式系統",
+			"options": [
+				"載微波中繼介面卡",
+				"磁石介面卡",
+				"局線介面卡",
+				"類比用戶介面卡"
+			],
+			"answer": "磁石介面卡",
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇17",
+			"question": "KY-32野戰交換機之熱線電話需由何處設定？",
+			"options": [
+				"用戶線首碼表",
+				"用戶線等級",
+				"中繼線等級",
+				"出局首碼表"
+			],
+			"answer": "用戶線等級",
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇18",
+			"question": "KY-32野戰交換機在分機最多可以啟動多少人參與會議",
+			"options": [
+				"7人",
+				"8人",
+				"9人",
+				"10人"
+			],
+			"answer": "8人",
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇19",
+			"question": "KY-32野戰交換機每一張ALC類比用戶介面卡可提供幾個通道？",
+			"options": [
+				"1門",
+				"2門",
+				"3門",
+				"4門"
+			],
+			"answer": "2門",
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇20",
+			"question": "KY-32野戰數位交換系統其用戶容量特性，適合哪些單位使用",
+			"options": [
+				"聯兵旅",
+				"營級",
+				"連級",
+				"以上皆是"
+			],
+			"answer": "以上皆是",
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選1",
+			"question": "下列何者不是掛勾鍵功能表「呼叫轉接」之操作方式？",
+			"options": [
+				"掛勾鍵+2+電話號碼+掛勾鍵+電話號碼。",
+				"呼出+1+電話號碼。",
+				"掛勾鍵+1+電話號碼。",
+				"＊字鍵+1+電話號碼。",
+				"交換機功能鍵之轉接鈕。"
+			],
+			"answer": [
+				"掛勾鍵+2+電話號碼+掛勾鍵+電話號碼。",
+				"＊字鍵+1+電話號碼。",
+				"交換機功能鍵之轉接鈕。"
+			],
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選2",
+			"question": "下列有關KY-32野戰交換機敘述何者正確？",
+			"options": [
+				"野戰數位交換機有分成KY-32MA及KY-32MX。",
+				"DLC類比用戶卡片對應連接話機為KY-2000A野戰話機。",
+				"ALC數位用戶卡片對應連接話機為KY-2000D野戰話機。",
+				"類比中繼卡片區分為LDT、COT、RDT、EMT。",
+				"數位中繼卡片為DTK，又稱為E1。",
+				"堆疊至五部時最大容量為150門用戶。"
+			],
+			"answer": [
+				"野戰數位交換機有分成KY-32MA及KY-32MX。",
+				"類比中繼卡片區分為LDT、COT、RDT、EMT。"
+			],
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選3",
+			"question": "在資料庫設定中『*字鍵』功能表設定值有哪些?",
+			"options": [
+				"重撥。",
+				"簡撥。",
+				"隨我記憶轉接。",
+				"消除自動回叫。",
+				"高層超越。"
+			],
+			"answer": [
+				"重撥。",
+				"簡撥。",
+				"隨我記憶轉接。",
+				"消除自動回叫。"
+			],
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選4",
+			"question": "有線電交換網路中，有關星型網路型態，下列敘述何者正確？",
+			"options": [
+				"各局彼此都有一個中繼路由，具備迂迴能力。",
+				"以彙接局為中心，網路呈放射狀，架構單純。",
+				"架構複雜，建構成本高。",
+				"地區內設置一彙接局，擔任中繼線彙接交換。",
+				"各交換局與彙接局之間，僅有一個中繼路由，不具備迂迴能力。"
+			],
+			"answer": [
+				"以彙接局為中心，網路呈放射狀，架構單純。",
+				"地區內設置一彙接局，擔任中繼線彙接交換。",
+				"各交換局與彙接局之間，僅有一個中繼路由，不具備迂迴能力。"
+			],
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選5",
+			"question": "哪些部分是KY-32野戰交換機的前面板?",
+			"options": [
+				"數據接口。",
+				"功能鍵。",
+				"電源開關。",
+				"接地座。"
+			],
+			"answer": [
+				"數據接口。",
+				"功能鍵。"
+			],
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選6",
+			"question": "下列哪些是KY-32野戰交換機之用戶卡?",
+			"options": [
+				"LDT",
+				"COT",
+				"ALC",
+				"DLC",
+				"EMT"
+			],
+			"answer": [
+				"ALC",
+				"DLC"
+			],
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選7",
+			"question": "下列哪些是KY-32野戰交換機之類比中繼卡?",
+			"options": [
+				"COT",
+				"RDT",
+				"T1",
+				"EMT",
+				"LDT"
+			],
+			"answer": [
+				"COT",
+				"RDT",
+				"EMT",
+				"LDT"
+			],
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選8",
+			"question": "下列哪些是KY-32野戰交換機的裝備組成?",
+			"options": [
+				"交換機主機",
+				"充電機",
+				"測試儀表組",
+				"配線架",
+				"KY-2000A話機"
+			],
+			"answer": [
+				"交換機主機",
+				"充電機",
+				"測試儀表組"
+			],
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選9",
+			"question": "KY-2000A話機的操作模式有哪些?",
+			"options": [
+				"DTMF/CB",
+				"CO/RD",
+				"DP/CB",
+				"PTT",
+				"PTP"
+			],
+			"answer": [
+				"DTMF/CB",
+				"DP/CB",
+				"PTP"
+			],
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選10",
+			"question": "下列何者不是資料庫設定中之功能選項？",
+			"options": [
+				"用戶線首碼表",
+				"出局首碼表",
+				"掛勾鍵功能表",
+				"用戶線選項表",
+				"用戶首碼",
+				"分機群組設定",
+				"次碼識別"
+			],
+			"answer": [
+				"用戶線選項表",
+				"用戶首碼",
+				"分機群組設定",
+				"次碼識別"
+			],
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選11",
+			"question": "KY-32野戰交換機工具箱內的基本維護工具有哪些?",
+			"options": [
+				"烙鐵",
+				"鐵鎚",
+				"尖嘴鉗、斜口鉗",
+				"一字、十字起子組",
+				"電路板拔除器"
+			],
+			"answer": [
+				"烙鐵",
+				"尖嘴鉗、斜口鉗",
+				"一字、十字起子組",
+				"電路板拔除器"
+			],
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選12",
+			"question": "哪些部分是KY-32野戰交換機的後面板?",
+			"options": [
+				"L01~L26(orL30)",
+				"T1/E1",
+				"E&M1~4",
+				"電源輸入",
+				"天線"
+			],
+			"answer": [
+				"L01~L26(orL30)",
+				"T1/E1",
+				"E&M1~4",
+				"電源輸入"
+			],
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選13",
+			"question": "哪些部分是KY-32野戰交換機的後面板?",
+			"options": [
+				"發射器",
+				"無線電入口",
+				"擴充輸入/輸出",
+				"電源開關",
+				"接地座"
+			],
+			"answer": [
+				"無線電入口",
+				"擴充輸入/輸出",
+				"電源開關",
+				"接地座"
+			],
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選14",
+			"question": "EMT載微波中繼卡只能放在KY-32野戰交換機哪些卡片槽位？",
+			"options": [
+				"IOC12",
+				"IOC13",
+				"IOC14",
+				"IOC15",
+				"IOC16"
+			],
+			"answer": [
+				"IOC14",
+				"IOC15"
+			],
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選15",
+			"question": "KY-32野戰交換機與機動數位微波系統介接可使用哪幾種介面卡?",
+			"options": [
+				"T1",
+				"RDT",
+				"COT",
+				"LDT",
+				"ALC"
+			],
+			"answer": [
+				"T1",
+				"COT",
+				"ALC"
+			],
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選16",
+			"question": "KY-32野戰交換機與陸區交換機介接不可使用哪幾種介面卡?",
+			"options": [
+				"T1",
+				"RDT",
+				"COT",
+				"EMT",
+				"LDT"
+			],
+			"answer": [
+				"RDT",
+				"COT",
+				"EMT",
+				"LDT"
+			],
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選17",
+			"question": "KY-32野戰交換機卡片功能介紹，何者正確？",
+			"options": [
+				"ALC:類比用戶卡(2個通道)",
+				"COT:數位中繼卡(2個通道)",
+				"LDT:數位中繼卡(2個通道)",
+				"DLC:數位用戶卡(2個通道)",
+				"EMT:數位中繼卡(2個通道)",
+				"DTK:數位中繼卡(2個通道)"
+			],
+			"answer": [
+				"ALC:類比用戶卡(2個通道)",
+				"DLC:數位用戶卡(2個通道)"
+			],
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選18",
+			"question": "KY-2000A野戰話機之操作模式選擇，何者為非？",
+			"options": [
+				"DTMF/CB",
+				"DNVT/CB",
+				"PPT",
+				"DP/CB",
+				"PTP"
+			],
+			"answer": [
+				"DNVT/CB",
+				"PPT"
+			],
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選19",
+			"question": "KY-32野戰交換機資料庫設定中，用戶線首碼表中之FUNC功能選項，何者為非？",
+			"options": [
+				"LOCAL",
+				"RING TEST",
+				"INCOMING",
+				"XVL",
+				"INDIC TRK",
+				"ROUTE SET",
+				"BOTH WAY"
+			],
+			"answer": [
+				"INCOMING",
+				"XVL",
+				"ROUTE SET",
+				"BOTH WAY"
+			],
+			"reference": "KY-32交換機操作與保養"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選20",
+			"question": "KY-32野戰交換機資料庫用戶線首碼表設定中，如設定本局首碼(局號)ID：348，下列何者正確？",
+			"options": [
+				"FUNC：ATT CONSOLE",
+				"RX LEN：6",
+				"RX LEN：8",
+				"FUNC：LOCAL",
+				"TX LEN：SEND ALL",
+				"FUNC：XYL"
+			],
+			"answer": [
+				"RX LEN：6",
+				"FUNC：LOCAL",
+				"TX LEN：SEND ALL"
+			],
+			"reference": "KY-32交換機操作與保養"
+		}
+	]
+}

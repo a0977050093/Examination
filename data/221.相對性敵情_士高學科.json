@@ -1,0 +1,744 @@
+{
+	"questions": [
+		{
+			"type": "true_false",
+			"number": "是非1",
+			"question": "以科技合作移轉及逆向工程模式，建立電子戰關鍵技術。",
+			"answer": true,
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "true_false",
+			"number": "是非2",
+			"question": "創新電子戰戰術戰法：運用操演時機模擬臺海實戰環境。",
+			"answer": true,
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "true_false",
+			"number": "是非3",
+			"question": "發展電子戰攻防戰具：電子戰裝備採對外採購與自行研發雙軌併行。",
+			"answer": true,
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "true_false",
+			"number": "是非4",
+			"question": "確保頻譜有效運用：結合國軍情監偵單位技術情報，建立制式化電子參數資料庫。",
+			"answer": true,
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "true_false",
+			"number": "是非5",
+			"question": "打贏高技術條件下局部戰爭：電子對抗裝備具備偵察、定位、干擾、摧毀敵方C4I設備的多功能綜合電子對抗系統。",
+			"answer": true,
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "true_false",
+			"number": "是非6",
+			"question": "建立備援手段，恪遵通信紀律：加強演練備援系統接替，並模擬中斷應處作為及如何指管遂行機制等。",
+			"answer": true,
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "true_false",
+			"number": "是非7",
+			"question": "為強化戰場信息優勢，將電子作戰部隊由「配屬支援干擾」轉變為「信火一體攻防」，作戰手段亦從「傳統專業對抗」提升為「綜合制權攻擊」。",
+			"answer": true,
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "true_false",
+			"number": "是非8",
+			"question": "電磁脈衝與高能微波武器：具備小型核彈、中子彈技術。",
+			"answer": true,
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "true_false",
+			"number": "是非9",
+			"question": "預警雷達之發展：與湯姆遜公司合作ASTAC雷達電子情報偵察系統，具高精度干涉儀定位測向、複雜信號處理及偵察調差等技術。",
+			"answer": true,
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "true_false",
+			"number": "是非10",
+			"question": "整合電子戰部隊：整合陸、海軍2軍、資通電軍、軍情局及電展室能量，建立對敵武器系統電磁頻譜監控。",
+			"answer": false,
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "true_false",
+			"number": "是非11",
+			"question": "共軍通網電部隊未來發展趨勢依國防現代化建設三步走發展戰略。",
+			"answer": true,
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "true_false",
+			"number": "是非12",
+			"question": "突出聯合作戰體系訓練：按「練系統、用網路、訓體系」指導。",
+			"answer": true,
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "true_false",
+			"number": "是非13",
+			"question": "致使信息化時代之新裝備發揮實際效能，為可全面實現2體化指揮控制、情報分析、數據共享。",
+			"answer": false,
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "true_false",
+			"number": "是非14",
+			"question": "通信部隊：屏除老舊觀念，提升信息素養，近年積極籌獲新式通裝。",
+			"answer": true,
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "true_false",
+			"number": "是非15",
+			"question": "提高實戰化訓練要求：要求各級按實際作戰「任務、進程、能力、環境、方式」之要素規劃部隊訓練內容。",
+			"answer": true,
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "true_false",
+			"number": "是非16",
+			"question": "進階持續性滲透攻擊：其發展網路戰，不再只是從事竊取，而是以積極朝自行研發先進技術為目標。",
+			"answer": true,
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "true_false",
+			"number": "是非17",
+			"question": "運用信息媒體，影響軍心士氣：以網路信息媒介為主軸，另藉由各式宣傳品、電台廣播等，干擾我內部進行信息威懾與造勢的方式。",
+			"answer": true,
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "true_false",
+			"number": "是非18",
+			"question": "電子戰部隊：未來電子對抗裝備具備偵察、定位、干擾、摧毀敵方C8I設備的多功能綜合電子對抗系統。",
+			"answer": false,
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "true_false",
+			"number": "是非19",
+			"question": "網軍(信息)部隊：科技不斷的進步，信息作戰的發展將不會停滯。",
+			"answer": true,
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "true_false",
+			"number": "是非20",
+			"question": "維護國家網路空間主權：其內容將建立準確高效的情報訊息收集、研判和使用制度等，將網路空間視為與各國戰略競逐的重要一環。",
+			"answer": true,
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇1",
+			"question": "中共建政迄今，軍事戰略皆以「積極防禦」為核心思維，於哪一年提出「打贏信息化局部戰爭」?",
+			"options": [
+				"2015年",
+				"2016年",
+				"2017年",
+				"2018年"
+			],
+			"answer": "2015年",
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇2",
+			"question": "中共建政迄今，軍事戰略皆以「積極防禦」為核心思維，於哪一年提出「打贏信息化條件下的局部戰爭」?",
+			"options": [
+				"2004年",
+				"2003年",
+				"2002年",
+				"2001年"
+			],
+			"answer": "2004年",
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇3",
+			"question": "中共建政迄今，軍事戰略皆以「積極防禦」為核心思維，於哪一年提出「打贏高技術條件下局部戰爭」?",
+			"options": [
+				"1990年",
+				"1991年",
+				"1992年",
+				"1993年"
+			],
+			"answer": "1993年",
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇4",
+			"question": "習近平於2017年第幾大後，調整國防和軍隊現代化建設三步走發展戰略?",
+			"options": [
+				"17大",
+				"18大",
+				"19大",
+				"20大"
+			],
+			"answer": "19大",
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇5",
+			"question": "共軍之戰略發展，由「被動反擊」逐步走向?",
+			"options": [
+				"自由",
+				"民主",
+				"帝國",
+				"主動先制"
+			],
+			"answer": "主動先制",
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇6",
+			"question": "共軍至本世紀中葉要把人民軍隊全面建成世界哪一流的軍隊?",
+			"options": [
+				"1流",
+				"2流",
+				"3流",
+				"4流"
+			],
+			"answer": "1流",
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇7",
+			"question": "共軍調整國防發展戰略，期在哪一年基本實現機械化?",
+			"options": [
+				"2020年",
+				"2021年",
+				"2022年",
+				"2023年"
+			],
+			"answer": "2020年",
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇8",
+			"question": "共軍調整國防發展戰略，期在哪一年實現國防和軍隊現代化?",
+			"options": [
+				"2035年",
+				"2036年",
+				"2037年",
+				"2038年"
+			],
+			"answer": "2035年",
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇9",
+			"question": "海軍依「近海防禦、遠海防衛」戰略，由近海防禦型向哪種防衛型轉變?",
+			"options": [
+				"靠海",
+				"遠海",
+				"底海",
+				"黑海"
+			],
+			"answer": "遠海",
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇10",
+			"question": "陸軍依「機動作戰、立體攻防」戰略，由區域防衛型向什麼作戰型轉?",
+			"options": [
+				"全域",
+				"單向",
+				"雙向",
+				"西域"
+			],
+			"answer": "全域",
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇11",
+			"question": "火箭軍依「核常兼備、全域懾戰」戰略，強化中、遠程精確打擊及戰略什麼能力?",
+			"options": [
+				"控制",
+				"制衡",
+				"抵制",
+				"投降"
+			],
+			"answer": "制衡",
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇12",
+			"question": "共軍依「國防和軍隊現代化建設幾步走」發展戰略?",
+			"options": [
+				"1",
+				"2",
+				"3",
+				"4"
+			],
+			"answer": "3",
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇13",
+			"question": "共軍於哪一年年底，基本完成上層領導指揮體制改革?",
+			"options": [
+				"2016",
+				"2017",
+				"2018",
+				"2019"
+			],
+			"answer": "2016",
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇14",
+			"question": "共軍通裝重視哪種能力?",
+			"options": [
+				"抗干擾",
+				"抗震",
+				"抗風",
+				"防水"
+			],
+			"answer": "抗干擾",
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇15",
+			"question": "共軍網絡系統部能力無線網路偵察技術屬哪一個類型?",
+			"options": [
+				"無線網路偵蒐",
+				"漏洞分析技術",
+				"網頁爬蟲",
+				"目標偵察"
+			],
+			"answer": "無線網路偵蒐",
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇16",
+			"question": "共軍網絡系統部能力網路釣魚技術屬哪一個類型?",
+			"options": [
+				"蠕蟲病毒程式",
+				"社交工程",
+				"資訊作戰系統",
+				"阻斷服務"
+			],
+			"answer": "社交工程",
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇17",
+			"question": "於哪一年達成「基本實現機械化，信息化建設取得重大進展」目標?",
+			"options": [
+				"2017",
+				"2018",
+				"2019",
+				"2020"
+			],
+			"answer": "2020",
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇18",
+			"question": "空軍依「空天一體、攻防兼備」戰略，由國土防空型向哪種兼備型轉變?",
+			"options": [
+				"攻防",
+				"防禦",
+				"打擊",
+				"近岸"
+			],
+			"answer": "攻防",
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇19",
+			"question": "哪一年年起，持續進行軍級(含)以下部隊整併?",
+			"options": [
+				"2017",
+				"2018",
+				"2019",
+				"2020"
+			],
+			"answer": "2017",
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇20",
+			"question": "戰略支援部隊依「體系融合、什麼融合」戰略?",
+			"options": [
+				"軍人",
+				"民眾",
+				"軍民",
+				"大學生"
+			],
+			"answer": "軍民",
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選1",
+			"question": "中共建政迄今，軍事戰略皆以「積極防禦」為核心思維，於哪一年提出「打贏信息化局部戰爭」?下列何者為非。",
+			"options": [
+				"2015年",
+				"2016年",
+				"2017年",
+				"2018年"
+			],
+			"answer": [
+				"2016年",
+				"2017年",
+				"2018年"
+			],
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選2",
+			"question": "習近平於2017年第幾大後，調整國防和軍隊現代化建設三步走發展戰略?下列何者為非。",
+			"options": [
+				"17大",
+				"18大",
+				"19大",
+				"20大"
+			],
+			"answer": [
+				"17大",
+				"18大",
+				"20大"
+			],
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選3",
+			"question": "戰略支援部隊依「體系融合、什麼融合」戰略?下列何者為非。",
+			"options": [
+				"軍人",
+				"民眾",
+				"軍民",
+				"大學生"
+			],
+			"answer": [
+				"軍人",
+				"民眾",
+				"大學生"
+			],
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選4",
+			"question": "共軍於哪一年年底，基本完成上層領導指揮體制改革?下列何者為非。",
+			"options": [
+				"2016",
+				"2017",
+				"2018",
+				"2019"
+			],
+			"answer": [
+				"2017",
+				"2018",
+				"2019"
+			],
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選5",
+			"question": "共軍調整國防發展戰略，期在哪一年基本實現機械化?下列何者為非。",
+			"options": [
+				"2020年",
+				"2021年",
+				"2022年",
+				"2023年"
+			],
+			"answer": [
+				"2021年",
+				"2022年",
+				"2023年"
+			],
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選6",
+			"question": "共軍調整國防發展戰略，期在哪一年實現國防和軍隊現代化?下列何者為非。",
+			"options": [
+				"2035年",
+				"2036年",
+				"2037年",
+				"2038年"
+			],
+			"answer": [
+				"2036年",
+				"2037年",
+				"2038年"
+			],
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選7",
+			"question": "共軍至本世紀中葉要把人民軍隊全面建成世界哪一流的軍隊?下列何者為非。",
+			"options": [
+				"1流",
+				"2流",
+				"3流",
+				"4流"
+			],
+			"answer": [
+				"2流",
+				"3流",
+				"4流"
+			],
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選8",
+			"question": "共軍之戰略發展，由「被動反擊」逐步走向?下列何者為非?",
+			"options": [
+				"自由",
+				"民主",
+				"帝國",
+				"主動先制"
+			],
+			"answer": [
+				"自由",
+				"民主",
+				"帝國"
+			],
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選9",
+			"question": "陸軍依「機動作戰、立體攻防」戰略，由區域防衛型向什麼作戰型轉?下列何者為非?",
+			"options": [
+				"全域",
+				"單向",
+				"雙向",
+				"西域"
+			],
+			"answer": [
+				"單向",
+				"雙向",
+				"西域"
+			],
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選10",
+			"question": "海軍依「近海防禦、遠海防衛」戰略，由近海防禦型向哪種防衛型轉變?下列何者為非。",
+			"options": [
+				"靠海",
+				"遠海",
+				"底海",
+				"黑海"
+			],
+			"answer": [
+				"靠海",
+				"底海",
+				"黑海"
+			],
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選11",
+			"question": "中共建政迄今，軍事戰略皆以「積極防禦」為核心思維，於哪一年提出「打贏高技術條件下局部戰爭」?下列何者為非。",
+			"options": [
+				"1990年",
+				"1991年",
+				"1992年",
+				"1993年"
+			],
+			"answer": [
+				"1990年",
+				"1991年",
+				"1992年"
+			],
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選12",
+			"question": "中共建政迄今，軍事戰略皆以「積極防禦」為核心思維，於哪一年提出「打贏信息化條件下的局部戰爭」?下列何者為非。",
+			"options": [
+				"2004年",
+				"2003年",
+				"2002年",
+				"2001年"
+			],
+			"answer": [
+				"2003年",
+				"2002年",
+				"2001年"
+			],
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選13",
+			"question": "空軍依「空天一體、攻防兼備」戰略，由國土防空型向哪種兼備型轉變?下列何者為非。",
+			"options": [
+				"攻防",
+				"防禦",
+				"打擊",
+				"近岸"
+			],
+			"answer": [
+				"防禦",
+				"打擊",
+				"近岸"
+			],
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選14",
+			"question": "火箭軍依「核常兼備、全域懾戰」戰略，強化中、遠程精確打擊及戰略什麼能力?下列何者為非。",
+			"options": [
+				"控制",
+				"制衡",
+				"抵制",
+				"投降"
+			],
+			"answer": [
+				"控制",
+				"抵制",
+				"投降"
+			],
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選15",
+			"question": "哪一年年起，持續進行軍級(含)以下部隊整併?下列何者為非。",
+			"options": [
+				"2017",
+				"2018",
+				"2019",
+				"2020"
+			],
+			"answer": [
+				"2018",
+				"2019",
+				"2020"
+			],
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選16",
+			"question": "於哪一年達成「基本實現機械化，信息化建設取得重大進展」目標?下列何者為非。",
+			"options": [
+				"2017",
+				"2018",
+				"2019",
+				"2020"
+			],
+			"answer": [
+				"2017",
+				"2018",
+				"2019"
+			],
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選17",
+			"question": "共軍通裝重視哪種能力?下列何者為非。",
+			"options": [
+				"抗干擾",
+				"抗震",
+				"抗風",
+				"防水"
+			],
+			"answer": [
+				"抗震",
+				"抗風",
+				"防水"
+			],
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選18",
+			"question": "共軍網絡系統部能力無線網路偵察技術屬哪一個類型?下列何者為非。",
+			"options": [
+				"無線網路偵蒐",
+				"漏洞分析技術",
+				"網頁爬蟲",
+				"目標偵察"
+			],
+			"answer": [
+				"漏洞分析技術",
+				"網頁爬蟲",
+				"目標偵察"
+			],
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選19",
+			"question": "軍網絡系統部能力網路釣魚技術屬哪一個類型?下列何者為非。",
+			"options": [
+				"蠕蟲病毒程式",
+				"社交工程",
+				"資訊作戰系統",
+				"阻斷服務"
+			],
+			"answer": [
+				"蠕蟲病毒程式",
+				"資訊作戰系統",
+				"阻斷服務"
+			],
+			"reference": "相對性敵情"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選20",
+			"question": "共軍依「國防和軍隊現代化建設幾步走」發展戰略?下列何者為非。",
+			"options": [
+				"1",
+				"2",
+				"3",
+				"4"
+			],
+			"answer": [
+				"1",
+				"2",
+				"4"
+			],
+			"reference": "相對性敵情"
+		}
+	]
+}

@@ -1,0 +1,743 @@
+{
+	"questions": [
+		{
+			"type": "true_false",
+			"number": "是非1",
+			"question": "內心判斷為時間倉促或狀況簡單，可依合理之思維程序，行內心判斷，僅表達其結論。",
+			"answer": true,
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "true_false",
+			"number": "是非2",
+			"question": "作戰地區分析，現宜由作戰區以上階層作業，旅行獨立作戰時，方由旅作業，惟各階層均不需於平時建立相關兵要資料。",
+			"answer": false,
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "true_false",
+			"number": "是非3",
+			"question": "情報判斷之目的在判明敵實際或潛在之能力與行動，包括敵可能行動之公算、特點與弱點級作戰地區特性對我作戰行動或達成任務之影響等。",
+			"answer": true,
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "true_false",
+			"number": "是非4",
+			"question": "情報判斷的意義乃作戰地區與敵情之綜合研究，為情報幹部之職責。",
+			"answer": true,
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "true_false",
+			"number": "是非5",
+			"question": "內心判斷為當時間餘裕或狀況繁雜時，則採完整書面方式表達。",
+			"answer": false,
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "true_false",
+			"number": "是非6",
+			"question": "列舉敵之弱點時，不須為本級與上、下級部隊指揮官均可資利用者為主",
+			"answer": false,
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "true_false",
+			"number": "是非7",
+			"question": "敵之弱點及敵情與作戰地區特性中，使敵亦遭損害、欺騙及不利之任何情況均屬之。",
+			"answer": true,
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "true_false",
+			"number": "是非8",
+			"question": "敵可能行動將敵有能力實施，且影響我任務達成之各種行動，予以列舉，其敘述通常包括何事、何物、何地、兵力如何。",
+			"answer": false,
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "true_false",
+			"number": "是非9",
+			"question": "敵軍投入部隊乃指已投入戰鬥，與我軍接戰之敵地面部隊。",
+			"answer": true,
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "true_false",
+			"number": "是非10",
+			"question": "敵軍增援部隊乃指敵可用以對抗我軍之部隊。",
+			"answer": true,
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "true_false",
+			"number": "是非11",
+			"question": "人物誌：為敵軍主要指揮官及參謀之素質、性格、歷史背景與情感。",
+			"answer": true,
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "true_false",
+			"number": "是非12",
+			"question": "內心判斷：時間倉促或狀況簡單，可依合理之思維程序，行內心判斷，僅表達其結論。",
+			"answer": true,
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "true_false",
+			"number": "是非13",
+			"question": "作戰地區分析，現宜由旅以上階層作業，營行獨立作戰時，方由營作業，惟各階層均應於平時建立相關兵要資料。",
+			"answer": false,
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "true_false",
+			"number": "是非14",
+			"question": "書面判斷：時間倉促或狀況簡單，可依合理之思維程序，行內心判斷，僅表達其結論。",
+			"answer": false,
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "true_false",
+			"number": "是非15",
+			"question": "書面判斷：當時間餘裕或狀況繁雜時，則採完整書面方式表達。",
+			"answer": true,
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "true_false",
+			"number": "是非16",
+			"question": "情報判斷作為，係以任務為基礎，因此其涵蓋之範圍與地區，必須審慎考量任務的性質與對敵情明瞭的程度，方能呈出一份適切可行之情報判斷，供各級參考運用。",
+			"answer": true,
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "true_false",
+			"number": "是非17",
+			"question": "情報判斷的意義乃利害地區與敵情之綜合研究，為情報幹部之職責。",
+			"answer": false,
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "true_false",
+			"number": "是非18",
+			"question": "情報判斷為一合理之思維程序，乃針對當前狀及可能發展，綜合考量各有關因素。",
+			"answer": true,
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "true_false",
+			"number": "是非19",
+			"question": "情報判斷除求得利害地區對我作戰行動之影響外，並須判定敵可能行動及其弱",
+			"answer": false,
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "true_false",
+			"number": "是非20",
+			"question": "敵軍兵力，通常係列述能適時與我作戰，而足以影響我任務達成者為限。",
+			"answer": true,
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇1",
+			"question": "作戰地區分析屬",
+			"options": [
+				"綜合運用資料",
+				"作戰資料",
+				"基礎資料"
+			],
+			"answer": "基礎資料",
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇2",
+			"question": "時間倉促或狀況簡單，可依合理之思維程序，行內心判斷，僅表達其結論屬",
+			"options": [
+				"內心判斷",
+				"書面判斷",
+				"參謀判斷",
+				"指揮官判斷"
+			],
+			"answer": "內心判斷",
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇3",
+			"question": "情報判斷屬",
+			"options": [
+				"綜合運用資料",
+				"作戰資料",
+				"基礎資料"
+			],
+			"answer": "綜合運用資料",
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇4",
+			"question": "當時間餘裕或狀況繁雜時，則採完整書面方式表達屬",
+			"options": [
+				"內心判斷",
+				"書面判斷",
+				"參謀判斷",
+				"指揮官判斷"
+			],
+			"answer": "書面判斷",
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇5",
+			"question": "情報判斷之作業格式之本文內第二段作戰地區內容包括",
+			"options": [
+				"天氣",
+				"地形",
+				"其他特性",
+				"以上皆是"
+			],
+			"answer": "以上皆是",
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇6",
+			"question": "情報判斷之作業格式之本文內第二段作戰地區天氣內容包括",
+			"options": [
+				"現況",
+				"對敵之影響",
+				"對我之影響",
+				"以上皆是"
+			],
+			"answer": "以上皆是",
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇7",
+			"question": "情報判斷之作業格式之本文內第二段作戰地區地形內容包括",
+			"options": [
+				"觀測與射擊",
+				"隱蔽與掩蔽",
+				"地形要點",
+				"以上皆是"
+			],
+			"answer": "以上皆是",
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇8",
+			"question": "情報判斷之作業格式之本文內第二段為",
+			"options": [
+				"任務",
+				"作戰地區",
+				"敵軍狀況",
+				"敵可能行動"
+			],
+			"answer": "作戰地區",
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇9",
+			"question": "情報判斷之作業格式之本文內第五段結論，其內容通常包括",
+			"options": [
+				"作戰地區對我作戰行動之影響",
+				"敵較大可能行動",
+				"敵之特、弱點",
+				"以上皆是"
+			],
+			"answer": "以上皆是",
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇10",
+			"question": "情報判斷方式概區分",
+			"options": [
+				"內心判斷",
+				"參謀判斷",
+				"指揮官判斷"
+			],
+			"answer": "內心判斷",
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇11",
+			"question": "作戰地區分析，現宜由__以上階層作業，旅行獨立作戰時，方由旅作業，惟各階層均應於平時建立相關兵要資料。",
+			"options": [
+				"作戰區",
+				"旅",
+				"營",
+				"連"
+			],
+			"answer": "作戰區",
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇12",
+			"question": "於判斷敵弱點時，應就__，綜合考慮，並就敵可供我實際利用之弱點敘述之。",
+			"options": [
+				"作戰地區特性",
+				"敵情",
+				"敵之準則與戰法",
+				"以上皆是"
+			],
+			"answer": "以上皆是",
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇13",
+			"question": "情報判斷之作業格式之本文內第一段為",
+			"options": [
+				"任務",
+				"作戰地區",
+				"敵軍狀況",
+				"敵可能行動"
+			],
+			"answer": "任務",
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇14",
+			"question": "情報判斷之作業格式之本文內第三段為",
+			"options": [
+				"任務",
+				"作戰地區",
+				"敵軍狀況",
+				"敵可能行動"
+			],
+			"answer": "敵軍狀況",
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇15",
+			"question": "情報判斷之作業格式之本文內第三段敵軍狀況，其敵軍內容為",
+			"options": [
+				"部署",
+				"編組",
+				"兵力",
+				"以上皆是"
+			],
+			"answer": "以上皆是",
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇16",
+			"question": "情報判斷之作業格式之本文內第四段為",
+			"options": [
+				"任務",
+				"作戰地區",
+				"敵軍狀況",
+				"敵可能行動"
+			],
+			"answer": "敵可能行動",
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇17",
+			"question": "情報判斷之作業格式之本文內第四段敵可能行動，其列舉內容通常包括",
+			"options": [
+				"何時",
+				"何事",
+				"何地",
+				"以上皆是"
+			],
+			"answer": "以上皆是",
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇18",
+			"question": "情報判斷分發方式，旅級以下單位，作戰初期為",
+			"options": [
+				"書面分發",
+				"口頭報告",
+				"電子郵件"
+			],
+			"answer": "書面分發",
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇19",
+			"question": "情報判斷係基於__，綜合作戰地區特性與敵軍狀況，列舉敵每一可能行動，加以研討並分析其採行之公算大小，進而產生判斷之結論。",
+			"options": [
+				"任務",
+				"敵情",
+				"作戰",
+				"情報"
+			],
+			"answer": "任務",
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇20",
+			"question": "敵軍兵力通常區分為",
+			"options": [
+				"投入部隊",
+				"增援部隊",
+				"海軍",
+				"以上皆是"
+			],
+			"answer": "以上皆是",
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選1",
+			"question": "情報判斷方式，可區分為",
+			"options": [
+				"內心判斷",
+				"書面判斷",
+				"參謀判斷",
+				"指揮官判斷"
+			],
+			"answer": [
+				"內心判斷",
+				"書面判斷"
+			],
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選2",
+			"question": "作戰地區分析屬何種資料，情報判斷屬何種資料？",
+			"options": [
+				"後勤資料",
+				"基礎資料",
+				"作戰資料",
+				"綜合運用資料"
+			],
+			"answer": [
+				"基礎資料",
+				"綜合運用資料"
+			],
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選3",
+			"question": "判斷以作業人員共區分哪些方式?",
+			"options": [
+				"指揮官判斷",
+				"主管判斷",
+				"參謀判斷",
+				"士官判斷"
+			],
+			"answer": [
+				"指揮官判斷",
+				"參謀判斷"
+			],
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選4",
+			"question": "判斷格式中「狀況及考慮事項」共含下述哪些項次?",
+			"options": [
+				"人事狀況",
+				"情報",
+				"作戰",
+				"後勤"
+			],
+			"answer": [
+				"人事狀況",
+				"情報",
+				"作戰",
+				"後勤"
+			],
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選5",
+			"question": "情報判斷作業格式之本文中第二段作戰地區內容包括",
+			"options": [
+				"天氣",
+				"地形",
+				"其他特性",
+				"敵情"
+			],
+			"answer": [
+				"天氣",
+				"地形",
+				"其他特性"
+			],
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選6",
+			"question": "情報判斷作業格式之本文中第二段作戰地區的地形現況，應包括",
+			"options": [
+				"觀測與射擊",
+				"隱蔽與掩蔽",
+				"障礙",
+				"地形要點"
+			],
+			"answer": [
+				"觀測與射擊",
+				"隱蔽與掩蔽",
+				"障礙",
+				"地形要點"
+			],
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選7",
+			"question": "情報判斷作業格式之本文中第三段敵軍狀況之資料，應包括",
+			"options": [
+				"部署",
+				"編組",
+				"兵力",
+				"作戰方式"
+			],
+			"answer": [
+				"部署",
+				"編組",
+				"兵力"
+			],
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選8",
+			"question": "判斷通常於何層級部隊適宜用表格式作業為主?",
+			"options": [
+				"旅",
+				"營",
+				"連",
+				"排"
+			],
+			"answer": [
+				"旅",
+				"營",
+				"連"
+			],
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選9",
+			"question": "因素為構成影響判斷結果之事實或徵候，故狀況判斷考量因素，主為作戰地區之敵、我、天、地、水，應基於任務綜合思維之，其中「敵」指的是?",
+			"options": [
+				"我軍部署",
+				"兵力",
+				"活動",
+				"可能行動"
+			],
+			"answer": [
+				"兵力",
+				"活動",
+				"可能行動"
+			],
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選10",
+			"question": "因素為構成影響判斷結果之事實或徵候，故狀況判斷考量因素，主為作戰地區之敵、我、天、地、水，應基於任務綜合思維之，其中「我」的部份指的是?",
+			"options": [
+				"我軍兵力",
+				"編組",
+				"部署",
+				"行動"
+			],
+			"answer": [
+				"我軍兵力",
+				"編組",
+				"部署",
+				"行動"
+			],
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選11",
+			"question": "情報判斷作業格式之本文中第三段敵軍狀況之兵力，通常區分為",
+			"options": [
+				"投入部隊",
+				"增援部隊",
+				"海軍",
+				"空軍"
+			],
+			"answer": [
+				"投入部隊",
+				"增援部隊",
+				"海軍",
+				"空軍"
+			],
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選12",
+			"question": "探討敵之弱點及判定敵可能行動公算大小之各項資料，下列為是？",
+			"options": [
+				"人事",
+				"情報",
+				"作戰",
+				"後勤"
+			],
+			"answer": [
+				"人事",
+				"情報",
+				"作戰",
+				"後勤"
+			],
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選13",
+			"question": "敵可能行動為將敵有能力實施，且影響我任務達成之各種行動，予以列舉，其敘述通常包括",
+			"options": [
+				"何事",
+				"何時",
+				"何地",
+				"兵力如何"
+			],
+			"answer": [
+				"何事",
+				"何時",
+				"何地",
+				"兵力如何"
+			],
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選14",
+			"question": "參二計算敵投入部隊時，通常以低幾層級為計算基準，何者為非？",
+			"options": [
+				"低一層級",
+				"低二層級",
+				"低三層級",
+				"低四層級"
+			],
+			"answer": [
+				"低一層級",
+				"低三層級",
+				"低四層級"
+			],
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選15",
+			"question": "情報判斷之作業格式區分，何者為非?",
+			"options": [
+				"三部六段",
+				"二部五段",
+				"二部六段",
+				"三部五段"
+			],
+			"answer": [
+				"三部六段",
+				"二部五段",
+				"二部六段"
+			],
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選16",
+			"question": "參謀判斷概分為?",
+			"options": [
+				"內心判斷",
+				"研議判斷",
+				"書面判斷",
+				"自行判斷"
+			],
+			"answer": [
+				"內心判斷",
+				"書面判斷"
+			],
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選17",
+			"question": "地面作戰部隊，通常將哪些項次併於「作戰地區特性」內分析之?",
+			"options": [
+				"我",
+				"天",
+				"地",
+				"水"
+			],
+			"answer": [
+				"天",
+				"地",
+				"水"
+			],
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選18",
+			"question": "判斷之格式區分三部五段，可以用何方式作業?",
+			"options": [
+				"表格式",
+				"演譯式",
+				"條列式",
+				"敘述式"
+			],
+			"answer": [
+				"表格式",
+				"條列式"
+			],
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選19",
+			"question": "任務之記述通常包括?",
+			"options": [
+				"何人",
+				"何事",
+				"何地",
+				"何時"
+			],
+			"answer": [
+				"何人",
+				"何事",
+				"何地",
+				"何時"
+			],
+			"reference": "情報判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選20",
+			"question": "列舉敵可能行動，應考量兩個條件、四項內容，其中內容部分為?",
+			"options": [
+				"何時",
+				"何事",
+				"何地",
+				"兵力如何"
+			],
+			"answer": [
+				"何時",
+				"何事",
+				"何地",
+				"兵力如何"
+			],
+			"reference": "情報判斷與計畫"
+		}
+	]
+}

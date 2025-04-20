@@ -1,0 +1,787 @@
+{
+	"questions": [
+		{
+			"type": "true_false",
+			"number": "是非1",
+			"question": "作戰判斷係依據情報判斷，對所有足以影響我作戰任務達成之諸因素，作一合理而有系統之判斷。",
+			"answer": true,
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "true_false",
+			"number": "是非2",
+			"question": "作戰判斷係依據情報判斷，對所有足以影響我作戰任務達成之諸因素，作一合理而有系統之判斷。",
+			"answer": true,
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "true_false",
+			"number": "是非3",
+			"question": "參謀判斷依其業務性質，區分為人事判斷、情報判斷、作戰判斷、後勤判斷、政戰判斷及通信電子資訊判斷。",
+			"answer": true,
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "true_false",
+			"number": "是非4",
+			"question": "通信電子判斷則依情報判斷與作戰判斷分析與研判各戰術行動方案之通信電子因素，向指揮官建議，何案可獲致通信電子最有效之支援，以協助指揮官下達決心。",
+			"answer": true,
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "true_false",
+			"number": "是非5",
+			"question": "任務之敘述，包括「何人」、「何時」、「何事」、「何地」及「為何」等五項。",
+			"answer": true,
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "true_false",
+			"number": "是非6",
+			"question": "判定某一行動方案時，須符合三大條件，即合情、合理、有完成任務公算者。",
+			"answer": false,
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "true_false",
+			"number": "是非7",
+			"question": "判斷之尾部，包括簽署、附錄、配布",
+			"answer": false,
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "true_false",
+			"number": "是非8",
+			"question": "判斷之尾部，包括簽署、附錄、配布",
+			"answer": false,
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "true_false",
+			"number": "是非9",
+			"question": "判斷格式之功用為使作業標準化，格式可使各級指參人員在判斷作為方法與表達上獲得一致，容易溝通。",
+			"answer": true,
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "true_false",
+			"number": "是非10",
+			"question": "判斷格式之功用為使作業標準化，格式可使各級指參人員在判斷作為方法與表達上獲得一致，容易溝通。",
+			"answer": true,
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "true_false",
+			"number": "是非11",
+			"question": "判定某一行動方案時，須符合三大條件，即合情、合理、有完成任務公算者。",
+			"answer": false,
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "true_false",
+			"number": "是非12",
+			"question": "判斷之格式區分為三部六段",
+			"answer": false,
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "true_false",
+			"number": "是非13",
+			"question": "判斷之格式區分為三部六段",
+			"answer": false,
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "true_false",
+			"number": "是非14",
+			"question": "狀況判斷之目的，在提供選定最有利之行動方案。",
+			"answer": true,
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "true_false",
+			"number": "是非15",
+			"question": "狀況判斷之目的，在提供選定最有利之行動方案。",
+			"answer": true,
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "true_false",
+			"number": "是非16",
+			"question": "狀況判斷可分為指揮官判斷及參謀判斷",
+			"answer": true,
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "true_false",
+			"number": "是非17",
+			"question": "指揮官狀況判斷，可由指揮官親自擬訂，亦可由參二代擬，但決心必須由指揮官親自下達。",
+			"answer": false,
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "true_false",
+			"number": "是非18",
+			"question": "指揮官狀況判斷，可由指揮官親自擬訂，亦可由參二代擬，但決心必須由指揮官親自下達。",
+			"answer": false,
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "true_false",
+			"number": "是非19",
+			"question": "數值比較法尋找評估要項，基於第三段分析所發現之各種因素，依其性質，歸併為若干評估要項。",
+			"answer": true,
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "true_false",
+			"number": "是非20",
+			"question": "數值比較法尋找評估要項，基於第三段分析所發現之各種因素，依其性質，歸併為若干評估要項。",
+			"answer": true,
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇1",
+			"question": "判斷之尾部包括_，何者為非？",
+			"options": [
+				"簽署",
+				"附件",
+				"字號",
+				"配布"
+			],
+			"answer": "字號",
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇2",
+			"question": "判斷之首部包括_，何者為是？",
+			"options": [
+				"受文者",
+				"簽署",
+				"配布",
+				"附件"
+			],
+			"answer": "受文者",
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇3",
+			"question": "我軍行動方案內容通常應包括_，何者為非？",
+			"options": [
+				"所採取之行動",
+				"開始或完成之時間",
+				"行動之地點、地區或方向",
+				"運用之方法"
+			],
+			"answer": "運用之方法",
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇4",
+			"question": "決心之敘述，不包括",
+			"options": [
+				"何物",
+				"何人",
+				"何時",
+				"何事",
+				"何地"
+			],
+			"answer": "何物",
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇5",
+			"question": "任務之敘述有五何，下列何者為非？",
+			"options": [
+				"何時",
+				"如何",
+				"何人",
+				"何地"
+			],
+			"answer": "如何",
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇6",
+			"question": "何人為策定通信電子資訊計畫？",
+			"options": [
+				"人事參謀軍官",
+				"情報參謀軍官",
+				"作戰參謀軍官",
+				"通資參謀軍官"
+			],
+			"answer": "通資參謀軍官",
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇7",
+			"question": "何人為策定通信電子資訊計畫？",
+			"options": [
+				"人事參謀軍官",
+				"情報參謀軍官",
+				"作戰參謀軍官",
+				"通資參謀軍官"
+			],
+			"answer": "通資參謀軍官",
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇8",
+			"question": "判定某一行狀方案時，須符合三大條件，何者為非？",
+			"options": [
+				"合理",
+				"合情",
+				"可行",
+				"有完成任務公算者"
+			],
+			"answer": "合情",
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇9",
+			"question": "完整之決心的六何其中「為何」其內容為",
+			"options": [
+				"作戰之目的",
+				"作戰之方式",
+				"作戰之部署"
+			],
+			"answer": "作戰之目的",
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇10",
+			"question": "敵較大可能行動是依據何者判斷，以作為分析之基礎？",
+			"options": [
+				"作戰判斷",
+				"情報判斷",
+				"後勤判斷",
+				"政戰判斷"
+			],
+			"answer": "情報判斷",
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇11",
+			"question": "任務之敘述有五何，下列何者為非？",
+			"options": [
+				"何時",
+				"如何",
+				"何人",
+				"何地"
+			],
+			"answer": "如何",
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇12",
+			"question": "完整之決心的六何其中「為何」其內容為",
+			"options": [
+				"作戰之目的",
+				"作戰之方式",
+				"作戰之部署"
+			],
+			"answer": "作戰之目的",
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇13",
+			"question": "我軍行動方案之比較可依三種方式進行，下列何者為非？",
+			"options": [
+				"直接比較法",
+				"因素比較法",
+				"數量比較法",
+				"數值比較法"
+			],
+			"answer": "數量比較法",
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇14",
+			"question": "決心之敘述，不包括",
+			"options": [
+				"何物",
+				"何人",
+				"何時",
+				"何事",
+				"何地"
+			],
+			"answer": "何物",
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇15",
+			"question": "狀況判斷之因素，何者為非？",
+			"options": [
+				"敵",
+				"我",
+				"地",
+				"土"
+			],
+			"answer": "土",
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇16",
+			"question": "指揮官狀況判斷，可由指揮官親自擬訂，亦可由何人代擬？",
+			"options": [
+				"參一",
+				"參二",
+				"參三",
+				"參四"
+			],
+			"answer": "參三",
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇17",
+			"question": "指揮官狀況判斷，可由指揮官親自擬訂，亦可由何人代擬？",
+			"options": [
+				"參一",
+				"參二",
+				"參三",
+				"參四"
+			],
+			"answer": "參三",
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇18",
+			"question": "參謀判斷依業務性質，區分為_，何者為非？",
+			"options": [
+				"人事判斷",
+				"情報判斷",
+				"作戰判斷",
+				"政治判斷"
+			],
+			"answer": "政治判斷",
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇19",
+			"question": "通信電子狀況判斷可區分為_，何者為非？",
+			"options": [
+				"通資參謀軍官判斷",
+				"通資部隊長判斷",
+				"通資（排）組長判斷"
+			],
+			"answer": "通資（排）組長判斷",
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "single_choice",
+			"number": "選擇20",
+			"question": "影響我選擇適當行動方案之主要因素計有_，何者為非？",
+			"options": [
+				"地形",
+				"敵軍部署",
+				"我軍部署",
+				"友軍部署"
+			],
+			"answer": "友軍部署",
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選1",
+			"question": "因素為構成影響判斷結果之事實或徵候，故狀況判斷考量因素，主為作戰地區之敵、我、天、地、水，應基於任務綜合思維之，其中「敵」指的是?",
+			"options": [
+				"我軍部署",
+				"兵力",
+				"活動",
+				"特點與優點",
+				"可能行動"
+			],
+			"answer": [
+				"兵力",
+				"活動",
+				"可能行動"
+			],
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選2",
+			"question": "指揮官對戰術、勤務支援等問題之研究，有賴各參謀軍官以參謀判斷方式，提供資料、結論、建議。各參遂行判斷時，須與有關人員密切協調，同時作業，儘速完成。主要之參謀判斷有?",
+			"options": [
+				"情報判斷",
+				"作戰判斷",
+				"人事判斷",
+				"後勤判斷",
+				"政戰判斷",
+				"通信判斷",
+				"行政判斷"
+			],
+			"answer": [
+				"情報判斷",
+				"作戰判斷",
+				"人事判斷",
+				"後勤判斷",
+				"政戰判斷",
+				"通信判斷"
+			],
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選3",
+			"question": "相對戰力，通常以作戰部隊的哪些能力實施比較?",
+			"options": [
+				"偵搜力",
+				"機動力",
+				"打擊力",
+				"後勤支援能力",
+				"指通力",
+				"地形",
+				"部署位置",
+				"戰鬥效率"
+			],
+			"answer": [
+				"偵搜力",
+				"機動力",
+				"打擊力",
+				"後勤支援能力",
+				"指通力",
+				"地形",
+				"部署位置",
+				"戰鬥效率"
+			],
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選4",
+			"question": "通信判斷裡的「指揮與通信電子」項次，其中電子戰應敘述?",
+			"options": [
+				"電子戰攻擊需求",
+				"電子戰防護需求",
+				"電子戰支援需求",
+				"電子戰對抗需求"
+			],
+			"answer": [
+				"電子戰攻擊需求",
+				"電子戰防護需求",
+				"電子戰支援需求"
+			],
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選5",
+			"question": "參謀判斷依其業務性質，可區分為",
+			"options": [
+				"人事判斷",
+				"情報判斷",
+				"政治判斷",
+				"作戰判斷",
+				"後勤判斷",
+				"政戰判斷",
+				"通信電子資訊判斷"
+			],
+			"answer": [
+				"人事判斷",
+				"情報判斷",
+				"作戰判斷",
+				"後勤判斷",
+				"政戰判斷",
+				"通信電子資訊判斷"
+			],
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選6",
+			"question": "判斷之尾部，何者為是？",
+			"options": [
+				"簽署",
+				"附件",
+				"字號",
+				"配布"
+			],
+			"answer": [
+				"簽署",
+				"附件",
+				"配布"
+			],
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選7",
+			"question": "判斷尾部包含?",
+			"options": [
+				"簽署",
+				"附件",
+				"配布",
+				"任務",
+				"各部隊行動"
+			],
+			"answer": [
+				"簽署",
+				"附件",
+				"配布"
+			],
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選8",
+			"question": "判斷格式中「狀況及考慮事項」共含下述哪些項次?",
+			"options": [
+				"人事狀況",
+				"情報",
+				"作戰",
+				"後勤",
+				"政戰",
+				"行政",
+				"立案假定"
+			],
+			"answer": [
+				"人事狀況",
+				"情報",
+				"作戰",
+				"後勤",
+				"政戰",
+				"立案假定"
+			],
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選9",
+			"question": "任務之敘述，包括哪些項次?",
+			"options": [
+				"何人",
+				"何時",
+				"何事",
+				"何地",
+				"何物",
+				"為何"
+			],
+			"answer": [
+				"何人",
+				"何時",
+				"何事",
+				"何地",
+				"為何"
+			],
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選10",
+			"question": "判斷之首部，何者為非？",
+			"options": [
+				"受文者",
+				"簽署",
+				"附件",
+				"配布"
+			],
+			"answer": [
+				"簽署",
+				"附件",
+				"配布"
+			],
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選11",
+			"question": "聯兵旅級(含)以下部隊的判斷之格式，以何種格式作業為主，餘以何種格式作業為宜?",
+			"options": [
+				"二段式",
+				"表格式",
+				"條列式",
+				"三段式"
+			],
+			"answer": [
+				"表格式",
+				"條列式"
+			],
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選12",
+			"question": "敵較大可能行動是依據何者判斷，以作為分析之基礎，何者為非？",
+			"options": [
+				"作戰判斷",
+				"情報判斷",
+				"後勤判斷",
+				"政戰判斷"
+			],
+			"answer": [
+				"作戰判斷",
+				"後勤判斷",
+				"政戰判斷"
+			],
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選13",
+			"question": "任務之敘述有五何，下列何者為是?",
+			"options": [
+				"何時",
+				"何人",
+				"何地",
+				"何事",
+				"為何"
+			],
+			"answer": [
+				"何時",
+				"何人",
+				"何地",
+				"何事",
+				"為何"
+			],
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選14",
+			"question": "我軍行動方案之比較可依哪三種方式進行?",
+			"options": [
+				"直接比較法",
+				"數量比較法",
+				"因素比較法",
+				"數值比較法"
+			],
+			"answer": [
+				"直接比較法",
+				"因素比較法",
+				"數值比較法"
+			],
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選15",
+			"question": "指揮官狀況判斷，可由指揮官親自擬訂，不可由何人代擬?",
+			"options": [
+				"參三",
+				"參四",
+				"參二",
+				"參一"
+			],
+			"answer": [
+				"參四",
+				"參二",
+				"參一"
+			],
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選16",
+			"question": "影響我選擇適當行動方案之主要因素，何者為是?",
+			"options": [
+				"敵軍部署",
+				"友軍部署",
+				"我軍部署",
+				"地形",
+				"敵可能行動"
+			],
+			"answer": [
+				"敵軍部署",
+				"我軍部署",
+				"地形",
+				"敵可能行動"
+			],
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選17",
+			"question": "何人為策定通信電子資訊計畫，何者為非?",
+			"options": [
+				"通資參謀軍官",
+				"人事參謀軍官",
+				"情報參謀軍官",
+				"後勤參謀軍官"
+			],
+			"answer": [
+				"人事參謀軍官",
+				"情報參謀軍官",
+				"後勤參謀軍官"
+			],
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選18",
+			"question": "通信電子狀況判斷思維程序",
+			"options": [
+				"任務",
+				"狀況及行動方案",
+				"敵我行動行方案分析",
+				"我行動方案之比較",
+				"結論與建議（決心）"
+			],
+			"answer": [
+				"任務",
+				"狀況及行動方案",
+				"敵我行動行方案分析",
+				"我行動方案之比較",
+				"結論與建議（決心）"
+			],
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選19",
+			"question": "狀況判斷從作業人員區分，可分為哪種判斷?",
+			"options": [
+				"指揮官判斷",
+				"指揮判斷",
+				"參謀判斷",
+				"業務判斷"
+			],
+			"answer": [
+				"指揮官判斷",
+				"參謀判斷"
+			],
+			"reference": "作戰判斷與計畫"
+		},
+		{
+			"type": "multiple_choice",
+			"number": "複選20",
+			"question": "決心之敘述，包括",
+			"options": [
+				"何人",
+				"何時",
+				"何事",
+				"何地",
+				"為何",
+				"如何"
+			],
+			"answer": [
+				"何人",
+				"何時",
+				"何事",
+				"何地",
+				"為何",
+				"如何"
+			],
+			"reference": "作戰判斷與計畫"
+		}
+	]
+}
