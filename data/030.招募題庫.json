@@ -51,7 +51,7 @@
     {"id":47,"type":"true_false","question":"專業軍、士官班及志願士兵屬於國軍就學班隊。","answer":"O"},
     {"id":48,"type":"true_false","question":"具學士以上學位者僅能報名一個班隊，不可同時報考軍官、士官班。","answer":"X"},
     {"id":49,"type":"true_false","question":"具有副學士學位者僅能報考專業預備士官班。","answer":"O"},
-    {"id":50,"type":"true_false","question":"考生如接獲入營徵集令，可持志願役准考證向兵役單位辦理延期徵集。","answer":"O"}
+    {"id":50,"type":"true_false","question":"考生如接獲入營徵集令，可持志願役准考證向兵役單位辦理延期徵集。","answer":"O"},
     {"id":51,"type":"true_false","question":"志願士兵若未轉服士官，則僅能服役10年；轉服士官後最多可服役20年。","answer":"X"},
     {"id":52,"type":"true_false","question":"具學士以上學位可同時報考志願役專業軍官、士官班，並同時可選填軍官、士官各16個志願。","answer":"O"},
     {"id":53,"type":"true_false","question":"志願士兵考試項目為智力測驗、體能測驗、身心評量測驗、口試及性向測驗。","answer":"X"},
@@ -158,7 +158,7 @@
     {"id":47,"type":"single_choice","question":"報考志願士兵之軍樂兵專長測驗未達幾分(含)以上不予錄取？","options":["80分","70分","60分","50分"],"answer":1},
     {"id":48,"type":"single_choice","question":"下列何種情形者不得報考專業預備軍官預備士官班？","options":["曾就讀軍事學校品德退學未滿3年","港澳設籍未滿10年","女性士官退伍未納入後備役","以上皆是"],"answer":4},
     {"id":49,"type":"single_choice","question":"報考專業預備軍官預備士官班年齡限制為何？","options":["18至26歲","20至26歲","20至32歲","20至35歲"],"answer":3},
-    {"id":50,"type":"single_choice","question":"專業預備軍官、士官班考選內容何者為是？","options":["國文","英文","作文","以上皆不考"],"answer":4}
+    {"id":50,"type":"single_choice","question":"專業預備軍官、士官班考選內容何者為是？","options":["國文","英文","作文","以上皆不考"],"answer":4},
     {"id":51,"type":"single_choice","question":"下列哪一項不屬於志願士兵報名需檢附之文件？","options":["身分證正反面影本","學歷證明文件","體檢合格表","出生證明書"],"answer":4},
     {"id":52,"type":"single_choice","question":"報考志願士兵身高體重基準中，男性最低身高為？","options":["155公分","158公分","160公分","162公分"],"answer":2},
     {"id":53,"type":"single_choice","question":"志願士兵錄取報到延後以幾日為限？","options":["1日","2日","3日","4日"],"answer":2},
