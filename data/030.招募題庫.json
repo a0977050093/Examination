@@ -1184,6 +1184,166 @@
     },
     {
       "type": "single_choice",
+      "number": "61",
+      "question": "志願士兵若錄取後不報到者，處理方式為？",
+      "options": ["延後報到", "取消錄取資格", "重新安排梯次", "可補報"],
+      "answer": "取消錄取資格",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "62",
+      "question": "志願士兵錄取後報到若身體檢查不合格，應如何處理？",
+      "options": ["延後訓練", "退訓", "取消錄取", "補檢"],
+      "answer": "取消錄取",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "63",
+      "question": "志願士兵若在訓練中死亡，依規給與何項？",
+      "options": ["撫卹金", "退伍金", "退休金", "慰勞金"],
+      "answer": "撫卹金",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "64",
+      "question": "志願士兵若於服役期間犯罪，依何法處理？",
+      "options": ["刑法", "軍事審判法", "陸海空軍刑法", "行政罰法"],
+      "answer": "陸海空軍刑法",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "65",
+      "question": "志願士兵服役期滿可否自動續約？",
+      "options": ["可自動續約", "須經申請與核准", "由單位決定", "視考績而定"],
+      "answer": "須經申請與核准",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "66",
+      "question": "志願士兵服役滿幾年可申請退伍？",
+      "options": ["10年", "15年", "20年", "25年"],
+      "answer": "20年",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "67",
+      "question": "志願士兵錄取後報到未攜帶身份證件者，應如何處理？",
+      "options": ["准予入營", "補件後報到", "不予報到", "視情況決定"],
+      "answer": "不予報到",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "68",
+      "question": "志願士兵考試若有作弊情事，處理方式為？",
+      "options": ["扣分處理", "取消當次成績", "禁考一年", "註銷錄取資格"],
+      "answer": "取消當次成績",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "69",
+      "question": "志願士兵考試中攜帶行動電話未關機，將如何處理？",
+      "options": ["警告一次", "扣分", "視同違規", "取消考試資格"],
+      "answer": "視同違規",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "70",
+      "question": "志願士兵考試時，若試場外噪音干擾，應如何處理？",
+      "options": ["立即停止考試", "由監試人員處理", "自行反映給主辦單位", "延長考試時間"],
+      "answer": "由監試人員處理",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "71",
+      "question": "志願士兵錄取報到時須填寫何種文件？",
+      "options": ["役男登記表", "入營報到表", "保密切結書", "以上皆是"],
+      "answer": "以上皆是",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "72",
+      "question": "志願士兵訓練地點為？",
+      "options": ["志願士兵教育中心", "各軍司令部訓練單位", "新兵訓練中心", "部隊所在地"],
+      "answer": "新兵訓練中心",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "73",
+      "question": "志願士兵若訓練未通過，得否重修？",
+      "options": ["可重修一次", "不得重修", "須重新報名", "由單位核准決定"],
+      "answer": "可重修一次",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "74",
+      "question": "志願士兵退訓後重新報名，需重新參加哪些項目？",
+      "options": ["智力測驗", "體能測驗", "體檢", "以上皆需"],
+      "answer": "以上皆需",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "75",
+      "question": "志願士兵訓練期間之膳宿由誰負擔？",
+      "options": ["個人自理", "國防部補助一半", "政府全額負擔", "單位補助"],
+      "answer": "政府全額負擔",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "76",
+      "question": "志願士兵訓練期間若表現優異，得獲何種獎勵？",
+      "options": ["嘉獎", "獎金", "提前晉級", "休假"],
+      "answer": "嘉獎",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "77",
+      "question": "志願士兵服役期間可否兼職？",
+      "options": ["可", "不可", "經核准後可", "休假期間可"],
+      "answer": "不可",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "78",
+      "question": "志願士兵服役期間可否經商？",
+      "options": ["可", "經核准後可", "不可", "退伍後才可"],
+      "answer": "不可",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "79",
+      "question": "志願士兵服役期間若有重大違紀，可能之處分為？",
+      "options": ["禁足", "罰勤", "退伍", "警告"],
+      "answer": "退伍",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "80",
+      "question": "志願士兵如未依規定完成訓練課程者，處理方式為？",
+      "options": ["補訓", "延訓", "退訓", "罰勤"],
+      "answer": "退訓",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
       "number": "81",
       "question": "志願士兵服役滿幾年可晉升上士？",
       "options": ["3年", "5年", "7年", "9年"],
