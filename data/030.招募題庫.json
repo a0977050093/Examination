@@ -2,208 +2,1345 @@
   "subject_id": "recruit_exam",
   "subject_name": "招募員合格簽證測驗",
   "questions": [
-    {"id":1,"type":"true_false","question":"自108年起志願士兵報名資料需檢附國軍全民國防教育線上即測即評檢測成績單，列為特別加分項目，並應於報名截止日前檢附。","answer":"O"},
-    {"id":2,"type":"true_false","question":"凡參加國軍103年起各招募班隊智力測驗，或出具國軍智力測驗線上即測即評、國軍兵籍資料智力測驗成績（兵籍表須加蓋申請單位章戳），成績達90分以上者，得申請免予智力測驗。","answer":"X"},
-    {"id":3,"type":"true_false","question":"凡參加國軍102年起各招募班隊智力測驗，或出具國軍智力測驗線上即測即評、國軍兵籍資料智力測驗成績（兵籍表須加蓋申請單位章戳），成績達90分以上者，報考志願士兵得申請免予智力測驗。","answer":"O"},
-    {"id":4,"type":"true_false","question":"志願士兵體能測驗徒手跑步合格標準，男性1600公尺/10分30秒、女性800公尺/5分30秒。","answer":"O"},
-    {"id":5,"type":"true_false","question":"志願士兵體能測驗徒手跑步合格標準，男性1600公尺/11分30秒、女性800公尺/6分30秒。","answer":"X"},
-    {"id":6,"type":"true_false","question":"曾服志願士兵現役並申請不適服現役，或依陸海空軍懲罰法，經評審不適服志願士兵者，不得報考國家安全局。","answer":"O"},
-    {"id":7,"type":"true_false","question":"役男徵兵體檢被判定替代役或免役體位確定者，除身高、BMI、血色素濃度或扁平足足弓角等項目符合志願士兵體格基準可申請複檢外，其他不合格項目得直接判定為不合格體位。","answer":"X"},
-    {"id":8,"type":"true_false","question":"已服完常備兵義務役35歲以下且具學士以上學位者，可同時報考專業預備軍官、預備士官班。","answer":"O"},
-    {"id":9,"type":"true_false","question":"志願士兵體格基準身高男性：158公分至200公分、女性：155公分至195公分，BMI男性：17至31、女性：17至26。","answer":"X"},
-    {"id":10,"type":"true_false","question":"志願士兵體格基準身高男性：158公分至195公分、女性：155公分至185公分，BMI男性：17至31、女性：17至26。","answer":"O"},
-    {"id":11,"type":"true_false","question":"志願士兵體格基準身高男性：158公分至195公分、女性：155公分至185公分，BMI男性：17至30、女性：17至30。","answer":"X"},
-    {"id":12,"type":"true_false","question":"曾服志願士兵現役，因個人因素申請不適服現役，退伍未滿三年者，不得報名志願士兵。","answer":"O"},
-    {"id":13,"type":"true_false","question":"曾服志願士兵現役，因個人因素申請不適服現役，退伍未滿兩年者，不得報名志願士兵。","answer":"X"},
-    {"id":14,"type":"true_false","question":"志願士兵於基礎訓練期間因請假缺課超過訓練時間六分之一，應予退訓。","answer":"X"},
-    {"id":15,"type":"true_false","question":"志願士兵於基礎訓練期間因請假缺課超過訓練時間五分之一，應予退訓。","answer":"O"},
-    {"id":16,"type":"true_false","question":"志願士兵於基礎訓練期間因公假、事假、病假或其他事故缺課，其缺課時數分別計算超過訓練時間六分之一，應予退訓。","answer":"O"},
-    {"id":17,"type":"true_false","question":"志願士兵於基礎訓練期間因公假、事假、病假或其他事故缺課，其缺課時數分別計算超過訓練時間五分之一，應予退訓。","answer":"X"},
-    {"id":18,"type":"true_false","question":"志願士兵報名考生需繳交70元郵票，如因郵資不足導致無法如期收到准考證者，考生自行負責。","answer":"O"},
-    {"id":19,"type":"true_false","question":"自109年起志願士兵報名資料需檢附國軍全民國防教育線上即測即評檢測成績單，列為特別加分項目，並應於報名截止日前檢附。","answer":"X"},
-    {"id":20,"type":"true_false","question":"志願士兵基本薪資由本俸、專業加給及志願役加給組成，二兵35,320元，一兵37,040元，上等兵38,770元。","answer":"O"},
-    {"id":21,"type":"true_false","question":"志願士兵基本薪資二兵34,340元，一兵35,665元，上等兵37,995元。","answer":"X"},
-    {"id":22,"type":"true_false","question":"役男徵兵體檢被判定替代役或免役體位確定者，除身高、BMI、血色素濃度或扁平足足弓角符合志願士兵體格基準可申請複檢外，其他不合格項目得直接判定為不合格體位。","answer":"X"},
-    {"id":23,"type":"true_false","question":"役男徵兵體檢被判定替代役或免役體位確定者，除身高、BMI、血色素濃度、視力(不含弱視)或扁平足足弓角等項目符合志願士兵體格基準可申請複檢外，其餘不合格項目直接判定不合格體位。","answer":"O"},
-    {"id":24,"type":"true_false","question":"志願士兵錄取後報到若因病無法按時報到，可申請延後入營。","answer":"X"},
-    {"id":25,"type":"true_false","question":"國防部國軍人才招募中心客服專線為0800-000-050。","answer":"O"},
-    {"id":26,"type":"true_false","question":"常備兵後備役人員錄取志願士兵後，若專長一致，不須實施入伍訓練及專長訓練。","answer":"O"},
-    {"id":27,"type":"true_false","question":"志願士兵准考證遺失或毀損時，可自行列印或於考試當日提前30分鐘向服務台補發。","answer":"O"},
-    {"id":28,"type":"true_false","question":"大學儲備軍官訓練團學生於修業期間，得依意願轉為軍校正期班學生。","answer":"X"},
-    {"id":29,"type":"true_false","question":"未依規定完成入營報到手續或未繳交規定文件者，視同放棄錄取資格。","answer":"O"},
-    {"id":30,"type":"true_false","question":"體檢費用為新臺幣1,200元，由考生負擔，不得跨院重複辦理。","answer":"X"},
-    {"id":31,"type":"true_false","question":"體檢費用為新臺幣1,400元，由考生負擔，僅能擇一指定醫院檢查。","answer":"O"},
-    {"id":32,"type":"true_false","question":"大學儲備軍官訓練團招生管道分為自辦甄選、委託民校及國防培育班三種方式。","answer":"O"},
-    {"id":33,"type":"true_false","question":"大學儲備軍官訓練團招生管道僅有自辦甄選與委託民校兩種。","answer":"X"},
-    {"id":34,"type":"true_false","question":"志願士兵錄取後報到時可申請延後報到天數以3日為限。","answer":"X"},
-    {"id":35,"type":"true_false","question":"志願士兵錄取後報到時可申請延後報到天數以2日為限。","answer":"O"},
-    {"id":36,"type":"true_false","question":"同時具外國國籍者可先行參加志願役專業預備軍士官班，錄取後入營前須放棄外國國籍。","answer":"O"},
-    {"id":37,"type":"true_false","question":"14歲至18歲男性得以丙級技術士證報考中正預校。","answer":"X"},
-    {"id":38,"type":"true_false","question":"報考志願士兵國軍全民國防教育線上即測即評檢測成績列為特別加分項目，並應於報名截止日前檢附。","answer":"O"},
-    {"id":39,"type":"true_false","question":"報考志願士兵加分項目應於准考證寄發日前檢附。","answer":"X"},
-    {"id":40,"type":"true_false","question":"志願士兵甄選簡章明訂自費體檢表一年內有效，依檢查當日起算至報名截止日止。","answer":"X"},
-    {"id":41,"type":"true_false","question":"志願士兵甄選簡章明訂自費體檢表一年內有效，依檢查當日起算至報名起始日止。","answer":"O"},
-    {"id":42,"type":"true_false","question":"國外軍校畢業返國人員以少尉任官，服現役10年。","answer":"X"},
-    {"id":43,"type":"true_false","question":"國外軍校畢業返國人員以少尉任官，服現役14年。","answer":"O"},
-    {"id":44,"type":"true_false","question":"曾服志願士兵現役者，服役滿7年且考績未達甲等者不得報考。","answer":"O"},
-    {"id":45,"type":"true_false","question":"曾服志願士兵現役者，服役滿3年且考績未達甲等者不得報考。","answer":"X"},
-    {"id":46,"type":"true_false","question":"軍校正期班、士官二專班屬於國軍就業班隊。","answer":"X"},
-    {"id":47,"type":"true_false","question":"專業軍、士官班及志願士兵屬於國軍就學班隊。","answer":"O"},
-    {"id":48,"type":"true_false","question":"具學士以上學位者僅能報名一個班隊，不可同時報考軍官、士官班。","answer":"X"},
-    {"id":49,"type":"true_false","question":"具有副學士學位者僅能報考專業預備士官班。","answer":"O"},
-    {"id":50,"type":"true_false","question":"考生如接獲入營徵集令，可持志願役准考證向兵役單位辦理延期徵集。","answer":"O"},
-    {"id":51,"type":"true_false","question":"志願士兵若未轉服士官，則僅能服役10年；轉服士官後最多可服役20年。","answer":"X"},
-    {"id":52,"type":"true_false","question":"具學士以上學位可同時報考志願役專業軍官、士官班，並同時可選填軍官、士官各16個志願。","answer":"O"},
-    {"id":53,"type":"true_false","question":"志願士兵考試項目為智力測驗、體能測驗、身心評量測驗、口試及性向測驗。","answer":"X"},
-    {"id":54,"type":"true_false","question":"在營人員及在訓新兵智力測驗未超過100分者一律不得報名志願士兵。","answer":"X"},
-    {"id":55,"type":"true_false","question":"飛行常備軍官班招生對象需年滿21至27歲並具學士學位。","answer":"O"},
-    {"id":56,"type":"true_false","question":"經戶籍地徵兵檢查委員會判定為體位未定者，均不得報考志願士兵。","answer":"O"},
-    {"id":57,"type":"true_false","question":"曾任軍、士官或警察學校畢業並授予預備軍官或預備士官適任證書者，不得報考志願士兵。","answer":"O"},
-    {"id":58,"type":"true_false","question":"報考志願役專業軍、士官已完成自費體檢合格時，可用於報名志願士兵。","answer":"O"},
-    {"id":59,"type":"true_false","question":"參加志願役專業預備軍官預備士官班考試，凡任何一科缺考者不得繼續參加爾後各科測驗。","answer":"O"},
-    {"id":60,"type":"true_false","question":"徵兵體檢超過1年者，不需辦理自費體檢即可報考志願士兵。","answer":"X"},
-    {"id":61,"type":"true_false","question":"報考志願士兵班隊，軍種選填中海巡署、國安局均屬單一軍種。","answer":"O"},
-    {"id":62,"type":"true_false","question":"未取得畢業證書之大學四年級學生可用同等學歷報考專業預備軍官班。","answer":"X"},
-    {"id":63,"type":"true_false","question":"報考國軍士官二專班，智力測驗未超過100分者一律不得報考。","answer":"O"},
-    {"id":64,"type":"true_false","question":"具專科以上學位者，不可同時報考空軍航空技術學院二技班與專業預備士官班。","answer":"X"},
-    {"id":65,"type":"true_false","question":"大學儲備軍官訓練團甄選學歷為就讀國內公私立大學四年制二年級或五年制三年級之男性學生。","answer":"X"},
-    {"id":66,"type":"true_false","question":"志願役專業預備軍士官班考選地點分設於北中南三個考區同時舉行。","answer":"O"},
-    {"id":67,"type":"true_false","question":"大學儲備軍官訓練團學生畢業後欲攻讀碩士班得申請資格保留。","answer":"X"},
-    {"id":68,"type":"true_false","question":"報考志願士兵之軍樂兵專長測驗總成績未達80分(含)以上者不予錄取。","answer":"O"},
-    {"id":69,"type":"true_false","question":"報考志願士兵之軍樂兵專長測驗總成績未達60分(含)以上者不予錄取。","answer":"X"},
-    {"id":70,"type":"true_false","question":"國防醫學院醫學系、牙醫學系、藥學系修業時間為6年。","answer":"O"},
-    {"id":71,"type":"true_false","question":"國防醫學院醫學系、牙醫學系、藥學系修業時間為7年。","answer":"X"},
-    {"id":72,"type":"true_false","question":"國防醫學院護理學系、公共衛生學系修業時間為4年。","answer":"O"},
-    {"id":73,"type":"true_false","question":"志願士兵基本薪資由本俸、專業加給及志願役加給組成，二兵33,625元，上兵37,845元。","answer":"X"},
-    {"id":74,"type":"true_false","question":"報考志願士兵，自費體檢表可跨年使用一年。","answer":"O"},
-    {"id":75,"type":"true_false","question":"女性青年報考志願士兵，身高須在150至200公分之間，BMI須在17至26之間。","answer":"X"},
-    {"id":76,"type":"true_false","question":"報考軍事學校正期班學歷必須高中(職)，考試科目含國文、英文、數學、體能測驗、口試及身心評量。","answer":"X"},
-    {"id":77,"type":"true_false","question":"志願士兵考試項目為智力測驗、體能測驗、身心評量測驗、口試及性向測驗。","answer":"X"},
-    {"id":78,"type":"true_false","question":"考生若因郵資不足或地址填寫不清，導致無法收到准考證或錄取通知單，須自行負責。","answer":"O"},
-    {"id":79,"type":"true_false","question":"志願士兵如因適應不良，依退場機制須服務滿3個月後方可申請解除志願役役期。","answer":"O"},
-    {"id":80,"type":"true_false","question":"常備兵後備役人員錄取志願士兵時，若專長不符仍須接受專長訓練。","answer":"O"},
-    {"id":81,"type":"true_false","question":"已服完常備兵義務役30歲以下且具學士以上學位者，可同時報考專業預備軍官及軍情局專業軍官班。","answer":"O"},
-    {"id":82,"type":"true_false","question":"曾任軍、士官或警察大學畢業者不得報考志願士兵。","answer":"O"},
-    {"id":83,"type":"true_false","question":"考生受檢時應誠實告知病史，若隱瞞導致入伍後復發不符基準，將退訓。","answer":"O"},
-    {"id":84,"type":"true_false","question":"志願役專業預備軍官須服滿法定役期5年，志願役專業預備士官則為4年。","answer":"X"},
-    {"id":85,"type":"true_false","question":"報考志願役專業軍官班隊，滿20歲之計算以考試日為依據。","answer":"X"},
-    {"id":86,"type":"true_false","question":"應屆畢業考生報名志願士兵班時可憑高三體育成績免體能測驗。","answer":"X"},
-    {"id":87,"type":"true_false","question":"海軍義務役退伍者報考志願士兵時可選擇其他軍種。","answer":"O"},
-    {"id":88,"type":"true_false","question":"報考專業預備軍官、士官班男性身高須160~195公分或152~200公分，志願士兵男性須150~200公分。","answer":"X"},
-    {"id":89,"type":"true_false","question":"具高普考合格證書者加總分10分；具普考證書者加總分5分。","answer":"X"},
-    {"id":90,"type":"true_false","question":"具高普考合格證書者加總分20分；具普考證書者加總分10分。","answer":"O"},
-    {"id":91,"type":"true_false","question":"報考專業預備軍官預備士官班，智力測驗未超過100分者一律不得報考。","answer":"O"},
-    {"id":92,"type":"true_false","question":"考生視力檢查前不可戴隱形眼鏡或角膜塑型片以避免干擾檢測。","answer":"O"},
-    {"id":93,"type":"true_false","question":"報考志願士兵班隊軍種選填中電展室、海巡署、國安局均屬單一軍種。","answer":"X"},
-    {"id":94,"type":"true_false","question":"大學儲備軍官訓練團須服役5年，志願役專業預備士官則為4年。","answer":"X"},
-    {"id":95,"type":"true_false","question":"報考軍事學校正期班已完成自費體檢合格時，可用於報名國軍士官二專班。","answer":"O"},
-    {"id":96,"type":"true_false","question":"報考志願士兵時未滿20歲者須檢具法定代理人同意書。","answer":"X"},
-    {"id":97,"type":"true_false","question":"志願士兵體格檢查心電圖異常確定為不合格體位者，仍得複檢。","answer":"X"},
-    {"id":98,"type":"true_false","question":"考生接獲徵集令可持具監考官用印的准考證向兵役單位辦理延期徵集。","answer":"O"},
-    {"id":99,"type":"true_false","question":"報考國軍士官二專班，智力測驗未達100分者一律不得錄取。","answer":"O"},
-    {"id":100,"type":"true_false","question":"志願士兵體能測驗徒手跑步合格標準男性1600公尺10分30秒，女性800公尺5分30秒。","answer":"O"},
-
-    
-    {"id":1,"type":"single_choice","question":"考生應試時須攜帶身分證明文件，下列何項為非？","options":["國民身分證","有效期限之駕照或護照","有照片且有註冊章之學生證","貼有照片之健保IC卡"],"answer":3},
-    {"id":2,"type":"single_choice","question":"下列何階段，志願士兵親屬不適用現役軍人眷屬之各項福利優待事項？","options":["基礎訓練期間","任志願役二等兵期間","任志願役上等兵期間","轉服志願役士官後"],"answer":1},
-    {"id":3,"type":"single_choice","question":"志願士兵鑑測科目何者為非？","options":["智力測驗","身心評量","徒手跑步","口試"],"answer":2},
-    {"id":4,"type":"single_choice","question":"志願士兵考試入場時間，遲到幾分鐘後不得入場？","options":["20分鐘","15分鐘","10分鐘","5分鐘"],"answer":1},
-    {"id":5,"type":"single_choice","question":"報考志願士兵之未役考生應至何處辦理兵役體位查核？","options":["戶籍地鄉鎮市公所","各地區體檢醫院","各地區招募站","以上皆非"],"answer":4},
-    {"id":6,"type":"single_choice","question":"報考志願士兵需繳交的資料，下列何者非？","options":["戶口名簿影本","學歷證明文件","身分證影本","徵兵體檢表"],"answer":1},
-    {"id":7,"type":"single_choice","question":"香港及澳門地區人民須設有戶籍滿幾年，才可報考專業預備軍官預備士官班？","options":["5年","10年","15年","20年"],"answer":2},
-    {"id":8,"type":"single_choice","question":"大陸地區人民須設有戶籍滿幾年，才可報考專業預備軍官預備士官班？","options":["5年","10年","15年","20年"],"answer":4},
-    {"id":9,"type":"single_choice","question":"國軍士官二專班畢業後以下士任官，服常備士官現役最少年限幾年？","options":["7年","6年","5年","4年"],"answer":2},
-    {"id":10,"type":"single_choice","question":"志願役士兵轉服下士後最大服役年限為？","options":["20年","10年","45歲","50歲"],"answer":4},
-    {"id":11,"type":"single_choice","question":"報考志願士兵成績複查需傳真至何單位？","options":["國防部","國軍人才招募中心","國軍志願士兵甄選會","以上皆是"],"answer":3},
-    {"id":12,"type":"single_choice","question":"准考證遺失或毀損時得於考試當日首節前幾分鐘憑證件辦理補發？","options":["30分鐘","20分鐘","15分鐘","10分鐘"],"answer":1},
-    {"id":13,"type":"single_choice","question":"報考志願士兵，女生BMI值合格標準範圍何者為非？","options":["16","18","19","26"],"answer":1},
-    {"id":14,"type":"single_choice","question":"報考志願士兵，男生BMI值合格標準範圍何者為非？","options":["17","18","19","32"],"answer":4},
-    {"id":15,"type":"single_choice","question":"大學儲備軍官訓練團招生管道有幾種方式？","options":["自辦甄選","委託民校","國防培育班","以上皆是"],"answer":4},
-    {"id":16,"type":"single_choice","question":"報考大學儲備軍官訓練團，港澳地區人民須設有戶籍滿幾年？","options":["5年","10年","15年","20年"],"answer":2},
-    {"id":17,"type":"single_choice","question":"報考大學儲備軍官訓練團，大陸地區人民須設有戶籍滿幾年？","options":["5年","10年","15年","20年"],"answer":4},
-    {"id":18,"type":"single_choice","question":"報考年度志願士兵，體檢表跨年度可適用期限為何？","options":["6個月","1年","8個月","10個月"],"answer":2},
-    {"id":19,"type":"single_choice","question":"志願士兵受訓期間缺課合併計算超過訓練計畫所定時間幾分之一應退訓？","options":["1/6","1/5","1/4","1/3"],"answer":2},
-    {"id":20,"type":"single_choice","question":"志願士兵受訓期間缺課時數分別計算超過訓練時間幾分之一應退訓？","options":["1/6","1/5","1/4","1/3"],"answer":1},
-    {"id":21,"type":"single_choice","question":"報考志願士兵男性體能測驗項目為何？","options":["仰臥起坐","徒手跑步1600公尺","引體向上","伏地挺身"],"answer":2},
-    {"id":22,"type":"single_choice","question":"報考志願士兵女性體能測驗項目為何？","options":["仰臥起坐","徒手跑步800公尺","引體向上","伏地挺身"],"answer":2},
-    {"id":23,"type":"single_choice","question":"辦理志願再入營應向何單位申辦？","options":["各軍種司令部","縣市後備指揮部","戶籍地公所","國軍人才招募中心"],"answer":2},
-    {"id":24,"type":"single_choice","question":"報考志願士兵智力測驗項目遲到幾分鐘以上即不得入場？","options":["5分鐘","10分鐘","15分鐘","20分鐘"],"answer":4},
-    {"id":25,"type":"single_choice","question":"志願士兵在營服役自晉任上等兵起可服現役最大年限為？","options":["15年","10年","6年","5年"],"answer":2},
-    {"id":26,"type":"single_choice","question":"志願士兵報名考生需繳交郵票幾元？","options":["60元","65元","70元","105元"],"answer":4},
-    {"id":27,"type":"single_choice","question":"曾服志願士兵現役退伍未滿幾年不得報考志願士兵？","options":["1年","3年","5年","7年"],"answer":2},
-    {"id":28,"type":"single_choice","question":"曾服志願士兵現役者服役滿幾年且考績未達甲等不得報考？","options":["1年","3年","5年","7年"],"answer":4},
-    {"id":29,"type":"single_choice","question":"報名志願士兵延期徵集證明書以幾次為限？","options":["1次","2次","3次","4次"],"answer":2},
-    {"id":30,"type":"single_choice","question":"報考志願士兵未滿20歲者須檢具同意書，年齡計算至何日？","options":["通信報名截止日","考試當日","核發准考證日","入營報到日"],"answer":2},
-    {"id":31,"type":"single_choice","question":"報考軍情局專業預備軍官班初試科目何者為非？","options":["國文","英文","數學","專業科目"],"answer":4},
-    {"id":32,"type":"single_choice","question":"大學儲備軍官訓練團學生修習期間每月生活費補助幾元？","options":["5,000元","8,000元","10,000元","12,000元"],"answer":4},
-    {"id":33,"type":"single_choice","question":"大學儲備軍官訓練團屬於何種班隊？","options":["就學班隊","就業班隊","其他班隊","以上皆非"],"answer":3},
-    {"id":34,"type":"single_choice","question":"國防醫學院醫學系軍費生畢業後服現役最少年限？","options":["8年","10年","12年","14年"],"answer":4},
-    {"id":35,"type":"single_choice","question":"大學儲備軍官訓練團書籍文具費每學期補助幾元？","options":["8,000元","6,000元","5,000元","4,000元"],"answer":3},
-    {"id":36,"type":"single_choice","question":"社會青年入伍訓期為多久？","options":["16週","12週","8週","4週"],"answer":3},
-    {"id":37,"type":"single_choice","question":"具學士以上學位可同時報考志願役專業軍官、士官班各可選幾個志願？","options":["32個","16個","12個","8個"],"answer":2},
-    {"id":38,"type":"single_choice","question":"具副學士可報考志願役專業士官班，可選填幾個志願？","options":["16個","8個","4個","2個"],"answer":1},
-    {"id":39,"type":"single_choice","question":"志願士兵鑑測科目為何？","options":["智力測驗","口試","體能測驗","以上皆是"],"answer":4},
-    {"id":40,"type":"single_choice","question":"專業預備軍、士官班測驗項目何者為是？","options":["國文","數學","英文","口試"],"answer":4},
-    {"id":41,"type":"single_choice","question":"港澳及大陸地區來台者須設籍滿幾年以上得報考志願士兵？","options":["10年","15年","20年","5年"],"answer":3},
-    {"id":42,"type":"single_choice","question":"智力測驗實際測驗時間為？","options":["80分鐘","70分鐘","60分鐘","50分鐘"],"answer":4},
-    {"id":43,"type":"single_choice","question":"志願士兵考試成績公布後可複查哪一項？","options":["智力測驗","身心評量","口試","體能測驗"],"answer":4},
-    {"id":44,"type":"single_choice","question":"下列何者不具報考志願士兵資格？","options":["私立普通高中畢業","國立高中肄業且修滿2年離校達2年","私立高職肄業修滿三年級上學期離校6個月","私立高職肄業修滿夜間部四年級上學期離校1年"],"answer":4},
-    {"id":45,"type":"single_choice","question":"國軍各項口試測驗內容以下何者非？","options":["家庭狀況","學習過程","一般常識","經濟來源"],"answer":4},
-    {"id":46,"type":"single_choice","question":"志願士兵報考事項何者為非？","options":["年齡18至32歲","限報同一軍種","成績複查僅限體能及軍樂兵測驗","錄取常備兵後備役免接受入伍訓練"],"answer":3},
-    {"id":47,"type":"single_choice","question":"報考志願士兵之軍樂兵專長測驗未達幾分(含)以上不予錄取？","options":["80分","70分","60分","50分"],"answer":1},
-    {"id":48,"type":"single_choice","question":"下列何種情形者不得報考專業預備軍官預備士官班？","options":["曾就讀軍事學校品德退學未滿3年","港澳設籍未滿10年","女性士官退伍未納入後備役","以上皆是"],"answer":4},
-    {"id":49,"type":"single_choice","question":"報考專業預備軍官預備士官班年齡限制為何？","options":["18至26歲","20至26歲","20至32歲","20至35歲"],"answer":3},
-    {"id":50,"type":"single_choice","question":"專業預備軍官、士官班考選內容何者為是？","options":["國文","英文","作文","以上皆不考"],"answer":4},
-    {"id":51,"type":"single_choice","question":"下列哪一項不屬於志願士兵報名需檢附之文件？","options":["身分證正反面影本","學歷證明文件","體檢合格表","出生證明書"],"answer":4},
-    {"id":52,"type":"single_choice","question":"報考志願士兵身高體重基準中，男性最低身高為？","options":["155公分","158公分","160公分","162公分"],"answer":2},
-    {"id":53,"type":"single_choice","question":"志願士兵錄取報到延後以幾日為限？","options":["1日","2日","3日","4日"],"answer":2},
-    {"id":54,"type":"single_choice","question":"志願士兵報考加分項目之全民國防教育線上即測即評檢測成績須於何時檢附？","options":["報名截止日前","考試當日","考試後複查日","報到當日"],"answer":1},
-    {"id":55,"type":"single_choice","question":"報考志願士兵所需體檢表有效期限為？","options":["半年","一年","兩年","不限"],"answer":2},
-    {"id":56,"type":"single_choice","question":"志願士兵錄取報到若未依規定完成手續或文件不全者，將？","options":["得補件入營","依情節酌處","視同放棄錄取","退回原單位"],"answer":3},
-    {"id":57,"type":"single_choice","question":"志願士兵如因病無法按時報到，應？","options":["可申請延後入營","須放棄資格","自行決定報到日","由家屬代理報到"],"answer":2},
-    {"id":58,"type":"single_choice","question":"志願士兵錄取後報到需攜帶何者？","options":["准考證","錄取通知書","身分證","以上皆是"],"answer":4},
-    {"id":59,"type":"single_choice","question":"志願士兵基礎訓練期間，缺課超過訓練時間幾分之一者退訓？","options":["六分之一","五分之一","四分之一","三分之一"],"answer":2},
-    {"id":60,"type":"single_choice","question":"曾服志願士兵現役並申請不適服現役退伍未滿幾年不得報考？","options":["一年","兩年","三年","五年"],"answer":3},
-    {"id":61,"type":"single_choice","question":"志願士兵二兵基本薪資為？","options":["33,625元","35,320元","37,040元","38,770元"],"answer":2},
-    {"id":62,"type":"single_choice","question":"志願士兵上等兵基本薪資為？","options":["35,320元","37,040元","38,770元","39,500元"],"answer":3},
-    {"id":63,"type":"single_choice","question":"志願士兵如請假缺課超過訓練時間幾分之一應退訓？","options":["五分之一","六分之一","七分之一","八分之一"],"answer":1},
-    {"id":64,"type":"single_choice","question":"志願士兵身高體格基準女性範圍為？","options":["150-190公分","155-185公分","155-195公分","158-195公分"],"answer":2},
-    {"id":65,"type":"single_choice","question":"志願士兵BMI女性範圍為？","options":["17-26","17-28","18-28","16-26"],"answer":1},
-    {"id":66,"type":"single_choice","question":"志願士兵BMI男性範圍為？","options":["17-28","17-30","17-31","18-31"],"answer":3},
-    {"id":67,"type":"single_choice","question":"國防部國軍人才招募中心客服專線為？","options":["0800-000-005","0800-000-050","0800-050-000","0800-005-000"],"answer":2},
-    {"id":68,"type":"single_choice","question":"常備兵後備役錄取志願士兵後若專長一致，是否需訓練？","options":["需全程訓練","可免訓","僅須補訓專長","依單位決定"],"answer":2},
-    {"id":69,"type":"single_choice","question":"志願士兵考試項目為？","options":["智力測驗、體能測驗、口試","智力測驗、體能測驗、身心評量測驗","智力測驗、體能測驗、專業測驗","智力測驗、身心評量測驗、專業測驗"],"answer":2},
-    {"id":70,"type":"single_choice","question":"考生准考證遺失補發需提前幾分鐘？","options":["10分鐘","15分鐘","20分鐘","30分鐘"],"answer":4},
-    {"id":71,"type":"single_choice","question":"志願士兵錄取報到若專長不符，應？","options":["補訓專長","免訓","重新分發","改服士官"],"answer":1},
-    {"id":72,"type":"single_choice","question":"女性報考志願士兵最低身高為？","options":["150公分","152公分","155公分","158公分"],"answer":3},
-    {"id":73,"type":"single_choice","question":"男性報考志願士兵最低身高為？","options":["155公分","156公分","158公分","160公分"],"answer":3},
-    {"id":74,"type":"single_choice","question":"報考志願士兵體檢費用為？","options":["1,200元","1,300元","1,400元","1,500元"],"answer":3},
-    {"id":75,"type":"single_choice","question":"報考志願士兵自費體檢表有效期限為？","options":["6個月","8個月","10個月","12個月"],"answer":4},
-    {"id":76,"type":"single_choice","question":"志願士兵報考郵票金額為？","options":["60元","65元","70元","75元"],"answer":3},
-    {"id":77,"type":"single_choice","question":"志願士兵報名年齡限制為？","options":["18-28歲","18-30歲","18-32歲","18-35歲"],"answer":3},
-    {"id":78,"type":"single_choice","question":"志願士兵成績複查項目為？","options":["智力測驗","體能測驗","口試","筆試"],"answer":2},
-    {"id":79,"type":"single_choice","question":"志願士兵若因病無法報到者，應如何處理？","options":["可申請延後入營","自動放棄錄取","補報次梯","由招募中心決議"],"answer":2},
-    {"id":80,"type":"single_choice","question":"志願士兵若請假缺課超過訓練時間幾分之一者退訓？","options":["五分之一","六分之一","七分之一","八分之一"],"answer":1},
-    {"id":81,"type":"single_choice","question":"志願士兵女性體能測驗項目為？","options":["800公尺徒手跑步","伏地挺身","仰臥起坐","引體向上"],"answer":1},
-    {"id":82,"type":"single_choice","question":"志願士兵男性體能測驗項目為？","options":["1600公尺徒手跑步","仰臥起坐","伏地挺身","引體向上"],"answer":1},
-    {"id":83,"type":"single_choice","question":"志願士兵智力測驗成績達幾分以上可申請免測？","options":["80分","85分","90分","95分"],"answer":3},
-    {"id":84,"type":"single_choice","question":"志願士兵考試遲到幾分鐘不得入場？","options":["5分鐘","10分鐘","15分鐘","20分鐘"],"answer":4},
-    {"id":85,"type":"single_choice","question":"志願士兵成績複查須傳真至哪個單位？","options":["國防部","國軍人才招募中心","國軍志願士兵甄選會","以上皆非"],"answer":3},
-    {"id":86,"type":"single_choice","question":"志願士兵報名所附全民國防教育線上成績為何性質？","options":["加分項目","必備項目","資格條件","體測項目"],"answer":1},
-    {"id":87,"type":"single_choice","question":"志願士兵報到攜帶物品何者非必要？","options":["身分證","錄取通知書","健保卡","戶口名簿"],"answer":4},
-    {"id":88,"type":"single_choice","question":"報考志願士兵女性BMI合格範圍為？","options":["17-26","18-26","17-28","18-28"],"answer":1},
-    {"id":89,"type":"single_choice","question":"報考志願士兵男性BMI合格範圍為？","options":["17-30","17-31","18-30","18-31"],"answer":2},
-    {"id":90,"type":"single_choice","question":"志願士兵基本薪資由哪三部分組成？","options":["本俸、專業加給、志願役加給","本俸、津貼、專業加給","專業加給、伙食費、志願役加給","本俸、年功俸、津貼"],"answer":1},
-    {"id":91,"type":"single_choice","question":"志願士兵報考需附上全民國防教育檢測成績單，其用途為？","options":["加分項目","資格審查","健康評估","體能成績"],"answer":1},
-    {"id":92,"type":"single_choice","question":"志願士兵報到延後申請以幾天為限？","options":["1天","2天","3天","5天"],"answer":2},
-    {"id":93,"type":"single_choice","question":"志願士兵智力測驗時間為？","options":["60分鐘","70分鐘","80分鐘","90分鐘"],"answer":1},
-    {"id":94,"type":"single_choice","question":"志願士兵體能測驗標準男性1600公尺應在幾分幾秒內完成？","options":["9分30秒","10分30秒","11分30秒","12分"],"answer":2},
-    {"id":95,"type":"single_choice","question":"志願士兵體能測驗標準女性800公尺應在幾分幾秒內完成？","options":["4分30秒","5分","5分30秒","6分"],"answer":3},
-    {"id":96,"type":"single_choice","question":"志願士兵基礎訓練缺課超過訓練時間幾分之一應退訓？","options":["五分之一","六分之一","七分之一","八分之一"],"answer":1},
-    {"id":97,"type":"single_choice","question":"志願士兵錄取後若專長一致，是否需再訓？","options":["須再訓","免訓","改分軍種","視單位需求"],"answer":2},
-    {"id":98,"type":"single_choice","question":"志願士兵受訓期間缺課超過訓練時間五分之一應？","options":["退訓","警告","補課","不影響"],"answer":1},
-    {"id":99,"type":"single_choice","question":"志願士兵報到若文件不齊將？","options":["退件補交","延後報到","視同放棄錄取","由單位核准"],"answer":3},
-    {"id":100,"type":"single_choice","question":"志願士兵如因個人因素退訓，退伍未滿幾年不得報考？","options":["1年","2年","3年","5年"],"answer":3}
+    {
+      "type": "true_false",
+      "number": "易1",
+      "question": "自108年起志願士兵報名資料需檢附國軍全民國防教育線上即測即評檢測成績單，列為特別加分項目，並應於報名截止日前檢附。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易2",
+      "question": "凡參加國軍103年起各招募班隊智力測驗，或出具國軍智力測驗線上即測即評、國軍兵籍資料智力測驗成績（兵籍表須加蓋申請單位章戳），成績達90分以上者，得申請免予智力測驗。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易3",
+      "question": "凡參加國軍102年起各招募班隊智力測驗，或出具國軍智力測驗線上即測即評、國軍兵籍資料智力測驗成績（兵籍表須加蓋申請單位章戳），成績達90分以上者，報考志願士兵得申請免予智力測驗。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易4",
+      "question": "志願士兵體能測驗徒手跑步合格標準，男性1600公尺/10分30秒、女性800公尺/5分30秒。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易5",
+      "question": "志願士兵體能測驗徒手跑步合格標準，男性1600公尺/11分30秒、女性800公尺/6分30秒。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易6",
+      "question": "曾服志願士兵現役並申請不適服現役，或依陸海空軍懲罰法，經評審不適服志願士兵者，不得報考國家安全局。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易7",
+      "question": "役男徵兵體檢被判定替代役或免役體位確定者，除身高、BMI、血色素濃度或扁平足足弓角等項目符合志願士兵體格基準可申請複檢外，其他不合格項目得直接判定為不合格體位。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易8",
+      "question": "已服完常備兵義務役35歲以下且具學士以上學位者，可同時報考專業預備軍官、預備士官班。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易9",
+      "question": "志願士兵體格基準身高男性：158公分至200公分、女性：155公分至195公分，BMI男性：17至31、女性：17至26。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易10",
+      "question": "志願士兵體格基準身高男性：158公分至195公分、女性：155公分至185公分，BMI男性：17至31、女性：17至26。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易11",
+      "question": "志願士兵體格基準身高男性：158公分至195公分、女性：155公分至185公分，BMI男性：17至30、女性：17至30。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易12",
+      "question": "曾服志願士兵現役，因個人因素申請不適服現役，退伍未滿三年者，不得報名志願士兵。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易13",
+      "question": "曾服志願士兵現役，因個人因素申請不適服現役，退伍未滿兩年者，不得報名志願士兵。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易14",
+      "question": "志願士兵於基礎訓練期間因請假缺課超過訓練時間六分之一，應予退訓。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易15",
+      "question": "志願士兵於基礎訓練期間因請假缺課超過訓練時間五分之一，應予退訓。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易16",
+      "question": "志願士兵於基礎訓練期間因公假、事假、病假或其他事故缺課，其缺課時數分別計算超過訓練時間六分之一，應予退訓。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易17",
+      "question": "志願士兵於基礎訓練期間因公假、事假、病假或其他事故缺課，其缺課時數分別計算超過訓練時間五分之一，應予退訓。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易18",
+      "question": "志願士兵報名考生需繳交70元郵票，如因郵資不足導致無法如期收到准考證者，考生自行負責。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易19",
+      "question": "自109年起志願士兵報名資料需檢附國軍全民國防教育線上即測即評檢測成績單，列為特別加分項目，並應於報名截止日前檢附。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易20",
+      "question": "志願士兵基本薪資由本俸、專業加給及志願役加給組成，二兵35,320元，一兵37,040元，上等兵38,770元。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易21",
+      "question": "志願士兵基本薪資二兵34,340元，一兵35,665元，上等兵37,995元。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易22",
+      "question": "役男徵兵體檢被判定替代役或免役體位確定者，除身高、BMI、血色素濃度或扁平足足弓角符合志願士兵體格基準可申請複檢外，其他不合格項目得直接判定為不合格體位。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易23",
+      "question": "役男徵兵體檢被判定替代役或免役體位確定者，除身高、BMI、血色素濃度、視力(不含弱視)或扁平足足弓角等項目符合志願士兵體格基準可申請複檢外，其餘不合格項目直接判定不合格體位。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易24",
+      "question": "志願士兵錄取後報到若因病無法按時報到，可申請延後入營。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易25",
+      "question": "國防部國軍人才招募中心客服專線為0800-000-050。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易26",
+      "question": "常備兵後備役人員錄取志願士兵後，若專長一致，不須實施入伍訓練及專長訓練。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易27",
+      "question": "志願士兵准考證遺失或毀損時，可自行列印或於考試當日提前30分鐘向服務台補發。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易28",
+      "question": "大學儲備軍官訓練團學生於修業期間，得依意願轉為軍校正期班學生。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易29",
+      "question": "未依規定完成入營報到手續或未繳交規定文件者，視同放棄錄取資格。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易30",
+      "question": "體檢費用為新臺幣1,200元，由考生負擔，不得跨院重複辦理。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易31",
+      "question": "體檢費用為新臺幣1,400元，由考生負擔，僅能擇一指定醫院檢查。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易32",
+      "question": "大學儲備軍官訓練團招生管道分為自辦甄選、委託民校及國防培育班三種方式。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易33",
+      "question": "大學儲備軍官訓練團招生管道僅有自辦甄選與委託民校兩種。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易34",
+      "question": "志願士兵錄取後報到時可申請延後報到天數以3日為限。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易35",
+      "question": "志願士兵錄取後報到時可申請延後報到天數以2日為限。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易36",
+      "question": "同時具外國國籍者可先行參加志願役專業預備軍士官班，錄取後入營前須放棄外國國籍。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易37",
+      "question": "14歲至18歲男性得以丙級技術士證報考中正預校。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易38",
+      "question": "報考志願士兵國軍全民國防教育線上即測即評檢測成績列為特別加分項目，並應於報名截止日前檢附。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易39",
+      "question": "報考志願士兵加分項目應於准考證寄發日前檢附。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易40",
+      "question": "志願士兵甄選簡章明訂自費體檢表一年內有效，依檢查當日起算至報名截止日止。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易41",
+      "question": "志願士兵甄選簡章明訂自費體檢表一年內有效，依檢查當日起算至報名起始日止。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易42",
+      "question": "國外軍校畢業返國人員以少尉任官，服現役10年。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易43",
+      "question": "國外軍校畢業返國人員以少尉任官，服現役14年。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易44",
+      "question": "曾服志願士兵現役者，服役滿7年且考績未達甲等者不得報考。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易45",
+      "question": "曾服志願士兵現役者，服役滿3年且考績未達甲等者不得報考。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易46",
+      "question": "軍校正期班、士官二專班屬於國軍就業班隊。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易47",
+      "question": "專業軍、士官班及志願士兵屬於國軍就學班隊。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易48",
+      "question": "具學士以上學位者僅能報名一個班隊，不可同時報考軍官、士官班。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易49",
+      "question": "具有副學士學位者僅能報考專業預備士官班。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易50",
+      "question": "考生如接獲入營徵集令，可持志願役准考證向兵役單位辦理延期徵集。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易51",
+      "question": "志願士兵若未轉服士官，則僅能服役10年；轉服士官後最多可服役20年。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易52",
+      "question": "具學士以上學位可同時報考志願役專業軍官、士官班，並同時可選填軍官、士官各16個志願。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易53",
+      "question": "志願士兵考試項目為智力測驗、體能測驗、身心評量測驗、口試及性向測驗。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易54",
+      "question": "在營人員及在訓新兵智力測驗未超過100分者一律不得報名志願士兵。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易55",
+      "question": "飛行常備軍官班招生對象需年滿21至27歲並具學士學位。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易56",
+      "question": "經戶籍地徵兵檢查委員會判定為體位未定者，均不得報考志願士兵。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易57",
+      "question": "曾任軍、士官或警察學校畢業並授予預備軍官或預備士官適任證書者，不得報考志願士兵。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易58",
+      "question": "報考志願役專業軍、士官已完成自費體檢合格時，可用於報名志願士兵。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易59",
+      "question": "參加志願役專業預備軍官預備士官班考試，凡任何一科缺考者不得繼續參加爾後各科測驗。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易60",
+      "question": "徵兵體檢超過1年者，不需辦理自費體檢即可報考志願士兵。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易61",
+      "question": "報考志願士兵班隊，軍種選填中海巡署、國安局均屬單一軍種。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易62",
+      "question": "未取得畢業證書之大學四年級學生可用同等學歷報考專業預備軍官班。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易63",
+      "question": "報考國軍士官二專班，智力測驗未超過100分者一律不得報考。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易64",
+      "question": "具專科以上學位者，不可同時報考空軍航空技術學院二技班與專業預備士官班。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易65",
+      "question": "大學儲備軍官訓練團甄選學歷為就讀國內公私立大學四年制二年級或五年制三年級之男性學生。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易66",
+      "question": "志願役專業預備軍士官班考選地點分設於北中南三個考區同時舉行。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易67",
+      "question": "大學儲備軍官訓練團學生畢業後欲攻讀碩士班得申請資格保留。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易68",
+      "question": "報考志願士兵之軍樂兵專長測驗總成績未達80分(含)以上者不予錄取。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易69",
+      "question": "報考志願士兵之軍樂兵專長測驗總成績未達60分(含)以上者不予錄取。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易70",
+      "question": "國防醫學院醫學系、牙醫學系、藥學系修業時間為6年。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易71",
+      "question": "國防醫學院醫學系、牙醫學系、藥學系修業時間為7年。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易72",
+      "question": "國防醫學院護理學系、公共衛生學系修業時間為4年。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易73",
+      "question": "志願士兵基本薪資由本俸、專業加給及志願役加給組成，二兵33,625元，上兵37,845元。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易74",
+      "question": "報考志願士兵，自費體檢表可跨年使用一年。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易75",
+      "question": "女性青年報考志願士兵，身高須在150至200公分之間，BMI須在17至26之間。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易76",
+      "question": "報考軍事學校正期班學歷必須高中(職)，考試科目含國文、英文、數學、體能測驗、口試及身心評量。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易77",
+      "question": "志願士兵考試項目為智力測驗、體能測驗、身心評量測驗、口試及性向測驗。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易78",
+      "question": "考生若因郵資不足或地址填寫不清，導致無法收到准考證或錄取通知單，須自行負責。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易79",
+      "question": "志願士兵如因適應不良，依退場機制須服務滿3個月後方可申請解除志願役役期。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易80",
+      "question": "常備兵後備役人員錄取志願士兵時，若專長不符仍須接受專長訓練。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易81",
+      "question": "志願士兵於基礎訓練期間因公假、事假、病假或其他事故缺課，其缺課時數分別計算超過訓練時間六分之一，應予退訓。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易82",
+      "question": "志願士兵若於訓練期間違紀，經評定不適服現役，得予退訓。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易83",
+      "question": "志願士兵於基礎訓練期間缺課未達規定比例者，仍得依情節予以退訓。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易84",
+      "question": "志願士兵於基礎訓練期間體能測驗或學科考核不及格，仍可核予結訓。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易85",
+      "question": "志願士兵基礎訓練及格後方可分發部隊，並依專長分派職務。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易86",
+      "question": "志願士兵基礎訓練期滿考核不及格者，可重修一次。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易87",
+      "question": "志願士兵基礎訓練期滿考核不及格者，不得重修，應予退訓。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易88",
+      "question": "志願士兵入伍訓練期間如有重大違紀情事或品性不良者，得予退訓處分。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易89",
+      "question": "志願士兵基礎訓練期間，如因身體不適經醫師診斷不宜繼續訓練，應准退訓。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易90",
+      "question": "志願士兵如退訓後重新報名，需重新體檢與測驗。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易91",
+      "question": "志願士兵服役未滿3年，不得申請轉服士官。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易92",
+      "question": "志願士兵服役滿3年且考績甲等以上者，得申請轉服士官。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易93",
+      "question": "志願士兵服務年限為4年，期滿得續服。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易94",
+      "question": "志願士兵服務年限為3年，期滿得續服。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易95",
+      "question": "志願士兵於服役期間考績丙等以下者，得依規定解除志願役。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易96",
+      "question": "志願士兵期滿退伍後，得申請參加各類國家考試或公務人員甄試。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易97",
+      "question": "志願士兵退伍後不得報考國軍其他班隊。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易98",
+      "question": "志願士兵服役期間不得兼職或經商。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易99",
+      "question": "志願士兵服役滿15年可申請退伍並請領退休給與。",
+      "answer": false,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "true_false",
+      "number": "易100",
+      "question": "志願士兵服役滿20年可申請退伍並請領退休給與。",
+      "answer": true,
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "1",
+      "question": "志願士兵報名資格之年齡限制為何？",
+      "options": ["年滿18歲至未滿26歲", "年滿17歲至未滿30歲", "年滿18歲至未滿32歲", "年滿20歲至未滿35歲"],
+      "answer": "年滿18歲至未滿32歲",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "2",
+      "question": "志願士兵入營後之基礎訓練期為多久？",
+      "options": ["4週", "6週", "8週", "10週"],
+      "answer": "8週",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "3",
+      "question": "志願士兵體能測驗項目包含下列何者？",
+      "options": ["徒手跑步與仰臥起坐", "伏地挺身與徒手跑步", "引體向上與伏地挺身", "仰臥起坐與立定跳遠"],
+      "answer": "伏地挺身與徒手跑步",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "4",
+      "question": "志願士兵報名資料應檢附下列何項？",
+      "options": ["身分證影本", "畢業證書影本", "體檢合格表", "以上皆是"],
+      "answer": "以上皆是",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "5",
+      "question": "志願士兵報名之體格基準，男性BMI範圍為何？",
+      "options": ["16至30", "17至31", "18至32", "19至33"],
+      "answer": "17至31",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "6",
+      "question": "志願士兵錄取後須接受何種訓練？",
+      "options": ["入伍訓練", "基礎訓練", "專長訓練", "以上皆須"],
+      "answer": "以上皆須",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "7",
+      "question": "志願士兵初任階級為何？",
+      "options": ["上兵", "一兵", "二兵", "下士"],
+      "answer": "二兵",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "8",
+      "question": "志願士兵期滿續服需經何種程序？",
+      "options": ["本人申請", "部隊核准", "考績合格", "以上皆需"],
+      "answer": "以上皆需",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "9",
+      "question": "志願士兵每屆甄選簡章由何單位公告？",
+      "options": ["國防部", "國軍人才招募中心", "行政院", "內政部役政署"],
+      "answer": "國軍人才招募中心",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "10",
+      "question": "志願士兵自費體檢應於何處辦理？",
+      "options": ["任一區域醫院", "指定體檢醫院", "衛生所", "私人診所"],
+      "answer": "指定體檢醫院",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "11",
+      "question": "志願士兵報名資料未附郵票或資料不全者，處理方式為何？",
+      "options": ["仍可審查", "補件後受理", "視同放棄", "延後審查"],
+      "answer": "視同放棄",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "12",
+      "question": "志願士兵報名體檢表效期為多久？",
+      "options": ["3個月", "6個月", "1年", "不限期"],
+      "answer": "1年",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "13",
+      "question": "志願士兵期滿退伍後可報考下列何項？",
+      "options": ["預備士官班", "預備軍官班", "軍事學校", "以上皆可"],
+      "answer": "以上皆可",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "14",
+      "question": "志願士兵服役年限為何？",
+      "options": ["2年", "3年", "4年", "6年"],
+      "answer": "3年",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "15",
+      "question": "志願士兵服役期間考績丙等以下者處理方式為？",
+      "options": ["減薪", "延役", "解除志願役", "調職"],
+      "answer": "解除志願役",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "16",
+      "question": "志願士兵於基礎訓練請假缺課超過訓練時間幾分之一應退訓？",
+      "options": ["五分之一", "六分之一", "四分之一", "八分之一"],
+      "answer": "五分之一",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "17",
+      "question": "志願士兵錄取後報到延後天數以幾日為限？",
+      "options": ["2日", "3日", "5日", "7日"],
+      "answer": "2日",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "18",
+      "question": "志願士兵於基礎訓練期間違紀情節重大者，應如何處理？",
+      "options": ["警告", "退訓", "罰勤", "降階"],
+      "answer": "退訓",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "19",
+      "question": "志願士兵初任本俸為下列何者？",
+      "options": ["32,000元", "33,625元", "35,320元", "36,500元"],
+      "answer": "35,320元",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "20",
+      "question": "志願士兵申請報名時，若戶籍地變更，應如何辦理？",
+      "options": ["重新體檢", "重新報名", "以新戶籍地為準辦理報名", "不需更動"],
+      "answer": "以新戶籍地為準辦理報名",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "21",
+      "question": "志願士兵在服役期間如因個人因素不適服現役，得於何時申請解除？",
+      "options": ["服役未滿1年", "服役滿3個月後", "服役滿6個月後", "服役滿1年後"],
+      "answer": "服役滿3個月後",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "22",
+      "question": "志願士兵服役滿幾年可申請轉服士官？",
+      "options": ["1年", "2年", "3年", "4年"],
+      "answer": "3年",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "23",
+      "question": "志願士兵服役滿20年退伍者可請領下列何項？",
+      "options": ["資遣費", "退休給與", "撫慰金", "慰勞金"],
+      "answer": "退休給與",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "24",
+      "question": "報考志願士兵需繳交之郵票金額為多少？",
+      "options": ["50元", "60元", "70元", "80元"],
+      "answer": "70元",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "25",
+      "question": "志願士兵報名體檢費用由誰負擔？",
+      "options": ["國防部", "招募中心", "報考人自行負擔", "部隊負擔"],
+      "answer": "報考人自行負擔",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "26",
+      "question": "志願士兵錄取後，若專長不符，應接受何種訓練？",
+      "options": ["再教育訓練", "補充訓練", "專長訓練", "複訓"],
+      "answer": "專長訓練",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "27",
+      "question": "志願士兵體能測驗男性徒手跑步合格標準為？",
+      "options": ["1600公尺/9分30秒", "1600公尺/10分30秒", "1600公尺/11分30秒", "1600公尺/12分30秒"],
+      "answer": "1600公尺/10分30秒",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "28",
+      "question": "志願士兵體能測驗女性徒手跑步合格標準為？",
+      "options": ["800公尺/4分30秒", "800公尺/5分30秒", "800公尺/6分30秒", "800公尺/7分30秒"],
+      "answer": "800公尺/5分30秒",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "29",
+      "question": "志願士兵服役未滿3個月申請解除志願役者，應如何處理？",
+      "options": ["得依規准退", "須退還訓練費", "不予退伍", "需補繳薪餉"],
+      "answer": "須退還訓練費",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "30",
+      "question": "志願士兵訓練期間缺課超過訓練時間幾分之一應退訓？",
+      "options": ["五分之一", "六分之一", "七分之一", "八分之一"],
+      "answer": "五分之一",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "31",
+      "question": "志願士兵在服役期間如有違紀情事，處理依據為？",
+      "options": ["行政程序法", "刑法", "陸海空軍懲罰法", "軍事審判法"],
+      "answer": "陸海空軍懲罰法",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "32",
+      "question": "志願士兵期滿續服需符合下列何條件？",
+      "options": ["服滿2年以上", "考績甲等以上", "無違紀紀錄", "以上皆是"],
+      "answer": "以上皆是",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "33",
+      "question": "志願士兵錄取後未依規定報到者，處理方式為？",
+      "options": ["得補報", "延後入營", "視同放棄", "另行通知"],
+      "answer": "視同放棄",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "34",
+      "question": "志願士兵退伍後得報考之班隊包含下列何者？",
+      "options": ["預備軍官班", "預備士官班", "軍事學校", "以上皆可"],
+      "answer": "以上皆可",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "35",
+      "question": "志願士兵報名年齡限制中，女性最年長不得超過？",
+      "options": ["30歲", "31歲", "32歲", "35歲"],
+      "answer": "32歲",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "36",
+      "question": "志願士兵入營報到須攜帶下列何項？",
+      "options": ["身分證", "戶口名簿", "體檢表", "以上皆是"],
+      "answer": "以上皆是",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "37",
+      "question": "志願士兵若於服役期間表現優異，得依規晉升最高至何階？",
+      "options": ["下士", "中士", "上士", "少尉"],
+      "answer": "上士",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "38",
+      "question": "志願士兵申請報名時需檢附之學歷證件為？",
+      "options": ["國中畢業", "高中(職)以上畢業", "專科以上畢業", "不限學歷"],
+      "answer": "高中(職)以上畢業",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "39",
+      "question": "志願士兵訓練中退訓者，應負擔之費用為？",
+      "options": ["膳宿費", "服裝費", "訓練費", "交通費"],
+      "answer": "訓練費",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "40",
+      "question": "志願士兵若於訓練期間患病，經診斷不宜繼續訓練者應？",
+      "options": ["延訓", "退訓", "調單位", "記缺課"],
+      "answer": "退訓",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "41",
+      "question": "報考志願士兵時，男性最低身高為？",
+      "options": ["155公分", "156公分", "158公分", "160公分"],
+      "answer": "158公分",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "42",
+      "question": "報考志願士兵時，女性最低身高為？",
+      "options": ["150公分", "152公分", "155公分", "158公分"],
+      "answer": "155公分",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "43",
+      "question": "志願士兵報名資料中之全民國防教育檢測成績屬於何性質？",
+      "options": ["必要文件", "附加資料", "特別加分項目", "身分證明"],
+      "answer": "特別加分項目",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "44",
+      "question": "志願士兵報考資料中全民國防教育線上即測即評檢測成績，應於何時檢附？",
+      "options": ["考試當日", "報名截止日前", "錄取公告日", "報到當日"],
+      "answer": "報名截止日前",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "45",
+      "question": "志願士兵報名時，若郵資不足導致准考證無法寄達，責任歸屬為？",
+      "options": ["主辦單位", "郵局", "報考人", "無責任"],
+      "answer": "報考人",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "46",
+      "question": "志願士兵考試遲到幾分鐘以上不得入場？",
+      "options": ["5分鐘", "10分鐘", "15分鐘", "20分鐘"],
+      "answer": "20分鐘",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "47",
+      "question": "志願士兵考試成績可複查之項目為何？",
+      "options": ["智力測驗", "口試", "體能測驗", "筆試"],
+      "answer": "體能測驗",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "48",
+      "question": "志願士兵錄取後報到若專長一致者，是否需再訓？",
+      "options": ["需再訓", "免訓", "改分單位", "依單位決定"],
+      "answer": "免訓",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "49",
+      "question": "志願士兵錄取報到若文件不齊，應如何處理？",
+      "options": ["延後報到", "補件入營", "視同放棄錄取", "得延期"],
+      "answer": "視同放棄錄取",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "50",
+      "question": "志願士兵若因病無法如期報到，應如何處理？",
+      "options": ["可申請延後入營", "可由家屬代報到", "可自行選梯", "視同放棄錄取"],
+      "answer": "視同放棄錄取",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "51",
+      "question": "志願士兵報考所需體檢表有效期限為？",
+      "options": ["6個月", "8個月", "10個月", "12個月"],
+      "answer": "12個月",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "52",
+      "question": "志願士兵報名所需繳交郵票金額為？",
+      "options": ["60元", "65元", "70元", "75元"],
+      "answer": "70元",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "53",
+      "question": "志願士兵二兵基本薪資為？",
+      "options": ["33,625元", "35,320元", "37,040元", "38,770元"],
+      "answer": "35,320元",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "54",
+      "question": "志願士兵上等兵基本薪資為？",
+      "options": ["35,320元", "37,040元", "38,770元", "39,500元"],
+      "answer": "38,770元",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "55",
+      "question": "志願士兵基本薪資組成為何？",
+      "options": ["本俸、津貼、伙食費", "本俸、專業加給、志願役加給", "專業加給、勤務津貼、志願役加給", "本俸、勤務獎金、專業加給"],
+      "answer": "本俸、專業加給、志願役加給",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "56",
+      "question": "報考志願士兵未滿20歲者須附下列何文件？",
+      "options": ["體檢表", "畢業證書", "法定代理人同意書", "戶籍謄本"],
+      "answer": "法定代理人同意書",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "57",
+      "question": "志願士兵在基礎訓練期間缺課超過訓練時間幾分之一應退訓？",
+      "options": ["五分之一", "六分之一", "七分之一", "八分之一"],
+      "answer": "五分之一",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "58",
+      "question": "志願士兵錄取後報到延後天數以幾日為限？",
+      "options": ["1日", "2日", "3日", "5日"],
+      "answer": "2日",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "59",
+      "question": "志願士兵考試智力測驗時間為？",
+      "options": ["50分鐘", "60分鐘", "70分鐘", "80分鐘"],
+      "answer": "60分鐘",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "60",
+      "question": "志願士兵報名所需繳交體檢費用為？",
+      "options": ["1,000元", "1,200元", "1,300元", "1,400元"],
+      "answer": "1,400元",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "81",
+      "question": "志願士兵服役滿幾年可晉升上士？",
+      "options": ["3年", "5年", "7年", "9年"],
+      "answer": "7年",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "82",
+      "question": "志願士兵考試合格標準依何項目決定？",
+      "options": ["智力測驗與體能測驗成績", "口試成績", "身體檢查結果", "綜合評分"],
+      "answer": "智力測驗與體能測驗成績",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "83",
+      "question": "志願士兵錄取分發之原則為？",
+      "options": ["依身高體重", "依測驗成績及志願序", "依居住地", "隨機分發"],
+      "answer": "依測驗成績及志願序",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "84",
+      "question": "志願士兵退伍後得報考何種班隊？",
+      "options": ["預備軍官班", "預備士官班", "軍事學校", "以上皆可"],
+      "answer": "以上皆可",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "85",
+      "question": "志願士兵錄取報到當日若遲到未報到者，處理方式為？",
+      "options": ["得補報", "延後報到", "視同放棄", "記警告"],
+      "answer": "視同放棄",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "86",
+      "question": "志願士兵考試體能測驗徒手跑步若未達標準，應如何處理？",
+      "options": ["補測一次", "不予錄取", "降等錄取", "以平均計算"],
+      "answer": "不予錄取",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "87",
+      "question": "志願士兵基礎訓練課程包括下列何項？",
+      "options": ["戰鬥技能訓練", "體能訓練", "紀律教育", "以上皆是"],
+      "answer": "以上皆是",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "88",
+      "question": "志願士兵如有身心狀況不宜服役，應由何單位鑑定？",
+      "options": ["體檢醫院", "招募中心", "軍醫單位", "國防部"],
+      "answer": "軍醫單位",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "89",
+      "question": "志願士兵在服役期間死亡，其家屬可申請何種給與？",
+      "options": ["退休金", "撫卹金", "資遣費", "安家費"],
+      "answer": "撫卹金",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "90",
+      "question": "志願士兵服役滿3年轉服士官後，其服役年限計算方式為？",
+      "options": ["重新起算", "合併計算", "依單位核定", "僅計士官期"],
+      "answer": "合併計算",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "91",
+      "question": "志願士兵錄取後報到若有特殊狀況需延後，應何時提出申請？",
+      "options": ["報到前3日", "報到前5日", "報到前7日", "報到前10日"],
+      "answer": "報到前3日",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "92",
+      "question": "志願士兵服役期間若懷孕，依規定應如何處理？",
+      "options": ["提前退伍", "暫時休役", "保留服役資格", "由單位決定"],
+      "answer": "提前退伍",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "93",
+      "question": "志願士兵於服役期間可否申請國內外進修？",
+      "options": ["得經核准後進修", "可自由進修", "不得進修", "僅限國內進修"],
+      "answer": "得經核准後進修",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "94",
+      "question": "志願士兵服役期間如因意外傷殘，得依規申請何項？",
+      "options": ["醫療補助", "殘廢給與", "退伍金", "補助金"],
+      "answer": "殘廢給與",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "95",
+      "question": "志願士兵服役期間若表現優良，可獲何種獎勵？",
+      "options": ["升遷", "嘉獎或記功", "加薪", "延役"],
+      "answer": "嘉獎或記功",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "96",
+      "question": "志願士兵服役期間若犯重大違法行為，將依何法懲處？",
+      "options": ["陸海空軍懲罰法", "刑法", "公務人員懲戒法", "行政罰法"],
+      "answer": "陸海空軍懲罰法",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "97",
+      "question": "志願士兵報名體格檢查項目包含何者？",
+      "options": ["視力與聽力", "血壓與體重", "胸部X光檢查", "以上皆是"],
+      "answer": "以上皆是",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "98",
+      "question": "志願士兵期滿續服需提出申請期限為期滿前幾個月？",
+      "options": ["1個月", "2個月", "3個月", "6個月"],
+      "answer": "3個月",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "99",
+      "question": "志願士兵服役期滿未申請續服者，依規定如何處理？",
+      "options": ["自動延役", "視同放棄續服", "得保留資格", "由單位決議"],
+      "answer": "視同放棄續服",
+      "reference": "招募員合格簽證測驗簡章"
+    },
+    {
+      "type": "single_choice",
+      "number": "100",
+      "question": "志願士兵服役滿20年申請退伍後，仍可享有何項權益？",
+      "options": ["退伍金", "退休給與", "月退俸", "嘉獎紀錄保留"],
+      "answer": "退休給與",
+      "reference": "招募員合格簽證測驗簡章"
+    }
   ]
 }
-
