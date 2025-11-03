@@ -101,14 +101,9 @@
     {"id":97,"type":"true_false","question":"志願士兵體格檢查心電圖異常確定為不合格體位者，仍得複檢。","answer":"X"},
     {"id":98,"type":"true_false","question":"考生接獲徵集令可持具監考官用印的准考證向兵役單位辦理延期徵集。","answer":"O"},
     {"id":99,"type":"true_false","question":"報考國軍士官二專班，智力測驗未達100分者一律不得錄取。","answer":"O"},
-    {"id":100,"type":"true_false","question":"志願士兵體能測驗徒手跑步合格標準男性1600公尺10分30秒，女性800公尺5分30秒。","answer":"O"}
-  ]
-}
+    {"id":100,"type":"true_false","question":"志願士兵體能測驗徒手跑步合格標準男性1600公尺10分30秒，女性800公尺5分30秒。","answer":"O"},
 
-{
-  "subject_id": "recruit_exam",
-  "subject_name": "招募員合格簽證測驗（選擇題）",
-  "questions": [
+    
     {"id":1,"type":"single_choice","question":"考生應試時須攜帶身分證明文件，下列何項為非？","options":["國民身分證","有效期限之駕照或護照","有照片且有註冊章之學生證","貼有照片之健保IC卡"],"answer":3},
     {"id":2,"type":"single_choice","question":"下列何階段，志願士兵親屬不適用現役軍人眷屬之各項福利優待事項？","options":["基礎訓練期間","任志願役二等兵期間","任志願役上等兵期間","轉服志願役士官後"],"answer":1},
     {"id":3,"type":"single_choice","question":"志願士兵鑑測科目何者為非？","options":["智力測驗","身心評量","徒手跑步","口試"],"answer":2},
